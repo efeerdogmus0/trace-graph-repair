@@ -1,6 +1,6 @@
 """Build the public code release as a clean snapshot of HEAD (local only; it pushes nothing).
 
-usage: python scripts/release_export.py --out <dir> [--author "Name <email>"] [--test]
+usage: python scripts/release_export.py --out <dir> [--author "Name <email>"] [--test] [--into <clone>]
 
 Writes <out>/trace-graph-repair/ from `git archive HEAD`, minus the files listed in PRIVATE: personal or
 working notes that are not part of the research record (autopilot state, plans, the original task prompt, notes
@@ -60,6 +60,25 @@ def export(out, author=DEFAULT_AUTHOR):
     return dst, kept
 
 
+def commit_into(clone, dst, author):
+    """Commit the snapshot `dst` on top of an existing clone of the public repo (no push, no history rewrite).
+
+    The clone's index is matched to the snapshot's tree (added, changed and removed files), then committed under
+    `author`. Returns the new commit id, or None when the snapshot equals the clone's HEAD."""
+    clone = Path(clone).resolve()
+    gd = ["--git-dir=%s" % (clone / ".git"), "--work-tree=%s" % dst]
+    git(*gd, "add", "-A", cwd=dst)
+    if not git(*gd, "status", "--porcelain", cwd=dst).stdout.strip():
+        return None
+    snap = git("log", "-1", "--format=%s", cwd=dst).stdout.decode().strip()
+    git(*gd, "commit", "-q", "-m", "Update: " + snap, cwd=dst, env=identity_env(author))
+    gone = git("diff", "--name-only", "--diff-filter=D", "HEAD~1", "HEAD", cwd=clone).stdout.decode().split("\n")
+    for rel in filter(None, gone):                    # files the commit removed; nothing else is touched
+        (clone / rel).unlink(missing_ok=True)
+    git("checkout", "-q", "HEAD", "--", ".", cwd=clone)  # bring the clone's tracked files to the new commit
+    return git("rev-parse", "--short", "HEAD", cwd=clone).stdout.decode().strip()
+
+
 def main(argv):
     if "--out" not in argv:
         raise SystemExit(__doc__)
@@ -78,7 +97,11 @@ def main(argv):
                            capture_output=True, text=True, env=env)
         fails = [l for l in t.stdout.splitlines() if l.startswith("FAILED")]
         print("suite in snapshot: exit %d%s" % (t.returncode, "".join("\n  " + f for f in fails)))
-        return t.returncode or a.returncode
+        if t.returncode or a.returncode:
+            return t.returncode or a.returncode
+    if "--into" in argv:
+        c = commit_into(argv[argv.index("--into") + 1], dst, author)
+        print("committed %s on the clone (not pushed)" % c if c else "clone already equals the snapshot; nothing committed")
     return 0
 
 

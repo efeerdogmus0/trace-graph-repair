@@ -8,6 +8,8 @@ describe an adapter whose bytes were already recorded by scripts/kaggle/artifact
 Locked test (since 2026-11-22): if reports/final/final_table.json exists, every run named in
 scripts/kaggle/final_queue.json (as `run`, or as the `parser` of an arm-E entry) gets a "Locked-test evaluation" section with
 its own seed's per-split numbers copied from that table; runs not in the queue keep the dev-only scope text.
+External (since 2026-11-23): runs evaluated in the pre-registered VGCure record (reports/external/vgcure_final_seeds_vs_B.json;
+a C_desc parser through its arm-E run) get an "External evaluation" section with their own seed's scores from that record.
 Output: docs/model_cards/<run>.md and docs/model_cards/README.md (index). Every number is copied from those files.
 --check: regenerate in memory and compare with the files on disk (exit 1 on any difference).
 """
@@ -19,6 +21,7 @@ KAGGLE = ROOT / "runs/kaggle"
 MANIFEST = ROOT / "runs/kaggle_artifacts.json"
 QUEUE = ROOT / "scripts/kaggle/final_queue.json"
 FINAL_TABLE = ROOT / "reports/final/final_table.json"
+VGCURE = ROOT / "reports/external/vgcure_final_seeds_vs_B.json"
 TEST_TASKS = ("minimal_graph_repair", "reachability", "critical_edge", "non_edit_macro_accuracy")
 OUT = ROOT / "docs/model_cards"
 
@@ -32,8 +35,8 @@ ARM_TEXT = {
 
 SCOPE_TESTED = (
     "Research artifact from a pilot-scale study on synthetic drawn directed graphs (TRACE benchmark, "
-    "`manifests/pilot.json`), three seeds per arm. Evaluated once on the locked test splits (section below); "
-    "not evaluated on any external benchmark yet. Not intended for any use outside reproducing the TRACE "
+    "`manifests/pilot.json`), three seeds per arm. Evaluated once on the locked test splits and once on a "
+    "pre-registered, adapted VGCure subset (sections below). Not intended for any use outside reproducing the TRACE "
     "experiments; the numbers say nothing about natural images or other graph drawings."
 )
 
@@ -95,7 +98,35 @@ def test_section(entry, table):
     return lines + [""]
 
 
-def card(run, job, rec, train, metrics, test=None, table=None):
+def vgcure_scores(run, record):
+    """Own-seed VGCure scores of `run` (a C_desc parser through its arm-E run), or None."""
+    if record is None:
+        return None
+    name = run.replace("C_desc", "E")
+    for arm, a in record["arms"].items():
+        for path, scores in zip(a["runs"], a["per_seed"]):
+            if path.rsplit("/", 1)[1] == name:
+                return arm, path, scores, name != run
+    return None
+
+
+def external_section(ext, record):
+    arm, path, s, parser = ext
+    return [
+        "## External evaluation (pre-registered VGCure subset)",
+        "",
+        f"Evaluated once{' as the parser of arm E' if parser else ''} on {record['graphs']} VGCure graphs "
+        f"({record['n']} items), adapted protocol (our prompts, images letterboxed to 512x512, strict JSON scoring; "
+        f"not official VGCure numbers). Run `{path}`; record `reports/external/vgcure_final_seeds_vs_B.json`.",
+        "",
+        "| Edge-existence accuracy | Reachability balanced accuracy | External macro |",
+        "|---|---|---|",
+        f"| {_fmt(s['edge_exists_accuracy'])} | {_fmt(s['reachability_balanced_accuracy'])} | {_fmt(s['external_macro'])} |",
+        "",
+    ]
+
+
+def card(run, job, rec, train, metrics, test=None, table=None, ext=None, record=None):
     arm = train["arm"]
     lines = [
         f"# TRACE adapter `{run}`",
@@ -139,6 +170,8 @@ def card(run, job, rec, train, metrics, test=None, table=None):
         lines += ["", f"Non-edit macro accuracy: **{_fmt(m['non_edit_macro_accuracy'])}**.", ""]
     if test:
         lines += test_section(test, table)
+    if ext:
+        lines += external_section(ext, record)
     lines += [
         "## Licence",
         "",
@@ -153,6 +186,7 @@ def build(kaggle=KAGGLE, manifest_path=MANIFEST, queue_path=QUEUE, table_path=FI
     manifest = json.loads(manifest_path.read_text())
     table = json.loads(table_path.read_text()) if table_path and table_path.exists() else None
     tested = locked_test(json.loads(queue_path.read_text()), table) if table else {}
+    record = json.loads(VGCURE.read_text()) if VGCURE.exists() else None
     cards, rows = {}, []
     for run, (job, rec) in sorted(adapters(manifest).items()):
         d = kaggle / job / "runs" / run
@@ -161,7 +195,7 @@ def build(kaggle=KAGGLE, manifest_path=MANIFEST, queue_path=QUEUE, table_path=FI
         metrics = json.loads(mpath.read_text()) if mpath.exists() else None
         if metrics is not None and metrics.get("adapter") != f"runs/{run}/adapter":
             raise SystemExit(f"{mpath}: evaluates {metrics.get('adapter')}, not runs/{run}/adapter")
-        cards[f"{run}.md"] = card(run, job, rec, train, metrics, tested.get(run), table)
+        cards[f"{run}.md"] = card(run, job, rec, train, metrics, tested.get(run), table, vgcure_scores(run, record), record)
         macro = _fmt(metrics["metrics"]["non_edit_macro_accuracy"]) if metrics else "-"
         t = tested.get(run)
         final = f"{t[0]}" + (" (as E parser)" if t[3] == "parser" else "") if t else "-"

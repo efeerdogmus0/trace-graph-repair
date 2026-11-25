@@ -8,7 +8,7 @@ LoRA adapter for `Qwen/Qwen3.5-2B` (revision `15852e8c16360a2fea060d615a32b45270
 
 ## Scope
 
-Research artifact from a pilot-scale study on synthetic drawn directed graphs (TRACE benchmark, `manifests/pilot.json`), three seeds per arm. Evaluated once on the locked test splits (section below); not evaluated on any external benchmark yet. Not intended for any use outside reproducing the TRACE experiments; the numbers say nothing about natural images or other graph drawings.
+Research artifact from a pilot-scale study on synthetic drawn directed graphs (TRACE benchmark, `manifests/pilot.json`), three seeds per arm. Evaluated once on the locked test splits and once on a pre-registered, adapted VGCure subset (sections below). Not intended for any use outside reproducing the TRACE experiments; the numbers say nothing about natural images or other graph drawings.
 
 ## Training
 
@@ -64,6 +64,14 @@ Accuracy of this seed per locked split, copied from `reports/final/final_table.j
 | test_combined_ood | 100 | 0.250 | 0.615 | 0.360 | 0.487 |
 | test_family_ood | 100 | 0.240 | 0.660 | 0.370 | 0.515 |
 | test_size_ood | 100 | 0.250 | 0.650 | 0.365 | 0.508 |
+
+## External evaluation (pre-registered VGCure subset)
+
+Evaluated once on 500 VGCure graphs (1500 items), adapted protocol (our prompts, images letterboxed to 512x512, strict JSON scoring; not official VGCure numbers). Run `runs/kaggle/jobV2/pilot3_C`; record `reports/external/vgcure_final_seeds_vs_B.json`.
+
+| Edge-existence accuracy | Reachability balanced accuracy | External macro |
+|---|---|---|
+| 0.830 | 0.636 | 0.733 |
 
 ## Licence
 

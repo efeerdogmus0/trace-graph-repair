@@ -1883,3 +1883,34 @@ Freeze checks (protocol_freeze, eval_freeze) ok at d116351; no code change since
 ## 2026-11-25T10:50:47Z — autopilot
 
 protocol_freeze.py ok, eval_freeze.py ok at b2194a1. No code change since f73bb3f; on battery (54%), owner active, so the owed full test suite still waits for AC. Nothing run.
+
+## 2026-11-25T12:10Z: code published (owner approved "Yayınla")
+- Public repository https://github.com/efeerdogmus0/trace-graph-repair created and pushed: one commit (snapshot of
+  the working repo after the URL commit), 674 files, author `Yiğit Efe Erdoğmuş <84052925+efeerdogmus0@users.noreply.github.com>`
+  (GitHub noreply, so no private address is exposed). Built by `scripts/release_export.py`: private/working notes left
+  out (PROJECT_STATE, PLAN, BLOCKERS, the original task prompt, prior-chat notes, the drafted endorsement message,
+  the other-project Kaggle log); release_audit pass (secrets 0, local paths 0); full suite exit 0 inside the snapshot;
+  eval_freeze ok there. Verified online: visibility PUBLIC, 674 blobs, none of the private files, licence MIT detected.
+- The working repo's history is NOT pushed anywhere and has no remote; updates to the public repo go as new
+  snapshot commits on a clone of it (never a force-push, never this repo's history).
+- Not published yet: the LoRA adapters (12 locked-test adapters, ~770 MB) and the arXiv preprint (endorsement pending).
+
+## 2026-11-25T13:54Z autopilot
+protocol_freeze.py ok, eval_freeze.py ok at 60e4f54 (state-only commits since 09f44e9). On battery (4%), owner active, so the owed full suite still waits for AC. Nothing run.
+
+## 2026-11-25T14:52Z autopilot
+On AC. Full suite (`PYTHONPATH=src nice -n 19 .venv/bin/python -m pytest -q -x`) at c3fad46: exit 0, 508 passed, 16 skipped, 0 failed. Covers every code change since 9b38b75, so no full run is owed any more. protocol_freeze.py ok, eval_freeze.py ok.
+
+## 2026-11-25T14:55Z autopilot
+protocol_freeze.py ok, eval_freeze.py ok at aacc0df (state-only commits since c3fad46, whose full suite passed). Nothing to run.
+
+## 2026-11-25T17:15Z: adapters published (owner approved "Yükle")
+- Release `adapters-v1` on https://github.com/efeerdogmus0/trace-graph-repair: the 12 locked-test adapters (B, C, D,
+  C_desc at seeds 3407 / 2027 / 9173; the source training-job copies, byte-identical to the jobF* copies and to
+  `runs/kaggle_artifacts.json`), one deterministic tar each with adapter_config.json, adapter_model.safetensors, the
+  model card as README.md and LICENSE-DATA.md, plus SHA256SUMS.txt. Uploaded with curl at 512 KB/s (16:42-17:09Z),
+  all 13 HTTP 201; GitHub's asset digests equal the local sha256 for all 13. Token passed through a 0600 header file,
+  removed after the run.
+- Model cards now carry each run's own VGCure scores (`scripts/model_cards.py`); the paper's reproducibility section
+  names the release. The public repo itself still holds the 2026-11-25 snapshot (cards without the VGCure section);
+  updating it is a new snapshot commit and waits for the owner's approval.

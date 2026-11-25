@@ -103,3 +103,19 @@ def test_committed_cards_no_longer_say_untested():
         text = (ROOT / "docs/model_cards" / f"{run}.md").read_text()
         assert "## Locked-test evaluation" in text and "Not evaluated on the locked test" not in text, run
     assert "Not evaluated on the locked test" in (ROOT / "docs/model_cards/pilot3_D2.md").read_text()
+
+
+def test_external_section_matches_vgcure_record():
+    import json
+    rec = json.loads((ROOT / "reports/external/vgcure_final_seeds_vs_B.json").read_text())
+    seen = 0
+    for arm, a in rec["arms"].items():
+        for path, s in zip(a["runs"], a["per_seed"]):
+            run = path.rsplit("/", 1)[1].replace("_E", "_C_desc")
+            card = (ROOT / "docs/model_cards" / ("%s.md" % run)).read_text()
+            row = "| %.3f | %.3f | %.3f |" % (s["edge_exists_accuracy"], s["reachability_balanced_accuracy"], s["external_macro"])
+            assert row in card and path in card, run
+            assert ("as the parser of arm E" in card) == (arm == "E")
+            seen += 1
+    assert seen == 12
+    assert "External evaluation" not in (ROOT / "docs/model_cards/pilot3_D2.md").read_text()
