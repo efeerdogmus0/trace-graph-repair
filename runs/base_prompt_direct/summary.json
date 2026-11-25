@@ -1,0 +1,76 @@
+{
+ "source": "copied from Kaggle kernel output yiitefeerdomu/trace-joba1 (files, not transcription); flags re-scored locally from the downloaded predictions and equal to the log line",
+ "arm": "A",
+ "prompt_variant": "direct",
+ "kernel_environment_lines": [
+  "JOB-START jobA1 arm=A base_prompt roots=20 limit=768 2026-11-14T11:54:36Z",
+  "peft 0.21.2 transformers 5.22.2",
+  "JOB-END jobA1 2026-11-14T12:38:15Z"
+ ],
+ "eval_dev": {
+  "manifest": "manifests/pilot.json",
+  "split": "dev",
+  "eval_root_graphs": 20,
+  "samples": 120,
+  "adapter": "none",
+  "max_new_tokens": 768,
+  "input_mode": "image",
+  "sample_set": "main",
+  "prompt_variant": "direct",
+  "content_digest": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8",
+  "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+  "eval_seconds": 104.1,
+  "truncated_at_limit": 0,
+  "mean_new_tokens": 14.466666666666667,
+  "metrics": {
+   "samples": 120,
+   "missing_responses": 0,
+   "per_task": {
+    "minimal_graph_repair": {
+     "n": 40,
+     "accuracy": 0.075,
+     "format_failure_rate": 0.25,
+     "lenient_accuracy": 0.075,
+     "status_accuracy": 0.35,
+     "valid_edit_rate": 0.15,
+     "minimal_repair_accuracy": 0.15,
+     "n_true_edited": 20,
+     "n_parsed": 30
+    },
+    "reachability": {
+     "n": 40,
+     "accuracy": 0.725,
+     "format_failure_rate": 0.0,
+     "lenient_accuracy": 0.725
+    },
+    "critical_edge": {
+     "n": 40,
+     "accuracy": 0.475,
+     "format_failure_rate": 0.0,
+     "lenient_accuracy": 0.475
+    }
+   },
+   "non_edit_macro_lenient_accuracy": 0.6,
+   "non_edit_macro_accuracy": 0.6,
+   "pair_accuracy": {
+    "critical:critical_edge": {
+     "n": 20,
+     "both_correct": 0.05
+    },
+    "critical:minimal_graph_repair": {
+     "n": 20,
+     "both_correct": 0.0
+    },
+    "critical:reachability": {
+     "n": 20,
+     "both_correct": 0.45
+    }
+   }
+  }
+ },
+ "images_digest": {
+  "kernel": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+  "local": "f654e1cb98c09c65917212e7f1da9e3e66e2087a2be933ff3d2824deec903f76"
+ },
+ "note": "flags_dev.json is scored at the run limit; the variant choice uses token_budget_dev.json at the variant's own limit"
+}

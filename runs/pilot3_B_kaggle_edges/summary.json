@@ -1,0 +1,105 @@
+{
+ "source": "copied from Kaggle kernel output yiitefeerdomu/trace-job11 (files, not transcription); flags re-scored locally from the downloaded predictions and equal to the log line",
+ "kernel_environment_lines": [
+  "JOB-START job11 arm=B roots=200 mode=image 2026-11-12T16:17:09Z",
+  "peft 0.21.2 transformers 5.22.2",
+  "TRAIN-SUMMARY {\"arm\": \"B\", \"manifest\": \"manifests/pilot.json\", \"split\": \"train\", \"content_digest\": \"ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8\", \"images_digest\": \"a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028\", \"samples\": 1024, \"root_graphs\": 512, \"images\": 1024, \"epochs\": 3, \"accum\": 4, \"resumed_from_sample\": 0, \"updates\": 768, \"lr\": 0.0002, \"lora_r\": 16, \"lora_targets\": \"model\\\\.language_model\\\\..*\\\\.(q_proj|k_proj|v_proj|o_proj|in_proj_qkv|in_proj_a|in_proj_b|in_proj_z|out_proj|gate_proj|up_proj|down_proj)\", \"seed\": 3407, \"base_id\": \"Qwen/Qwen3.5-2B\", \"revision\": \"15852e8c16360a2fea060d615a32b45270f8a8fc\", \"torch\": \"2.11.0+cu130\", \"platform\": \"Linux-6.18.55+-x86_64-with-glibc2.39\", \"tokens_in_seen\": 1070592, \"target_tokens_seen\": 21504, \"train_seconds\": 1638.8, \"mean_loss_first_100\": 0.4666982058348367, \"mean_loss_last_100\": 0.06567585779728688, \"gpu\": \"Tesla T4\", \"peak_allocated_gib\": 7.77, \"peak_reserved_gib\": 8.04}",
+  "JOB-END job11 2026-11-12T17:11:56Z",
+  "JOB-START job11 arm=B roots=100 mode=edges 2026-11-12T17:11:56Z",
+  "peft 0.21.2 transformers 5.22.2"
+ ],
+ "train": {
+  "arm": "B",
+  "manifest": "manifests/pilot.json",
+  "split": "train",
+  "content_digest": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8",
+  "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+  "samples": 1024,
+  "root_graphs": 512,
+  "images": 1024,
+  "epochs": 3,
+  "accum": 4,
+  "resumed_from_sample": 0,
+  "updates": 768,
+  "lr": 0.0002,
+  "lora_r": 16,
+  "lora_targets": "model\\.language_model\\..*\\.(q_proj|k_proj|v_proj|o_proj|in_proj_qkv|in_proj_a|in_proj_b|in_proj_z|out_proj|gate_proj|up_proj|down_proj)",
+  "seed": 3407,
+  "base_id": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.11.0+cu130",
+  "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+  "tokens_in_seen": 1070592,
+  "target_tokens_seen": 21504,
+  "train_seconds": 1638.8,
+  "mean_loss_first_100": 0.4666982058348367,
+  "mean_loss_last_100": 0.06567585779728688,
+  "gpu": "Tesla T4",
+  "peak_allocated_gib": 7.77,
+  "peak_reserved_gib": 8.04
+ },
+ "eval_dev_edges": {
+  "manifest": "manifests/pilot.json",
+  "split": "dev",
+  "eval_root_graphs": 100,
+  "samples": 600,
+  "adapter": "runs/pilot3_B/adapter",
+  "max_new_tokens": 96,
+  "input_mode": "edges",
+  "sample_set": "main",
+  "content_digest": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8",
+  "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+  "eval_seconds": 690.7,
+  "truncated_at_limit": 0,
+  "mean_new_tokens": 10.723333333333333,
+  "metrics": {
+   "samples": 600,
+   "missing_responses": 0,
+   "per_task": {
+    "minimal_graph_repair": {
+     "n": 200,
+     "accuracy": 0.225,
+     "format_failure_rate": 0.165,
+     "lenient_accuracy": 0.225,
+     "status_accuracy": 0.265,
+     "valid_edit_rate": 0.01,
+     "minimal_repair_accuracy": 0.01,
+     "n_true_edited": 100,
+     "n_parsed": 167
+    },
+    "reachability": {
+     "n": 200,
+     "accuracy": 0.825,
+     "format_failure_rate": 0.0,
+     "lenient_accuracy": 0.825
+    },
+    "critical_edge": {
+     "n": 200,
+     "accuracy": 0.675,
+     "format_failure_rate": 0.0,
+     "lenient_accuracy": 0.675
+    }
+   },
+   "non_edit_macro_lenient_accuracy": 0.75,
+   "non_edit_macro_accuracy": 0.75,
+   "pair_accuracy": {
+    "critical:critical_edge": {
+     "n": 100,
+     "both_correct": 0.38
+    },
+    "critical:minimal_graph_repair": {
+     "n": 100,
+     "both_correct": 0.0
+    },
+    "critical:reachability": {
+     "n": 100,
+     "both_correct": 0.65
+    }
+   }
+  }
+ },
+ "images_digest": {
+  "kernel": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+  "local": "f654e1cb98c09c65917212e7f1da9e3e66e2087a2be933ff3d2824deec903f76"
+ }
+}

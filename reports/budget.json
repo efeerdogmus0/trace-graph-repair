@@ -1,0 +1,156 @@
+{
+ "cash_cost": 0,
+ "failed_lines": [
+  {
+   "gpu_seconds": 60,
+   "line": 2,
+   "run_id": "overfit_t4_failed_torchao",
+   "status": "failed_import_torchao"
+  },
+  {
+   "gpu_seconds": 330,
+   "line": 3,
+   "run_id": "overfit_t4",
+   "status": "partial_script_crashed_after_eval"
+  }
+ ],
+ "groups": [
+  {
+   "gpu_seconds": 1450,
+   "key": "smoke",
+   "lines": 4,
+   "lines_total": 4,
+   "lines_without_seconds": 0,
+   "title": "Smoke and overfit checks (M3)"
+  },
+  {
+   "gpu_seconds": 3477,
+   "key": "pilot1",
+   "lines": 5,
+   "lines_total": 5,
+   "lines_without_seconds": 0,
+   "title": "One-epoch pilot, arms A, B, D"
+  },
+  {
+   "gpu_seconds": 148127.1,
+   "key": "final",
+   "lines": 13,
+   "lines_total": 13,
+   "lines_without_seconds": 0,
+   "title": "Locked-test evaluation kernels"
+  },
+  {
+   "gpu_seconds": 49784.7,
+   "key": "vgcure",
+   "lines": 5,
+   "lines_total": 5,
+   "lines_without_seconds": 0,
+   "title": "External evaluation on VGCure images"
+  },
+  {
+   "gpu_seconds": 2286.2,
+   "key": "base_prompt",
+   "lines": 1,
+   "lines_total": 1,
+   "lines_without_seconds": 0,
+   "title": "Frozen-base prompt scan (dev, 20 roots)"
+  },
+  {
+   "gpu_seconds": 3359.5,
+   "key": "repro",
+   "lines": 1,
+   "lines_total": 1,
+   "lines_without_seconds": 0,
+   "title": "GPU rerun of a recorded dev run from a clean clone"
+  },
+  {
+   "gpu_seconds": 59113.1,
+   "key": "pilot3",
+   "lines": 18,
+   "lines_total": 26,
+   "lines_without_seconds": 8,
+   "title": "Three-epoch pilot on dev: training, evaluation and oracle condition, all arms and seeds"
+  }
+ ],
+ "lines": 55,
+ "measured": {
+  "gpu_seconds": 267597.6,
+  "lines": 47
+ },
+ "measured_failed": {
+  "gpu_seconds": 390,
+  "lines": 2
+ },
+ "placeholder_lines": [
+  {
+   "line": 12,
+   "run_id": "pilot3_job6"
+  },
+  {
+   "line": 16,
+   "run_id": "pilot3_B_job7"
+  },
+  {
+   "line": 21,
+   "run_id": "pilot3_oracle_job9"
+  }
+ ],
+ "platforms": {
+  "colab": {
+   "device_recorded": {
+    "Tesla T4": 22
+   },
+   "gpu_seconds": 14743,
+   "lines": 14,
+   "lines_total": 22
+  },
+  "kaggle": {
+   "device_recorded": {
+    "Tesla T4": 19,
+    "not recorded": 14
+   },
+   "gpu_seconds": 252854.6,
+   "lines": 33,
+   "lines_total": 33
+  }
+ },
+ "rule": "budget-report-v1",
+ "source": "runs/budget.jsonl",
+ "unmeasured_lines": [
+  {
+   "line": 11,
+   "platform": "colab",
+   "run_id": "pilot3_job5_lost",
+   "started_utc": "2026-11-10T17:42Z",
+   "status": "lost_vm_recycled_before_readback"
+  },
+  {
+   "line": 15,
+   "platform": "colab",
+   "run_id": "pilot3_B_job6_lost",
+   "started_utc": "2026-11-11T15:52Z",
+   "status": "lost_vm_recycled_before_readback; found 2026-11-11T16:48Z, notebook reconnecting and no GPU backend available"
+  },
+  {
+   "line": 19,
+   "platform": "colab",
+   "run_id": "pilot3_B_job8_oracle_lost",
+   "started_utc": "2026-11-11T~17:55Z",
+   "status": "lost_vm_recycled_before_readback; found 2026-11-11T19:52Z, notebook showed Connect"
+  },
+  {
+   "line": 20,
+   "platform": "colab",
+   "run_id": "pilot3_B_job8_oracle_lost",
+   "started_utc": "2026-11-11T17:51Z",
+   "status": "lost_vm_recycled_while_mac_slept"
+  },
+  {
+   "line": 23,
+   "platform": "colab",
+   "run_id": "pilot3_oracle_job9_B",
+   "started_utc": "2026-11-11T21:09Z",
+   "status": "not_read_back; 2026-11-12 09:13Z Colab asked for sign-in, VM presumed recycled"
+  }
+ ]
+}

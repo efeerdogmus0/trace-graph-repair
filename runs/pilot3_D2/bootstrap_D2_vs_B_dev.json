@@ -1,0 +1,94 @@
+{
+ "unit": "graph_group_id",
+ "root_graphs": 200,
+ "n_boot": 2000,
+ "seed": "bootstrap-v1",
+ "level": 0.95,
+ "method": "percentile",
+ "a": {
+  "minimal_graph_repair": {
+   "point": 0.5,
+   "lo": 0.455,
+   "hi": 0.5475
+  },
+  "reachability": {
+   "point": 0.77,
+   "lo": 0.735,
+   "hi": 0.805
+  },
+  "critical_edge": {
+   "point": 0.495,
+   "lo": 0.4875,
+   "hi": 0.5
+  },
+  "non_edit_macro_accuracy": {
+   "point": 0.6325000000000001,
+   "lo": 0.61375,
+   "hi": 0.65
+  }
+ },
+ "b": {
+  "minimal_graph_repair": {
+   "point": 0.295,
+   "lo": 0.26,
+   "hi": 0.3275
+  },
+  "reachability": {
+   "point": 0.845,
+   "lo": 0.81,
+   "hi": 0.8775
+  },
+  "critical_edge": {
+   "point": 0.77,
+   "lo": 0.735,
+   "hi": 0.8025
+  },
+  "non_edit_macro_accuracy": {
+   "point": 0.8075,
+   "lo": 0.78375,
+   "hi": 0.8325
+  }
+ },
+ "a_minus_b": {
+  "minimal_graph_repair": {
+   "point": 0.20500000000000002,
+   "lo": 0.15000000000000002,
+   "hi": 0.25749999999999995,
+   "share_above_zero": 1.0
+  },
+  "reachability": {
+   "point": -0.07499999999999996,
+   "lo": -0.1100000000000001,
+   "hi": -0.03749999999999998,
+   "share_above_zero": 0.0
+  },
+  "critical_edge": {
+   "point": -0.275,
+   "lo": -0.30750000000000005,
+   "hi": -0.23750000000000004,
+   "share_above_zero": 0.0
+  },
+  "non_edit_macro_accuracy": {
+   "point": -0.17499999999999993,
+   "lo": -0.19999999999999996,
+   "hi": -0.14874999999999994,
+   "share_above_zero": 0.0
+  }
+ },
+ "inputs": [
+  {
+   "file": "runs/pilot3_D2/flags_dev.json",
+   "run": "pilot3_D2",
+   "predictions_sha256": "1d033ddde1a51af4cbece41ae3816aae836d41c215fc8dc7e410e38aa1e00375",
+   "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+   "missing_responses": 0
+  },
+  {
+   "file": "runs/pilot3_B/flags_dev.json",
+   "run": "pilot3_B",
+   "predictions_sha256": "db7e57b7b95184cd296dfa8a9557783e0f56ae260edc0119af9da4f2563aea6f",
+   "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+   "missing_responses": 0
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+% Why the locked test and VGCure disagree about repair training. Descriptive, written after both were read.
+% Numbers come from reports/final/final_primary.json, final_slices.json, final_pairs.json, final_table.json and
+% reports/external/vgcure_final_breakdown.json (scripts/vgcure_breakdown.py); checked by tests/test_paper_why.py.
+\section{Why the two evaluations disagree}
+\label{sec:why}
+
+The two pre-registered evaluations point in opposite directions for repair training: D is
+$0.105$ below B on our locked test and $0.056$ above it on the VGCure drawings. They do not ask
+the same questions, and splitting the items by task and by answer shows where each number comes
+from. This section is descriptive and was written after both results were known; it explains the
+numbers and tests nothing. For the same reason, the decision to state the external result in the
+abstract and introduction next to the locked-test result was taken after reading both. The wording
+rule fixed before the locked test was opened (\texttt{finding-v1}) put only the locked-test statistic
+there. The locked-test numbers and their reading are unchanged and the text that rule produced is
+kept in the released reports; the hypothesis is still decided by the locked test alone.
+
+\paragraph{On our test, D fails one task.}
+On reachability D is level with B ($0.784$ against $0.789$ over the three main locked splits),
+although D was never trained on a reachability label. The whole deficit is in the critical-edge
+task ($0.529$ against $0.735$). There D answers \emph{true} to $0.792$ of the questions, where
+\emph{true} is right for half: it is right on $0.821$ of the items whose answer is true and on
+only $0.237$ of those whose answer is false (B: $0.756$ and $0.714$). Over the three main splits
+and three seeds it answers both images of a critical-edge twin pair correctly on $228$ of $1{,}800$
+pairs, against $856$ for B. D's critical-edge answers follow an answer prior more than the edge a
+path depends on. Two development observations fit this (Section~\ref{sec:negative}): providing
+the correct edge list as text did not resolve D's critical-edge deficit, although that format was
+never seen in training and lowers B's score as well, so it does not rule out a part for perception;
+and an auxiliary target added in the one revision we spent moved the prior to \emph{true} on $1\%$
+of questions without making the answers right. A possible source, which we did not test: whenever a
+repair target removes an edge to break a reachability goal, that edge is by construction critical
+for the goal (a single edit can only break reachability by removing such an edge), so in D's
+training data every edge that a target removes disconnects something.
+
+\paragraph{On VGCure, D wins on false claims and unreachable pairs.}
+VGCure has no critical-edge items, so D's weak task is absent. Its edge claims are half true and
+half false. B says that the edge exists to $0.607$ of them and accepts $0.289$ of the false claims;
+D says so to $0.513$ and accepts $0.146$. D is right on $0.854$ of the false claims against $0.711$
+for B, and slightly behind on the true ones ($0.881$ against $0.925$). On path questions D is ahead
+on both classes, most on the unreachable pairs ($0.894$ against $0.795$; reachable pairs $0.860$
+against $0.833$). D's edge accuracy is above B's in all ten VGCure sources; its reachability is
+above in seven, equal in one and below in two. The same tilt is visible on our own reachability
+items, where D is right on $0.797$ of unreachable pairs and $0.771$ of reachable ones (B: $0.775$
+and $0.802$).
+
+Why repair training helps here we leave as a hypothesis to test. A repair target names one exact
+edge, and a removal must name an edge that is drawn, so repair training may teach the model to
+check edges one by one, where B's targets are a single yes or no about paths and B leans towards
+\emph{yes} on the foreign drawings. Repair training does not, however, make the model find missing
+arrows in the image: the repair prompt lists the edges that may be added, and the generator
+requires each of them to be absent from the drawing, so the candidates for an addition come from
+the text. Nor can we separate a task effect from a style effect. Compared on the same task,
+reachability, D$-$B is $-0.016$ on our style-OOD split and $-0.004$ on the in-distribution split,
+against $+0.063$ on VGCure. Our reachability items are balanced between yes and no, so their
+accuracy weighs the two classes equally; VGCure's are not ($409$ yes, $91$ no) and are scored by
+balanced accuracy, which weighs them equally too. In raw accuracy D is still ahead on VGCure,
+$0.866$ against $0.826$ ($+0.040$). Either way, the held-out styles of
+our generator do not reproduce the VGCure advantage, and VGCure's drawings, with entity names,
+relation labels and other layouts, are a larger shift than those styles.
+
+\paragraph{The parse-then-solve arm.}
+E is the strongest arm on our test ($+0.065$ over B) and among the weakest on VGCure ($-0.092$).
+Its parser, the \texttt{C\_desc} extraction adapter trained on our drawings, returns no usable graph for $7\%$ of the VGCure images and
+drops edges from many others: E accepts only $0.553$ of the true edge claims and $0.511$ of the
+reachable pairs, while it rejects false claims well ($0.915$). An exact solver only helps when the
+transcription is right, and on foreign drawings it often is not.
+
+\paragraph{What would settle it.}
+Runs that we did not make would separate the explanations: critical-edge questions on
+externally drawn graphs with known edge lists, which would show whether D's answer prior travels
+with it, and edge-existence questions on our locked test, which would show whether D's advantage
+on absent edges exists in our own drawing style. A third, a repair variant whose prompt does not
+list the edges that may be added, would test whether finding missing arrows in the image matters.
+All three fit the released protocol.

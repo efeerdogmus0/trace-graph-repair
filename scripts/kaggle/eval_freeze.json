@@ -1,0 +1,16 @@
+{
+ "commit": "40620446fd6a39b4322b20c25a3dead9c443afbe",
+ "digest": "7473014474f1c736ae1acd9628d4c842c0684295e413cda5cc6b3b64a8cca42d",
+ "paths": [
+  "pyproject.toml",
+  "src/trace_vr",
+  "configs",
+  "manifests",
+  "scripts/colab/final_eval.sh",
+  "scripts/eval_arm.py",
+  "scripts/eval_parse_solve.py",
+  "scripts/export_flags.py",
+  "scripts/kaggle/make_kernel.py"
+ ],
+ "note": "commit jobF01's payload was built from; see eval_freeze.py"
+}

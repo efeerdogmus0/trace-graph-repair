@@ -1,0 +1,15 @@
+{
+ "note": "Ordered Kaggle GPU queue (one kernel at a time). An entry is done when <out>/summary.json exists. Seeds are the protocol's pre-registered ones; D at seed 3407 is retrained on Kaggle (out pilot3_D_kaggle) so all three D seeds share B/C's machine. See DECISIONS 2026-11-12T19:40Z.",
+ "jobs": [
+  {"job": "job13", "arm": "E", "evals": "200:image", "seed": 3407, "out": "runs/pilot3_E"},
+  {"job": "job14", "arm": "B", "evals": "200:image", "seed": 2027, "out": "runs/pilot3_B_s2027"},
+  {"job": "job15", "arm": "D", "evals": "200:image", "seed": 2027, "out": "runs/pilot3_D_s2027"},
+  {"job": "job16", "arm": "C", "evals": "200:image", "seed": 2027, "out": "runs/pilot3_C_s2027"},
+  {"job": "job17", "arm": "B", "evals": "200:image", "seed": 9173, "out": "runs/pilot3_B_s9173"},
+  {"job": "job18", "arm": "D", "evals": "200:image", "seed": 9173, "out": "runs/pilot3_D_s9173"},
+  {"job": "job19", "arm": "C", "evals": "200:image", "seed": 9173, "out": "runs/pilot3_C_s9173"},
+  {"job": "job20", "arm": "D", "evals": "200:image", "seed": 3407, "out": "runs/pilot3_D_kaggle"},
+  {"job": "job21", "arm": "E", "evals": "200:image", "seed": 2027, "out": "runs/pilot3_E_s2027"},
+  {"job": "job22", "arm": "E", "evals": "200:image", "seed": 9173, "out": "runs/pilot3_E_s9173"}
+ ]
+}

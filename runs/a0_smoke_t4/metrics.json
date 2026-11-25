@@ -1,0 +1,70 @@
+{
+  "source": "copied by hand from the Colab cell output on 2026-11-10; raw predictions stayed on the Colab VM",
+  "purpose": "frozen_base_smoke",
+  "manifest": "manifests/pilot.json",
+  "split": "dev",
+  "root_graphs": 10,
+  "samples": 80,
+  "base_id": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "dtype": "torch.float16",
+  "torch": "2.14.1+cu130",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "python": "3.13.16",
+  "transformers": "5.22.2",
+  "peft": "0.21.2",
+  "pillow": "11.3.0",
+  "images_digest_on_this_machine": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+  "content_digest": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8",
+  "load_seconds": 77.8,
+  "inference_seconds": 458.3,
+  "seconds_per_sample": 5.73,
+  "truncated_at_limit": 64,
+  "peak_allocated_gib": 4.22,
+  "peak_reserved_gib": 4.3,
+  "pipeline_checks": {
+    "image_tokens_in_prompt": 256,
+    "prompt_tokens": 462,
+    "pixel_tensor_shape": [
+      1024,
+      1536
+    ],
+    "same_image_twice_identical": true,
+    "different_image_changes_pixels": true,
+    "different_image_same_text_tokens": true,
+    "supervised_tokens": 24
+  },
+  "metrics": {
+    "per_task": {
+      "minimal_graph_repair": {
+        "n": 20,
+        "accuracy": 0.0,
+        "format_failure_rate": 1.0
+      },
+      "reachability": {
+        "n": 20,
+        "accuracy": 0.2,
+        "format_failure_rate": 0.65
+      },
+      "critical_edge": {
+        "n": 20,
+        "accuracy": 0.05,
+        "format_failure_rate": 0.9
+      },
+      "edge_exists": {
+        "n": 10,
+        "accuracy": 0.3,
+        "format_failure_rate": 0.7
+      },
+      "graph_extraction": {
+        "n": 10,
+        "accuracy": 0.0,
+        "format_failure_rate": 0.8
+      }
+    },
+    "non_edit_macro_accuracy": 0.125
+  },
+  "note": "64 of 80 responses hit the token limit while reasoning in prose; strict scoring counts them as format failures. Not a measure of the base model's ability."
+}

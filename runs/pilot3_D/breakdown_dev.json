@@ -1,0 +1,328 @@
+{
+ "run": "pilot3_D",
+ "predictions_sha256": "7604ebcfdbb517e4c5733425e2acc21d5d21b432fc6f71fec3208d2156526d8b",
+ "format_failures": 0,
+ "answer_bias": {
+  "reachability": {
+   "n": 400,
+   "no_answer": 0,
+   "truth_true_rate": 0.5,
+   "said_true_rate": 0.46
+  },
+  "critical_edge": {
+   "n": 400,
+   "no_answer": 0,
+   "truth_true_rate": 0.5,
+   "said_true_rate": 0.7525
+  }
+ },
+ "critical_pairs": {
+  "minimal_graph_repair": {
+   "pairs": 200,
+   "both_right": 60,
+   "one_right": 98,
+   "both_wrong": 42
+  },
+  "reachability": {
+   "pairs": 200,
+   "both_right": 136,
+   "one_right": 64,
+   "both_wrong": 0
+  },
+  "critical_edge": {
+   "pairs": 200,
+   "both_right": 19,
+   "one_right": 163,
+   "both_wrong": 18
+  }
+ },
+ "breakdown": {
+  "minimal_graph_repair": {
+   "truth": {
+    "edited": {
+     "n": 200,
+     "right": 79,
+     "accuracy": 0.395
+    },
+    "unchanged": {
+     "n": 100,
+     "right": 79,
+     "accuracy": 0.79
+    },
+    "impossible": {
+     "n": 100,
+     "right": 60,
+     "accuracy": 0.6
+    }
+   },
+   "image_variant": {
+    "root": {
+     "n": 200,
+     "right": 112,
+     "accuracy": 0.56
+    },
+    "edit": {
+     "n": 200,
+     "right": 106,
+     "accuracy": 0.53
+    }
+   },
+   "graph_family": {
+    "sparse_random": {
+     "n": 138,
+     "right": 68,
+     "accuracy": 0.4927536231884058
+    },
+    "tree_plus": {
+     "n": 128,
+     "right": 72,
+     "accuracy": 0.5625
+    },
+    "layered_dag": {
+     "n": 134,
+     "right": 78,
+     "accuracy": 0.582089552238806
+    }
+   },
+   "size": {
+    "nodes<=8": {
+     "n": 266,
+     "right": 148,
+     "accuracy": 0.556390977443609
+    },
+    "nodes9-12": {
+     "n": 134,
+     "right": 70,
+     "accuracy": 0.5223880597014925
+    }
+   },
+   "layout": {
+    "layered": {
+     "n": 44,
+     "right": 26,
+     "accuracy": 0.5909090909090909
+    },
+    "force": {
+     "n": 228,
+     "right": 129,
+     "accuracy": 0.5657894736842105
+    },
+    "grid": {
+     "n": 70,
+     "right": 37,
+     "accuracy": 0.5285714285714286
+    },
+    "circle": {
+     "n": 58,
+     "right": 26,
+     "accuracy": 0.4482758620689655
+    }
+   },
+   "style": {
+    "c": {
+     "n": 138,
+     "right": 81,
+     "accuracy": 0.5869565217391305
+    },
+    "a": {
+     "n": 116,
+     "right": 64,
+     "accuracy": 0.5517241379310345
+    },
+    "b": {
+     "n": 146,
+     "right": 73,
+     "accuracy": 0.5
+    }
+   }
+  },
+  "reachability": {
+   "truth": {
+    "True": {
+     "n": 200,
+     "right": 160,
+     "accuracy": 0.8
+    },
+    "False": {
+     "n": 200,
+     "right": 176,
+     "accuracy": 0.88
+    }
+   },
+   "image_variant": {
+    "root": {
+     "n": 200,
+     "right": 176,
+     "accuracy": 0.88
+    },
+    "edit": {
+     "n": 200,
+     "right": 160,
+     "accuracy": 0.8
+    }
+   },
+   "graph_family": {
+    "sparse_random": {
+     "n": 138,
+     "right": 113,
+     "accuracy": 0.8188405797101449
+    },
+    "tree_plus": {
+     "n": 128,
+     "right": 114,
+     "accuracy": 0.890625
+    },
+    "layered_dag": {
+     "n": 134,
+     "right": 109,
+     "accuracy": 0.8134328358208955
+    }
+   },
+   "size": {
+    "nodes<=8": {
+     "n": 266,
+     "right": 229,
+     "accuracy": 0.8609022556390977
+    },
+    "nodes9-12": {
+     "n": 134,
+     "right": 107,
+     "accuracy": 0.7985074626865671
+    }
+   },
+   "layout": {
+    "layered": {
+     "n": 44,
+     "right": 37,
+     "accuracy": 0.8409090909090909
+    },
+    "force": {
+     "n": 228,
+     "right": 195,
+     "accuracy": 0.8552631578947368
+    },
+    "grid": {
+     "n": 70,
+     "right": 57,
+     "accuracy": 0.8142857142857143
+    },
+    "circle": {
+     "n": 58,
+     "right": 47,
+     "accuracy": 0.8103448275862069
+    }
+   },
+   "style": {
+    "c": {
+     "n": 138,
+     "right": 118,
+     "accuracy": 0.855072463768116
+    },
+    "a": {
+     "n": 116,
+     "right": 96,
+     "accuracy": 0.8275862068965517
+    },
+    "b": {
+     "n": 146,
+     "right": 122,
+     "accuracy": 0.8356164383561644
+    }
+   }
+  },
+  "critical_edge": {
+   "truth": {
+    "False": {
+     "n": 200,
+     "right": 50,
+     "accuracy": 0.25
+    },
+    "True": {
+     "n": 200,
+     "right": 151,
+     "accuracy": 0.755
+    }
+   },
+   "image_variant": {
+    "root": {
+     "n": 200,
+     "right": 118,
+     "accuracy": 0.59
+    },
+    "edit": {
+     "n": 200,
+     "right": 83,
+     "accuracy": 0.415
+    }
+   },
+   "graph_family": {
+    "sparse_random": {
+     "n": 138,
+     "right": 65,
+     "accuracy": 0.47101449275362317
+    },
+    "tree_plus": {
+     "n": 128,
+     "right": 65,
+     "accuracy": 0.5078125
+    },
+    "layered_dag": {
+     "n": 134,
+     "right": 71,
+     "accuracy": 0.5298507462686567
+    }
+   },
+   "size": {
+    "nodes<=8": {
+     "n": 266,
+     "right": 128,
+     "accuracy": 0.48120300751879697
+    },
+    "nodes9-12": {
+     "n": 134,
+     "right": 73,
+     "accuracy": 0.5447761194029851
+    }
+   },
+   "layout": {
+    "layered": {
+     "n": 44,
+     "right": 23,
+     "accuracy": 0.5227272727272727
+    },
+    "force": {
+     "n": 228,
+     "right": 118,
+     "accuracy": 0.5175438596491229
+    },
+    "grid": {
+     "n": 70,
+     "right": 34,
+     "accuracy": 0.4857142857142857
+    },
+    "circle": {
+     "n": 58,
+     "right": 26,
+     "accuracy": 0.4482758620689655
+    }
+   },
+   "style": {
+    "c": {
+     "n": 138,
+     "right": 75,
+     "accuracy": 0.5434782608695652
+    },
+    "a": {
+     "n": 116,
+     "right": 55,
+     "accuracy": 0.47413793103448276
+    },
+    "b": {
+     "n": 146,
+     "right": 71,
+     "accuracy": 0.4863013698630137
+    }
+   }
+  }
+ }
+}

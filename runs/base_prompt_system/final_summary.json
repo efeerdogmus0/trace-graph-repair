@@ -1,0 +1,650 @@
+{
+ "source": "copied from Kaggle kernel output yiitefeerdomu/trace-jobf13 (files, not transcription); every flags file re-scored locally from the downloaded predictions and equal to the log line",
+ "job": "jobF13",
+ "run": "base_prompt_system",
+ "kernel_environment_lines": [
+  "FINAL-START jobF13 run=runs/base_prompt_system adapter=none parse_solve=0 prompt_variant=system max_new=96 2026-11-21T20:02:07Z",
+  "FINAL-END jobF13 2026-11-21T22:17:56Z"
+ ],
+ "required_metric_values": {
+  "adapter": "none",
+  "prompt_variant": "system",
+  "max_new_tokens": 96
+ },
+ "evaluations": [
+  "test_id",
+  "test_id_inv",
+  "test_style_ood",
+  "test_style_ood_inv",
+  "test_struct_ood",
+  "test_struct_ood_inv",
+  "test_combined_ood",
+  "test_combined_ood_inv",
+  "test_family_ood",
+  "test_family_ood_inv",
+  "test_size_ood",
+  "test_size_ood_inv"
+ ],
+ "metrics": {
+  "test_id": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_id",
+   "eval_root_graphs": 200,
+   "samples": 1200,
+   "adapter": "none",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "main",
+   "prompt_variant": "system",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 1484.4,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 21.721666666666668,
+   "metrics": {
+    "samples": 1200,
+    "missing_responses": 0,
+    "per_task": {
+     "minimal_graph_repair": {
+      "n": 400,
+      "accuracy": 0.0625,
+      "format_failure_rate": 0.06,
+      "lenient_accuracy": 0.0625,
+      "status_accuracy": 0.465,
+      "valid_edit_rate": 0.125,
+      "minimal_repair_accuracy": 0.125,
+      "n_true_edited": 200,
+      "n_parsed": 376
+     },
+     "reachability": {
+      "n": 400,
+      "accuracy": 0.6825,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.6825
+     },
+     "critical_edge": {
+      "n": 400,
+      "accuracy": 0.5375,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.5375
+     }
+    },
+    "non_edit_macro_lenient_accuracy": 0.61,
+    "non_edit_macro_accuracy": 0.61,
+    "pair_accuracy": {
+     "critical:critical_edge": {
+      "n": 200,
+      "both_correct": 0.105
+     },
+     "critical:minimal_graph_repair": {
+      "n": 200,
+      "both_correct": 0.0
+     },
+     "critical:reachability": {
+      "n": 200,
+      "both_correct": 0.365
+     }
+    }
+   }
+  },
+  "test_id_inv": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_id",
+   "eval_root_graphs": 200,
+   "samples": 198,
+   "adapter": "none",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "invariance",
+   "prompt_variant": "system",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 126.3,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 9.818181818181818,
+   "metrics": {
+    "samples": 198,
+    "missing_responses": 0,
+    "per_task": {},
+    "non_edit_macro_lenient_accuracy": null,
+    "non_edit_macro_accuracy": null,
+    "pair_accuracy": {},
+    "invariance_copy_accuracy": {
+     "reachability": {
+      "n": 99,
+      "accuracy": 0.8282828282828283
+     },
+     "critical_edge": {
+      "n": 99,
+      "accuracy": 0.5757575757575758
+     }
+    }
+   }
+  },
+  "test_style_ood": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_style_ood",
+   "eval_root_graphs": 200,
+   "samples": 1200,
+   "adapter": "none",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "main",
+   "prompt_variant": "system",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 1469.1,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 21.458333333333332,
+   "metrics": {
+    "samples": 1200,
+    "missing_responses": 0,
+    "per_task": {
+     "minimal_graph_repair": {
+      "n": 400,
+      "accuracy": 0.0625,
+      "format_failure_rate": 0.045,
+      "lenient_accuracy": 0.0625,
+      "status_accuracy": 0.48,
+      "valid_edit_rate": 0.125,
+      "minimal_repair_accuracy": 0.125,
+      "n_true_edited": 200,
+      "n_parsed": 382
+     },
+     "reachability": {
+      "n": 400,
+      "accuracy": 0.7175,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.7175
+     },
+     "critical_edge": {
+      "n": 400,
+      "accuracy": 0.5425,
+      "format_failure_rate": 0.0025,
+      "lenient_accuracy": 0.5425
+     }
+    },
+    "non_edit_macro_lenient_accuracy": 0.63,
+    "non_edit_macro_accuracy": 0.63,
+    "pair_accuracy": {
+     "critical:critical_edge": {
+      "n": 200,
+      "both_correct": 0.115
+     },
+     "critical:minimal_graph_repair": {
+      "n": 200,
+      "both_correct": 0.0
+     },
+     "critical:reachability": {
+      "n": 200,
+      "both_correct": 0.435
+     }
+    }
+   }
+  },
+  "test_style_ood_inv": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_style_ood",
+   "eval_root_graphs": 200,
+   "samples": 216,
+   "adapter": "none",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "invariance",
+   "prompt_variant": "system",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 136.6,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 9.657407407407407,
+   "metrics": {
+    "samples": 216,
+    "missing_responses": 0,
+    "per_task": {},
+    "non_edit_macro_lenient_accuracy": null,
+    "non_edit_macro_accuracy": null,
+    "pair_accuracy": {},
+    "invariance_copy_accuracy": {
+     "reachability": {
+      "n": 108,
+      "accuracy": 0.7962962962962963
+     },
+     "critical_edge": {
+      "n": 108,
+      "accuracy": 0.6111111111111112
+     }
+    }
+   }
+  },
+  "test_struct_ood": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_struct_ood",
+   "eval_root_graphs": 200,
+   "samples": 1200,
+   "adapter": "none",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "main",
+   "prompt_variant": "system",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 1514.8,
+   "truncated_at_limit": 1,
+   "mean_new_tokens": 21.68166666666667,
+   "metrics": {
+    "samples": 1200,
+    "missing_responses": 0,
+    "per_task": {
+     "minimal_graph_repair": {
+      "n": 400,
+      "accuracy": 0.065,
+      "format_failure_rate": 0.03,
+      "lenient_accuracy": 0.065,
+      "status_accuracy": 0.485,
+      "valid_edit_rate": 0.13,
+      "minimal_repair_accuracy": 0.13,
+      "n_true_edited": 200,
+      "n_parsed": 388
+     },
+     "reachability": {
+      "n": 400,
+      "accuracy": 0.6325,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.6325
+     },
+     "critical_edge": {
+      "n": 400,
+      "accuracy": 0.545,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.545
+     }
+    },
+    "non_edit_macro_lenient_accuracy": 0.58875,
+    "non_edit_macro_accuracy": 0.58875,
+    "pair_accuracy": {
+     "critical:critical_edge": {
+      "n": 200,
+      "both_correct": 0.13
+     },
+     "critical:minimal_graph_repair": {
+      "n": 200,
+      "both_correct": 0.0
+     },
+     "critical:reachability": {
+      "n": 200,
+      "both_correct": 0.275
+     }
+    }
+   }
+  },
+  "test_struct_ood_inv": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_struct_ood",
+   "eval_root_graphs": 200,
+   "samples": 208,
+   "adapter": "none",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "invariance",
+   "prompt_variant": "system",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 134.1,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 9.567307692307692,
+   "metrics": {
+    "samples": 208,
+    "missing_responses": 0,
+    "per_task": {},
+    "non_edit_macro_lenient_accuracy": null,
+    "non_edit_macro_accuracy": null,
+    "pair_accuracy": {},
+    "invariance_copy_accuracy": {
+     "reachability": {
+      "n": 104,
+      "accuracy": 0.6538461538461539
+     },
+     "critical_edge": {
+      "n": 104,
+      "accuracy": 0.5192307692307693
+     }
+    }
+   }
+  },
+  "test_combined_ood": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_combined_ood",
+   "eval_root_graphs": 100,
+   "samples": 600,
+   "adapter": "none",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "main",
+   "prompt_variant": "system",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 760.0,
+   "truncated_at_limit": 3,
+   "mean_new_tokens": 22.096666666666668,
+   "metrics": {
+    "samples": 600,
+    "missing_responses": 0,
+    "per_task": {
+     "minimal_graph_repair": {
+      "n": 200,
+      "accuracy": 0.06,
+      "format_failure_rate": 0.035,
+      "lenient_accuracy": 0.06,
+      "status_accuracy": 0.485,
+      "valid_edit_rate": 0.12,
+      "minimal_repair_accuracy": 0.12,
+      "n_true_edited": 100,
+      "n_parsed": 193
+     },
+     "reachability": {
+      "n": 200,
+      "accuracy": 0.6,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.6
+     },
+     "critical_edge": {
+      "n": 200,
+      "accuracy": 0.51,
+      "format_failure_rate": 0.015,
+      "lenient_accuracy": 0.51
+     }
+    },
+    "non_edit_macro_lenient_accuracy": 0.5549999999999999,
+    "non_edit_macro_accuracy": 0.5549999999999999,
+    "pair_accuracy": {
+     "critical:critical_edge": {
+      "n": 100,
+      "both_correct": 0.06
+     },
+     "critical:minimal_graph_repair": {
+      "n": 100,
+      "both_correct": 0.0
+     },
+     "critical:reachability": {
+      "n": 100,
+      "both_correct": 0.21
+     }
+    }
+   }
+  },
+  "test_combined_ood_inv": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_combined_ood",
+   "eval_root_graphs": 100,
+   "samples": 84,
+   "adapter": "none",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "invariance",
+   "prompt_variant": "system",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 53.5,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 9.523809523809524,
+   "metrics": {
+    "samples": 84,
+    "missing_responses": 0,
+    "per_task": {},
+    "non_edit_macro_lenient_accuracy": null,
+    "non_edit_macro_accuracy": null,
+    "pair_accuracy": {},
+    "invariance_copy_accuracy": {
+     "reachability": {
+      "n": 42,
+      "accuracy": 0.5238095238095238
+     },
+     "critical_edge": {
+      "n": 42,
+      "accuracy": 0.5238095238095238
+     }
+    }
+   }
+  },
+  "test_family_ood": {
+   "manifest": "manifests/pilot_diag.json",
+   "split": "test_family_ood",
+   "eval_root_graphs": 100,
+   "samples": 600,
+   "adapter": "none",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "main",
+   "prompt_variant": "system",
+   "content_digest": "bafc07abe3c4743e5fc4a4483602a3e388cd1df5e9036016007e5422e0b05652",
+   "images_digest": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "eval_seconds": 728.7,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 21.14666666666667,
+   "metrics": {
+    "samples": 600,
+    "missing_responses": 0,
+    "per_task": {
+     "minimal_graph_repair": {
+      "n": 200,
+      "accuracy": 0.06,
+      "format_failure_rate": 0.02,
+      "lenient_accuracy": 0.06,
+      "status_accuracy": 0.49,
+      "valid_edit_rate": 0.12,
+      "minimal_repair_accuracy": 0.12,
+      "n_true_edited": 100,
+      "n_parsed": 196
+     },
+     "reachability": {
+      "n": 200,
+      "accuracy": 0.71,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.71
+     },
+     "critical_edge": {
+      "n": 200,
+      "accuracy": 0.585,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.585
+     }
+    },
+    "non_edit_macro_lenient_accuracy": 0.6475,
+    "non_edit_macro_accuracy": 0.6475,
+    "pair_accuracy": {
+     "critical:critical_edge": {
+      "n": 100,
+      "both_correct": 0.2
+     },
+     "critical:minimal_graph_repair": {
+      "n": 100,
+      "both_correct": 0.0
+     },
+     "critical:reachability": {
+      "n": 100,
+      "both_correct": 0.42
+     }
+    }
+   }
+  },
+  "test_family_ood_inv": {
+   "manifest": "manifests/pilot_diag.json",
+   "split": "test_family_ood",
+   "eval_root_graphs": 100,
+   "samples": 92,
+   "adapter": "none",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "invariance",
+   "prompt_variant": "system",
+   "content_digest": "bafc07abe3c4743e5fc4a4483602a3e388cd1df5e9036016007e5422e0b05652",
+   "images_digest": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "eval_seconds": 60.2,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 9.717391304347826,
+   "metrics": {
+    "samples": 92,
+    "missing_responses": 0,
+    "per_task": {},
+    "non_edit_macro_lenient_accuracy": null,
+    "non_edit_macro_accuracy": null,
+    "pair_accuracy": {},
+    "invariance_copy_accuracy": {
+     "reachability": {
+      "n": 46,
+      "accuracy": 0.782608695652174
+     },
+     "critical_edge": {
+      "n": 46,
+      "accuracy": 0.45652173913043476
+     }
+    }
+   }
+  },
+  "test_size_ood": {
+   "manifest": "manifests/pilot_diag.json",
+   "split": "test_size_ood",
+   "eval_root_graphs": 100,
+   "samples": 600,
+   "adapter": "none",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "main",
+   "prompt_variant": "system",
+   "content_digest": "bafc07abe3c4743e5fc4a4483602a3e388cd1df5e9036016007e5422e0b05652",
+   "images_digest": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "eval_seconds": 740.2,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 21.583333333333332,
+   "metrics": {
+    "samples": 600,
+    "missing_responses": 0,
+    "per_task": {
+     "minimal_graph_repair": {
+      "n": 200,
+      "accuracy": 0.06,
+      "format_failure_rate": 0.045,
+      "lenient_accuracy": 0.06,
+      "status_accuracy": 0.48,
+      "valid_edit_rate": 0.12,
+      "minimal_repair_accuracy": 0.12,
+      "n_true_edited": 100,
+      "n_parsed": 191
+     },
+     "reachability": {
+      "n": 200,
+      "accuracy": 0.705,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.705
+     },
+     "critical_edge": {
+      "n": 200,
+      "accuracy": 0.535,
+      "format_failure_rate": 0.005,
+      "lenient_accuracy": 0.535
+     }
+    },
+    "non_edit_macro_lenient_accuracy": 0.62,
+    "non_edit_macro_accuracy": 0.62,
+    "pair_accuracy": {
+     "critical:critical_edge": {
+      "n": 100,
+      "both_correct": 0.11
+     },
+     "critical:minimal_graph_repair": {
+      "n": 100,
+      "both_correct": 0.0
+     },
+     "critical:reachability": {
+      "n": 100,
+      "both_correct": 0.41
+     }
+    }
+   }
+  },
+  "test_size_ood_inv": {
+   "manifest": "manifests/pilot_diag.json",
+   "split": "test_size_ood",
+   "eval_root_graphs": 100,
+   "samples": 86,
+   "adapter": "none",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "invariance",
+   "prompt_variant": "system",
+   "content_digest": "bafc07abe3c4743e5fc4a4483602a3e388cd1df5e9036016007e5422e0b05652",
+   "images_digest": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "eval_seconds": 54.6,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 9.651162790697674,
+   "metrics": {
+    "samples": 86,
+    "missing_responses": 0,
+    "per_task": {},
+    "non_edit_macro_lenient_accuracy": null,
+    "non_edit_macro_accuracy": null,
+    "pair_accuracy": {},
+    "invariance_copy_accuracy": {
+     "reachability": {
+      "n": 43,
+      "accuracy": 0.8372093023255814
+     },
+     "critical_edge": {
+      "n": 43,
+      "accuracy": 0.4418604651162791
+     }
+    }
+   }
+  }
+ },
+ "images_digest": {
+  "test_id": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_id_inv": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_style_ood": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_style_ood_inv": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_struct_ood": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_struct_ood_inv": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_combined_ood": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_combined_ood_inv": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_family_ood": {
+   "kernel": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "local": "982403581f338031d28a21fef4c132db3851371371eaf6322954ed8947279fad"
+  },
+  "test_family_ood_inv": {
+   "kernel": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "local": "982403581f338031d28a21fef4c132db3851371371eaf6322954ed8947279fad"
+  },
+  "test_size_ood": {
+   "kernel": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "local": "982403581f338031d28a21fef4c132db3851371371eaf6322954ed8947279fad"
+  },
+  "test_size_ood_inv": {
+   "kernel": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "local": "982403581f338031d28a21fef4c132db3851371371eaf6322954ed8947279fad"
+  }
+ }
+}

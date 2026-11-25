@@ -1,0 +1,79 @@
+{
+ "source": "TRAIN-SUMMARY line of /content/job9.log (Colab T4 job9), copied from notebook status-cell output 2026-11-11T21:03Z",
+ "train": {
+  "arm": "D",
+  "manifest": "manifests/pilot.json",
+  "split": "train",
+  "content_digest": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8",
+  "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+  "samples": 1024,
+  "root_graphs": 512,
+  "images": 1024,
+  "epochs": 3,
+  "accum": 4,
+  "updates": 768,
+  "lr": 0.0002,
+  "lora_r": 16,
+  "seed": 3407,
+  "base_id": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.14.1+cu130",
+  "tokens_in_seen": 1471362,
+  "target_tokens_seen": 55296,
+  "train_seconds": 2143.7,
+  "mean_loss_first_100": 0.1768206560984254,
+  "mean_loss_last_100": 0.035568235049722716,
+  "gpu": "Tesla T4",
+  "peak_allocated_gib": 8.92,
+  "peak_reserved_gib": 14.16
+ },
+ "eval_edges": {
+  "adapter": "runs/pilot3_D/adapter",
+  "input_mode": "edges",
+  "n": 600,
+  "truncated": 0,
+  "seconds": 718.4,
+  "per_task": {
+   "minimal_graph_repair": {
+    "n": 200,
+    "accuracy": 0.505,
+    "format_failure_rate": 0.0,
+    "lenient_accuracy": 0.505,
+    "status_accuracy": 0.57,
+    "valid_edit_rate": 0.39,
+    "minimal_repair_accuracy": 0.39,
+    "n_true_edited": 100,
+    "n_parsed": 200
+   },
+   "reachability": {
+    "n": 200,
+    "accuracy": 0.835,
+    "format_failure_rate": 0.0,
+    "lenient_accuracy": 0.835
+   },
+   "critical_edge": {
+    "n": 200,
+    "accuracy": 0.55,
+    "format_failure_rate": 0.0,
+    "lenient_accuracy": 0.55
+   }
+  },
+  "macro": 0.6925,
+  "macro_lenient": 0.6925,
+  "pairs": {
+   "critical:critical_edge": {
+    "n": 100,
+    "both_correct": 0.13
+   },
+   "critical:minimal_graph_repair": {
+    "n": 100,
+    "both_correct": 0.24
+   },
+   "critical:reachability": {
+    "n": 100,
+    "both_correct": 0.67
+   }
+  }
+ },
+ "eval_edges_source": "EVAL-SUMMARY read 2026-11-11T21:12Z, sha256 prefix f27cc0aa7af6c47d matched in-page"
+}

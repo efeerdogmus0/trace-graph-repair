@@ -1,0 +1,646 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/j2RVqifd7mPf3x1Mw/IieuLT/z0</id>
+  <title>arXiv Query: search_query=abs:"answer-flipping" OR abs:"contrast set" AND abs:"graph"&amp;id_list=&amp;start=0&amp;max_results=25</title>
+  <updated>2026-11-15T05:16:43Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22answer-flipping%22+OR+(abs:%22contrast+set%22+AND+abs:%22graph%22)&amp;start=0&amp;max_results=25&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+  <opensearch:totalResults>30</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2407.01992v1</id>
+    <title>Is Your Large Language Model Knowledgeable or a Choices-Only Cheater?</title>
+    <updated>2024-07-02T07:06:53Z</updated>
+    <link href="https://arxiv.org/abs/2407.01992v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.01992v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent work shows that large language models (LLMs) can answer multiple-choice questions using only the choices, but does this mean that MCQA leaderboard rankings of LLMs are largely influenced by abilities in choices-only settings? To answer this, we use a contrast set that probes if LLMs over-rely on choices-only shortcuts in MCQA. While previous works build contrast sets via expensive human annotations or model-generated data which can be biased, we employ graph mining to extract contrast sets from existing MCQA datasets. We use our method on UnifiedQA, a group of six commonsense reasoning datasets with high choices-only accuracy, to build an 820-question contrast set. After validating our contrast set, we test 12 LLMs, finding that these models do not exhibit reliance on choice-only shortcuts when given both the question and choices. Thus, despite the susceptibility~of MCQA to high choices-only accuracy, we argue that LLMs are not obtaining high ranks on MCQA leaderboards just due to their ability to exploit choices-only shortcuts.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-02T07:06:53Z</published>
+    <arxiv:comment>KnowledgeLM Workshop @ ACL 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Nishant Balepur</name>
+    </author>
+    <author>
+      <name>Rachel Rudinger</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.22866v1</id>
+    <title>Interpreting and Mitigating Unwanted Uncertainty in LLMs</title>
+    <updated>2025-10-26T23:16:59Z</updated>
+    <link href="https://arxiv.org/abs/2510.22866v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.22866v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Despite their impressive capabilities, Large Language Models (LLMs) exhibit unwanted uncertainty, a phenomenon where a model changes a previously correct answer into an incorrect one when re-prompted. This behavior undermines trust and poses serious risks in high-stakes domains. In this work, we investigate the mechanisms that drive this phenomenon. We adapt the Needle-in-a-Haystack retrieval framework and integrate a Flip-style re-evaluation prompt to simulate realistic answer-flipping scenarios. We find that retrieval heads are not primarily responsible for avoiding uncertainty. Instead, we identify a small set of non-retrieval attention heads that disproportionately attend to misleading tokens in uncertain contexts. Masking these heads yields significant improvements, reducing flip behavior by up to 15% without introducing incoherence or overcorrection. However, when tested for downstream tasks, we observe trade-offs with flip behavior. Our findings contribute to the growing field of mechanistic interpretability and present a simple yet effective technique for mitigating uncertainty-driven failure modes in LLMs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-26T23:16:59Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Tiasa Singha Roy</name>
+    </author>
+    <author>
+      <name>Ayush Rajesh Jhaveri</name>
+    </author>
+    <author>
+      <name>Ilias Triantafyllopoulos</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.28851v1</id>
+    <title>Looks the Same, Answers Differently: Flip-Direction Steering for Robust Vision-Language Reasoning</title>
+    <updated>2026-09-23T23:43:26Z</updated>
+    <link href="https://arxiv.org/abs/2609.28851v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.28851v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Vision-language models (VLMs) achieve strong visual reasoning performance, yet subtle changes from routine image capture and processing can alter their reasoning trajectories even when images appear nearly identical. In long-horizon generation, the resulting activation shifts may accumulate across decoding steps, progressively altering reasoning tokens and ultimately changing the final answer, a phenomenon referred to as answer flips. To address this instability, we propose FlipDir (Flip-Direction Steering), a training-free inference-time method that estimates a low-rank flip-inducing activation subspace from contrastive pairs of original and answer-flipping inputs and selectively steers hidden states during decoding. A margin-based gate limits subspace attenuation to uncertain decoding steps, recovering original predictions while preserving stable ones. To evaluate robustness beyond accuracy or consistency on fixed test sets, we introduce VisFlip, a benchmark framework that constructs evaluation groups for a target model and visual variation setting to separately assess recovery of original predictions and preservation of stable ones. VisFlip spans nine dataset-variation combinations across scientific reasoning, robot-scene understanding, and medical VQA, covering subtle visual variations common in each domain. Experiments across 18 settings demonstrate that FlipDir consistently outperforms existing methods on the combined recovery and preservation metric. We will make our code publicly available.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-23T23:43:26Z</published>
+    <arxiv:comment>27 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yeonsung Jung</name>
+    </author>
+    <author>
+      <name>Joonhyun Jeong</name>
+    </author>
+    <author>
+      <name>Hoang Pham</name>
+    </author>
+    <author>
+      <name>Joowon Kim</name>
+    </author>
+    <author>
+      <name>Yoonsik Park</name>
+    </author>
+    <author>
+      <name>Viet Dac Lai</name>
+    </author>
+    <author>
+      <name>Eunho Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2103.09591v1</id>
+    <title>Automatic Generation of Contrast Sets from Scene Graphs: Probing the Compositional Consistency of GQA</title>
+    <updated>2021-03-17T12:19:25Z</updated>
+    <link href="https://arxiv.org/abs/2103.09591v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2103.09591v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent works have shown that supervised models often exploit data artifacts to achieve good test scores while their performance severely degrades on samples outside their training distribution. Contrast sets (Gardneret al., 2020) quantify this phenomenon by perturbing test samples in a minimal way such that the output label is modified. While most contrast sets were created manually, requiring intensive annotation effort, we present a novel method which leverages rich semantic input representation to automatically generate contrast sets for the visual question answering task. Our method computes the answer of perturbed questions, thus vastly reducing annotation cost and enabling thorough evaluation of models' performance on various semantic aspects (e.g., spatial or relational reasoning). We demonstrate the effectiveness of our approach on the GQA dataset and its semantic scene graph image representation. We find that, despite GQA's compositionality and carefully balanced label distribution, two high-performing models drop 13-17% in accuracy compared to the original test set. Finally, we show that our automatic perturbation can be applied to the training set to mitigate the degradation in performance, opening the door to more robust models.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-03-17T12:19:25Z</published>
+    <arxiv:comment>Accepted to NAACL 2021</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yonatan Bitton</name>
+    </author>
+    <author>
+      <name>Gabriel Stanovsky</name>
+    </author>
+    <author>
+      <name>Roy Schwartz</name>
+    </author>
+    <author>
+      <name>Michael Elhadad</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.30826v1</id>
+    <title>SUCRe: Selective Uncertainty-Aware Contrastive Representation for Graph Transfer Learning</title>
+    <updated>2026-09-25T05:11:25Z</updated>
+    <link href="https://arxiv.org/abs/2609.30826v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.30826v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Graph transfer learning (GTL) provides a promising paradigm for adapting knowledge from source graphs with sufficient labels to label-scarce target graphs. However, existing approaches often assume that transferred knowledge is uniformly reliable, ignoring the different transferability of samples caused by structural and distribution shifts across graphs. This limitation leads to negative transfer and unnecessary computational overhead. In this work, we propose SUCRe, a selective uncertainty-aware contrastive representation method for GTL. The key idea is to selectively adapt and transfer graph knowledge according to its estimated reliability. Specifically, we introduce structure-aware entropy-based matching discrepancy, which jointly models feature uncertainty and structural coherence to ensure accurate feature adaptation between graphs. Moreover, we develop a domain-aware semi-hard negative sampling strategy that constructs informative contrastive sets by filtering unreliable cross-domain relationships, reducing computational redundancy while enhancing representation discrimination. Extensive experiments on graph transfer benchmarks demonstrate that SUCRe achieves competitive performance with improved efficiency.</summary>
+    <category term="cs.GR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-25T05:11:25Z</published>
+    <arxiv:primary_category term="cs.GR"/>
+    <author>
+      <name>Mingcan Wang</name>
+    </author>
+    <author>
+      <name>Junchang Xin</name>
+    </author>
+    <author>
+      <name>Zhongming Yao</name>
+    </author>
+    <author>
+      <name>Bing Tian Dai</name>
+    </author>
+    <author>
+      <name>Kaifu Long</name>
+    </author>
+    <author>
+      <name>Zhiqiong Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2104.09570v2</id>
+    <title>Extracting Temporal Event Relation with Syntax-guided Graph Transformer</title>
+    <updated>2022-10-24T19:17:53Z</updated>
+    <link href="https://arxiv.org/abs/2104.09570v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2104.09570v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Extracting temporal relations (e.g., before, after, and simultaneous) among events is crucial to natural language understanding. One of the key challenges of this problem is that when the events of interest are far away in text, the context in-between often becomes complicated, making it challenging to resolve the temporal relationship between them. This paper thus proposes a new Syntax-guided Graph Transformer network (SGT) to mitigate this issue, by (1) explicitly exploiting the connection between two events based on their dependency parsing trees, and (2) automatically locating temporal cues between two events via a novel syntax-guided attention mechanism. Experiments on two benchmark datasets, MATRES and TB-Dense, show that our approach significantly outperforms previous state-of-the-art methods on both end-to-end temporal relation extraction and temporal relation classification; This improvement also proves to be robust on the contrast set of MATRES. The code is publicly available at https://github.com/VT-NLP/Syntax-Guided-Graph-Transformer.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-04-19T19:00:45Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shuaicheng Zhang</name>
+    </author>
+    <author>
+      <name>Lifu Huang</name>
+    </author>
+    <author>
+      <name>Qiang Ning</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.14099v1</id>
+    <title>Just Keep Prompting: Evaluating Repetitive Socratic Prompting in VLMs</title>
+    <updated>2026-05-01T17:02:19Z</updated>
+    <link href="https://arxiv.org/abs/2607.14099v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.14099v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Deploying Vision-Language Models (VLMs) in real-world settings requires not only strong visual reasoning but also stability under sustained conversational pressure. We introduce Just Keep Prompting (JKP), a multi-turn evaluation framework that measures VLM epistemic stability when users repeatedly challenge, question, or contradict a model's answer. JKP probes models for up to 10 follow-up turns using three strategies: Adversarial Negation (repeated rejection), Pure Socratic Interrogation (repeated calls to reassess certainty), and Context-Aware Socratic Summarization (reflecting the model's prior rationale back before asking for reconsideration). We evaluate GPT-4o, Gemini 2.5 Pro, and Qwen3-VL-30B on a subset of the STAR benchmark across 720 multi-turn runs. Aggregate accuracy changes modestly from Turn 0 to Turn 10, but trajectory-level analysis reveals substantial instability: correct answers regress, wrong answers recover, and many runs exhibit repeated answer flipping. Repeated prompting has bounded upside and often acts as a destabilizer rather than a reasoning aid. The effect is strongly model-dependent: Qwen3-VL-30B achieves the highest final accuracy but becomes confidently wrong under direct contradiction; Gemini 2.5 Pro is comparatively stable but token-expensive; GPT-4o is the most brittle and oscillatory. These findings reveal that multi-turn VLM evaluation captures not just additional reasoning but pressure-response profiles: how models trade off visual grounding, calibration, and conversational compliance under repeated challenge.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-01T17:02:19Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shayda Moezzi</name>
+    </author>
+    <author>
+      <name>Bishoy Galoaa</name>
+    </author>
+    <author>
+      <name>Lorena Genua</name>
+    </author>
+    <author>
+      <name>Taskin Padir</name>
+    </author>
+    <author>
+      <name>Sarah Ostadabbas</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2201.05493v1</id>
+    <title>Contrastive Laplacian Eigenmaps</title>
+    <updated>2022-01-14T14:59:05Z</updated>
+    <link href="https://arxiv.org/abs/2201.05493v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2201.05493v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Graph contrastive learning attracts/disperses node representations for similar/dissimilar node pairs under some notion of similarity. It may be combined with a low-dimensional embedding of nodes to preserve intrinsic and structural properties of a graph. In this paper, we extend the celebrated Laplacian Eigenmaps with contrastive learning, and call them COntrastive Laplacian EigenmapS (COLES). Starting from a GAN-inspired contrastive formulation, we show that the Jensen-Shannon divergence underlying many contrastive graph embedding models fails under disjoint positive and negative distributions, which may naturally emerge during sampling in the contrastive setting. In contrast, we demonstrate analytically that COLES essentially minimizes a surrogate of Wasserstein distance, which is known to cope well under disjoint distributions. Moreover, we show that the loss of COLES belongs to the family of so-called block-contrastive losses, previously shown to be superior compared to pair-wise losses typically used by contrastive methods. We show on popular benchmarks/backbones that COLES offers favourable accuracy/scalability compared to DeepWalk, GCN, Graph2Gauss, DGI and GRACE baselines.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-01-14T14:59:05Z</published>
+    <arxiv:comment>Accepted by NeurIPS 2021. Includes the main paper and the supplementary material. OpenReview: https://openreview.net/forum?id=iLn-bhP-kKH</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <arxiv:journal_ref>35th Conference on Neural Information Processing Systems (NeurIPS 2021)</arxiv:journal_ref>
+    <author>
+      <name>Hao Zhu</name>
+    </author>
+    <author>
+      <name>Ke Sun</name>
+    </author>
+    <author>
+      <name>Piotr Koniusz</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.01106v1</id>
+    <title>Temporal Evidence Routing with Structured Visual Evidence for TimeLogicQA</title>
+    <updated>2026-05-31T08:49:04Z</updated>
+    <link href="https://arxiv.org/abs/2606.01106v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.01106v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>TimeLogicQA evaluates whether video question answering systems can reason over temporal relations such as event existence, ordering, persistence, boundary conditions, and overlap. We address this task with a visual evidence routing pipeline that separates perception from symbolic temporal reasoning. The system first parses each question into event targets, answer mode, candidate options, and temporal operators. It then routes videos according to duration and operator difficulty, using ordered full-frame evidence for short clips and event-focused candidate windows for long videos. A multimodal large language model produces structured visual evidence for the relevant events, while programmatic verifiers recover dense action intervals and a deterministic reducer applies operator-specific temporal rules to produce the final answer. Conservative fusion accepts an answer only when the visual evidence, temporal program, and confidence checks agree, reducing noisy answer flips. On the official test evaluation, our final system achieves an AvgAcc of 81.8.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-31T08:49:04Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yuyang Sun</name>
+    </author>
+    <author>
+      <name>Yongliang Wu</name>
+    </author>
+    <author>
+      <name>Xingyu Zhu</name>
+    </author>
+    <author>
+      <name>Yuxia Chen</name>
+    </author>
+    <author>
+      <name>Zhenxiang Jiang</name>
+    </author>
+    <author>
+      <name>Yangguang Ji</name>
+    </author>
+    <author>
+      <name>Wenbo Zhu</name>
+    </author>
+    <author>
+      <name>Yanxi Shi</name>
+    </author>
+    <author>
+      <name>Jay Wu</name>
+    </author>
+    <author>
+      <name>Shuo Wang</name>
+    </author>
+    <author>
+      <name>Xu Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.29087v1</id>
+    <title>The Chain Holds, the Answer Folds: Trace-Answer Dissociation in Reasoning Models Under Adversarial Pressure</title>
+    <updated>2026-05-27T20:41:08Z</updated>
+    <link href="https://arxiv.org/abs/2605.29087v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.29087v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reasoning models are evaluated on single-turn benchmarks but deployed in multi-turn dialogue, where users push back on correct answers. Under sustained adversarial pressure we find a previously undocumented failure mode: the chain-of-thought stays factually correct from first turn to last while the emitted answer flips wrong. We call this unfaithful capitulation (UC) and isolate it with a $2\times 2$ latent-versus-behavioral framework that flip-rate metrics and single-turn faithfulness probes both miss. Across three datasets (MT-Consistency, MMLU-Pro, GSM8K), the latent-correct rate at the behavioral flip clusters near 50% in think mode and collapses to 11-15% under no_think -- paired, within-model causal evidence that reasoning creates the gap. Across models the effect tracks the reasoning channel (high in Qwen3-32B and GPT-OSS-20B, low in inline-CoT Gemma-4-31B-it). An independent GPT-4o judge corroborates $86\%$ of UC labels; a token-level probe shows the answer-slot argmax is correct in $84\%$ of UC cells; and a naive trace-anchored defense backfires. We release all trajectories, traces, and judge labels.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-27T20:41:08Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Yubo Li</name>
+    </author>
+    <author>
+      <name>Ramayya Krishnan</name>
+    </author>
+    <author>
+      <name>Rema Padman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.23458v2</id>
+    <title>Two Regimes of Chain-of-Thought Unfaithfulness: Metric-Based Detection Fails Where Models Are Wrong</title>
+    <updated>2026-08-23T06:06:39Z</updated>
+    <link href="https://arxiv.org/abs/2607.23458v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.23458v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Chain-of-thought (CoT) explanations support oversight only if they are faithful: the stated reasoning must actually produce the answer. Auditing black-box (behavioral) detection of unfaithful CoT against FaithCoT-Bench's human annotations, we find answer correctness structures the problem at every level. Answer incorrectness alone (an oracle diagnostic, not a deployable detector) outperforms every purpose-built signal (AUROC 0.696), because 69% of annotated unfaithfulness occurs on incorrect answers. Stratifying by correctness splits detection into two regimes: on correct answers, behavioral signals moderately separate faithful from post-hoc reasoning (0.63-0.67); on incorrect answers, where most unfaithfulness lives, no tested signal is detectably above chance (replicated on all four models for benchmark-wide signals). The standard step-removal metric anti-correlates with human labels; this inversion reproduces on the benchmark's released scores and on hint-dependent counterfactually labeled traces. Linear probes decode the behaviorally blind regime in Llama-3.1-8B and the correct-answer regime in Qwen-2.5-7B, with no shared, positively aligned direction detected across regimes; instructed answer-first traces (7 models) transfer to neither annotated regime, while hint-induced unverbalized answer flips do, in model- and source-dependent settings. We also independently verify and resolve a documentation-data mismatch in the benchmark's label semantics.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-26T04:43:53Z</published>
+    <arxiv:comment>14 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Suramya R. Angdembay</name>
+    </author>
+    <author>
+      <name>Dikshant Aryal</name>
+    </author>
+    <author>
+      <name>Nick Rahimi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.24790v1</id>
+    <title>Right Diagnoses, Decorative Reasoning:A Perturbation Audit of Medical Chain-of-Thought</title>
+    <updated>2026-08-25T16:37:39Z</updated>
+    <link href="https://arxiv.org/abs/2608.24790v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.24790v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Clinicians read chain-of-thought (CoT) rationales as evidence of medical reasoning, but whether the visible chain plays that role is rarely tested. General-domain CoT-faithfulness probes ignore clinical cost, and medical LLM evaluations treat the chain as a black box. We close this gap with a medical perturbation audit: a 30-operator battery edits both the chain and the question with clinically motivated operators (severity reversal, negation flip, demographic swap, evidence ablation), paired with a chain-update times answer-flip joint analysis that classifies each model by its failure mode. Applied to 14 LLMs on four medical QA benchmarks, three independent tests converge: the Chain-Decoupling Rate (CDR; chain does not register the edit and the answer does not flip) is 72.9% panel-wide on clinically meaningful destructive edits, chain corruption leaves accuracy unchanged, and removing CoT prompting does not reduce accuracy. Two board-certified clinicians re-annotate N=197 perturbed questions; 98.5% leave the gold defensible. The pattern holds across medical and reasoning fine-tuning and scale; on the closed-source tier, where the chain text is unavailable, the answer-side signals are consistent with the same decoupling. Our framework and CDR provide a reusable yardstick for auditing whether medical CoT is faithful or merely documentation.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-25T16:37:39Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Mengzhu Xu</name>
+    </author>
+    <author>
+      <name>Jifan Gao</name>
+    </author>
+    <author>
+      <name>Xia Jiang</name>
+    </author>
+    <author>
+      <name>Yaoxin Wu</name>
+    </author>
+    <author>
+      <name>Xi Long</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.26511v1</id>
+    <title>Sycophancy Suppression Can Impair Rational Updating: Anti-Sycophancy Should Preserve the Ability to Update</title>
+    <updated>2026-08-27T01:20:03Z</updated>
+    <link href="https://arxiv.org/abs/2608.26511v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.26511v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models often exhibit sycophancy, revising their answers to align with users when users push back. Such answer flips, however, can arise from different causes. One possibility is that the model simply aligns with the user's feedback in order to satisfy them. Another is that the feedback genuinely contains useful evidence, prompting the model to update its answer in a rational way. We distinguish them as Unsupported-Yielding and Rational-Updating. Prior work focuses primarily on suppressing Unsupported-Yielding, while overlooking its effect on Rational-Updating. We address this gap with a two-turn evaluation framework that measures the two behaviors separately. Across representative training-time and inference-time interventions, we find that anti-sycophancy methods often encounter a trade-off in which reducing Unsupported-Yielding can sacrifice Rational-Updating, and vice versa, even when the two objectives are optimized jointly. Mechanistic analysis suggests that the two behaviors share an internal substrate: the MLP neurons and attention heads driving them overlap substantially, and their associated steering directions are positively aligned. We further conduct a preliminary orthogonalized steering exploration, which yields modest, backbone-dependent selectivity gains. Overall, our results suggest that anti-sycophancy should be treated not as a simple suppression problem, but as a selectivity problem, where effective interventions should preserve Rational-Updating while reducing Unsupported-Yielding.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-27T01:20:03Z</published>
+    <arxiv:comment>Accepted to EMNLP 2026 Findings. Code and data: https://github.com/dependentsign/sycophancy-rational-updating</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Huanhuan Ma</name>
+    </author>
+    <author>
+      <name>Henry Peng Zou</name>
+    </author>
+    <author>
+      <name>Chengze Li</name>
+    </author>
+    <author>
+      <name>Enze Ma</name>
+    </author>
+    <author>
+      <name>Yunyue Su</name>
+    </author>
+    <author>
+      <name>Philip S. Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.16011v2</id>
+    <title>Who Flips? Self- and Cross-Model Counterarguments Reveal Answer Instability in LLMs</title>
+    <updated>2026-08-30T15:25:57Z</updated>
+    <link href="https://arxiv.org/abs/2606.16011v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.16011v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Standard accuracy benchmarks evaluate whether large language models (LLMs) reach correct answers. However, they do not test whether models maintain that answer when challenged by a plausible counter-argument. We introduce a controlled protocol for evaluating answer stability: after a model answers a multiple-choice question correctly, we challenge the model's answer with a coherent argument for an incorrect option and measure whether the model flips. The setup a) isolates argumentative content from overt social pressure and b) varies argument length, self-attribution, and cross-model source. Across seven frontier models and 57 MMLU subjects, flip rates range from 17.5% to 97.3%, revealing large differences in stability that are not captured by accuracy metrics alone. We find that self-attribution consistently increases flip rates (mean 7.1pp, up to 18.7pp). Furthermore, pooling wrong-answer arguments across models and selecting the most effective one per question yields stronger adversarial challenges than relying on any single source model. From this cross-model pool, we construct MaxFlip, a curated benchmark that amplifies answer flips by up to 23.6pp over self-generated challenges. We release the protocol, challenge records, and MaxFlip to support stability evaluation alongside standard accuracy benchmarks. Materials are available at https://github.com/nafisenik/WhoFlips, https://hf.co/datasets/nafisehNik/WhoFlips.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-14T20:45:30Z</published>
+    <arxiv:comment>EMNLP Findings 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Nafiseh Nikeghbal</name>
+    </author>
+    <author>
+      <name>Amir Hossein Kargaran</name>
+    </author>
+    <author>
+      <name>Shaghayegh Kolli</name>
+    </author>
+    <author>
+      <name>Jana Diesner</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.13305v1</id>
+    <title>Accuracy Without Grounding: Diagnosing Visual Dependency Dissociation in Video LLM Benchmarks</title>
+    <updated>2026-07-14T22:15:50Z</updated>
+    <link href="https://arxiv.org/abs/2607.13305v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.13305v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Benchmark accuracy in video large language models (LLMs) is often treated as evidence of visual understanding. We audit this assumption across twenty models spanning 2-78B parameters and ten architecture families. We introduce the Visual Dependency Gap (VDG), the difference in per-question correctness between original-video and black-screen conditions. Paired McNemar tests on MVBench show that accuracy and visual dependency are separable: models differ on original video (p = 0.0003) but not on black screens (p = 0.53). Across models, task-type rankings are stable: Attribute Perception is strongly visual, whereas Temporal Reasoning approaches the language-only baseline. A diagnostic ladder from black screen to single frame, shuffled frames, and original video reveals that frame diversity supplies most of the visual benefit, while temporal order contributes near-zero accuracy across sixteen open-weight models. An ablation from 0.5 to 24 FPS rules out sparse sampling as the cause. H.264 experiments further show that stable aggregate accuracy conceals bidirectional question-level answer flips. The diagnostic also generalizes to four API-accessed models, whose VDG values range from 0.025 to 0.315. These results motivate VDG as a standard audit for whether video benchmarks measure visually grounded capability. Code is available at https://github.com/JaeLee18/accuracy-without-grounding.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-14T22:15:50Z</published>
+    <arxiv:comment>Accepted, ACM International Conference on Multimedia 2026 (ACM MM)</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Jae Joong Lee</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.22554v1</id>
+    <title>Same Question, Different Answers: Evaluating LLM Reliability Beyond Accuracy</title>
+    <updated>2026-05-18T16:45:13Z</updated>
+    <link href="https://arxiv.org/abs/2607.22554v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.22554v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) often achieve strong accuracy on benchmarks, yet it remains unclear how reliably they apply this knowledge when the same question is phrased in different but equivalent ways. In this work, we study how model answers change under meaning-preserving paraphrases across factual question answering and mathematical reasoning tasks. Across four benchmarks and 13 models, we find that model outputs frequently depend on the exact wording of the prompt. While overall accuracy typically changes only modestly across paraphrases, instance-level behavior is far less stable: for many questions, models alternate between correct and incorrect answers depending on phrasing, with mismatch rates reaching more than 23%. Conditioning on questions that are answered correctly in their original form reveals even larger failures measured by answer flip rates, showing that single-prompt correctness is often a poor indicator of reliability. At the same time, we find that models often produce a correct answer for at least one paraphrase of a question, suggesting that the underlying knowledge is present but inconsistently retrieved. Building on this observation, we show that a simple self-paraphrasing strategy can partially recover this latent knowledge and improve performance at inference time. Together, these findings suggest that standard accuracy metrics can mask substantial instability, and that evaluating consistency across equivalent inputs provides a clearer picture of LLM reliability.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-18T16:45:13Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Kazem Faghih</name>
+    </author>
+    <author>
+      <name>Yize Cheng</name>
+    </author>
+    <author>
+      <name>Shoumik Saha</name>
+    </author>
+    <author>
+      <name>Mobina Pournemat</name>
+    </author>
+    <author>
+      <name>Armin Gerami</name>
+    </author>
+    <author>
+      <name>Soheil Feizi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.31341v1</id>
+    <title>The Right Information Extraction Pipeline Depends on the Document: Accuracy-Energy Trade-offs for Small, Local Models</title>
+    <updated>2026-09-25T14:43:18Z</updated>
+    <link href="https://arxiv.org/abs/2609.31341v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.31341v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Whether an information extraction pipeline should process page images or parsed text depends on the document, and the answer flips across the layout spectrum. We study this trade-off under a constraint that rules out (closed) cloud services: privacy-sensitive documents processed on-premise by small ($\le 8\mathrm{B}$ parameter) text-only and vision--language models, evaluated on both accuracy and energy over a design space spanning input representation, model family, and inference configuration. Benchmarking on the near-plain-text Kleister-NDA contracts and the layout-rich VRDU forms, we find that batching is the dominant energy lever, cutting energy per page by 38-85% at no cost in accuracy, while FP8 quantization saves 27-32% when requests are served one at a time but less than 1mWh per page (9-19%) once batching is applied. Preprocessing dominates what remains: neural OCR costs $17\times$ more energy per page than classical OCR and never reaches the Pareto frontier. Which representation wins flips with the type of document: vision--language models on layout-rich documents and small text-only models with a cheap parser on near-plain text, where they are both more accurate and cheaper than any vision--language configuration. Our work yields concrete guidelines for energy-efficient, privacy-compliant local information extraction.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-25T14:43:18Z</published>
+    <arxiv:comment>Accepted to DocInsights at EMNLP 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Christoph Walser</name>
+    </author>
+    <author>
+      <name>Mauricio Fadel Argerich</name>
+    </author>
+    <author>
+      <name>Jonathan Fürst</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.38067v1</id>
+    <title>From Error Prediction to Causal Influence: Auditing SAE Features in Multiple-Choice QA</title>
+    <updated>2026-10-27T23:34:33Z</updated>
+    <link href="https://arxiv.org/abs/2610.38067v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.38067v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Sparse autoencoders (SAEs) can predict internal features associated with model errors, but association alone does not establish causal influence. We study this distinction in multiple-choice question answering, where answer preference can be measured by the logit margin between the correct answer and the competing choices. Across eight datasets, we analyze Gemma~3 1B and 4B with Gemma Scope SAEs. We propose a pipeline to filter out the features that have high correlation with format and content artifacts, such as prompt and answer permutation, and evaluate the remaining ones with causal feature interventions. Our results show that SAE activations contain predictive signals about wrongness and uncertainty across models and datasets. After filtering artifact-contaminated features, selected features for causal intervention at question and option spans produce larger absolute margin shifts and a higher wrong-to-correct rate than randomly selected features, indicating greater causal leverage. However, answer flips are rare, and we do not observe stable effect directions across meaning-preserving changes in prompt format and answer order. An adapted HalluSAE baseline produces larger final-token margin changes, but relies on substantially contaminated features and does not significantly improve correction rates. Therefore, the identified features reflect context-dependent answer competition rather than the mechanism of incorrect answer errors.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-27T23:34:33Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Aria Nourbakhsh</name>
+    </author>
+    <author>
+      <name>Adelaide Danilov</name>
+    </author>
+    <author>
+      <name>Oleksandr Marchenko Breneur</name>
+    </author>
+    <author>
+      <name>Salima Lamsiyah</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.12537v1</id>
+    <title>GARCIA: Powering Representations of Long-tail Query with Multi-granularity Contrastive Learning</title>
+    <updated>2023-04-25T03:04:12Z</updated>
+    <link href="https://arxiv.org/abs/2304.12537v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.12537v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently, the growth of service platforms brings great convenience to both users and merchants, where the service search engine plays a vital role in improving the user experience by quickly obtaining desirable results via textual queries. Unfortunately, users' uncontrollable search customs usually bring vast amounts of long-tail queries, which severely threaten the capability of search models. Inspired by recently emerging graph neural networks (GNNs) and contrastive learning (CL), several efforts have been made in alleviating the long-tail issue and achieve considerable performance. Nevertheless, they still face a few major weaknesses. Most importantly, they do not explicitly utilize the contextual structure between heads and tails for effective knowledge transfer, and intention-level information is commonly ignored for more generalized representations.
+  To this end, we develop a novel framework GARCIA, which exploits the graph based knowledge transfer and intention based representation generalization in a contrastive setting. In particular, we employ an adaptive encoder to produce informative representations for queries and services, as well as hierarchical structure aware representations of intentions. To fully understand tail queries and services, we equip GARCIA with a novel multi-granularity contrastive learning module, which powers representations through knowledge transfer, structure enhancement and intention generalization. Subsequently, the complete GARCIA is well trained in a pre-training&amp;fine-tuning manner. At last, we conduct extensive experiments on both offline and online environments, which demonstrates the superior capability of GARCIA in improving tail queries and overall performance in service search scenarios.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-25T03:04:12Z</published>
+    <arxiv:comment>Accepted by ICDE 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Weifan Wang</name>
+    </author>
+    <author>
+      <name>Binbin Hu</name>
+    </author>
+    <author>
+      <name>Zhicheng Peng</name>
+    </author>
+    <author>
+      <name>Mingjie Zhong</name>
+    </author>
+    <author>
+      <name>Zhiqiang Zhang</name>
+    </author>
+    <author>
+      <name>Zhongyi Liu</name>
+    </author>
+    <author>
+      <name>Guannan Zhang</name>
+    </author>
+    <author>
+      <name>Jun Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.08941v2</id>
+    <title>Predictive Entropy as a Joint Screen for Error and Paraphrase Instability in Medical Vision-Language Models</title>
+    <updated>2026-08-11T00:44:26Z</updated>
+    <link href="https://arxiv.org/abs/2604.08941v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.08941v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Medical Vision-Language Models (VLMs) answering binary presence questions on chest radiographs can fail in two linked ways: they are confidently wrong, and they change answers when a clinically equivalent question is rephrased. In a binary answer head both failures track the same logit margin, so we test how well one score screens for both. On MedGemma-4B-IT across MIMIC-CXR (in-distribution, n=196) and PadChest (out-of-distribution, n=861), single-pass predictive entropy predicts which yes/no answers flip under rephrasing with an area under the receiver operating characteristic curve (AUROC) of 0.823 on PadChest and 0.821 on MIMIC, and the signal is stable across five random seeds (0.828$\pm$0.021). The same signal replicates on LLaVA-RAD-7B (AUROC 0.83) and is invariant to the flip definition (all, operator-preserving, or negation-excluded rewrites), so the screen needs no semantic filter at inference. One low-entropy threshold drives error and flip rate down together (3.3% and 5.7% at 80% coverage), and threshold selection transfers to a held-out split. Under cross-site shift the more expensive methods we test add nothing practical: at the 5% risk target a single forward pass answers 88.5% of cases, matching Monte Carlo (MC) Dropout, and beats the uniformly averaged five-seed adapter ensemble on error detection by 0.111 AUROC. Even a model that is 91% accurate still contradicts itself on 13% of items under rephrasing, and one forward pass flags them.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-10T04:18:47Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Binesh Sadanandan</name>
+    </author>
+    <author>
+      <name>Vahid Behzadan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.27069v2</id>
+    <title>Visual Credit Audit for Multimodal Spatial Reasoning</title>
+    <updated>2026-07-30T03:38:02Z</updated>
+    <link href="https://arxiv.org/abs/2607.27069v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.27069v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Closed yes/no spatial benchmarks can reward a correct answer even when the image adds little support beyond no-image contexts. Under a fixed forced-choice interface, Visual Credit Audit (VCA) separates two estimands: whether the benchmark image gives the model's declared decision more support than text-only and blank controls, and whether the model responds to relation-specific visual evidence. The first audit is training- and label-free and does not require an answer flip. Applying labels yields dependence-credited correctness (D-CC); on correct items, it equals same-control gold-aligned positive gain, while prediction alignment extends the audit to errors. Across four open MLLMs and two spatial benchmarks, 12.73-26.25% of decisions are correct yet uncredited. Matched same-split image permutation reduces D-CC by 21.25-47.80 points, with every paired 95% interval above zero. Fixed-pixel relation contrasts and a 3x3 evidence-source factorial show why null controls cannot identify relation response. Among controlled correct-but-uncredited agreement decisions, response to relation reversal spans 81.57-100.00%, while 32.11% pooled change answer. Independently audited outcomes on 108 geometry-compatible edits provide a bounded natural-image correspondence check. VCA thereby decomposes benchmark success into correctness, additional image support, and relation-consistent response.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-29T15:55:31Z</published>
+    <arxiv:comment>20 pages, 2 figures. Code: https://github.com/SouthWinter/VCA</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Feixiang Liu</name>
+    </author>
+    <author>
+      <name>Qiang Qiu</name>
+    </author>
+    <author>
+      <name>Lanbo Sun</name>
+    </author>
+    <author>
+      <name>Nan Wei</name>
+    </author>
+    <author>
+      <name>Huawei Shen</name>
+    </author>
+    <author>
+      <name>Xueqi Cheng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.11196v1</id>
+    <title>Selective Listening: Mechanism-Guided Control of Audio Influence in Large Audio-Language Models</title>
+    <updated>2026-10-08T04:00:47Z</updated>
+    <link href="https://arxiv.org/abs/2610.11196v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.11196v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large audio-language models (LALMs) exploit multimodal evidence, yet task-irrelevant audio can alter text-reasoning decisions when listening is unnecessary. Aggregate Accuracy can hide this paired drift because audio-induced repairs and damages may cancel. Paired drift analysis and targeted interventions identify architecture-specific, intervention-sensitive late audio pathways as actionable control points. We introduce ICAP-Gate, which applies mechanism-guided, task-conditioned control to each model's pathway. Across four LALMs, two reasoning benchmarks, and environmental-sound and natural-speech interference, ICAP-Gate has lower point estimates for Influence Rate and Answer Flip than ungated inference in all 16 full-split model--condition evaluations. Fixed suppression degrades automatic speech recognition (ASR) across all four models, whereas ICAP-Gate matches ungated ASR performance by preserving the pathway for explicit audio-demand instructions. ICAP-Gate has lower paired-drift point estimates than mitigation prompting in all four evaluated settings and provides competitive stabilization relative to eight-sample Self-Consistency while using one generation per query; in controlled ARC measurements, Self-Consistency incurs $7.0$--$9.2\times$ ungated latency. These results establish selective modality influence control as a design principle for robust multimodal reasoning.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-08T04:00:47Z</published>
+    <arxiv:comment>24 pages, 5 figures, 20 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Yulin Sun</name>
+    </author>
+    <author>
+      <name>Kele Xu</name>
+    </author>
+    <author>
+      <name>Yong Dou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.17954v1</id>
+    <title>Sort &amp; Slice: A Simple and Superior Alternative to Hash-Based Folding for Extended-Connectivity Fingerprints</title>
+    <updated>2024-03-10T16:49:04Z</updated>
+    <link href="https://arxiv.org/abs/2403.17954v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.17954v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Extended-connectivity fingerprints (ECFPs) are a ubiquitous tool in current cheminformatics and molecular machine learning, and one of the most prevalent molecular feature extraction techniques used for chemical prediction. Atom features learned by graph neural networks can be aggregated to compound-level representations using a large spectrum of graph pooling methods; in contrast, sets of detected ECFP substructures are by default transformed into bit vectors using only a simple hash-based folding procedure. We introduce a general mathematical framework for the vectorisation of structural fingerprints via a formal operation called substructure pooling that encompasses hash-based folding, algorithmic substructure-selection, and a wide variety of other potential techniques. We go on to describe Sort &amp; Slice, an easy-to-implement and bit-collision-free alternative to hash-based folding for the pooling of ECFP substructures. Sort &amp; Slice first sorts ECFP substructures according to their relative prevalence in a given set of training compounds and then slices away all but the $L$ most frequent substructures which are subsequently used to generate a binary fingerprint of desired length, $L$. We computationally compare the performance of hash-based folding, Sort &amp; Slice, and two advanced supervised substructure-selection schemes (filtering and mutual-information maximisation) for ECFP-based molecular property prediction. Our results indicate that, despite its technical simplicity, Sort &amp; Slice robustly (and at times substantially) outperforms traditional hash-based folding as well as the other investigated methods across prediction tasks, data splitting techniques, machine-learning models and ECFP hyperparameters. We thus recommend that Sort &amp; Slice canonically replace hash-based folding as the default substructure-pooling technique to vectorise ECFPs for supervised molecular machine learning.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.chem-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.BM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-10T16:49:04Z</published>
+    <arxiv:comment>Submitted to Journal of Cheminformatics</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <arxiv:journal_ref>Journal of Cheminformatics, vol. 16, Article number: 135 (2024)</arxiv:journal_ref>
+    <author>
+      <name>Markus Dablander</name>
+    </author>
+    <author>
+      <name>Thierry Hanser</name>
+    </author>
+    <author>
+      <name>Renaud Lambiotte</name>
+    </author>
+    <author>
+      <name>Garrett M. Morris</name>
+    </author>
+    <arxiv:doi>10.1186/s13321-024-00932-y</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1186/s13321-024-00932-y" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.37616v1</id>
+    <title>Authority Bias in Language Models: Source Deference and User Agreement Are Not Interchangeable</title>
+    <updated>2026-09-29T13:58:04Z</updated>
+    <link href="https://arxiv.org/abs/2609.37616v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.37616v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language models tend to agree with whatever a user asserts, and post-training increasingly targets this sycophancy so that models evaluate claims on their merits rather than deferring to the user. Yet the same models are far more compliant when a wrong answer is attributed to a verified source, which is how retrieval results, tool outputs, and grounded-search content often present information. We measure this gap across five open-weight families and three closed APIs. A single verified-source note endorsing a wrong answer flips 45-88% of baseline-correct responses in seven of eight models, and compliance rises with how authoritative the note sounds. Source deference and user agreement are not behaviorally interchangeable inside the model: on matched items with the same wrong answer, causal interventions can selectively suppress one without equally affecting the other. In three open-weight families, removing a fitted source direction lowers source compliance by 65-80 percentage points while removing a user or assistant direction has far smaller effects, and removing the user direction shows the reverse preference. A separately fitted intervention derived from source-versus-user cue activations moves compliance in both directions while leaving the prompt text unchanged. An authority direction fitted on trivia also transfers to PIQA and multi-turn SYCON dialogues without refitting, and removing it lowers wrong-source compliance by tens of percentage points in four of five families with no detected change in MMLU-Pro or GSM8K accuracy at our evaluation sizes. Source deference and user agreement therefore need separate evaluation.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-29T13:58:04Z</published>
+    <arxiv:comment>Accepted at NeurIPS 2026 (Main Conference, Poster). 33 pages, 8 figures. Project page: https://authority-bias.vercel.app/ . Code: https://github.com/Lossfunk/authority-bias</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Abhinav Rajeev Kumar</name>
+      <arxiv:affiliation>Lossfunk</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Paras Chopra</name>
+      <arxiv:affiliation>Lossfunk</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.01639v1</id>
+    <title>Fragile Reasoning: A Mechanistic Analysis of LLM Sensitivity to Meaning-Preserving Perturbations</title>
+    <updated>2026-04-02T05:30:20Z</updated>
+    <link href="https://arxiv.org/abs/2604.01639v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.01639v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models demonstrate strong performance on mathematical reasoning benchmarks, yet remain surprisingly fragile to meaning-preserving surface perturbations. We systematically evaluate three open-weight LLMs, Mistral-7B, Llama-3-8B, and Qwen2.5-7B, on 677 GSM8K problems paired with semantically equivalent variants generated through name substitution and number format paraphrasing. All three models exhibit substantial answer-flip rates (28.8%-45.1%), with number paraphrasing consistently more disruptive than name swaps. To trace the mechanistic basis of these failures, we introduce the Mechanistic Perturbation Diagnostics (MPD) framework, combining logit lens analysis, activation patching, component ablation, and the Cascading Amplification Index (CAI) into a unified diagnostic pipeline. CAI, a novel metric quantifying layer-wise divergence amplification, outperforms first divergence layer as a failure predictor for two of three architectures (AUC up to 0.679). Logit lens reveals that flipped samples diverge from correct predictions at significantly earlier layers than stable samples. Activation patching reveals a stark architectural divide in failure localizability: Llama-3 failures are recoverable by patching at specific layers (43/60 samples), while Mistral and Qwen failures are broadly distributed (3/60 and 0/60). Based on these diagnostic signals, we propose a mechanistic failure taxonomy (localized, distributed, and entangled) and validate it through targeted repair experiments: steering vectors and layer fine-tuning recover 12.2% of localized failures (Llama-3) but only 7.2% of entangled (Qwen) and 5.2% of distributed (Mistral) failures.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-02T05:30:20Z</published>
+    <arxiv:comment>Preprint. Under review at COLM 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shou-Tzu Han</name>
+    </author>
+    <author>
+      <name>Rodrigue Rizk</name>
+    </author>
+    <author>
+      <name>KC Santosh</name>
+    </author>
+  </entry>
+</feed>

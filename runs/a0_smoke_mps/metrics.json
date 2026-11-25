@@ -1,0 +1,87 @@
+{
+  "purpose": "frozen_base_smoke",
+  "manifest": "manifests/pilot.json",
+  "split": "dev",
+  "root_graphs": 3,
+  "samples": 24,
+  "base_id": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "device": "mps",
+  "dtype": "torch.float16",
+  "torch": "2.15.0",
+  "platform": "macOS-15.6-arm64-arm-64bit",
+  "load_seconds": 18.9,
+  "inference_seconds": 281.3,
+  "seconds_per_sample": 11.72,
+  "truncated_at_limit": 20,
+  "pipeline_checks": {
+    "image_tokens_in_prompt": 256,
+    "prompt_tokens": 462,
+    "pixel_tensor_shape": [
+      1024,
+      1536
+    ],
+    "same_image_twice_identical": true,
+    "different_image_changes_pixels": true,
+    "different_image_same_text_tokens": true,
+    "supervised_text": "{\"edits\":[{\"dst\":\"D\",\"op\":\"remove_edge\",\"src\":\"W\"}],\"status\":\"edited\"}<|im_end|>\n",
+    "supervised_tokens": 24,
+    "target": "{\"edits\":[{\"dst\":\"D\",\"op\":\"remove_edge\",\"src\":\"W\"}],\"status\":\"edited\"}"
+  },
+  "metrics": {
+    "samples": 24,
+    "missing_responses": 0,
+    "per_task": {
+      "minimal_graph_repair": {
+        "n": 6,
+        "accuracy": 0.0,
+        "format_failure_rate": 1.0,
+        "status_accuracy": 0.0,
+        "valid_edit_rate": 0.0,
+        "minimal_repair_accuracy": 0.0,
+        "n_true_edited": 3,
+        "n_parsed": 0
+      },
+      "reachability": {
+        "n": 6,
+        "accuracy": 0.3333333333333333,
+        "format_failure_rate": 0.6666666666666666
+      },
+      "critical_edge": {
+        "n": 6,
+        "accuracy": 0.0,
+        "format_failure_rate": 1.0
+      },
+      "edge_exists": {
+        "n": 3,
+        "accuracy": 0.0,
+        "format_failure_rate": 1.0
+      },
+      "graph_extraction": {
+        "n": 3,
+        "accuracy": 0.0,
+        "format_failure_rate": 1.0,
+        "node_precision": null,
+        "node_recall": null,
+        "edge_precision": null,
+        "edge_recall": null,
+        "direction_accuracy": null
+      }
+    },
+    "non_edit_macro_accuracy": 0.16666666666666666,
+    "pair_accuracy": {
+      "critical:critical_edge": {
+        "n": 3,
+        "both_correct": 0.0
+      },
+      "critical:minimal_graph_repair": {
+        "n": 3,
+        "both_correct": 0.0
+      },
+      "critical:reachability": {
+        "n": 3,
+        "both_correct": 0.3333333333333333
+      }
+    }
+  }
+}

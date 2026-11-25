@@ -1,0 +1,93 @@
+{
+  "run_limit": 768,
+  "trunc_max": 0.02,
+  "limits": {
+    "96": {
+      "truncation_rate": {
+        "critical_edge": 0.825,
+        "minimal_graph_repair": 1.0,
+        "reachability": 0.5
+      },
+      "max_truncation_rate": 1.0,
+      "non_edit_macro": 0.1375,
+      "non_edit_macro_lenient": 0.2125,
+      "per_task_accuracy": {
+        "minimal_graph_repair": 0.0,
+        "reachability": 0.2,
+        "critical_edge": 0.075
+      },
+      "per_task_format_failure": {
+        "minimal_graph_repair": 1.0,
+        "reachability": 0.725,
+        "critical_edge": 0.825
+      }
+    },
+    "192": {
+      "truncation_rate": {
+        "critical_edge": 0.375,
+        "minimal_graph_repair": 1.0,
+        "reachability": 0.15
+      },
+      "max_truncation_rate": 1.0,
+      "non_edit_macro": 0.1375,
+      "non_edit_macro_lenient": 0.48750000000000004,
+      "per_task_accuracy": {
+        "minimal_graph_repair": 0.0,
+        "reachability": 0.2,
+        "critical_edge": 0.075
+      },
+      "per_task_format_failure": {
+        "minimal_graph_repair": 1.0,
+        "reachability": 0.725,
+        "critical_edge": 0.825
+      }
+    },
+    "384": {
+      "truncation_rate": {
+        "critical_edge": 0.1,
+        "minimal_graph_repair": 1.0,
+        "reachability": 0.0
+      },
+      "max_truncation_rate": 1.0,
+      "non_edit_macro": 0.1375,
+      "non_edit_macro_lenient": 0.5875,
+      "per_task_accuracy": {
+        "minimal_graph_repair": 0.0,
+        "reachability": 0.2,
+        "critical_edge": 0.075
+      },
+      "per_task_format_failure": {
+        "minimal_graph_repair": 1.0,
+        "reachability": 0.725,
+        "critical_edge": 0.825
+      }
+    },
+    "768": {
+      "truncation_rate": {
+        "critical_edge": 0.025,
+        "minimal_graph_repair": 0.9,
+        "reachability": 0.0
+      },
+      "max_truncation_rate": 0.9,
+      "non_edit_macro": 0.1375,
+      "non_edit_macro_lenient": 0.6125,
+      "per_task_accuracy": {
+        "minimal_graph_repair": 0.0,
+        "reachability": 0.2,
+        "critical_edge": 0.075
+      },
+      "per_task_format_failure": {
+        "minimal_graph_repair": 1.0,
+        "reachability": 0.725,
+        "critical_edge": 0.825
+      }
+    }
+  },
+  "chosen_limit": 768,
+  "manifest": "manifests/pilot.json",
+  "split": "dev",
+  "eval_root_graphs": 20,
+  "samples": 120,
+  "predictions": "runs/base_prompt_common/predictions_dev.jsonl",
+  "content_digest": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8"
+}

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/J5pr/lKJtRDTdT3As1FqjHJCUEE</id>
+  <title>arXiv Query: search_query=abs:"VGCure"&amp;id_list=&amp;start=0&amp;max_results=25</title>
+  <updated>2026-11-15T05:16:12Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22VGCure%22&amp;start=0&amp;max_results=25&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+  <opensearch:totalResults>2</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2412.13540v3</id>
+    <title>Benchmarking and Improving Large Vision-Language Models for Fundamental Visual Graph Understanding and Reasoning</title>
+    <updated>2025-06-06T06:41:46Z</updated>
+    <link href="https://arxiv.org/abs/2412.13540v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.13540v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Vision-Language Models (LVLMs) have demonstrated remarkable performance across diverse tasks. Despite great success, recent studies show that LVLMs encounter substantial limitations when engaging with visual graphs. To study the reason behind these limitations, we propose VGCure, a comprehensive benchmark covering 22 tasks for examining the fundamental graph understanding and reasoning capacities of LVLMs. Extensive evaluations conducted on 14 LVLMs reveal that LVLMs are weak in basic graph understanding and reasoning tasks, particularly those concerning relational or structurally complex information. Based on this observation, we propose a structure-aware fine-tuning framework to enhance LVLMs with structure learning abilities through three self-supervised learning tasks. Experiments validate the effectiveness of our method in improving LVLMs' performance on fundamental and downstream graph learning tasks, as well as enhancing their robustness against complex visual graphs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-18T06:35:18Z</published>
+    <arxiv:comment>Accepted by ACL2025 main conference</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yingjie Zhu</name>
+    </author>
+    <author>
+      <name>Xuefeng Bai</name>
+    </author>
+    <author>
+      <name>Kehai Chen</name>
+    </author>
+    <author>
+      <name>Yang Xiang</name>
+    </author>
+    <author>
+      <name>Jun Yu</name>
+    </author>
+    <author>
+      <name>Min Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.22327v1</id>
+    <title>Visual Graph Reasoning via Knowledge Compilation</title>
+    <updated>2026-09-16T08:40:43Z</updated>
+    <link href="https://arxiv.org/abs/2609.22327v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.22327v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Visual graph reasoning requires answering graph-theoretic questions directly from graph images, where graph topology and state are conveyed visually rather than given in symbolic form. Despite recent progress of vision-language models (VLMs), current approaches to visual graph reasoning still fail on simple visual graph problems. This reveals a fundamental limitation of existing approaches: they prioritize final-answer supervision over the intermediate recovery of an explicit graph representation that preserves graph topology and state from visual input. To address this limitation, we propose VGCompiler, a compilation-centric paradigm for visual graph reasoning via knowledge compilation. VGCompiler organizes reasoning around two compilers: a representation compiler that recovers a structure-preserving intermediate graph representation from visual input, and an operation compiler that compiles query intent under the recovered graph state into an executable graph operation. Specifically, we build VGCompiler on Qwen3-VL-8B and train it with reinforcement learning guided by a layered reward over executability, compiled graph validity, representation quality, and operation quality. VGCompiler uses a frozen observer to summarize graph and question conditions into lightweight signatures, enabling archive retrieval and code reuse across similar regimes. Experiments on three benchmarks GVLQA, VisionGraph, and VGCURE, show that Qwen-VGCompiler, built on an 8B backbone, surpasses the strongest closed-source VLM baseline by 28.9% and the strongest code-based baseline by 23.7%, while maintaining high efficiency. We further evaluate VGCompiler on three real-world domains, including metro routing, logistics delivery, and network fault assessment, where it generalizes across heterogeneous visual graphs and domain-grounded tasks.</summary>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-16T08:40:43Z</published>
+    <arxiv:comment>Accepted at the 34th ACM International Conference on Multimedia (MM '26)</arxiv:comment>
+    <arxiv:primary_category term="cs.MM"/>
+    <author>
+      <name>Rongzheng Wang</name>
+    </author>
+    <author>
+      <name>Zhe Wang</name>
+    </author>
+    <author>
+      <name>Ke Qin</name>
+    </author>
+    <author>
+      <name>Rongwei Wang</name>
+    </author>
+    <author>
+      <name>Muquan Li</name>
+    </author>
+    <author>
+      <name>Yizhuo Ma</name>
+    </author>
+    <author>
+      <name>Yihong Huang</name>
+    </author>
+    <author>
+      <name>Jielei Wang</name>
+    </author>
+    <author>
+      <name>Shuang Liang</name>
+    </author>
+  </entry>
+</feed>

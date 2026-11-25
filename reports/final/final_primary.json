@@ -1,0 +1,838 @@
+{
+ "statistic": "primary_six_cell",
+ "splits": [
+  "test_id",
+  "test_style_ood",
+  "test_struct_ood"
+ ],
+ "tasks": [
+  "reachability",
+  "critical_edge"
+ ],
+ "reference": "B",
+ "n_boot": 2000,
+ "level": 0.95,
+ "rng": "primary-v1",
+ "root_graphs": {
+  "test_id": 200,
+  "test_style_ood": 200,
+  "test_struct_ood": 200
+ },
+ "arms": [
+  {
+   "label": "B",
+   "seeds": [
+    2027,
+    3407,
+    9173
+   ],
+   "per_seed": {
+    "2027": {
+     "test_id/reachability": 0.7875,
+     "test_id/critical_edge": 0.74,
+     "test_style_ood/reachability": 0.83,
+     "test_style_ood/critical_edge": 0.75,
+     "test_struct_ood/reachability": 0.735,
+     "test_struct_ood/critical_edge": 0.695,
+     "test_id/non_edit_macro_accuracy": 0.7637499999999999,
+     "test_style_ood/non_edit_macro_accuracy": 0.79,
+     "test_struct_ood/non_edit_macro_accuracy": 0.715,
+     "reachability": 0.7841666666666667,
+     "critical_edge": 0.7283333333333334,
+     "primary_six_cell": 0.75625
+    },
+    "3407": {
+     "test_id/reachability": 0.8,
+     "test_id/critical_edge": 0.7475,
+     "test_style_ood/reachability": 0.835,
+     "test_style_ood/critical_edge": 0.7925,
+     "test_struct_ood/reachability": 0.7425,
+     "test_struct_ood/critical_edge": 0.6975,
+     "test_id/non_edit_macro_accuracy": 0.77375,
+     "test_style_ood/non_edit_macro_accuracy": 0.81375,
+     "test_struct_ood/non_edit_macro_accuracy": 0.72,
+     "reachability": 0.7925,
+     "critical_edge": 0.7458333333333332,
+     "primary_six_cell": 0.7691666666666667
+    },
+    "9173": {
+     "test_id/reachability": 0.8,
+     "test_id/critical_edge": 0.735,
+     "test_style_ood/reachability": 0.8425,
+     "test_style_ood/critical_edge": 0.775,
+     "test_struct_ood/reachability": 0.725,
+     "test_struct_ood/critical_edge": 0.6825,
+     "test_id/non_edit_macro_accuracy": 0.7675000000000001,
+     "test_style_ood/non_edit_macro_accuracy": 0.8087500000000001,
+     "test_struct_ood/non_edit_macro_accuracy": 0.70375,
+     "reachability": 0.7891666666666667,
+     "critical_edge": 0.7308333333333333,
+     "primary_six_cell": 0.7600000000000001
+    }
+   },
+   "pooled": {
+    "test_id/reachability": {
+     "point": 0.7958333333333334,
+     "lo": 0.7658333333333333,
+     "hi": 0.8250000000000001
+    },
+    "test_id/critical_edge": {
+     "point": 0.7408333333333333,
+     "lo": 0.7091666666666666,
+     "hi": 0.7708333333333334
+    },
+    "test_style_ood/reachability": {
+     "point": 0.8358333333333334,
+     "lo": 0.8075,
+     "hi": 0.8625000000000002
+    },
+    "test_style_ood/critical_edge": {
+     "point": 0.7725,
+     "lo": 0.7425,
+     "hi": 0.8016666666666666
+    },
+    "test_struct_ood/reachability": {
+     "point": 0.7341666666666667,
+     "lo": 0.7058333333333332,
+     "hi": 0.7625000000000001
+    },
+    "test_struct_ood/critical_edge": {
+     "point": 0.6916666666666668,
+     "lo": 0.6625,
+     "hi": 0.7191666666666666
+    },
+    "test_id/non_edit_macro_accuracy": {
+     "point": 0.7683333333333334,
+     "lo": 0.74625,
+     "hi": 0.7908333333333334
+    },
+    "test_style_ood/non_edit_macro_accuracy": {
+     "point": 0.8041666666666667,
+     "lo": 0.785,
+     "hi": 0.8220833333333334
+    },
+    "test_struct_ood/non_edit_macro_accuracy": {
+     "point": 0.7129166666666666,
+     "lo": 0.6920833333333333,
+     "hi": 0.7329166666666668
+    },
+    "reachability": {
+     "point": 0.788611111111111,
+     "lo": 0.7713888888888888,
+     "hi": 0.805
+    },
+    "critical_edge": {
+     "point": 0.735,
+     "lo": 0.7174999999999999,
+     "hi": 0.7502777777777778
+    },
+    "primary_six_cell": {
+     "point": 0.7618055555555556,
+     "lo": 0.7498611111111111,
+     "hi": 0.7731944444444445
+    }
+   }
+  },
+  {
+   "label": "D",
+   "seeds": [
+    2027,
+    3407,
+    9173
+   ],
+   "per_seed": {
+    "2027": {
+     "test_id/reachability": 0.7825,
+     "test_id/critical_edge": 0.5325,
+     "test_style_ood/reachability": 0.8175,
+     "test_style_ood/critical_edge": 0.545,
+     "test_struct_ood/reachability": 0.7375,
+     "test_struct_ood/critical_edge": 0.495,
+     "test_id/non_edit_macro_accuracy": 0.6575,
+     "test_style_ood/non_edit_macro_accuracy": 0.68125,
+     "test_struct_ood/non_edit_macro_accuracy": 0.61625,
+     "reachability": 0.7791666666666668,
+     "critical_edge": 0.5241666666666668,
+     "primary_six_cell": 0.6516666666666667
+    },
+    "3407": {
+     "test_id/reachability": 0.8025,
+     "test_id/critical_edge": 0.49,
+     "test_style_ood/reachability": 0.83,
+     "test_style_ood/critical_edge": 0.53,
+     "test_struct_ood/reachability": 0.745,
+     "test_struct_ood/critical_edge": 0.525,
+     "test_id/non_edit_macro_accuracy": 0.64625,
+     "test_style_ood/non_edit_macro_accuracy": 0.6799999999999999,
+     "test_struct_ood/non_edit_macro_accuracy": 0.635,
+     "reachability": 0.7925,
+     "critical_edge": 0.515,
+     "primary_six_cell": 0.6537499999999999
+    },
+    "9173": {
+     "test_id/reachability": 0.79,
+     "test_id/critical_edge": 0.5575,
+     "test_style_ood/reachability": 0.8125,
+     "test_style_ood/critical_edge": 0.565,
+     "test_struct_ood/reachability": 0.7375,
+     "test_struct_ood/critical_edge": 0.5225,
+     "test_id/non_edit_macro_accuracy": 0.6737500000000001,
+     "test_style_ood/non_edit_macro_accuracy": 0.68875,
+     "test_struct_ood/non_edit_macro_accuracy": 0.63,
+     "reachability": 0.7799999999999999,
+     "critical_edge": 0.5483333333333333,
+     "primary_six_cell": 0.6641666666666667
+    }
+   },
+   "pooled": {
+    "test_id/reachability": {
+     "point": 0.7916666666666666,
+     "lo": 0.7624999999999998,
+     "hi": 0.8208333333333333
+    },
+    "test_id/critical_edge": {
+     "point": 0.5266666666666667,
+     "lo": 0.5041666666666667,
+     "hi": 0.5483333333333333
+    },
+    "test_style_ood/reachability": {
+     "point": 0.82,
+     "lo": 0.79,
+     "hi": 0.8491666666666666
+    },
+    "test_style_ood/critical_edge": {
+     "point": 0.5466666666666667,
+     "lo": 0.5258333333333333,
+     "hi": 0.57
+    },
+    "test_struct_ood/reachability": {
+     "point": 0.7399999999999999,
+     "lo": 0.7124999999999999,
+     "hi": 0.77
+    },
+    "test_struct_ood/critical_edge": {
+     "point": 0.5141666666666667,
+     "lo": 0.49,
+     "hi": 0.5391666666666667
+    },
+    "test_id/non_edit_macro_accuracy": {
+     "point": 0.6591666666666667,
+     "lo": 0.6404166666666666,
+     "hi": 0.6774999999999999
+    },
+    "test_style_ood/non_edit_macro_accuracy": {
+     "point": 0.6833333333333332,
+     "lo": 0.665,
+     "hi": 0.7012499999999999
+    },
+    "test_struct_ood/non_edit_macro_accuracy": {
+     "point": 0.6270833333333333,
+     "lo": 0.6079166666666667,
+     "hi": 0.6470833333333333
+    },
+    "reachability": {
+     "point": 0.7838888888888889,
+     "lo": 0.7663888888888888,
+     "hi": 0.8016666666666666
+    },
+    "critical_edge": {
+     "point": 0.5291666666666667,
+     "lo": 0.5158333333333333,
+     "hi": 0.5425
+    },
+    "primary_six_cell": {
+     "point": 0.6565277777777778,
+     "lo": 0.6458333333333334,
+     "hi": 0.6670833333333334
+    }
+   }
+  },
+  {
+   "label": "E",
+   "seeds": [
+    2027,
+    3407,
+    9173
+   ],
+   "per_seed": {
+    "2027": {
+     "test_id/reachability": 0.8925,
+     "test_id/critical_edge": 0.84,
+     "test_style_ood/reachability": 0.92,
+     "test_style_ood/critical_edge": 0.8375,
+     "test_struct_ood/reachability": 0.815,
+     "test_struct_ood/critical_edge": 0.6375,
+     "test_id/non_edit_macro_accuracy": 0.86625,
+     "test_style_ood/non_edit_macro_accuracy": 0.87875,
+     "test_struct_ood/non_edit_macro_accuracy": 0.72625,
+     "reachability": 0.8758333333333334,
+     "critical_edge": 0.7716666666666666,
+     "primary_six_cell": 0.82375
+    },
+    "3407": {
+     "test_id/reachability": 0.9025,
+     "test_id/critical_edge": 0.8425,
+     "test_style_ood/reachability": 0.9425,
+     "test_style_ood/critical_edge": 0.8525,
+     "test_struct_ood/reachability": 0.805,
+     "test_struct_ood/critical_edge": 0.635,
+     "test_id/non_edit_macro_accuracy": 0.8725,
+     "test_style_ood/non_edit_macro_accuracy": 0.8975,
+     "test_struct_ood/non_edit_macro_accuracy": 0.72,
+     "reachability": 0.8833333333333333,
+     "critical_edge": 0.7766666666666667,
+     "primary_six_cell": 0.83
+    },
+    "9173": {
+     "test_id/reachability": 0.935,
+     "test_id/critical_edge": 0.8225,
+     "test_style_ood/reachability": 0.92,
+     "test_style_ood/critical_edge": 0.8275,
+     "test_struct_ood/reachability": 0.8175,
+     "test_struct_ood/critical_edge": 0.6425,
+     "test_id/non_edit_macro_accuracy": 0.87875,
+     "test_style_ood/non_edit_macro_accuracy": 0.87375,
+     "test_struct_ood/non_edit_macro_accuracy": 0.73,
+     "reachability": 0.8908333333333333,
+     "critical_edge": 0.7641666666666667,
+     "primary_six_cell": 0.8275000000000001
+    }
+   },
+   "pooled": {
+    "test_id/reachability": {
+     "point": 0.91,
+     "lo": 0.8875000000000001,
+     "hi": 0.9316666666666666
+    },
+    "test_id/critical_edge": {
+     "point": 0.835,
+     "lo": 0.7999999999999999,
+     "hi": 0.8691666666666666
+    },
+    "test_style_ood/reachability": {
+     "point": 0.9275000000000001,
+     "lo": 0.9074999999999999,
+     "hi": 0.9466666666666667
+    },
+    "test_style_ood/critical_edge": {
+     "point": 0.8391666666666667,
+     "lo": 0.8008333333333333,
+     "hi": 0.8725
+    },
+    "test_struct_ood/reachability": {
+     "point": 0.8125,
+     "lo": 0.7808333333333334,
+     "hi": 0.8433333333333334
+    },
+    "test_struct_ood/critical_edge": {
+     "point": 0.6383333333333333,
+     "lo": 0.59,
+     "hi": 0.685
+    },
+    "test_id/non_edit_macro_accuracy": {
+     "point": 0.8725,
+     "lo": 0.84875,
+     "hi": 0.8954166666666666
+    },
+    "test_style_ood/non_edit_macro_accuracy": {
+     "point": 0.8833333333333334,
+     "lo": 0.8583333333333334,
+     "hi": 0.9054166666666666
+    },
+    "test_struct_ood/non_edit_macro_accuracy": {
+     "point": 0.7254166666666667,
+     "lo": 0.6945833333333334,
+     "hi": 0.7570833333333334
+    },
+    "reachability": {
+     "point": 0.8833333333333333,
+     "lo": 0.8691666666666666,
+     "hi": 0.8977777777777778
+    },
+    "critical_edge": {
+     "point": 0.7708333333333334,
+     "lo": 0.7472222222222222,
+     "hi": 0.7944444444444444
+    },
+    "primary_six_cell": {
+     "point": 0.8270833333333334,
+     "lo": 0.8116666666666666,
+     "hi": 0.8420833333333334
+    }
+   }
+  },
+  {
+   "label": "C",
+   "seeds": [
+    2027,
+    3407,
+    9173
+   ],
+   "per_seed": {
+    "2027": {
+     "test_id/reachability": 0.63,
+     "test_id/critical_edge": 0.4725,
+     "test_style_ood/reachability": 0.6475,
+     "test_style_ood/critical_edge": 0.4525,
+     "test_struct_ood/reachability": 0.59,
+     "test_struct_ood/critical_edge": 0.475,
+     "test_id/non_edit_macro_accuracy": 0.55125,
+     "test_style_ood/non_edit_macro_accuracy": 0.55,
+     "test_struct_ood/non_edit_macro_accuracy": 0.5325,
+     "reachability": 0.6224999999999999,
+     "critical_edge": 0.4666666666666666,
+     "primary_six_cell": 0.5445833333333333
+    },
+    "3407": {
+     "test_id/reachability": 0.6825,
+     "test_id/critical_edge": 0.3875,
+     "test_style_ood/reachability": 0.7,
+     "test_style_ood/critical_edge": 0.3775,
+     "test_struct_ood/reachability": 0.635,
+     "test_struct_ood/critical_edge": 0.405,
+     "test_id/non_edit_macro_accuracy": 0.535,
+     "test_style_ood/non_edit_macro_accuracy": 0.53875,
+     "test_struct_ood/non_edit_macro_accuracy": 0.52,
+     "reachability": 0.6725,
+     "critical_edge": 0.38999999999999996,
+     "primary_six_cell": 0.53125
+    },
+    "9173": {
+     "test_id/reachability": 0.6775,
+     "test_id/critical_edge": 0.3875,
+     "test_style_ood/reachability": 0.7,
+     "test_style_ood/critical_edge": 0.3675,
+     "test_struct_ood/reachability": 0.65,
+     "test_struct_ood/critical_edge": 0.4425,
+     "test_id/non_edit_macro_accuracy": 0.5325,
+     "test_style_ood/non_edit_macro_accuracy": 0.53375,
+     "test_struct_ood/non_edit_macro_accuracy": 0.54625,
+     "reachability": 0.6758333333333333,
+     "critical_edge": 0.39916666666666667,
+     "primary_six_cell": 0.5375
+    }
+   },
+   "pooled": {
+    "test_id/reachability": {
+     "point": 0.6633333333333333,
+     "lo": 0.6333333333333333,
+     "hi": 0.6933333333333334
+    },
+    "test_id/critical_edge": {
+     "point": 0.41583333333333333,
+     "lo": 0.3941666666666667,
+     "hi": 0.4366666666666667
+    },
+    "test_style_ood/reachability": {
+     "point": 0.6825,
+     "lo": 0.6525,
+     "hi": 0.7158333333333333
+    },
+    "test_style_ood/critical_edge": {
+     "point": 0.39916666666666667,
+     "lo": 0.37666666666666665,
+     "hi": 0.4216666666666667
+    },
+    "test_struct_ood/reachability": {
+     "point": 0.625,
+     "lo": 0.6,
+     "hi": 0.6525
+    },
+    "test_struct_ood/critical_edge": {
+     "point": 0.44083333333333335,
+     "lo": 0.42249999999999993,
+     "hi": 0.45916666666666667
+    },
+    "test_id/non_edit_macro_accuracy": {
+     "point": 0.5395833333333334,
+     "lo": 0.5216666666666666,
+     "hi": 0.5575
+    },
+    "test_style_ood/non_edit_macro_accuracy": {
+     "point": 0.5408333333333334,
+     "lo": 0.52,
+     "hi": 0.5629166666666667
+    },
+    "test_struct_ood/non_edit_macro_accuracy": {
+     "point": 0.5329166666666666,
+     "lo": 0.5175,
+     "hi": 0.5504166666666667
+    },
+    "reachability": {
+     "point": 0.6569444444444444,
+     "lo": 0.64,
+     "hi": 0.6744444444444445
+    },
+    "critical_edge": {
+     "point": 0.4186111111111111,
+     "lo": 0.4066666666666667,
+     "hi": 0.43111111111111106
+    },
+    "primary_six_cell": {
+     "point": 0.5377777777777778,
+     "lo": 0.5276388888888889,
+     "hi": 0.5488888888888889
+    }
+   }
+  }
+ ],
+ "differences": [
+  {
+   "a": "D",
+   "b": "B",
+   "diff": {
+    "test_id/reachability": {
+     "point": -0.004166666666666763,
+     "lo": -0.030000000000000138,
+     "hi": 0.022499999999999964
+    },
+    "test_id/critical_edge": {
+     "point": -0.21416666666666662,
+     "lo": -0.24916666666666665,
+     "hi": -0.17916666666666659
+    },
+    "test_style_ood/reachability": {
+     "point": -0.015833333333333477,
+     "lo": -0.040000000000000036,
+     "hi": 0.01000000000000012
+    },
+    "test_style_ood/critical_edge": {
+     "point": -0.22583333333333322,
+     "lo": -0.2599999999999999,
+     "hi": -0.1908333333333333
+    },
+    "test_struct_ood/reachability": {
+     "point": 0.005833333333333135,
+     "lo": -0.019166666666666665,
+     "hi": 0.03083333333333338
+    },
+    "test_struct_ood/critical_edge": {
+     "point": -0.1775000000000001,
+     "lo": -0.21166666666666661,
+     "hi": -0.14250000000000007
+    },
+    "test_id/non_edit_macro_accuracy": {
+     "point": -0.10916666666666675,
+     "lo": -0.13083333333333336,
+     "hi": -0.08708333333333329
+    },
+    "test_style_ood/non_edit_macro_accuracy": {
+     "point": -0.12083333333333346,
+     "lo": -0.14208333333333334,
+     "hi": -0.09875
+    },
+    "test_struct_ood/non_edit_macro_accuracy": {
+     "point": -0.08583333333333332,
+     "lo": -0.1054166666666666,
+     "hi": -0.06583333333333319
+    },
+    "reachability": {
+     "point": -0.004722222222222183,
+     "lo": -0.019722222222222197,
+     "hi": 0.01083333333333325
+    },
+    "critical_edge": {
+     "point": -0.2058333333333333,
+     "lo": -0.22472222222222227,
+     "hi": -0.18638888888888883
+    },
+    "primary_six_cell": {
+     "point": -0.1052777777777778,
+     "lo": -0.1169444444444444,
+     "hi": -0.09305555555555567,
+     "share_above_zero": 0.0
+    }
+   },
+   "seed_matched": {
+    "2027": -0.10458333333333325,
+    "3407": -0.11541666666666672,
+    "9173": -0.09583333333333344
+   },
+   "reading": "negative",
+   "task_drop": [
+    "critical_edge"
+   ],
+   "splits_same_sign": true
+  },
+  {
+   "a": "E",
+   "b": "B",
+   "diff": {
+    "test_id/reachability": {
+     "point": 0.11416666666666664,
+     "lo": 0.08250000000000002,
+     "hi": 0.14666666666666672
+    },
+    "test_id/critical_edge": {
+     "point": 0.09416666666666662,
+     "lo": 0.05499999999999994,
+     "hi": 0.1333333333333333
+    },
+    "test_style_ood/reachability": {
+     "point": 0.09166666666666667,
+     "lo": 0.06166666666666676,
+     "hi": 0.1233333333333333
+    },
+    "test_style_ood/critical_edge": {
+     "point": 0.06666666666666676,
+     "lo": 0.025000000000000022,
+     "hi": 0.10833333333333339
+    },
+    "test_struct_ood/reachability": {
+     "point": 0.07833333333333325,
+     "lo": 0.03916666666666657,
+     "hi": 0.11833333333333329
+    },
+    "test_struct_ood/critical_edge": {
+     "point": -0.053333333333333455,
+     "lo": -0.10000000000000009,
+     "hi": -0.0025000000000000577
+    },
+    "test_id/non_edit_macro_accuracy": {
+     "point": 0.10416666666666663,
+     "lo": 0.07791666666666686,
+     "hi": 0.1316666666666667
+    },
+    "test_style_ood/non_edit_macro_accuracy": {
+     "point": 0.07916666666666672,
+     "lo": 0.05208333333333337,
+     "hi": 0.1054166666666666
+    },
+    "test_struct_ood/non_edit_macro_accuracy": {
+     "point": 0.012500000000000067,
+     "lo": -0.019583333333333508,
+     "hi": 0.04625000000000001
+    },
+    "reachability": {
+     "point": 0.09472222222222226,
+     "lo": 0.07444444444444442,
+     "hi": 0.1150000000000001
+    },
+    "critical_edge": {
+     "point": 0.035833333333333384,
+     "lo": 0.01083333333333325,
+     "hi": 0.06111111111111123
+    },
+    "primary_six_cell": {
+     "point": 0.06527777777777777,
+     "lo": 0.04819444444444454,
+     "hi": 0.0822222222222222,
+     "share_above_zero": 1.0
+    }
+   },
+   "seed_matched": {
+    "2027": 0.0675,
+    "3407": 0.060833333333333295,
+    "9173": 0.0675
+   },
+   "reading": "positive_clear",
+   "task_drop": [],
+   "splits_same_sign": true
+  },
+  {
+   "a": "C",
+   "b": "B",
+   "diff": {
+    "test_id/reachability": {
+     "point": -0.13250000000000006,
+     "lo": -0.1658333333333334,
+     "hi": -0.09833333333333327
+    },
+    "test_id/critical_edge": {
+     "point": -0.325,
+     "lo": -0.3666666666666666,
+     "hi": -0.27999999999999997
+    },
+    "test_style_ood/reachability": {
+     "point": -0.15333333333333343,
+     "lo": -0.18500000000000028,
+     "hi": -0.11916666666666664
+    },
+    "test_style_ood/critical_edge": {
+     "point": -0.3733333333333333,
+     "lo": -0.415,
+     "hi": -0.33083333333333326
+    },
+    "test_struct_ood/reachability": {
+     "point": -0.10916666666666675,
+     "lo": -0.13916666666666677,
+     "hi": -0.07833333333333337
+    },
+    "test_struct_ood/critical_edge": {
+     "point": -0.2508333333333334,
+     "lo": -0.2875,
+     "hi": -0.2124999999999999
+    },
+    "test_id/non_edit_macro_accuracy": {
+     "point": -0.22875,
+     "lo": -0.25708333333333333,
+     "hi": -0.20000000000000007
+    },
+    "test_style_ood/non_edit_macro_accuracy": {
+     "point": -0.2633333333333333,
+     "lo": -0.2891666666666667,
+     "hi": -0.23583333333333334
+    },
+    "test_struct_ood/non_edit_macro_accuracy": {
+     "point": -0.18000000000000005,
+     "lo": -0.2054166666666667,
+     "hi": -0.15250000000000008
+    },
+    "reachability": {
+     "point": -0.1316666666666666,
+     "lo": -0.15055555555555555,
+     "hi": -0.11277777777777775
+    },
+    "critical_edge": {
+     "point": -0.3163888888888889,
+     "lo": -0.3391666666666667,
+     "hi": -0.2922222222222222
+    },
+    "primary_six_cell": {
+     "point": -0.22402777777777783,
+     "lo": -0.23930555555555555,
+     "hi": -0.20805555555555566,
+     "share_above_zero": 0.0
+    }
+   },
+   "seed_matched": {
+    "2027": -0.21166666666666667,
+    "3407": -0.23791666666666667,
+    "9173": -0.22250000000000014
+   },
+   "reading": "negative",
+   "task_drop": [
+    "reachability",
+    "critical_edge"
+   ],
+   "splits_same_sign": true
+  },
+  {
+   "a": "E",
+   "b": "D",
+   "diff": {
+    "test_id/reachability": {
+     "point": 0.1183333333333334,
+     "lo": 0.08750000000000013,
+     "hi": 0.15083333333333326
+    },
+    "test_id/critical_edge": {
+     "point": 0.30833333333333324,
+     "lo": 0.2691666666666668,
+     "hi": 0.3466666666666667
+    },
+    "test_style_ood/reachability": {
+     "point": 0.10750000000000015,
+     "lo": 0.07333333333333325,
+     "hi": 0.14249999999999996
+    },
+    "test_style_ood/critical_edge": {
+     "point": 0.2925,
+     "lo": 0.2483333333333334,
+     "hi": 0.33333333333333326
+    },
+    "test_struct_ood/reachability": {
+     "point": 0.07250000000000012,
+     "lo": 0.035833333333333384,
+     "hi": 0.10750000000000015
+    },
+    "test_struct_ood/critical_edge": {
+     "point": 0.12416666666666665,
+     "lo": 0.07333333333333347,
+     "hi": 0.17500000000000004
+    },
+    "test_id/non_edit_macro_accuracy": {
+     "point": 0.21333333333333337,
+     "lo": 0.1875,
+     "hi": 0.23875000000000013
+    },
+    "test_style_ood/non_edit_macro_accuracy": {
+     "point": 0.20000000000000018,
+     "lo": 0.1708333333333334,
+     "hi": 0.22791666666666677
+    },
+    "test_struct_ood/non_edit_macro_accuracy": {
+     "point": 0.09833333333333338,
+     "lo": 0.0658333333333333,
+     "hi": 0.13250000000000006
+    },
+    "reachability": {
+     "point": 0.09944444444444445,
+     "lo": 0.07999999999999996,
+     "hi": 0.11999999999999988
+    },
+    "critical_edge": {
+     "point": 0.2416666666666667,
+     "lo": 0.21583333333333332,
+     "hi": 0.26722222222222225
+    },
+    "primary_six_cell": {
+     "point": 0.17055555555555557,
+     "lo": 0.15374999999999972,
+     "hi": 0.1875,
+     "share_above_zero": 1.0
+    }
+   },
+   "seed_matched": {
+    "2027": 0.17208333333333325,
+    "3407": 0.17625000000000002,
+    "9173": 0.16333333333333344
+   },
+   "reading": "positive_clear",
+   "task_drop": [],
+   "splits_same_sign": true
+  }
+ ],
+ "jobs": [
+  "jobF01",
+  "jobF02",
+  "jobF03",
+  "jobF04",
+  "jobF05",
+  "jobF06",
+  "jobF07",
+  "jobF08",
+  "jobF09",
+  "jobF10",
+  "jobF11",
+  "jobF12"
+ ],
+ "files": [
+  "runs/pilot3_B_kaggle/flags_test_id.json",
+  "runs/pilot3_D_kaggle/flags_test_id.json",
+  "runs/pilot3_E/flags_test_id.json",
+  "runs/pilot3_C/flags_test_id.json",
+  "runs/pilot3_B_s2027/flags_test_id.json",
+  "runs/pilot3_D_s2027/flags_test_id.json",
+  "runs/pilot3_E_s2027/flags_test_id.json",
+  "runs/pilot3_C_s2027/flags_test_id.json",
+  "runs/pilot3_B_s9173/flags_test_id.json",
+  "runs/pilot3_D_s9173/flags_test_id.json",
+  "runs/pilot3_E_s9173/flags_test_id.json",
+  "runs/pilot3_C_s9173/flags_test_id.json",
+  "runs/pilot3_B_kaggle/flags_test_style_ood.json",
+  "runs/pilot3_D_kaggle/flags_test_style_ood.json",
+  "runs/pilot3_E/flags_test_style_ood.json",
+  "runs/pilot3_C/flags_test_style_ood.json",
+  "runs/pilot3_B_s2027/flags_test_style_ood.json",
+  "runs/pilot3_D_s2027/flags_test_style_ood.json",
+  "runs/pilot3_E_s2027/flags_test_style_ood.json",
+  "runs/pilot3_C_s2027/flags_test_style_ood.json",
+  "runs/pilot3_B_s9173/flags_test_style_ood.json",
+  "runs/pilot3_D_s9173/flags_test_style_ood.json",
+  "runs/pilot3_E_s9173/flags_test_style_ood.json",
+  "runs/pilot3_C_s9173/flags_test_style_ood.json",
+  "runs/pilot3_B_kaggle/flags_test_struct_ood.json",
+  "runs/pilot3_D_kaggle/flags_test_struct_ood.json",
+  "runs/pilot3_E/flags_test_struct_ood.json",
+  "runs/pilot3_C/flags_test_struct_ood.json",
+  "runs/pilot3_B_s2027/flags_test_struct_ood.json",
+  "runs/pilot3_D_s2027/flags_test_struct_ood.json",
+  "runs/pilot3_E_s2027/flags_test_struct_ood.json",
+  "runs/pilot3_C_s2027/flags_test_struct_ood.json",
+  "runs/pilot3_B_s9173/flags_test_struct_ood.json",
+  "runs/pilot3_D_s9173/flags_test_struct_ood.json",
+  "runs/pilot3_E_s9173/flags_test_struct_ood.json",
+  "runs/pilot3_C_s9173/flags_test_struct_ood.json"
+ ]
+}

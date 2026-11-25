@@ -1,0 +1,1295 @@
+{
+ "rule": "style-cards-v1",
+ "splits": {
+  "test_id": {
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "manifest": "pilot_test",
+   "pool_pairs": 98,
+   "root_graphs": 200,
+   "slots": [
+    {
+     "card": {
+      "copy": {
+       "image": "images/test_id/imge07db83046fa3528.png",
+       "image_sha256": "3825af38d15212379e9d5b104e60c2ade1c92d8b622b01018d20542b40bb5a91",
+       "sample_id": "sa13cec21cf393450",
+       "style_id": "a"
+      },
+      "instruction": "Look at the directed graph in the image. Arrows show edge directions.\nFollowing the arrow directions along one or more edges, is there a path from node G to node C?\nAnswer {\"answer\": true} or {\"answer\": false}. Answer with a single JSON object and nothing else.",
+      "root": {
+       "image": "images/test_id/img058174c986dfdb76.png",
+       "image_sha256": "fdc59091abe9a3b7d7b99bc8e3fe7b412ad99a810dd1e363e3d407e77f8afa39",
+       "sample_id": "sd362f0fab7f3f9c6",
+       "style_id": "b"
+      },
+      "rows": [
+       {
+        "arm": "B",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}\n",
+        "job": "jobF05",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}\n",
+        "same_correctness": true,
+        "seed": 2027
+       },
+       {
+        "arm": "B",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}\n",
+        "job": "jobF01",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}\n",
+        "same_correctness": true,
+        "seed": 3407
+       },
+       {
+        "arm": "B",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}\n",
+        "job": "jobF09",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}\n",
+        "same_correctness": true,
+        "seed": 9173
+       },
+       {
+        "arm": "D",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\": true}\n",
+        "job": "jobF06",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\": true}\n",
+        "same_correctness": true,
+        "seed": 2027
+       },
+       {
+        "arm": "D",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\": true}\n",
+        "job": "jobF02",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\": true}\n",
+        "same_correctness": true,
+        "seed": 3407
+       },
+       {
+        "arm": "D",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\": true}\n",
+        "job": "jobF10",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\": true}\n",
+        "same_correctness": true,
+        "seed": 9173
+       },
+       {
+        "arm": "E",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}",
+        "job": "jobF07",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}",
+        "same_correctness": true,
+        "seed": 2027
+       },
+       {
+        "arm": "E",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}",
+        "job": "jobF03",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}",
+        "same_correctness": true,
+        "seed": 3407
+       },
+       {
+        "arm": "E",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}",
+        "job": "jobF11",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}",
+        "same_correctness": true,
+        "seed": 9173
+       },
+       {
+        "arm": "C",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}\n",
+        "job": "jobF08",
+        "root": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}\n",
+        "same_correctness": false,
+        "seed": 2027
+       },
+       {
+        "arm": "C",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}\n",
+        "job": "jobF04",
+        "root": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}\n",
+        "same_correctness": false,
+        "seed": 3407
+       },
+       {
+        "arm": "C",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}\n",
+        "job": "jobF12",
+        "root": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}\n",
+        "same_correctness": false,
+        "seed": 9173
+       }
+      ],
+      "same_instruction": true,
+      "task": "reachability",
+      "true_answer": "{\"answer\":true}"
+     },
+     "task": "reachability"
+    },
+    {
+     "card": {
+      "copy": {
+       "image": "images/test_id/img3f125c6f155c3c4c.png",
+       "image_sha256": "3c6b185feb7f658d67dca8445d3ed3defcc40205c93a9e43c418075e2adbba73",
+       "sample_id": "sc23df6fe21567585",
+       "style_id": "b"
+      },
+      "instruction": "Look at the directed graph in the image. Arrows show edge directions.\nNode H can currently reach node G by following arrows. If the edge H->A were removed, would H no longer be able to reach G?\nAnswer {\"answer\": true} if the connection would be lost, or {\"answer\": false} if H could still reach G. Answer with a single JSON object and nothing else.",
+      "root": {
+       "image": "images/test_id/img4b9ed9ff0f033b89.png",
+       "image_sha256": "b17d2ec18df4f0838ce05d2466045992bb81009b9a08f3e9e65639a19271467c",
+       "sample_id": "s644c79445d0edd94",
+       "style_id": "a"
+      },
+      "rows": [
+       {
+        "arm": "B",
+        "copy": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":false}\n",
+        "job": "jobF05",
+        "root": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}\n",
+        "same_correctness": true,
+        "seed": 2027
+       },
+       {
+        "arm": "B",
+        "copy": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":false}\n",
+        "job": "jobF01",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}\n",
+        "same_correctness": false,
+        "seed": 3407
+       },
+       {
+        "arm": "B",
+        "copy": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":false}\n",
+        "job": "jobF09",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}\n",
+        "same_correctness": false,
+        "seed": 9173
+       },
+       {
+        "arm": "D",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\": true}\n",
+        "job": "jobF06",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\": true}\n",
+        "same_correctness": true,
+        "seed": 2027
+       },
+       {
+        "arm": "D",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\": true}\n",
+        "job": "jobF02",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\": true}\n",
+        "same_correctness": true,
+        "seed": 3407
+       },
+       {
+        "arm": "D",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\": true}\n",
+        "job": "jobF10",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\": true}\n",
+        "same_correctness": true,
+        "seed": 9173
+       },
+       {
+        "arm": "E",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}",
+        "job": "jobF07",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}",
+        "same_correctness": true,
+        "seed": 2027
+       },
+       {
+        "arm": "E",
+        "copy": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":false}",
+        "job": "jobF03",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}",
+        "same_correctness": false,
+        "seed": 3407
+       },
+       {
+        "arm": "E",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}",
+        "job": "jobF11",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}",
+        "same_correctness": true,
+        "seed": 9173
+       },
+       {
+        "arm": "C",
+        "copy": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":false}\n",
+        "job": "jobF08",
+        "root": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}\n",
+        "same_correctness": true,
+        "seed": 2027
+       },
+       {
+        "arm": "C",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}\n",
+        "job": "jobF04",
+        "root": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}\n",
+        "same_correctness": false,
+        "seed": 3407
+       },
+       {
+        "arm": "C",
+        "copy": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":false}\n",
+        "job": "jobF12",
+        "root": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}\n",
+        "same_correctness": true,
+        "seed": 9173
+       }
+      ],
+      "same_instruction": true,
+      "task": "critical_edge",
+      "true_answer": "{\"answer\":true}"
+     },
+     "task": "critical_edge"
+    }
+   ],
+   "sources": [
+    {
+     "arm": "B",
+     "job": "jobF05",
+     "predictions": [
+      "runs/kaggle/jobF05/runs/pilot3_B_s2027/predictions_test_id.jsonl",
+      "runs/kaggle/jobF05/runs/pilot3_B_s2027/predictions_test_id_inv.jsonl"
+     ],
+     "seed": 2027,
+     "sha256": [
+      "c2522bc6ccf572fa8c5142c855477795ad042c4e9731d05a815a5ffe19ef3d2f",
+      "b5419f97833ceca78d85e8bb0be30cea414e195d7eb05575d01ca26925ab2ca5"
+     ]
+    },
+    {
+     "arm": "B",
+     "job": "jobF01",
+     "predictions": [
+      "runs/kaggle/jobF01/runs/pilot3_B/predictions_test_id.jsonl",
+      "runs/kaggle/jobF01/runs/pilot3_B/predictions_test_id_inv.jsonl"
+     ],
+     "seed": 3407,
+     "sha256": [
+      "b387a3e93ad2d5d9f74edf95d52c2d428c4f840f67086c5304ecfdf89dd7876d",
+      "33f20ca3ea1fb45edba24ce41dd316ccd1a9e6f4e7ecfadbea6c405a631d4ac4"
+     ]
+    },
+    {
+     "arm": "B",
+     "job": "jobF09",
+     "predictions": [
+      "runs/kaggle/jobF09/runs/pilot3_B_s9173/predictions_test_id.jsonl",
+      "runs/kaggle/jobF09/runs/pilot3_B_s9173/predictions_test_id_inv.jsonl"
+     ],
+     "seed": 9173,
+     "sha256": [
+      "d15c8dff1a83bcd75db53e923ff2fafee488663495d49223cf2e3a4ae60d0c1c",
+      "eed3e4c5f70ed7b17024fab5ca9c6a41b5ce89d9f440eab20dcc4b5cf5a32ac4"
+     ]
+    },
+    {
+     "arm": "D",
+     "job": "jobF06",
+     "predictions": [
+      "runs/kaggle/jobF06/runs/pilot3_D_s2027/predictions_test_id.jsonl",
+      "runs/kaggle/jobF06/runs/pilot3_D_s2027/predictions_test_id_inv.jsonl"
+     ],
+     "seed": 2027,
+     "sha256": [
+      "64af11eb95db12cfe1a5a8086106a9f1ce9da6d9abfcb376e1e18add47e3c4f5",
+      "9e3c16eaef758aa0e610e17048d25a40e59b6e18cbf32be00fed766c878c1c1e"
+     ]
+    },
+    {
+     "arm": "D",
+     "job": "jobF02",
+     "predictions": [
+      "runs/kaggle/jobF02/runs/pilot3_D/predictions_test_id.jsonl",
+      "runs/kaggle/jobF02/runs/pilot3_D/predictions_test_id_inv.jsonl"
+     ],
+     "seed": 3407,
+     "sha256": [
+      "c08a196c10c8ec38ea68159b13f7527f280b924a8c917dbbb41ac874b46946b3",
+      "4a0aee935df77b03f3089193778cc6d79e41e0c99774b8d205529dfe8fabf606"
+     ]
+    },
+    {
+     "arm": "D",
+     "job": "jobF10",
+     "predictions": [
+      "runs/kaggle/jobF10/runs/pilot3_D_s9173/predictions_test_id.jsonl",
+      "runs/kaggle/jobF10/runs/pilot3_D_s9173/predictions_test_id_inv.jsonl"
+     ],
+     "seed": 9173,
+     "sha256": [
+      "f63e18661f9634b8930c55ac5955ec37ea4724d3394eea361382c84f5aac2ce0",
+      "21e054be6dc97f716e69afe021758311cf63332737db3fdca4b3748ad58b4add"
+     ]
+    },
+    {
+     "arm": "E",
+     "job": "jobF07",
+     "predictions": [
+      "runs/kaggle/jobF07/runs/pilot3_E_s2027/predictions_test_id.jsonl",
+      "runs/kaggle/jobF07/runs/pilot3_E_s2027/predictions_test_id_inv.jsonl"
+     ],
+     "seed": 2027,
+     "sha256": [
+      "a99fa390ecb59e9d4af0482a019e193076278a2320b6b8b34df451f6428a364e",
+      "ffb92d90e6025241d40c8900aea5751af968270adb82610ad9c9760c68b84b1a"
+     ]
+    },
+    {
+     "arm": "E",
+     "job": "jobF03",
+     "predictions": [
+      "runs/kaggle/jobF03/runs/pilot3_E/predictions_test_id.jsonl",
+      "runs/kaggle/jobF03/runs/pilot3_E/predictions_test_id_inv.jsonl"
+     ],
+     "seed": 3407,
+     "sha256": [
+      "1a6457701b904dc1fb72aae9e776d24f3a3cd3e90a0df84a21776025e41ff08f",
+      "7ff4a528af8dfa7fea4948da18b47992a56b8a1052d91bb7903e623590afa4a9"
+     ]
+    },
+    {
+     "arm": "E",
+     "job": "jobF11",
+     "predictions": [
+      "runs/kaggle/jobF11/runs/pilot3_E_s9173/predictions_test_id.jsonl",
+      "runs/kaggle/jobF11/runs/pilot3_E_s9173/predictions_test_id_inv.jsonl"
+     ],
+     "seed": 9173,
+     "sha256": [
+      "780fc48f539e84f3c529ad818014f57d1d5b4d4b2204d10b58e94072977a4822",
+      "360d3ad0c6c1be2cc821928fe2be43e399b6a6e03b6e5942e60ed8ee57cc193c"
+     ]
+    },
+    {
+     "arm": "C",
+     "job": "jobF08",
+     "predictions": [
+      "runs/kaggle/jobF08/runs/pilot3_C_s2027/predictions_test_id.jsonl",
+      "runs/kaggle/jobF08/runs/pilot3_C_s2027/predictions_test_id_inv.jsonl"
+     ],
+     "seed": 2027,
+     "sha256": [
+      "5d36323408086d7c5cea8c57b71effadfd600a579fa70e729106f6f5c628c696",
+      "1501c16ff64c23d844a9d444c9a0fcf87313893248c4bb706945ccafec45e5e7"
+     ]
+    },
+    {
+     "arm": "C",
+     "job": "jobF04",
+     "predictions": [
+      "runs/kaggle/jobF04/runs/pilot3_C/predictions_test_id.jsonl",
+      "runs/kaggle/jobF04/runs/pilot3_C/predictions_test_id_inv.jsonl"
+     ],
+     "seed": 3407,
+     "sha256": [
+      "8c1f5066ac851b060fbb77c51380624681fe8a3737345e3e2d1060e153749f5f",
+      "f0cd318be0b278b679b1ac9b33e6d267ca4fdfc1b197c63fcfbd436a635e144e"
+     ]
+    },
+    {
+     "arm": "C",
+     "job": "jobF12",
+     "predictions": [
+      "runs/kaggle/jobF12/runs/pilot3_C_s9173/predictions_test_id.jsonl",
+      "runs/kaggle/jobF12/runs/pilot3_C_s9173/predictions_test_id_inv.jsonl"
+     ],
+     "seed": 9173,
+     "sha256": [
+      "cdb6ed786adbe4a95b65832376e2b738ff13de1d07dc79e53a823470d7d124d7",
+      "b1266b244a9c389f1dc8c3554730267fc4466129a43d05eee0c951daf9167583"
+     ]
+    }
+   ]
+  },
+  "test_style_ood": {
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "manifest": "pilot_test",
+   "pool_pairs": 106,
+   "root_graphs": 200,
+   "slots": [
+    {
+     "card": {
+      "copy": {
+       "image": "images/test_style_ood/img0a270ae742e5ac1a.png",
+       "image_sha256": "56b04a39d74180979885995c3f63ec802fd80f193ab9c7d4023998657fcb39a3",
+       "sample_id": "s2c4e2135d4a7801c",
+       "style_id": "y"
+      },
+      "instruction": "Look at the directed graph in the image. Arrows show edge directions.\nFollowing the arrow directions along one or more edges, is there a path from node B to node L?\nAnswer {\"answer\": true} or {\"answer\": false}. Answer with a single JSON object and nothing else.",
+      "root": {
+       "image": "images/test_style_ood/img05450879373d230e.png",
+       "image_sha256": "e06649ed969a058d47f9b656cf80f5edd2dd382c6d3efcae8bf1f6bcf476385d",
+       "sample_id": "s524ad271681af5e7",
+       "style_id": "x"
+      },
+      "rows": [
+       {
+        "arm": "B",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}\n",
+        "job": "jobF05",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}\n",
+        "same_correctness": true,
+        "seed": 2027
+       },
+       {
+        "arm": "B",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}\n",
+        "job": "jobF01",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}\n",
+        "same_correctness": true,
+        "seed": 3407
+       },
+       {
+        "arm": "B",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}\n",
+        "job": "jobF09",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}\n",
+        "same_correctness": true,
+        "seed": 9173
+       },
+       {
+        "arm": "D",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\": true}\n",
+        "job": "jobF06",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\": true}\n",
+        "same_correctness": true,
+        "seed": 2027
+       },
+       {
+        "arm": "D",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\": true}\n",
+        "job": "jobF02",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\": true}\n",
+        "same_correctness": true,
+        "seed": 3407
+       },
+       {
+        "arm": "D",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\": true}\n",
+        "job": "jobF10",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\": true}\n",
+        "same_correctness": true,
+        "seed": 9173
+       },
+       {
+        "arm": "E",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}",
+        "job": "jobF07",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}",
+        "same_correctness": true,
+        "seed": 2027
+       },
+       {
+        "arm": "E",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}",
+        "job": "jobF03",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}",
+        "same_correctness": true,
+        "seed": 3407
+       },
+       {
+        "arm": "E",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}",
+        "job": "jobF11",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}",
+        "same_correctness": true,
+        "seed": 9173
+       },
+       {
+        "arm": "C",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}\n",
+        "job": "jobF08",
+        "root": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}\n",
+        "same_correctness": false,
+        "seed": 2027
+       },
+       {
+        "arm": "C",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}\n",
+        "job": "jobF04",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}\n",
+        "same_correctness": true,
+        "seed": 3407
+       },
+       {
+        "arm": "C",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}\n",
+        "job": "jobF12",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}\n",
+        "same_correctness": true,
+        "seed": 9173
+       }
+      ],
+      "same_instruction": true,
+      "task": "reachability",
+      "true_answer": "{\"answer\":true}"
+     },
+     "task": "reachability"
+    },
+    {
+     "card": {
+      "copy": {
+       "image": "images/test_style_ood/img3f4534fe6f949ddc.png",
+       "image_sha256": "ce81e7017838ff391a58009f204a2c7a3bab10adda246161d5707695786509d7",
+       "sample_id": "sb3c36b44421a5303",
+       "style_id": "x"
+      },
+      "instruction": "Look at the directed graph in the image. Arrows show edge directions.\nNode K can currently reach node M by following arrows. If the edge G->V were removed, would K no longer be able to reach M?\nAnswer {\"answer\": true} if the connection would be lost, or {\"answer\": false} if K could still reach M. Answer with a single JSON object and nothing else.",
+      "root": {
+       "image": "images/test_style_ood/img0e9703cbe4385626.png",
+       "image_sha256": "41a42e7c966f93492fba0b4a77a659092c8b1bcb16be11ae6bafd15c57b9d955",
+       "sample_id": "s5902782afab60d55",
+       "style_id": "y"
+      },
+      "rows": [
+       {
+        "arm": "B",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":false}\n",
+        "job": "jobF05",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}\n",
+        "same_correctness": true,
+        "seed": 2027
+       },
+       {
+        "arm": "B",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":false}\n",
+        "job": "jobF01",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}\n",
+        "same_correctness": true,
+        "seed": 3407
+       },
+       {
+        "arm": "B",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":false}\n",
+        "job": "jobF09",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}\n",
+        "same_correctness": true,
+        "seed": 9173
+       },
+       {
+        "arm": "D",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\": false}\n",
+        "job": "jobF06",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\": false}\n",
+        "same_correctness": true,
+        "seed": 2027
+       },
+       {
+        "arm": "D",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\": false}\n",
+        "job": "jobF02",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\": false}\n",
+        "same_correctness": true,
+        "seed": 3407
+       },
+       {
+        "arm": "D",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\": false}\n",
+        "job": "jobF10",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\": false}\n",
+        "same_correctness": true,
+        "seed": 9173
+       },
+       {
+        "arm": "E",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":false}",
+        "job": "jobF07",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}",
+        "same_correctness": true,
+        "seed": 2027
+       },
+       {
+        "arm": "E",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":false}",
+        "job": "jobF03",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}",
+        "same_correctness": true,
+        "seed": 3407
+       },
+       {
+        "arm": "E",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":false}",
+        "job": "jobF11",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}",
+        "same_correctness": true,
+        "seed": 9173
+       },
+       {
+        "arm": "C",
+        "copy": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":false}\n",
+        "job": "jobF08",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}\n",
+        "same_correctness": true,
+        "seed": 2027
+       },
+       {
+        "arm": "C",
+        "copy": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}\n",
+        "job": "jobF04",
+        "root": {
+         "correct": true,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":false}\n",
+        "same_correctness": false,
+        "seed": 3407
+       },
+       {
+        "arm": "C",
+        "copy": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "copy_text": "{\"answer\":true}\n",
+        "job": "jobF12",
+        "root": {
+         "correct": false,
+         "error": null,
+         "format_ok": true
+        },
+        "root_text": "{\"answer\":true}\n",
+        "same_correctness": true,
+        "seed": 9173
+       }
+      ],
+      "same_instruction": true,
+      "task": "critical_edge",
+      "true_answer": "{\"answer\":false}"
+     },
+     "task": "critical_edge"
+    }
+   ],
+   "sources": [
+    {
+     "arm": "B",
+     "job": "jobF05",
+     "predictions": [
+      "runs/kaggle/jobF05/runs/pilot3_B_s2027/predictions_test_style_ood.jsonl",
+      "runs/kaggle/jobF05/runs/pilot3_B_s2027/predictions_test_style_ood_inv.jsonl"
+     ],
+     "seed": 2027,
+     "sha256": [
+      "7ab850cc29c5fe8145d0056b6c28dfb46f94b70ae9b1481382ee1c241ceef8f0",
+      "684c27fbce2239b4f891dfae42083d731280c2cbb71a56e11c2f3c00002ad6b9"
+     ]
+    },
+    {
+     "arm": "B",
+     "job": "jobF01",
+     "predictions": [
+      "runs/kaggle/jobF01/runs/pilot3_B/predictions_test_style_ood.jsonl",
+      "runs/kaggle/jobF01/runs/pilot3_B/predictions_test_style_ood_inv.jsonl"
+     ],
+     "seed": 3407,
+     "sha256": [
+      "f6535f8fb431af6efd3d79eb593dd246529c03a17935185dcab40f40a8493b7e",
+      "14248bf5049c8ec4d5181108d9e558ec7ad52fe7bb4bf9a56e4525875ca5d50e"
+     ]
+    },
+    {
+     "arm": "B",
+     "job": "jobF09",
+     "predictions": [
+      "runs/kaggle/jobF09/runs/pilot3_B_s9173/predictions_test_style_ood.jsonl",
+      "runs/kaggle/jobF09/runs/pilot3_B_s9173/predictions_test_style_ood_inv.jsonl"
+     ],
+     "seed": 9173,
+     "sha256": [
+      "7e87e6d514887a3529d0fdbe028f2b92cbd2774693e7352eb1e7a6f0973b482a",
+      "adb1537d3c22131357cf21b79535c138b693daa382d558aa07b821bb4a660969"
+     ]
+    },
+    {
+     "arm": "D",
+     "job": "jobF06",
+     "predictions": [
+      "runs/kaggle/jobF06/runs/pilot3_D_s2027/predictions_test_style_ood.jsonl",
+      "runs/kaggle/jobF06/runs/pilot3_D_s2027/predictions_test_style_ood_inv.jsonl"
+     ],
+     "seed": 2027,
+     "sha256": [
+      "72e4e22eb6b6211bf1ff37155fdea81feca3b9c279bc00684cbb1c641c94399f",
+      "4d5079f5efafc6ad0aa93e9612b4eaf0d930bafdc314bbb56707fd8d3464afec"
+     ]
+    },
+    {
+     "arm": "D",
+     "job": "jobF02",
+     "predictions": [
+      "runs/kaggle/jobF02/runs/pilot3_D/predictions_test_style_ood.jsonl",
+      "runs/kaggle/jobF02/runs/pilot3_D/predictions_test_style_ood_inv.jsonl"
+     ],
+     "seed": 3407,
+     "sha256": [
+      "0a41667951f052212ae20f9cadff73edba07d0d9d74037313ebea1e1837d5431",
+      "de82c2ff10a4a1f76738e234e55f2d44aba46a50bff608c5f46b5ae5837c98ab"
+     ]
+    },
+    {
+     "arm": "D",
+     "job": "jobF10",
+     "predictions": [
+      "runs/kaggle/jobF10/runs/pilot3_D_s9173/predictions_test_style_ood.jsonl",
+      "runs/kaggle/jobF10/runs/pilot3_D_s9173/predictions_test_style_ood_inv.jsonl"
+     ],
+     "seed": 9173,
+     "sha256": [
+      "b7371d8f59b72b0085382b842fe590c92b92de16f5c8e800ec678489c8422d48",
+      "043dde2415d501d73e6623e461dbdb41aaaf06cdf890cad322196c6042c9f882"
+     ]
+    },
+    {
+     "arm": "E",
+     "job": "jobF07",
+     "predictions": [
+      "runs/kaggle/jobF07/runs/pilot3_E_s2027/predictions_test_style_ood.jsonl",
+      "runs/kaggle/jobF07/runs/pilot3_E_s2027/predictions_test_style_ood_inv.jsonl"
+     ],
+     "seed": 2027,
+     "sha256": [
+      "50bc9aa9d25784ca859bae33cf1a75f832b7b090a2f051204ae5659b628d10a1",
+      "9ed9f7fed3fd07939328cc23c63495af3dd175cda08a773cfc408a2d7633b8aa"
+     ]
+    },
+    {
+     "arm": "E",
+     "job": "jobF03",
+     "predictions": [
+      "runs/kaggle/jobF03/runs/pilot3_E/predictions_test_style_ood.jsonl",
+      "runs/kaggle/jobF03/runs/pilot3_E/predictions_test_style_ood_inv.jsonl"
+     ],
+     "seed": 3407,
+     "sha256": [
+      "ac8798d92e7e5a152ebd32cc27c639e7f3a698307fe44a171659387182e72a63",
+      "12e6077a2a2e8a4e9a2d91f2023b68df8cd31b28ffc772cdaa2d5ddb38c3cd50"
+     ]
+    },
+    {
+     "arm": "E",
+     "job": "jobF11",
+     "predictions": [
+      "runs/kaggle/jobF11/runs/pilot3_E_s9173/predictions_test_style_ood.jsonl",
+      "runs/kaggle/jobF11/runs/pilot3_E_s9173/predictions_test_style_ood_inv.jsonl"
+     ],
+     "seed": 9173,
+     "sha256": [
+      "215a6a6d4897ac0746ae0c1198d0084838f3da2825fa21d62e4b76d4be0c686d",
+      "7457e19f9609fdd6cc43eea7cfcd46b2ac9d100f2b46b7688eeba6c5c02bfc09"
+     ]
+    },
+    {
+     "arm": "C",
+     "job": "jobF08",
+     "predictions": [
+      "runs/kaggle/jobF08/runs/pilot3_C_s2027/predictions_test_style_ood.jsonl",
+      "runs/kaggle/jobF08/runs/pilot3_C_s2027/predictions_test_style_ood_inv.jsonl"
+     ],
+     "seed": 2027,
+     "sha256": [
+      "443b400e174c5773c91b8a5726a8c0d4aa502d4f5acdd608996e6e2dc92d77ca",
+      "39a204db9721dd28324b7cf28fb291f5fb9be953796687d3612969d5b7c749f4"
+     ]
+    },
+    {
+     "arm": "C",
+     "job": "jobF04",
+     "predictions": [
+      "runs/kaggle/jobF04/runs/pilot3_C/predictions_test_style_ood.jsonl",
+      "runs/kaggle/jobF04/runs/pilot3_C/predictions_test_style_ood_inv.jsonl"
+     ],
+     "seed": 3407,
+     "sha256": [
+      "05d0342530dd0055d4868f012dde40664ba0306dde7f795d186ec2331cb04b86",
+      "30b0a3b25a719506c0139cabc19770a6e2e7c35d3e491b324deef9f4552346ba"
+     ]
+    },
+    {
+     "arm": "C",
+     "job": "jobF12",
+     "predictions": [
+      "runs/kaggle/jobF12/runs/pilot3_C_s9173/predictions_test_style_ood.jsonl",
+      "runs/kaggle/jobF12/runs/pilot3_C_s9173/predictions_test_style_ood_inv.jsonl"
+     ],
+     "seed": 9173,
+     "sha256": [
+      "ffb4445489a29f2721922dda812e3600be1bc64e96682b6488f8cc3635a8b987",
+      "03dfb1c7bdbdf24f0850751f220e3bc5aee6f6443f29f5c4a78a3af12c091985"
+     ]
+    }
+   ]
+  }
+ },
+ "table": "reports/final/final_table.json",
+ "table_sha256": "0d3b98d34f75d1d49b3f95f3512e83fe0f060be47188e60cb67181474ba5611d"
+}

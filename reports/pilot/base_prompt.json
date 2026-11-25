@@ -1,0 +1,61 @@
+{
+  "rule": "highest strict non-edit macro at each variant's own token limit; tie -> earlier of ('common', 'direct', 'system')",
+  "chosen": "system",
+  "chosen_limit": 96,
+  "variants": {
+    "common": {
+      "chosen_limit": 768,
+      "non_edit_macro": 0.1375,
+      "non_edit_macro_lenient": 0.6125,
+      "max_truncation_rate": 0.9,
+      "per_task_accuracy": {
+        "minimal_graph_repair": 0.0,
+        "reachability": 0.2,
+        "critical_edge": 0.075
+      },
+      "per_task_format_failure": {
+        "minimal_graph_repair": 1.0,
+        "reachability": 0.725,
+        "critical_edge": 0.825
+      }
+    },
+    "direct": {
+      "chosen_limit": 96,
+      "non_edit_macro": 0.6,
+      "non_edit_macro_lenient": 0.6,
+      "max_truncation_rate": 0.0,
+      "per_task_accuracy": {
+        "minimal_graph_repair": 0.075,
+        "reachability": 0.725,
+        "critical_edge": 0.475
+      },
+      "per_task_format_failure": {
+        "minimal_graph_repair": 0.25,
+        "reachability": 0.0,
+        "critical_edge": 0.0
+      }
+    },
+    "system": {
+      "chosen_limit": 96,
+      "non_edit_macro": 0.625,
+      "non_edit_macro_lenient": 0.625,
+      "max_truncation_rate": 0.0,
+      "per_task_accuracy": {
+        "minimal_graph_repair": 0.05,
+        "reachability": 0.725,
+        "critical_edge": 0.525
+      },
+      "per_task_format_failure": {
+        "minimal_graph_repair": 0.05,
+        "reachability": 0.0,
+        "critical_edge": 0.0
+      }
+    }
+  },
+  "split": "dev",
+  "eval_root_graphs": 20,
+  "samples": 120,
+  "run_limit": 768,
+  "content_digest": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8",
+  "direct_sentence": "Do not explain your reasoning. Reply with the JSON object only."
+}

@@ -1,0 +1,54 @@
+% Introduction. Written before the main experiments: it states the question, the design and
+% what the paper provides, and claims no model result. tests/test_paper_intro.py checks that
+% it cites only bibliography keys, quotes no measured number, and makes no result claim.
+% The final paragraph is to be rewritten once M5/M6 results exist.
+\section{Introduction}
+\label{sec:intro}
+
+Vision-language models (VLMs) answer many questions about natural images, yet questions
+about drawn structure, such as whether one node of a diagram can reach another, remain hard
+for them~\cite{mcdgraph,graphverse}. Probing suggests the needed information is often
+present in their representations even when the answer is wrong~\cite{signals}. A common
+remedy is supervised fine-tuning on the questions themselves or on structural auxiliary
+tasks such as describing or completing the graph~\cite{mcdgraph}.
+
+We ask whether a different signal helps: \emph{learning to repair} a drawing. A repair task
+gives the model a drawn directed graph and reachability goals and asks for the smallest
+edge edit that satisfies them. Producing a correct edit requires reading which edges exist
+and which paths depend on which edge; unlike a yes/no answer, the edit can be checked
+exactly and leaves little room for guessing. If repair training builds a usable internal
+reading of the graph, it should transfer to questions the model was never trained to
+answer, such as reachability and edge criticality.
+
+Testing this claim fairly needs two things that the graph-image benchmarks we reviewed
+(Section~\ref{sec:related}) do not provide together. First, labels and repair answers must be exact, and the verifier must
+accept every optimal edit, not one reference answer. Second, the evaluation must rule out
+answers that ignore the image. We build a procedural benchmark with an exact solver, an
+independent reference check and \emph{answer-flipping twins}: every question is asked on
+two drawings that differ by one edge and have opposite answers, so a predictor that does
+not use the image scores at most $0.50$ per task, and answering both twins correctly shows
+that the deciding edge was used (Fig.~\ref{fig:twins}).
+
+On this benchmark we compare, on the same base model with LoRA~\cite{lora} and matched
+samples, root graphs and images, a repair-trained arm against question-answer training on
+the target questions and against structural fine-tuning in the style of
+MCDGraph~\cite{mcdgraph}. Oracle conditions that give the true graph as text, and a
+parse-then-solve arm in the spirit of describe- or recover-then-compute
+methods~\cite{visiongraph,vgcompiler}, help separate failures of reading the drawing from failures of
+reasoning about it, within limits we state (the text oracle also changes the input format). All splits are grouped by root graph with no isomorphic graph shared across
+splits, and the test splits, including held-out styles, families and sizes, are opened once.
+
+\paragraph{Contributions.}
+(i)~A verified generator and benchmark for drawn directed graphs with exact labels,
+answer-flipping twins, invariance pairs and leakage-free splits (Section~\ref{sec:benchmark}).
+(ii)~A pre-specified, exposure-matched protocol for testing whether edit training transfers
+to non-edit questions in a small VLM (Sections~\ref{sec:setup} and~\ref{sec:analysis}).
+(iii)~Oracle-graph and parse-and-solve conditions that help separate perception errors from
+reasoning errors, with their limits stated. (iv)~A pre-registered external check on drawings by other authors
+(VGCure) and an item-level account of why it and our locked test disagree about repair
+training (Sections~\ref{sec:external} and~\ref{sec:why}). (v)~A record of what did not work
+during development (Section~\ref{sec:negative}). Code and data: \url{https://github.com/efeerdogmus0/trace-graph-repair}.
+% Main findings paragraph: scripts/paper_framing.py (rule framing-v2, chosen after reading); the pre-registered
+% finding-v1 paragraph (scripts/paper_finding.py) is kept in reports/final/intro_finding.tex.
+\IfFileExists{../reports/final/framing_intro.tex}{\input{../reports/final/framing_intro.tex}}{%
+\IfFileExists{../reports/final/intro_finding.tex}{\input{../reports/final/intro_finding.tex}}{}}

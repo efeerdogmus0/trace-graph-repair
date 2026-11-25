@@ -1,0 +1,7 @@
+# Exact versions used for the first CPU smoke run (Python 3.9.6, macOS arm64).
+pillow==11.3.0
+PyYAML==6.0.3
+pytest==8.4.2
+networkx==3.2.1
+numpy==2.0.2
+matplotlib==3.9.4

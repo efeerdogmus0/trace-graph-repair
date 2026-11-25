@@ -1,0 +1,22 @@
+B pooled {'external_macro': 0.8161, 'edge_exists_accuracy': 0.8183, 'reachability_balanced_accuracy': 0.8139} seeds macro [0.8162, 0.8161, 0.816]
+C pooled {'external_macro': 0.7197, 'edge_exists_accuracy': 0.817, 'reachability_balanced_accuracy': 0.6225} seeds macro [0.7329, 0.6936, 0.7327]
+   vs B external_macro -0.0964 [-0.1195, -0.0730] p<=0 1.0000
+   vs B edge_exists_accuracy -0.0013 [-0.0250, +0.0227] p<=0 0.5498
+   vs B reachability_balanced_accuracy -0.1914 [-0.2320, -0.1496] p<=0 1.0000
+   seed 0 macro -0.0834 [-0.1104, -0.0558]
+   seed 1 macro -0.1224 [-0.1490, -0.0950]
+   seed 2 macro -0.0833 [-0.1082, -0.0581]
+D pooled {'external_macro': 0.8721, 'edge_exists_accuracy': 0.8673, 'reachability_balanced_accuracy': 0.8768} seeds macro [0.8737, 0.8621, 0.8804]
+   vs B external_macro +0.0559 [+0.0378, +0.0749] p<=0 0.0000
+   vs B edge_exists_accuracy +0.0490 [+0.0330, +0.0653] p<=0 0.0000
+   vs B reachability_balanced_accuracy +0.0629 [+0.0293, +0.0970] p<=0 0.0001
+   seed 0 macro +0.0575 [+0.0334, +0.0824]
+   seed 1 macro +0.0460 [+0.0232, +0.0688]
+   seed 2 macro +0.0644 [+0.0438, +0.0847]
+E pooled {'external_macro': 0.7246, 'edge_exists_accuracy': 0.734, 'reachability_balanced_accuracy': 0.7152} seeds macro [0.7304, 0.7107, 0.7327]
+   vs B external_macro -0.0915 [-0.1212, -0.0614] p<=0 1.0000
+   vs B edge_exists_accuracy -0.0843 [-0.1120, -0.0567] p<=0 1.0000
+   vs B reachability_balanced_accuracy -0.0987 [-0.1455, -0.0511] p<=0 1.0000
+   seed 0 macro -0.0858 [-0.1231, -0.0488]
+   seed 1 macro -0.1054 [-0.1409, -0.0691]
+   seed 2 macro -0.0833 [-0.1180, -0.0495]

@@ -1,0 +1,772 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/ir+wJSiqdtdF0MpLnwBOzil9ddU</id>
+  <title>arXiv Query: search_query=abs:"rendered" AND abs:"graph" AND abs:"vision-language"&amp;id_list=&amp;start=0&amp;max_results=25</title>
+  <updated>2026-11-15T05:16:20Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22rendered%22+AND+(abs:%22graph%22+AND+abs:%22vision-language%22)&amp;start=0&amp;max_results=25&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+  <opensearch:totalResults>29</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2405.06634v2</id>
+    <title>Multimodal LLMs Struggle with Basic Visual Network Analysis: a VNA Benchmark</title>
+    <updated>2024-06-10T15:28:16Z</updated>
+    <link href="https://arxiv.org/abs/2405.06634v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.06634v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We evaluate the zero-shot ability of GPT-4 and LLaVa to perform simple Visual Network Analysis (VNA) tasks on small-scale graphs. We evaluate the Vision Language Models (VLMs) on 5 tasks related to three foundational network science concepts: identifying nodes of maximal degree on a rendered graph, identifying whether signed triads are balanced or unbalanced, and counting components. The tasks are structured to be easy for a human who understands the underlying graph theoretic concepts, and can all be solved by counting the appropriate elements in graphs. We find that while GPT-4 consistently outperforms LLaVa, both models struggle with every visual network analysis task we propose. We publicly release the first benchmark for the evaluation of VLMs on foundational VNA tasks.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-10T17:51:35Z</published>
+    <arxiv:comment>11 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Evan M. Williams</name>
+    </author>
+    <author>
+      <name>Kathleen M. Carley</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.22597v2</id>
+    <title>MapReason-OSM: Can Vision-Language Models Make Graph-Verifiable Mobility Decisions from Street Maps ?</title>
+    <updated>2026-06-23T04:17:28Z</updated>
+    <link href="https://arxiv.org/abs/2606.22597v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.22597v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Vision-language models (VLMs) are increasingly used to read maps for logistics, delivery, and accessible navigation, where the output is an actionable decision (a route, a pin, a parking choice) that must respect the road network. Yet most map benchmarks grade free text or multiple-choice answers that cannot be verified against the underlying graph. We present MapReason-OSM, a benchmark and evaluation harness for graph-verifiable mobility decisions on self-rendered OpenStreetMap panels. We render fixed-style maps for ten U.S. downtowns at two aligned zoom scales, overlay a consistent marker grammar, and pair each panel with a hidden street graph and exact oracles, yielding 6,000 instances (12,000 panels across the two zooms) over 12 routing, facility-location, and visual disambiguation tasks. Models return structured decisions that we snap back to the graph and score for validity, legality, optimality, and constraint satisfaction, plus cross-zoom consistency. Across seven VLMs, models read maps and route simply but fail at graph cost reasoning (single-facility pin placement is near chance even for frontier reasoning models), and are frequently scale-inconsistent. We release the benchmark, harness, and deterministic generator. Code and data: https://github.com/Vi-Sri/mapreason-osm</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-21T17:13:35Z</published>
+    <arxiv:comment>9 pages, 7 figures. Submitted to ACM SIGSPATIAL 2026 (Industrial Track). Code and data: https://github.com/Vi-Sri/mapreason-osm</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Srinivas Venkatanarayanan</name>
+    </author>
+    <author>
+      <name>Clement Pakkam Isaac</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.01248v1</id>
+    <title>SceneCraft: An LLM Agent for Synthesizing 3D Scene as Blender Code</title>
+    <updated>2024-03-02T16:16:26Z</updated>
+    <link href="https://arxiv.org/abs/2403.01248v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.01248v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper introduces SceneCraft, a Large Language Model (LLM) Agent converting text descriptions into Blender-executable Python scripts which render complex scenes with up to a hundred 3D assets. This process requires complex spatial planning and arrangement. We tackle these challenges through a combination of advanced abstraction, strategic planning, and library learning. SceneCraft first models a scene graph as a blueprint, detailing the spatial relationships among assets in the scene. SceneCraft then writes Python scripts based on this graph, translating relationships into numerical constraints for asset layout. Next, SceneCraft leverages the perceptual strengths of vision-language foundation models like GPT-V to analyze rendered images and iteratively refine the scene. On top of this process, SceneCraft features a library learning mechanism that compiles common script functions into a reusable library, facilitating continuous self-improvement without expensive LLM parameter tuning. Our evaluation demonstrates that SceneCraft surpasses existing LLM-based agents in rendering complex scenes, as shown by its adherence to constraints and favorable human assessments. We also showcase the broader application potential of SceneCraft by reconstructing detailed 3D scenes from the Sintel movie and guiding a video generative model with generated scenes as intermediary control signal.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-02T16:16:26Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Ziniu Hu</name>
+    </author>
+    <author>
+      <name>Ahmet Iscen</name>
+    </author>
+    <author>
+      <name>Aashi Jain</name>
+    </author>
+    <author>
+      <name>Thomas Kipf</name>
+    </author>
+    <author>
+      <name>Yisong Yue</name>
+    </author>
+    <author>
+      <name>David A. Ross</name>
+    </author>
+    <author>
+      <name>Cordelia Schmid</name>
+    </author>
+    <author>
+      <name>Alireza Fathi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.13035v1</id>
+    <title>SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis</title>
+    <updated>2026-04-14T17:59:26Z</updated>
+    <link href="https://arxiv.org/abs/2604.13035v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.13035v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) and Vision-Language Models (VLMs) increasingly generate indoor scenes through intermediate structures such as layouts and scene graphs, yet evaluation still relies on LLM or VLM judges that score rendered views, making judgments sensitive to viewpoint, prompt phrasing, and hallucination. When the evaluator is unstable, it becomes difficult to determine whether a model has produced a spatially plausible scene or whether the output score reflects the choice of viewpoint, rendering, or prompt. We introduce SceneCritic, a symbolic evaluator for floor-plan-level layouts. SceneCritic's constraints are grounded in SceneOnto, a structured spatial ontology we construct by aggregating indoor scene priors from 3D-FRONT, ScanNet, and Visual Genome. SceneOnto traverses this ontology to jointly verify semantic, orientation, and geometric coherence across object relationships, providing object-level and relationship-level assessments that identify specific violations and successful placements. Furthermore, we pair SceneCritic with an iterative refinement test bed that probes how models build and revise spatial structure under different critic modalities: a rule-based critic using collision constraints as feedback, an LLM critic operating on the layout as text, and a VLM critic operating on rendered observations. Through extensive experiments, we show that (a) SceneCritic aligns substantially better with human judgments than VLM-based evaluators, (b) text-only LLMs can outperform VLMs on semantic layout quality, and (c) image-based VLM refinement is the most effective critic modality for semantic and orientation correction.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-14T17:59:26Z</published>
+    <arxiv:comment>Project Page: https://lab-spell.github.io/SceneCritic/</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Kathakoli Sengupta</name>
+    </author>
+    <author>
+      <name>Kai Ao</name>
+    </author>
+    <author>
+      <name>Paola Cascante-Bonilla</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.02448v2</id>
+    <title>AgentsCAD: Automated Design for Manufacturing of FDM Parts via Multi-Agent LLM Reasoning and Geometric Feature Recognition</title>
+    <updated>2026-07-07T04:44:06Z</updated>
+    <link href="https://arxiv.org/abs/2607.02448v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.02448v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Parts manufactured with Fused Deposition Modeling (FDM) often require Design for Additive Manufacturing (DFAM) modifications to ensure printability, structural integrity, and reduced post-processing. Current slicers identify defects such as steep overhangs but are unable to modify the underlying geometry. This work presents AgentsCAD, a multi-agent system that bridges raw boundary-representation (B-Rep) geometry and Large Language Model (LLM) reasoning to automate targeted DFM. The workflow begins by parsing a STEP file. The agentic system detects overhangs above a 45°threshold, constructs a face-adjacency topology graph, and optionally injects semantic feature labels from a GraphSAGE model trained on MFCAD++ (59,665 parts), before dispatching a Claude Sonnet design-reasoning agent that recommends reorientations, fillets, chamfers, and similar modifications. A GPT-4o vision-language verifier inspects rendered views to confirm geometric integrity. Outputs include a modified STEP file and a human-readable report. A test case on a birdhouse model demonstrates that the system correctly diagnoses overhangs, selects appropriate defect mitigation strategies, and proposes physically valid corrections, partially solving the geometry-to-language translation problem central to LLM-driven CAD modification.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-02T17:19:41Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Emmanuel George</name>
+    </author>
+    <author>
+      <name>Christopher Keefe</name>
+    </author>
+    <author>
+      <name>Peter Pak</name>
+    </author>
+    <author>
+      <name>Amir Barati Farimani</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.26544v1</id>
+    <title>Chart2SVG: Editable SVG Generation from Raster Chart Images</title>
+    <updated>2026-08-27T02:35:30Z</updated>
+    <link href="https://arxiv.org/abs/2608.26544v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.26544v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present Chart2SVG, a multimodal large language model that converts static raster charts into structurally organized, semantically enriched SVGs that support programmatic editing. By incorporating chart-specific semantic tokens into a vision-language model, Chart2SVG captures both geometric primitives and their functional roles. To support robust structural recovery, we introduce Beagle+, a dataset of 33K canonicalized and structurally distilled chart samples. Our approach combines specialized training objectives with a rendering-aware post-training phase, producing SVGs that are both visually accurate and structurally consistent. To facilitate higher-level manipulations, we construct a Chart Structure Graph (CSG) that exposes visual dependencies, enabling tasks such as interactive exploration, chart repurposing, and layout reuse. Experiments show that Chart2SVG substantially outperforms baselines in reconstruction fidelity and downstream editing utility, advancing the development of intelligent and interactive visualization tools.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-27T02:35:30Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Jinning Cui</name>
+    </author>
+    <author>
+      <name>Lu Chen</name>
+    </author>
+    <author>
+      <name>Haoyan Shi</name>
+    </author>
+    <author>
+      <name>Yue He</name>
+    </author>
+    <author>
+      <name>Chenglong Wang</name>
+    </author>
+    <author>
+      <name>Mengyu Zhou</name>
+    </author>
+    <author>
+      <name>Weidong Huang</name>
+    </author>
+    <author>
+      <name>Yunhai Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.21443v1</id>
+    <title>Text-Guided Visual Dependency Graph Learning with Cross-Modal Attention Priors</title>
+    <updated>2026-08-19T09:57:34Z</updated>
+    <link href="https://arxiv.org/abs/2608.21443v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.21443v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Estimating interpretable conditional-dependence structures from multimodal visual-linguistic features remains largely unexplored. We propose CM-GLasso (Cross-Modal Graphical Lasso), a framework that bridges vision-language representation learning and sparse Gaussian Graphical Models. CM-GLasso introduces three key components: (i) a text visualization strategy that renders class-attribute descriptions as images and processes them through the same SigLIP-2 vision encoder as natural images, yielding prototype-indexed patch-level attention footprints in a shared feature coordinate system; (ii) a cross-attention distillation mechanism that condenses high-dimensional patches into a small set of semantic graph nodes, whose attention-footprint similarities yield cross-modal structural priors for non-uniform L1 penalization; (iii) a joint ADMM formulation that estimates shared and class-specific precision components within a single convex objective, avoiding the need to first estimate and then decompose separate class-wise graphs. The learned sparse graph topologies directly support a parameter-free, precision-based classification rule and a lightweight topology-aware segmentation head. Extensive experiments on eight benchmarks demonstrate that CM-GLasso achieves competitive or superior performance compared with strong feature-based and task-specific baselines. Under the matched controlled protocol, it attains the highest average classification accuracy (91.97%) and the highest segmentation mIoU among the controlled baselines on VOC (74.75%) and ADE20K (64.01%), while also yielding explicit sparse conditional-dependence graphs with common-specific decomposition.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-19T09:57:34Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Fei Wang</name>
+    </author>
+    <author>
+      <name>Yutong Zhang</name>
+    </author>
+    <author>
+      <name>Yang Ye</name>
+    </author>
+    <author>
+      <name>Jinxian Chen</name>
+    </author>
+    <author>
+      <name>Wang Wenshuai</name>
+    </author>
+    <author>
+      <name>Xiong Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.04721v1</id>
+    <title>Knossos and Ariadne: Benchmarking and Learning Complete Diagram Topology Extraction with Vision-Language Models</title>
+    <updated>2026-10-03T19:20:33Z</updated>
+    <link href="https://arxiv.org/abs/2610.04721v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.04721v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Structural diagrams are widely used to represent complex systems and relational information across scientific, engineering, procedural, and spatial domains. Recent vision-language models (VLMs) have become increasingly capable of recognizing diagram elements and reasoning about their content, while complete diagram topology extraction remains comparatively underexplored. In this paper, we study diagram-to-graph topology extraction: extracting all diagram entities and the complete relations among them. To enable large-scale supervised training and systematic evaluation of this task, we introduce Knossos, a benchmark of 19,200 diagrams across six diverse domains, with 245,179 nodes and 439,740 edges. Its symbolic generation process provides exact alignment between rendered diagrams and annotations of complete topology, relation types, and connector geometry. To address the modeling challenge of complete topology extraction, we also present Ariadne, a structured framework that decomposes the task into node inventory extraction and source-conditioned edge prediction. Extensive experiments show that training on Knossos substantially improves complete topology extraction in smaller open-source VLMs. Ariadne further improves over one-step extraction under matched supervision, demonstrating the additional benefit of structured decomposition. It achieves the highest average Edge F1 among the evaluated methods on Knossos, while both backbone variants also improve over their unadapted counterparts on the real-world external benchmark. Code and benchmark are available at https://github.com/bangwayne/knossos_Ariadne_Public.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-03T19:20:33Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Bangwei Guo</name>
+    </author>
+    <author>
+      <name>Xujiang Zhao</name>
+    </author>
+    <author>
+      <name>Shengyu Chen</name>
+    </author>
+    <author>
+      <name>Yanchi Liu</name>
+    </author>
+    <author>
+      <name>Wei Cheng</name>
+    </author>
+    <author>
+      <name>Xi Zhu</name>
+    </author>
+    <author>
+      <name>Guoning Zhang</name>
+    </author>
+    <author>
+      <name>Dimitris N. Metaxas</name>
+    </author>
+    <author>
+      <name>Haifeng Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.11307v2</id>
+    <title>Vision2Code: A Multi-Domain Benchmark for Evaluating Image-to-Code Generation</title>
+    <updated>2026-10-09T16:51:01Z</updated>
+    <link href="https://arxiv.org/abs/2605.11307v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.11307v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study whether vision-language models (VLMs) can reconstruct structured, graphics-based images by writing executable code to generate them. Existing benchmarks on image-to-code generation are generally limited in the domains they cover, rely on reference source code for evaluation, and do not provide metrics to quantify domain-specific issues. To address this, we introduce Vision2Code, a multi-domain, reference-code-free benchmark containing 539 test examples from 15 different datasets, spanning charts and plots, geometry, graphs, scientific diagrams, documents and 3D spatial scenes. Evaluation is done by executing the generated programs and comparing their rendered outputs to the source images using dataset- and domain-specific rubrics for a VLM judge. We find that the final scores obtained in this manner have substantially higher correlation with human ratings than those obtained via generic VLM rubrics or standard pixel-based, embedding-based or perceptual similarity metrics. We further demonstrate the reliability of our evaluation under repeated sampling from the VLM judges, varying rubric weights, and in the presence of controlled errors. Our results highlight the variability across domains of existing image-to-code generation models, with accuracy on charts and graphs being significantly higher than other domains. Lastly, we demonstrate the utility of our scoring method for rejection sampling of generated programs for fine-tuning, improving Qwen3.5-9B by 16% and Phi-4-MM by 28% compared to their base checkpoints. Our code and data are publicly available at https://image2code.github.io/vision2code/.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-11T22:50:12Z</published>
+    <arxiv:comment>Project page: https://image2code.github.io/vision2code/</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Ajay Vikram Periasami</name>
+    </author>
+    <author>
+      <name>Junlin Wang</name>
+    </author>
+    <author>
+      <name>Bhuwan Dhingra</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.19137v1</id>
+    <title>GSMem: 3D Gaussian Splatting as Persistent Spatial Memory for Zero-Shot Embodied Exploration and Reasoning</title>
+    <updated>2026-03-19T16:55:54Z</updated>
+    <link href="https://arxiv.org/abs/2603.19137v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.19137v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Effective embodied exploration requires agents to accumulate and retain spatial knowledge over time. However, existing scene representations, such as discrete scene graphs or static view-based snapshots, lack \textit{post-hoc re-observability}. If an initial observation misses a target, the resulting memory omission is often irrecoverable. To bridge this gap, we propose \textbf{GSMem}, a zero-shot embodied exploration and reasoning framework built upon 3D Gaussian Splatting (3DGS). By explicitly parameterizing continuous geometry and dense appearance, 3DGS serves as a persistent spatial memory that endows the agent with \textit{Spatial Recollection}: the ability to render photorealistic novel views from optimal, previously unoccupied viewpoints. To operationalize this, GSMem employs a retrieval mechanism that simultaneously leverages parallel object-level scene graphs and semantic-level language fields. This complementary design robustly localizes target regions, enabling the agent to ``hallucinate'' optimal views for high-fidelity Vision-Language Model (VLM) reasoning. Furthermore, we introduce a hybrid exploration strategy that combines VLM-driven semantic scoring with a 3DGS-based coverage objective, balancing task-aware exploration with geometric coverage. Extensive experiments on embodied question answering and lifelong navigation demonstrate the robustness and effectiveness of our framework</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-19T16:55:54Z</published>
+    <arxiv:comment>Project page at https://vulab-ai.github.io/GSMem/</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yiren Lu</name>
+    </author>
+    <author>
+      <name>Yi Du</name>
+    </author>
+    <author>
+      <name>Disheng Liu</name>
+    </author>
+    <author>
+      <name>Yunlai Zhou</name>
+    </author>
+    <author>
+      <name>Chen Wang</name>
+    </author>
+    <author>
+      <name>Yu Yin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.12938v1</id>
+    <title>Graph Visualizations in Prompts for Knowledge Graph Question Answering</title>
+    <updated>2026-11-06T14:55:29Z</updated>
+    <link href="https://arxiv.org/abs/2611.12938v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.12938v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study when and how multimodal input improves knowledge graph question answering (KGQA) in large vision--language models. Using a controlled evaluation over 1,500 WebQSP and CWQ questions and six VLMs within a fixed KGQA pipeline, we compare text-only prompting against text-plus-graph visualization at the per-question level and analyze performance changes as a function of reasoning complexity, model size, and image layout. Adding a graph image yields an average gain of 1.85 F1 points, driven by strong precision improvements on low-complexity questions (+4.65 F1). Mixed-effects and regression analyses show that these multimodal gains do not depend strongly on model scale, but are highly sensitive to graph layout: image-only settings sharply degrade performance, hierarchical Graphviz layouts outperform less organized renderings, and decomposing large subgraphs into separated paths yields the largest improvements. Taken together, the results indicate that visual prompting primarily aids KGQA by enhancing prediction precision in low-complexity contexts, provided that visual design respects cognitive and perceptual constraints. To optimize both accuracy and inference efficiency, we argue for adaptive visual prompting policies that selectively append diagrams to small, visually sparse subgraphs with well-structured layouts, avoiding unnecessary visual clutter and token overhead on complex queries. We conclude by relating these findings to a visual notation design theory, outlining how principled diagram encoding can guide future multimodal VLM prompting.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-06T14:55:29Z</published>
+    <arxiv:comment>Accepted at AACL-IJCNLP conference</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Luiz do Valle Miranda</name>
+    </author>
+    <author>
+      <name>Andreas L. Opdahl</name>
+    </author>
+    <author>
+      <name>Grzegorz J. Nalepa</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.00414v2</id>
+    <title>Toward Autonomous Laboratory Safety Monitoring with Vision Language Models: Learning to See Hazards Through Scene Structure</title>
+    <updated>2026-10-28T23:54:27Z</updated>
+    <link href="https://arxiv.org/abs/2602.00414v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.00414v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Laboratories are prone to severe injuries from unsafe actions, yet continuous manual safety monitoring, beyond mandatory pre-lab safety training, is infeasible. Vision-language models (VLMs) offer promise for autonomous laboratory safety monitoring, but their effectiveness in realistic settings is unclear due to the lack of visual evaluation data. Safety incidents are mostly documented as text, and existing studies are largely limited to textual understanding. Since hazardous scenes are unsafe to stage or capture, synthetic visual data becomes the only practical way to study this problem. This motivates us to introduce a structured data generation pipeline that converts textual laboratory scenarios into aligned quadruples using LLM as scene graph architect and image generation model as renderer, yielding \dataset: a synthetic dataset of 1,207 $\langle$image, scene graph, ground truth, hazard relevance mask$\rangle$ quadruples across 362 unique scenarios. Experiments on \dataset and seven open- and closed-source models show that VLMs perform effectively given a textual scene graph but degrade substantially in visual-only settings (i.e., where no scene graph is involved), indicating difficulty in extracting structured object relationships directly from pixels. We thus propose \saga, a post-training framework that leverages reinforcement learning to first structure the visual scene as a scene graph, and then predict hazards while aligning attention with relevant image regions. Evaluations with Qwen 3.5 and Gemma 4 show that our method nearly doubles the $F_1$ score over the baseline on our synthetic dataset and achieves an improvement of $\sim 3\times$ on a mini real-world dataset, while preserving general visual understanding in visual question answering.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-31T00:08:41Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Trishna Chakraborty</name>
+    </author>
+    <author>
+      <name>Udita Ghosh</name>
+    </author>
+    <author>
+      <name>Aldair Ernesto Gongora</name>
+    </author>
+    <author>
+      <name>Ruben Glatt</name>
+    </author>
+    <author>
+      <name>Yue Dong</name>
+    </author>
+    <author>
+      <name>Jiachen Li</name>
+    </author>
+    <author>
+      <name>Amit K. Roy-Chowdhury</name>
+    </author>
+    <author>
+      <name>Chengyu Song</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.22720v1</id>
+    <title>LayoutAgent: A Vision-Language Agent Guided Compositional Diffusion for Spatial Layout Planning</title>
+    <updated>2025-09-24T20:41:04Z</updated>
+    <link href="https://arxiv.org/abs/2509.22720v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.22720v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Designing realistic multi-object scenes requires not only generating images, but also planning spatial layouts that respect semantic relations and physical plausibility. On one hand, while recent advances in diffusion models have enabled high-quality image generation, they lack explicit spatial reasoning, leading to unrealistic object layouts. On the other hand, traditional spatial planning methods in robotics emphasize geometric and relational consistency, but they struggle to capture semantic richness in visual scenes. To bridge this gap, in this paper, we propose LayoutAgent, an agentic framework that unifies vision-language reasoning with compositional diffusion for layout generation. Given multiple input images with target objects in them, our method first employs visual-language model to preprocess the inputs through segmentation, object size estimation, scene graph construction, and prompt rewriting. Then we leverage compositional diffusion-a method traditionally used in robotics-to synthesize bounding boxes that respect object relations encoded in the scene graph for spatial layouts. In the end, a foreground-conditioned image generator composes the complete scene by rendering the objects into the planned layout guided by designed prompts. Experiments demonstrate that LayoutAgent outperforms other state-of-the-art layout generation models in layout coherence, spatial realism and aesthetic alignment.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-24T20:41:04Z</published>
+    <arxiv:comment>NeurIPS 2025 Workshop on SPACE in Vision, Language, and Embodied AI</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Zezhong Fan</name>
+    </author>
+    <author>
+      <name>Xiaohan Li</name>
+    </author>
+    <author>
+      <name>Luyi Ma</name>
+    </author>
+    <author>
+      <name>Kai Zhao</name>
+    </author>
+    <author>
+      <name>Liang Peng</name>
+    </author>
+    <author>
+      <name>Topojoy Biswas</name>
+    </author>
+    <author>
+      <name>Evren Korpeoglu</name>
+    </author>
+    <author>
+      <name>Kaushiki Nag</name>
+    </author>
+    <author>
+      <name>Kannan Achan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.19158v1</id>
+    <title>VisKG-LM: Compiling Knowledge Graphs into Visual Memory for Multiple-Choice Question Answering</title>
+    <updated>2026-07-29T17:02:58Z</updated>
+    <link href="https://arxiv.org/abs/2609.19158v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.19158v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Knowledge graphs are usually integrated into question answering by encoding a retrieved subgraph with a graph neural network and fusing it with the language model in the online inference path. The same subgraph is therefore re-encoded from scratch every time a pair is scored, across training epochs, seeds, and evaluation runs, even though the knowledge graph never changes. We ask whether the retrieved knowledge graphs can instead be compiled once, offline, and then accessed as read-only memory. VisKG-LM shows that it can, by decoupling graph encoding from language reasoning. It serializes each retrieved candidate-specific subgraph as Relation-Labeled Paths and renders the result as an image whose two-dimensional layout preserves the branching structure of the paths. Each image is encoded once, offline, and cached for reuse. At inference, the language model contextualizes the question and candidate from text alone, and only its final layer consults the cached visual memory, reading both its global layout and its local relational detail. The graph information thus enters only after the text has been understood. On the test sets of CommonsenseQA, OpenBookQA, and MedQA-USMLE, VisKG-LMimproves over GreaseLM by $1.2$, $0.8$, and $4.3$ points, respectively, while matching or surpassing GraphVis, a $7$B vision-language model, with only about $400$M online parameters. Against a matched text-only control that receives the identical Relation-Labeled Paths, it gains $4.2$, $6.5$, and $5.1$ points across the three benchmarks. These gains show that the complete visual-memory interface adds value beyond path textualization alone and support compiled visual memory as an alternative to online graph propagation.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-29T17:02:58Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yixin Peng</name>
+    </author>
+    <author>
+      <name>Er Jin</name>
+    </author>
+    <author>
+      <name>Shiwei Luo</name>
+    </author>
+    <author>
+      <name>Diego Collarana</name>
+    </author>
+    <author>
+      <name>Stefan Decker</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.13006v2</id>
+    <title>PhysPlan: Grounded Physical State Reasoning and Graph-Guided Optimization for Physically Plausible Video Generation</title>
+    <updated>2026-09-29T07:50:08Z</updated>
+    <link href="https://arxiv.org/abs/2609.13006v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.13006v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Video diffusion models (VDMs) synthesize photorealistic content, yet they often fail to follow the course that a physical phenomenon should take within a given scene. Recent training-free methods let a vision-language model (VLM) plan the phenomenon and guide a frozen VDM toward the plan; however, such plans are derived from the prompt and consumed as whole keyframes or trajectories, which leaves unspecified where the consequences land in the observed scene and turns incidental visual details into optimization targets. We observe that a phenomenon specified in words unfolds as sparse, local changes to the physical state of the observed scene. Building on this observation, we present PhysPlan, a training-free image-to-video framework that represents a phenomenon as a grounded state graph and uses this graph to decide what, where, and when the guidance constrains. Grounded Physical State Reasoning decomposes the phenomenon into physical deltas, each stating which objects change, to what state, and by which physical rule, and translates each delta into graph edits, verified by deterministic checks, that leave all other objects unchanged. Graph-Guided Test-Time Optimization renders a keyframe for each state, measures the denoised estimates only along the properties selected by the edits, and concentrates the update on the edited objects. On PhyGenBench and Physics-IQ, PhysPlan raises its base model from 0.52 to 0.77 and from 27.1 to 38.2, surpassing the strongest prior I2V method (0.60 and 34.6), and lowers FVD by over 20%. Project page: https://physplan.github.io</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-16T15:25:56Z</published>
+    <arxiv:comment>25 pages (9 main + references + appendix), 5 figures, 15 tables. Project page: https://physplan.github.io</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Minh-Loi Nguyen</name>
+    </author>
+    <author>
+      <name>Xuan-Vu Le</name>
+    </author>
+    <author>
+      <name>Trung-Nghia Le</name>
+    </author>
+    <author>
+      <name>Tam V. Nguyen</name>
+    </author>
+    <author>
+      <name>Minh-Triet Tran</name>
+    </author>
+    <author>
+      <name>Thanh-Toan Do</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.09215v1</id>
+    <title>View-on-Graph: Zero-shot 3D Visual Grounding via Vision-Language Reasoning on Scene Graphs</title>
+    <updated>2025-12-10T00:59:17Z</updated>
+    <link href="https://arxiv.org/abs/2512.09215v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.09215v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>3D visual grounding (3DVG) identifies objects in 3D scenes from language descriptions. Existing zero-shot approaches leverage 2D vision-language models (VLMs) by converting 3D spatial information (SI) into forms amenable to VLM processing, typically as composite inputs such as specified view renderings or video sequences with overlaid object markers. However, this VLM + SI paradigm yields entangled visual representations that compel the VLM to process entire cluttered cues, making it hard to exploit spatial semantic relationships effectively. In this work, we propose a new VLM x SI paradigm that externalizes the 3D SI into a form enabling the VLM to incrementally retrieve only what it needs during reasoning. We instantiate this paradigm with a novel View-on-Graph (VoG) method, which organizes the scene into a multi-modal, multi-layer scene graph and allows the VLM to operate as an active agent that selectively accesses necessary cues as it traverses the scene. This design offers two intrinsic advantages: (i) by structuring 3D context into a spatially and semantically coherent scene graph rather than confounding the VLM with densely entangled visual inputs, it lowers the VLM's reasoning difficulty; and (ii) by actively exploring and reasoning over the scene graph, it naturally produces transparent, step-by-step traces for interpretable 3DVG. Extensive experiments show that VoG achieves state-of-the-art zero-shot performance, establishing structured scene exploration as a promising strategy for advancing zero-shot 3DVG.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-10T00:59:17Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yuanyuan Liu</name>
+    </author>
+    <author>
+      <name>Haiyang Mei</name>
+    </author>
+    <author>
+      <name>Dongyang Zhan</name>
+    </author>
+    <author>
+      <name>Jiayue Zhao</name>
+    </author>
+    <author>
+      <name>Dongsheng Zhou</name>
+    </author>
+    <author>
+      <name>Bo Dong</name>
+    </author>
+    <author>
+      <name>Xin Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.04425v1</id>
+    <title>SSC: A Verifiable Structured Representation for Bimanual Manipulation Labelling</title>
+    <updated>2026-08-05T04:09:16Z</updated>
+    <link href="https://arxiv.org/abs/2608.04425v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.04425v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Subtask labels decompose a long-horizon manipulation demonstration into shorter semantic segments for policy training and evaluation. Natural language descriptions are easy to read, but their linguistic variability makes automatic verification difficult. Rigid template formats, such as BEHAVIOR-1K's skill_annotation, are linguistically over-segmented, hindering both readability and annotation consistency. We propose the Structured Subtask Chain (SSC), a state-transition representation that bridges these extremes. A demonstration is a sequence of Structured Subtask Template (SST) entries. Each SST stores core action components (subject, predicate, object), flexible conditions (adverbial modifiers such as spatial or instrumental phrases), a base-motion field separate from arm actions, and an after-state scene graph. Built on this format, SSC supports three vision-language assisted functions: rendering SSTs as natural language, checking the assembled chain against four state-transition rules, and completing underspecified fields through a query resolution cascade. We instantiate the pipeline on BEHAVIOR-1K (50 tasks, 3 episodes per task, 2,357 annotated action cells) for logic verification and content completion, evaluating 13 selected state-of-the-art VL models as candidate verifiers and reporting labelling anomalies.</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-05T04:09:16Z</published>
+    <arxiv:comment>8 main pages</arxiv:comment>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Yupu Lu</name>
+    </author>
+    <author>
+      <name>Shuang Wu</name>
+    </author>
+    <author>
+      <name>Sihan Chen</name>
+    </author>
+    <author>
+      <name>Ruihua Han</name>
+    </author>
+    <author>
+      <name>Yichen Zhang</name>
+    </author>
+    <author>
+      <name>Marcus Kalander</name>
+    </author>
+    <author>
+      <name>Jia Pan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.03476v2</id>
+    <title>Fine-tuning DeepSeek-OCR-2 for Molecular Structure Recognition</title>
+    <updated>2026-04-21T00:23:18Z</updated>
+    <link href="https://arxiv.org/abs/2604.03476v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.03476v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Optical Chemical Structure Recognition (OCSR) is critical for converting 2D molecular diagrams from printed literature into machine-readable formats. While Vision-Language Models have shown promise in end-to-end OCR tasks, their direct application to OCSR remains challenging, and direct full-parameter supervised fine-tuning often fails. In this work, we adapt DeepSeek-OCR-2 for molecular optical recognition by formulating the task as image-conditioned SMILES generation. To overcome training instabilities, we propose a two-stage progressive supervised fine-tuning strategy: starting with parameter-efficient LoRA and transitioning to selective full-parameter fine-tuning with split learning rates. We train our model on a large-scale corpus combining synthetic renderings from PubChem and realistic patent images from USPTO-MOL to improve coverage and robustness. Our fine-tuned model, MolSeek-OCR, demonstrates competitive capabilities, achieving exact matching accuracies comparable to the best-performing image-to-sequence model. However, it remains inferior to state-of-the-art image-to-graph modelS. Furthermore, we explore reinforcement-style post-training and data-curation-based refinement, finding that they fail to improve the strict sequence-level fidelity required for exact SMILES matching.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.BM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-03T21:42:54Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Haocheng Tang</name>
+    </author>
+    <author>
+      <name>Xingyu Dang</name>
+    </author>
+    <author>
+      <name>Junmei Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.11616v1</id>
+    <title>Grounding by Remembering: Cross-Scene and In-Scene Memory for 3D Functional Affordances</title>
+    <updated>2026-05-12T06:44:47Z</updated>
+    <link href="https://arxiv.org/abs/2605.11616v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.11616v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Functional affordance grounding requires more than recognizing an object: an agent must localize the specific region that supports an interaction, such as the handle to pull or the button to press. This is difficult for training-free vision-language pipelines because actionable regions are often small, visually ambiguous, and repeated across multiple same-category instances in a scene. We propose AFFORDMEM, a framework that grounds 3D functional affordances by remembering geometry at two levels. The first is cross-scene affordance memory: the agent maintains a category-level memory bank of RGB images with affordance regions rendered as overlays, and recalls the most informative examples at query time to guide a frozen VLM toward small operable subregions that text-only prompting consistently misses. The second is in-scene spatial memory: as the agent processes the scene, it organizes candidate instances and their 3D spatial relations into a structured scene graph, enabling the language model to resolve references over distant or currently unobserved candidates such as "the second handle from the top." AFFORDMEM requires no model fine-tuning and no target-scene annotation, using a reusable memory bank built from source scenes. On SceneFun3D, our method improves AP50 over the prior training-free state of the art by 3.23 on Split 0 and 3.7 on Split 1. Ablation studies support complementary benefits: cross-scene affordance memory improves fine-grained localization, while in-scene spatial memory provides the larger gain on spatially qualified queries. The project homepage is available at the project page.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-12T06:44:47Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Qirui Wang</name>
+    </author>
+    <author>
+      <name>Jingyi He</name>
+    </author>
+    <author>
+      <name>Yining Pan</name>
+    </author>
+    <author>
+      <name>Xulei Yang</name>
+    </author>
+    <author>
+      <name>Shijie Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.02838v1</id>
+    <title>I-Design: Personalized LLM Interior Designer</title>
+    <updated>2024-04-03T16:17:53Z</updated>
+    <link href="https://arxiv.org/abs/2404.02838v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2404.02838v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Interior design allows us to be who we are and live how we want - each design is as unique as our distinct personality. However, it is not trivial for non-professionals to express and materialize this since it requires aligning functional and visual expectations with the constraints of physical space; this renders interior design a luxury. To make it more accessible, we present I-Design, a personalized interior designer that allows users to generate and visualize their design goals through natural language communication. I-Design starts with a team of large language model agents that engage in dialogues and logical reasoning with one another, transforming textual user input into feasible scene graph designs with relative object relationships. Subsequently, an effective placement algorithm determines optimal locations for each object within the scene. The final design is then constructed in 3D by retrieving and integrating assets from an existing object database. Additionally, we propose a new evaluation protocol that utilizes a vision-language model and complements the design pipeline. Extensive quantitative and qualitative experiments show that I-Design outperforms existing methods in delivering high-quality 3D design solutions and aligning with abstract concepts that match user input, showcasing its advantages across detailed 3D arrangement and conceptual fidelity.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-04-03T16:17:53Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <arxiv:journal_ref>Computer Vision - ECCV 2024 Workshops, Lecture Notes in Computer Science (LNCS), vol. 15624, pp. 217-234, Springer, Cham, 2025</arxiv:journal_ref>
+    <author>
+      <name>Ata Çelen</name>
+    </author>
+    <author>
+      <name>Guo Han</name>
+    </author>
+    <author>
+      <name>Konrad Schindler</name>
+    </author>
+    <author>
+      <name>Luc Van Gool</name>
+    </author>
+    <author>
+      <name>Iro Armeni</name>
+    </author>
+    <author>
+      <name>Anton Obukhov</name>
+    </author>
+    <author>
+      <name>Xi Wang</name>
+    </author>
+    <arxiv:doi>10.1007/978-3-031-92387-6_17</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/978-3-031-92387-6_17" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2411.14460v2</id>
+    <title>LLaSA: Large Language and Structured Data Assistant</title>
+    <updated>2025-02-09T17:13:10Z</updated>
+    <link href="https://arxiv.org/abs/2411.14460v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.14460v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Structured data, such as tables, graphs, and databases, play a critical role in plentiful NLP tasks such as question answering and dialogue system. Recently, inspired by Vision-Language Models, Graph Neutral Networks (GNNs) have been introduced as an additional modality into the input of Large Language Models (LLMs) to improve their performance on Structured Knowledge Grounding (SKG) tasks. However, those GNN-enhanced LLMs have the following limitations: (1) They employ diverse GNNs to model varying types of structured data, rendering them unable to uniformly process various forms of structured data. (2) The pretraining of GNNs is coupled with specific LLMs, which prevents GNNs from fully aligning with the textual space and limits their adaptability to other LLMs. To address these issues, we propose \textbf{L}arge \textbf{L}anguage and \textbf{S}tructured Data \textbf{A}ssistant (LLaSA), a general framework for enhancing LLMs' ability to handle structured data. Specifically, we represent various types of structured data in a unified hypergraph format, and use self-supervised learning to pretrain a hypergraph encoder, and a G-Former compressing encoded hypergraph representations with cross-attention. The compressed hypergraph representations are appended to the serialized inputs during training and inference stages of LLMs. Experimental results on multiple SKG tasks show that our pretrained hypergraph encoder can adapt to various LLMs and enhance their ability to process different types of structured data. Besides, LLaSA, with LoRA fine-tuning, outperforms previous SOTA method using full parameters tuning.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-16T12:27:14Z</published>
+    <arxiv:comment>NAACL 2025 Main</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yao Xu</name>
+    </author>
+    <author>
+      <name>Shizhu He</name>
+    </author>
+    <author>
+      <name>Jiabei Chen</name>
+    </author>
+    <author>
+      <name>Zeng Xiangrong</name>
+    </author>
+    <author>
+      <name>Bingning Wang</name>
+    </author>
+    <author>
+      <name>Guang Liu</name>
+    </author>
+    <author>
+      <name>Jun Zhao</name>
+    </author>
+    <author>
+      <name>Kang Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.03468v1</id>
+    <title>A Vision-Language Model (VLM)-based Pipeline for End-to-End Procedural Modeling of Field-Grown Maize from Point Clouds</title>
+    <updated>2026-10-02T15:41:28Z</updated>
+    <link href="https://arxiv.org/abs/2610.03468v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.03468v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Editable 3D models of field-grown crops support high-throughput phenotyping and in silico breeding trials, but building them from scanned point clouds requires organ-level segmentation and fitting. Procedural generators can turn an organ-level parameter set into an analysis-suitable 3D model, but obtaining that set requires hours of manual tuning per plant or segmentation models trained on species-specific labels. We present an automated pipeline that reconstructs procedural maize models from raw 3D point clouds without manual tuning or species-specific training data. A multimodal vision-language model (VLM) annotates leaf midlines in rendered orthographic views. Deterministic geometric algorithms back-project the annotations onto the point cloud, merge them into 3D leaves by cross-view consensus, and grow the midlines to full blades on an orientation-weighted surface graph. Measured organ parameters populate a plant descriptor for a Non-Uniform Rational B-Spline (NURBS)-based procedural model generator. Each leaf surface is then refined against its scan points by differentiable NURBS fitting. The pipeline reached a median whole-plant Chamfer distance of 5.4 mm on 100 genotypically diverse field-grown maize plants from the MaizeField3D dataset. The reconstructions were closer to the scans than those of an earlier semi-automated pipeline based on manual annotations. The pipeline recovered 1,017 of 1,023 (99.4%) curated reference leaves at an intersection-over-union of at least 0.5 without using those labels as input. These results show that VLM annotations become usable organ-level measurements when downstream geometric stages can correct them. This makes automated generation of editable 3D plant assets feasible at the scale of modern phenotyping experiments.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-02T15:41:28Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Mozhgan Hadadi</name>
+    </author>
+    <author>
+      <name>Talukder Z. Jubery</name>
+    </author>
+    <author>
+      <name>Adarsh Krishnamurthy</name>
+    </author>
+    <author>
+      <name>Baskar Ganapathysubramanian</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.17535v1</id>
+    <title>GroupForward: Building Referable 3D Scenes via Instance-Grouped Feed-Forward Gaussian Splatting</title>
+    <updated>2026-08-18T08:55:52Z</updated>
+    <link href="https://arxiv.org/abs/2608.17535v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.17535v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Simultaneously reconstructing and understanding 3D environments is essential for embodied agents. Toward this goal, feed-forward semantic 3D Gaussian Splatting (3DGS) efficiently constructs semantic scene representations from sparse multi-view observations. However, existing methods lack explicit instance discrimination and mainly support category- or phrase-based semantic queries. To this end, we propose GroupForward, an instance-grouped feed-forward Gaussian splatting model that reconstructs geometry, appearance, instance structure, and semantics from sparse, unposed, and uncalibrated multi-view images. Unlike existing methods that attach high-dimensional semantic features to each Gaussian, GroupForward learns compact instance embeddings that group Gaussians into cross-view consistent 3D instances, reformulating feed-forward semantic 3DGS from per-Gaussian semantic feature rendering to instance-level semantic aggregation and propagation. Building on these instance groups, we further propose a Referential Scene Reasoning Framework (RSRF) for complex 3D referring segmentation. RSRF constructs an instance-grouped 3D scene graph and retrieves candidate instances for a given referring expression. A vision-language model then reasons over structured instance evidence and multi-view observations to identify the referred instance among the candidates. RSRF thereby extends language interaction from simple semantic querying to complex referential scene reasoning. Experiments on semantic reconstruction and referential reasoning demonstrate the effectiveness of our instance-grouped reconstruction and reasoning framework.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-18T08:55:52Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Qijian Tian</name>
+    </author>
+    <author>
+      <name>Zimeng Wu</name>
+    </author>
+    <author>
+      <name>Xuhong Wang</name>
+    </author>
+    <author>
+      <name>Lizhuang Ma</name>
+    </author>
+    <author>
+      <name>Xin Tan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.08045v1</id>
+    <title>Lingjing: A Simulation Testbed for Multi-Agent Embodied Tasks in Open-Ended Cities</title>
+    <updated>2026-08-08T10:18:58Z</updated>
+    <link href="https://arxiv.org/abs/2608.08045v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.08045v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Urban embodied intelligence requires coordination among heterogeneous agents (e.g., UAVs, ground robots, and autonomous vehicles) in dynamic cities. Simulators therefore provide a scalable foundation for developing and evaluating such coordination. Existing platforms nevertheless isolate different embodiments and decouple them from task design and evaluation. We present \textbf{Lingjing}, a simulation platform for heterogeneous multi-agent embodied intelligence in open-ended urban environments. Lingjing reconstructs and renders evolving cities from geographic data, synchronizes multiple physics engines, and exposes shared physical and structured urban state to agents. Its Gym-like interface supports user-defined ReAct agents and single- or multi-agent natural-language missions with configurable star or broadcast communication and resource constraints. Each episode becomes an attribution-ready replay that links agent trajectories and communication to relation-graph changes, resource consumption, and engine-based evaluations for systematic diagnosis. We evaluate twelve vision-language models on nine urban tasks under a shared engine-in-the-loop protocol. Controlled studies further examine communication, scalability, robustness, and failure provenance. Results expose persistent bottlenecks in grounding and long-horizon execution. They also show task-dependent coordination trade-offs and diminishing returns from added capacity, while heavier workloads further reduce success. Lingjing provides a unified testbed that enables reproducible end-to-end evaluation and systematic failure diagnosis in urban multi-agent embodied intelligence.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-08T10:18:58Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xiaohe Li</name>
+    </author>
+    <author>
+      <name>Yiru Wang</name>
+    </author>
+    <author>
+      <name>Junhao Fan</name>
+    </author>
+    <author>
+      <name>Mingyuan Liu</name>
+    </author>
+    <author>
+      <name>Jie Huang</name>
+    </author>
+    <author>
+      <name>Kaixin Zhang</name>
+    </author>
+    <author>
+      <name>Jiahao Li</name>
+    </author>
+    <author>
+      <name>Chen Qian</name>
+    </author>
+    <author>
+      <name>Zide Fan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.10782v1</id>
+    <title>VICO: Visual Environments Co-Evolving for Vision-Language Model Reasoning</title>
+    <updated>2026-10-07T18:39:32Z</updated>
+    <link href="https://arxiv.org/abs/2610.10782v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.10782v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reinforcement learning with verifiable rewards (RLVR) has become a standard recipe for post-training vision-language models (VLMs),
+  but it typically assumes a static training environment. As the actor improves, fixed tasks drift out of its learning frontier: many
+  become trivial, others remain unsolvable; and the learning signal collapses. We argue that VLM post-training should evolve the
+  visual environment alongside the actor, not just the actor itself. We propose VICO, a co-evolutionary framework in which an actor
+  and an Environment-as-Rewriter (EnvRewriter) are trained jointly: the EnvRewriter edits verifiable image-side structures, such as
+  scene graphs, chart tables, or protected region masks, and re-renders them to produce label-valid training samples whose difficulty
+  is calibrated to the actor's current ability through a pass-rate-based reward. This loop continuously realigns task difficulty with
+  actor capability without any additional human annotation. Across nine multimodal benchmarks spanning mathematical reasoning and
+  visually grounded understanding, VICO-8B improves over its base model by up to +5.0% on out-of-domain tasks, surpasses the strongest
+  self-evolution and text-editing co-evolution baselines by +4.3% and +8.4% respectively, and stays comparable to chart-specialized
+  RLVR methods using 16-160 times fewer labeled samples. By shifting from human-labeled supervision to image-editing co-evolution,
+  VICO offers a scalable path beyond static-corpus RLVR for visual reasoning.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-07T18:39:32Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Meng Lu</name>
+    </author>
+    <author>
+      <name>Ligeng Zhu</name>
+    </author>
+    <author>
+      <name>Olivia Xiao</name>
+    </author>
+    <author>
+      <name>Yuchen Zhuang</name>
+    </author>
+    <author>
+      <name>Zihan Wang</name>
+    </author>
+    <author>
+      <name>Kuncheng Wu</name>
+    </author>
+    <author>
+      <name>Bangya Liu</name>
+    </author>
+    <author>
+      <name>Yu Wang</name>
+    </author>
+    <author>
+      <name>Charles Fleming</name>
+    </author>
+    <author>
+      <name>Wenqi Shi</name>
+    </author>
+    <author>
+      <name>Xuan Wang</name>
+    </author>
+  </entry>
+</feed>

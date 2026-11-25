@@ -1,0 +1,104 @@
+{
+ "source": "copied from Kaggle kernel output yiitefeerdomu/trace-job16 (files, not transcription); flags re-scored locally from the downloaded predictions and equal to the log line",
+ "kernel_environment_lines": [
+  "JOB-START job16 arm=C seed=2027 roots=200 mode=image 2026-11-13T04:17:25Z",
+  "peft 0.21.2 transformers 5.22.2",
+  "TRAIN-SUMMARY {\"arm\": \"C\", \"manifest\": \"manifests/pilot.json\", \"split\": \"train\", \"content_digest\": \"ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8\", \"images_digest\": \"a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028\", \"samples\": 1024, \"root_graphs\": 512, \"images\": 1024, \"epochs\": 3, \"accum\": 4, \"resumed_from_sample\": 0, \"updates\": 768, \"lr\": 0.0002, \"lora_r\": 16, \"lora_targets\": \"model\\\\.language_model\\\\..*\\\\.(q_proj|k_proj|v_proj|o_proj|in_proj_qkv|in_proj_a|in_proj_b|in_proj_z|out_proj|gate_proj|up_proj|down_proj)\", \"seed\": 2027, \"base_id\": \"Qwen/Qwen3.5-2B\", \"revision\": \"15852e8c16360a2fea060d615a32b45270f8a8fc\", \"torch\": \"2.11.0+cu130\", \"platform\": \"Linux-6.18.55+-x86_64-with-glibc2.39\", \"tokens_in_seen\": 1197798, \"target_tokens_seen\": 91920, \"train_seconds\": 1784.8, \"mean_loss_first_100\": 0.390772932684049, \"mean_loss_last_100\": 0.014236376053013373, \"gpu\": \"Tesla T4\", \"peak_allocated_gib\": 8.42, \"peak_reserved_gib\": 13.03}",
+  "JOB-END job16 2026-11-13T05:10:53Z"
+ ],
+ "train_dir": "pilot3_C_s2027",
+ "train": {
+  "arm": "C",
+  "manifest": "manifests/pilot.json",
+  "split": "train",
+  "content_digest": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8",
+  "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+  "samples": 1024,
+  "root_graphs": 512,
+  "images": 1024,
+  "epochs": 3,
+  "accum": 4,
+  "resumed_from_sample": 0,
+  "updates": 768,
+  "lr": 0.0002,
+  "lora_r": 16,
+  "lora_targets": "model\\.language_model\\..*\\.(q_proj|k_proj|v_proj|o_proj|in_proj_qkv|in_proj_a|in_proj_b|in_proj_z|out_proj|gate_proj|up_proj|down_proj)",
+  "seed": 2027,
+  "base_id": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.11.0+cu130",
+  "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+  "tokens_in_seen": 1197798,
+  "target_tokens_seen": 91920,
+  "train_seconds": 1784.8,
+  "mean_loss_first_100": 0.390772932684049,
+  "mean_loss_last_100": 0.014236376053013373,
+  "gpu": "Tesla T4",
+  "peak_allocated_gib": 8.42,
+  "peak_reserved_gib": 13.03
+ },
+ "eval_dev": {
+  "manifest": "manifests/pilot.json",
+  "split": "dev",
+  "eval_root_graphs": 200,
+  "samples": 1200,
+  "adapter": "runs/pilot3_C_s2027/adapter",
+  "max_new_tokens": 96,
+  "input_mode": "image",
+  "sample_set": "main",
+  "content_digest": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8",
+  "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+  "eval_seconds": 1128.6,
+  "truncated_at_limit": 0,
+  "mean_new_tokens": 9.696666666666667,
+  "metrics": {
+   "samples": 1200,
+   "missing_responses": 0,
+   "per_task": {
+    "minimal_graph_repair": {
+     "n": 400,
+     "accuracy": 0.25,
+     "format_failure_rate": 0.0,
+     "lenient_accuracy": 0.25,
+     "status_accuracy": 0.2525,
+     "valid_edit_rate": 0.0,
+     "minimal_repair_accuracy": 0.0,
+     "n_true_edited": 200,
+     "n_parsed": 400
+    },
+    "reachability": {
+     "n": 400,
+     "accuracy": 0.6575,
+     "format_failure_rate": 0.0,
+     "lenient_accuracy": 0.6575
+    },
+    "critical_edge": {
+     "n": 400,
+     "accuracy": 0.47,
+     "format_failure_rate": 0.0,
+     "lenient_accuracy": 0.47
+    }
+   },
+   "non_edit_macro_lenient_accuracy": 0.56375,
+   "non_edit_macro_accuracy": 0.56375,
+   "pair_accuracy": {
+    "critical:critical_edge": {
+     "n": 200,
+     "both_correct": 0.005
+    },
+    "critical:minimal_graph_repair": {
+     "n": 200,
+     "both_correct": 0.0
+    },
+    "critical:reachability": {
+     "n": 200,
+     "both_correct": 0.325
+    }
+   }
+  }
+ },
+ "images_digest": {
+  "kernel": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+  "local": "f654e1cb98c09c65917212e7f1da9e3e66e2087a2be933ff3d2824deec903f76"
+ }
+}

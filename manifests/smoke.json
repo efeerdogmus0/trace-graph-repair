@@ -1,0 +1,953 @@
+{
+  "acceptance_by_family_and_size": {
+    "dev": {
+      "layered_dag/n=6": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "layered_dag/n=9": {
+        "accepted": 2,
+        "rejected": 0
+      },
+      "sparse_random/n=7": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "sparse_random/n=8": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "tree_plus/n=6": {
+        "accepted": 3,
+        "rejected": 0
+      },
+      "tree_plus/n=7": {
+        "accepted": 2,
+        "rejected": 0
+      }
+    },
+    "test_id": {
+      "layered_dag/n=8": {
+        "accepted": 2,
+        "rejected": 0
+      },
+      "sparse_random/n=10": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "sparse_random/n=5": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "sparse_random/n=6": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "sparse_random/n=7": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "tree_plus/n=10": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "tree_plus/n=5": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "tree_plus/n=7": {
+        "accepted": 2,
+        "rejected": 0
+      }
+    },
+    "test_struct_ood": {
+      "ring_chords/n=11": {
+        "accepted": 2,
+        "rejected": 0
+      },
+      "ring_chords/n=13": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "ring_chords/n=14": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "ring_chords/n=15": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "ring_chords/n=16": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "two_cluster/n=11": {
+        "accepted": 2,
+        "rejected": 0
+      },
+      "two_cluster/n=16": {
+        "accepted": 2,
+        "rejected": 0
+      }
+    },
+    "test_style_ood": {
+      "layered_dag/n=5": {
+        "accepted": 0,
+        "rejected": 1
+      },
+      "layered_dag/n=6": {
+        "accepted": 2,
+        "rejected": 0
+      },
+      "layered_dag/n=8": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "layered_dag/n=9": {
+        "accepted": 3,
+        "rejected": 0
+      },
+      "sparse_random/n=5": {
+        "accepted": 0,
+        "rejected": 2
+      },
+      "sparse_random/n=7": {
+        "accepted": 2,
+        "rejected": 0
+      },
+      "tree_plus/n=6": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "tree_plus/n=7": {
+        "accepted": 1,
+        "rejected": 0
+      }
+    },
+    "train": {
+      "layered_dag/n=10": {
+        "accepted": 3,
+        "rejected": 0
+      },
+      "layered_dag/n=5": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "layered_dag/n=7": {
+        "accepted": 5,
+        "rejected": 0
+      },
+      "layered_dag/n=8": {
+        "accepted": 8,
+        "rejected": 0
+      },
+      "sparse_random/n=10": {
+        "accepted": 5,
+        "rejected": 0
+      },
+      "sparse_random/n=5": {
+        "accepted": 1,
+        "rejected": 0
+      },
+      "sparse_random/n=6": {
+        "accepted": 3,
+        "rejected": 0
+      },
+      "sparse_random/n=7": {
+        "accepted": 5,
+        "rejected": 0
+      },
+      "sparse_random/n=8": {
+        "accepted": 4,
+        "rejected": 0
+      },
+      "sparse_random/n=9": {
+        "accepted": 3,
+        "rejected": 0
+      },
+      "tree_plus/n=10": {
+        "accepted": 4,
+        "rejected": 0
+      },
+      "tree_plus/n=5": {
+        "accepted": 5,
+        "rejected": 1
+      },
+      "tree_plus/n=6": {
+        "accepted": 3,
+        "rejected": 0
+      },
+      "tree_plus/n=7": {
+        "accepted": 4,
+        "rejected": 0
+      },
+      "tree_plus/n=8": {
+        "accepted": 4,
+        "rejected": 0
+      },
+      "tree_plus/n=9": {
+        "accepted": 2,
+        "rejected": 0
+      }
+    }
+  },
+  "build_environment": {
+    "pillow": "11.3.0",
+    "platform": "macOS-15.6-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "config": {
+    "image_size": 512,
+    "invariant_rate": 0.25,
+    "name": "smoke",
+    "repair_pair_types": [
+      [
+        "add",
+        "unchanged"
+      ],
+      [
+        "add",
+        "impossible"
+      ],
+      [
+        "remove",
+        "unchanged"
+      ],
+      [
+        "remove",
+        "impossible"
+      ]
+    ],
+    "require_pairs": true,
+    "secondary_tasks": [
+      "edge_exists",
+      "shortest_path_length",
+      "graph_extraction"
+    ],
+    "seed": 20261109,
+    "splits": {
+      "dev": {
+        "families": {
+          "layered_dag": 1,
+          "sparse_random": 1,
+          "tree_plus": 1
+        },
+        "nodes": [
+          5,
+          10
+        ],
+        "roots": 10,
+        "styles": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "test_id": {
+        "families": {
+          "layered_dag": 1,
+          "sparse_random": 1,
+          "tree_plus": 1
+        },
+        "nodes": [
+          5,
+          10
+        ],
+        "roots": 10,
+        "styles": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "test_struct_ood": {
+        "families": {
+          "ring_chords": 1,
+          "two_cluster": 1
+        },
+        "nodes": [
+          11,
+          16
+        ],
+        "roots": 10,
+        "styles": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      "test_style_ood": {
+        "families": {
+          "layered_dag": 1,
+          "sparse_random": 1,
+          "tree_plus": 1
+        },
+        "nodes": [
+          5,
+          10
+        ],
+        "roots": 10,
+        "styles": [
+          "x",
+          "y"
+        ]
+      },
+      "train": {
+        "families": {
+          "layered_dag": 1,
+          "sparse_random": 1,
+          "tree_plus": 1
+        },
+        "nodes": [
+          5,
+          10
+        ],
+        "roots": 60,
+        "styles": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    },
+    "supersample": 3
+  },
+  "config_sha256": "261bb8ff919804d1ad301b51c97c12509ceb7d7a7fce058872c11a679df4d933",
+  "content_digest": "c26d05b470bdd5eade382a303c9673b8efacbae8909ab442e83efb1d3fc343da",
+  "data_dir": "../data/smoke",
+  "generator_version": "trace-vr-gen-1",
+  "images_digest": "a69892ab52234035c71880478094769bfcdb14d9a1d43ff30729ad016baae0ec",
+  "name": "smoke",
+  "rejections": {
+    "dev": {},
+    "test_id": {},
+    "test_struct_ood": {},
+    "test_style_ood": {
+      "duplicate_topology": 2,
+      "no_twin:minimal_graph_repair": 1
+    },
+    "train": {
+      "duplicate_topology": 1
+    }
+  },
+  "split_order": [
+    "train",
+    "dev",
+    "test_id",
+    "test_style_ood",
+    "test_struct_ood"
+  ],
+  "splits": {
+    "dev": {
+      "images": 43,
+      "images_file": "dev.images.jsonl",
+      "images_file_sha256": "cd5dd1bae0e0c2e6700a5578ce7223f002ac7b38b7632a84979d645f2c213105",
+      "roots": 10,
+      "samples": 98,
+      "samples_file": "dev.samples.jsonl",
+      "samples_sha256": "8e4f47316a2916320b6599fc8c67d588088a909fba6232ca19c17bb89ba60890",
+      "tasks_without_valid_question": {},
+      "unpaired_main_samples": {}
+    },
+    "test_id": {
+      "images": 46,
+      "images_file": "test_id.images.jsonl",
+      "images_file_sha256": "26a66b8be08354cbe0a97321be307067f9dc30fb18d7977031a63323525eb4d3",
+      "roots": 10,
+      "samples": 106,
+      "samples_file": "test_id.samples.jsonl",
+      "samples_sha256": "b551207eeba753d26ed443110d4830fec0156c8f093b284b51bfca8530b7d7f2",
+      "tasks_without_valid_question": {},
+      "unpaired_main_samples": {}
+    },
+    "test_struct_ood": {
+      "images": 48,
+      "images_file": "test_struct_ood.images.jsonl",
+      "images_file_sha256": "c1696ea4ad07f9cf09ec7c442901cf03d9002fdfda86ef9d3a4ba4badbaa58bf",
+      "roots": 10,
+      "samples": 106,
+      "samples_file": "test_struct_ood.samples.jsonl",
+      "samples_sha256": "24c0a62f9bfb992c9e7a194febceaeb686f6f90e0b16ce27673644e420e03c24",
+      "tasks_without_valid_question": {},
+      "unpaired_main_samples": {}
+    },
+    "test_style_ood": {
+      "images": 39,
+      "images_file": "test_style_ood.images.jsonl",
+      "images_file_sha256": "830b3e1026dd5af951c9f25f51dcc115d61678a79db82872e6b9fbe25ed1d5f6",
+      "roots": 10,
+      "samples": 94,
+      "samples_file": "test_style_ood.samples.jsonl",
+      "samples_sha256": "e362c1031917f6f08a9fc4aed719edc2949c80863b2fa27d0b0cc314b4d933de",
+      "tasks_without_valid_question": {},
+      "unpaired_main_samples": {}
+    },
+    "train": {
+      "images": 251,
+      "images_file": "train.images.jsonl",
+      "images_file_sha256": "6534d0d9edc995dee81e757e489bc640f1748f30daf96213291a4f7b076aa102",
+      "roots": 60,
+      "samples": 584,
+      "samples_file": "train.samples.jsonl",
+      "samples_sha256": "9f1b5f06929c1f5ca1ed0ccf8eb9244792ac20a2b144083ef8cdcaf801cf12c4",
+      "tasks_without_valid_question": {},
+      "unpaired_main_samples": {}
+    }
+  },
+  "stats": {
+    "dev": {
+      "answer_balance:critical_edge": {
+        "False": 10,
+        "True": 14
+      },
+      "answer_balance:edge_exists": {
+        "False": 6,
+        "True": 4
+      },
+      "answer_balance:reachability": {
+        "False": 14,
+        "True": 10
+      },
+      "answer_on_root_images:critical_edge": {
+        "False": 1,
+        "True": 9
+      },
+      "answer_on_root_images:edge_exists": {
+        "False": 6,
+        "True": 4
+      },
+      "answer_on_root_images:reachability": {
+        "False": 6,
+        "True": 4
+      },
+      "images_by_variant": {
+        "edit": 29,
+        "relabel": 2,
+        "restyle": 2,
+        "root": 10
+      },
+      "pairs_by_kind": {
+        "critical:critical_edge": 10,
+        "critical:minimal_graph_repair": 10,
+        "critical:reachability": 10,
+        "invariant_relabel:critical_edge": 2,
+        "invariant_relabel:reachability": 2,
+        "invariant_style:critical_edge": 2,
+        "invariant_style:reachability": 2
+      },
+      "repair_category": {
+        "add": 5,
+        "impossible": 4,
+        "remove": 5,
+        "unchanged": 6
+      },
+      "repair_category_on_root_images": {
+        "add": 3,
+        "impossible": 2,
+        "remove": 1,
+        "unchanged": 4
+      },
+      "repair_direct_share_on_root_images": {
+        "False": 9,
+        "True": 1
+      },
+      "root_crossings": {
+        "0": 3,
+        "1": 4,
+        "3": 2,
+        "4": 1
+      },
+      "root_edge_count": {
+        "11": 1,
+        "12": 3,
+        "6": 4,
+        "8": 2
+      },
+      "root_family": {
+        "layered_dag": 3,
+        "sparse_random": 2,
+        "tree_plus": 5
+      },
+      "root_graphs": 10,
+      "root_layout": {
+        "circle": 2,
+        "force": 6,
+        "grid": 2
+      },
+      "root_node_count": {
+        "6": 4,
+        "7": 3,
+        "8": 1,
+        "9": 2
+      },
+      "root_style": {
+        "a": 4,
+        "b": 3,
+        "c": 3
+      },
+      "samples_by_task": {
+        "critical_edge": 24,
+        "edge_exists": 10,
+        "graph_extraction": 10,
+        "minimal_graph_repair": 20,
+        "reachability": 24,
+        "shortest_path_length": 10
+      },
+      "shortest_path_answers": {
+        "1": 4,
+        "2": 3,
+        "3": 1,
+        "4": 2
+      }
+    },
+    "test_id": {
+      "answer_balance:critical_edge": {
+        "False": 14,
+        "True": 14
+      },
+      "answer_balance:edge_exists": {
+        "False": 7,
+        "True": 3
+      },
+      "answer_balance:reachability": {
+        "False": 14,
+        "True": 14
+      },
+      "answer_on_root_images:critical_edge": {
+        "False": 5,
+        "True": 5
+      },
+      "answer_on_root_images:edge_exists": {
+        "False": 7,
+        "True": 3
+      },
+      "answer_on_root_images:reachability": {
+        "False": 4,
+        "True": 6
+      },
+      "images_by_variant": {
+        "edit": 28,
+        "relabel": 4,
+        "restyle": 4,
+        "root": 10
+      },
+      "pairs_by_kind": {
+        "critical:critical_edge": 10,
+        "critical:minimal_graph_repair": 10,
+        "critical:reachability": 10,
+        "invariant_relabel:critical_edge": 4,
+        "invariant_relabel:reachability": 4,
+        "invariant_style:critical_edge": 4,
+        "invariant_style:reachability": 4
+      },
+      "repair_category": {
+        "add": 5,
+        "impossible": 6,
+        "remove": 5,
+        "unchanged": 4
+      },
+      "repair_category_on_root_images": {
+        "add": 3,
+        "impossible": 4,
+        "remove": 2,
+        "unchanged": 1
+      },
+      "repair_direct_share_on_root_images": {
+        "False": 10
+      },
+      "root_crossings": {
+        "0": 4,
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "5": 2
+      },
+      "root_edge_count": {
+        "10": 2,
+        "11": 2,
+        "12": 1,
+        "4": 1,
+        "7": 1,
+        "8": 1,
+        "9": 2
+      },
+      "root_family": {
+        "layered_dag": 2,
+        "sparse_random": 4,
+        "tree_plus": 4
+      },
+      "root_graphs": 10,
+      "root_layout": {
+        "circle": 3,
+        "force": 1,
+        "grid": 3,
+        "layered": 3
+      },
+      "root_node_count": {
+        "10": 2,
+        "5": 2,
+        "6": 1,
+        "7": 3,
+        "8": 2
+      },
+      "root_style": {
+        "a": 6,
+        "b": 3,
+        "c": 1
+      },
+      "samples_by_task": {
+        "critical_edge": 28,
+        "edge_exists": 10,
+        "graph_extraction": 10,
+        "minimal_graph_repair": 20,
+        "reachability": 28,
+        "shortest_path_length": 10
+      },
+      "shortest_path_answers": {
+        "2": 3,
+        "3": 2,
+        "4": 1,
+        "None": 4
+      }
+    },
+    "test_struct_ood": {
+      "answer_balance:critical_edge": {
+        "False": 14,
+        "True": 14
+      },
+      "answer_balance:edge_exists": {
+        "False": 4,
+        "True": 6
+      },
+      "answer_balance:reachability": {
+        "False": 14,
+        "True": 14
+      },
+      "answer_on_root_images:critical_edge": {
+        "False": 4,
+        "True": 6
+      },
+      "answer_on_root_images:edge_exists": {
+        "False": 4,
+        "True": 6
+      },
+      "answer_on_root_images:reachability": {
+        "False": 6,
+        "True": 4
+      },
+      "images_by_variant": {
+        "edit": 30,
+        "relabel": 4,
+        "restyle": 4,
+        "root": 10
+      },
+      "pairs_by_kind": {
+        "critical:critical_edge": 10,
+        "critical:minimal_graph_repair": 10,
+        "critical:reachability": 10,
+        "invariant_relabel:critical_edge": 4,
+        "invariant_relabel:reachability": 4,
+        "invariant_style:critical_edge": 4,
+        "invariant_style:reachability": 4
+      },
+      "repair_category": {
+        "add": 5,
+        "impossible": 5,
+        "remove": 5,
+        "unchanged": 5
+      },
+      "repair_category_on_root_images": {
+        "add": 2,
+        "impossible": 3,
+        "remove": 1,
+        "unchanged": 4
+      },
+      "repair_direct_share_on_root_images": {
+        "False": 9,
+        "True": 1
+      },
+      "root_crossings": {
+        "0": 5,
+        "1": 2,
+        "2": 2,
+        "6": 1
+      },
+      "root_edge_count": {
+        "12": 1,
+        "13": 1,
+        "15": 1,
+        "16": 2,
+        "17": 1,
+        "19": 2,
+        "23": 1,
+        "24": 1
+      },
+      "root_family": {
+        "ring_chords": 6,
+        "two_cluster": 4
+      },
+      "root_graphs": 10,
+      "root_layout": {
+        "force": 9,
+        "grid": 1
+      },
+      "root_node_count": {
+        "11": 4,
+        "13": 1,
+        "14": 1,
+        "15": 1,
+        "16": 3
+      },
+      "root_style": {
+        "a": 4,
+        "b": 4,
+        "c": 2
+      },
+      "samples_by_task": {
+        "critical_edge": 28,
+        "edge_exists": 10,
+        "graph_extraction": 10,
+        "minimal_graph_repair": 20,
+        "reachability": 28,
+        "shortest_path_length": 10
+      },
+      "shortest_path_answers": {
+        "1": 2,
+        "2": 1,
+        "3": 3,
+        "4": 1,
+        "6": 1,
+        "8": 1,
+        "None": 1
+      }
+    },
+    "test_style_ood": {
+      "answer_balance:critical_edge": {
+        "False": 10,
+        "True": 12
+      },
+      "answer_balance:edge_exists": {
+        "False": 4,
+        "True": 6
+      },
+      "answer_balance:reachability": {
+        "False": 10,
+        "True": 12
+      },
+      "answer_on_root_images:critical_edge": {
+        "False": 4,
+        "True": 6
+      },
+      "answer_on_root_images:edge_exists": {
+        "False": 4,
+        "True": 6
+      },
+      "answer_on_root_images:reachability": {
+        "False": 7,
+        "True": 3
+      },
+      "images_by_variant": {
+        "edit": 27,
+        "relabel": 1,
+        "restyle": 1,
+        "root": 10
+      },
+      "pairs_by_kind": {
+        "critical:critical_edge": 10,
+        "critical:minimal_graph_repair": 10,
+        "critical:reachability": 10,
+        "invariant_relabel:critical_edge": 1,
+        "invariant_relabel:reachability": 1,
+        "invariant_style:critical_edge": 1,
+        "invariant_style:reachability": 1
+      },
+      "repair_category": {
+        "add": 5,
+        "impossible": 5,
+        "remove": 5,
+        "unchanged": 5
+      },
+      "repair_category_on_root_images": {
+        "add": 3,
+        "impossible": 2,
+        "remove": 4,
+        "unchanged": 1
+      },
+      "repair_direct_share_on_root_images": {
+        "False": 8,
+        "True": 2
+      },
+      "root_crossings": {
+        "0": 3,
+        "1": 5,
+        "2": 1,
+        "3": 1
+      },
+      "root_edge_count": {
+        "10": 1,
+        "11": 1,
+        "13": 3,
+        "6": 1,
+        "7": 1,
+        "8": 2,
+        "9": 1
+      },
+      "root_family": {
+        "layered_dag": 6,
+        "sparse_random": 2,
+        "tree_plus": 2
+      },
+      "root_graphs": 10,
+      "root_layout": {
+        "force": 10
+      },
+      "root_node_count": {
+        "6": 3,
+        "7": 3,
+        "8": 1,
+        "9": 3
+      },
+      "root_style": {
+        "x": 5,
+        "y": 5
+      },
+      "samples_by_task": {
+        "critical_edge": 22,
+        "edge_exists": 10,
+        "graph_extraction": 10,
+        "minimal_graph_repair": 20,
+        "reachability": 22,
+        "shortest_path_length": 10
+      },
+      "shortest_path_answers": {
+        "1": 1,
+        "2": 4,
+        "3": 4,
+        "4": 1
+      }
+    },
+    "train": {
+      "answer_balance:critical_edge": {
+        "False": 68,
+        "True": 74
+      },
+      "answer_balance:edge_exists": {
+        "False": 25,
+        "True": 35
+      },
+      "answer_balance:reachability": {
+        "False": 74,
+        "True": 68
+      },
+      "answer_on_root_images:critical_edge": {
+        "False": 20,
+        "True": 40
+      },
+      "answer_on_root_images:edge_exists": {
+        "False": 25,
+        "True": 35
+      },
+      "answer_on_root_images:reachability": {
+        "False": 31,
+        "True": 29
+      },
+      "images_by_variant": {
+        "edit": 169,
+        "relabel": 11,
+        "restyle": 11,
+        "root": 60
+      },
+      "pairs_by_kind": {
+        "critical:critical_edge": 60,
+        "critical:minimal_graph_repair": 60,
+        "critical:reachability": 60,
+        "invariant_relabel:critical_edge": 11,
+        "invariant_relabel:reachability": 11,
+        "invariant_style:critical_edge": 11,
+        "invariant_style:reachability": 11
+      },
+      "repair_category": {
+        "add": 30,
+        "impossible": 30,
+        "remove": 30,
+        "unchanged": 30
+      },
+      "repair_category_on_root_images": {
+        "add": 12,
+        "impossible": 11,
+        "remove": 21,
+        "unchanged": 16
+      },
+      "repair_direct_share_on_root_images": {
+        "False": 54,
+        "True": 6
+      },
+      "root_crossings": {
+        "0": 24,
+        "1": 21,
+        "2": 6,
+        "3": 4,
+        "4": 3,
+        "5": 2
+      },
+      "root_edge_count": {
+        "10": 9,
+        "11": 6,
+        "12": 6,
+        "13": 3,
+        "14": 4,
+        "15": 2,
+        "16": 1,
+        "17": 1,
+        "4": 1,
+        "5": 2,
+        "6": 3,
+        "7": 7,
+        "8": 3,
+        "9": 12
+      },
+      "root_family": {
+        "layered_dag": 17,
+        "sparse_random": 21,
+        "tree_plus": 22
+      },
+      "root_graphs": 60,
+      "root_layout": {
+        "circle": 4,
+        "force": 37,
+        "grid": 8,
+        "layered": 11
+      },
+      "root_node_count": {
+        "10": 12,
+        "5": 7,
+        "6": 6,
+        "7": 14,
+        "8": 16,
+        "9": 5
+      },
+      "root_style": {
+        "a": 20,
+        "b": 20,
+        "c": 20
+      },
+      "samples_by_task": {
+        "critical_edge": 142,
+        "edge_exists": 60,
+        "graph_extraction": 60,
+        "minimal_graph_repair": 120,
+        "reachability": 142,
+        "shortest_path_length": 60
+      },
+      "shortest_path_answers": {
+        "1": 17,
+        "2": 9,
+        "3": 8,
+        "4": 6,
+        "5": 2,
+        "6": 1,
+        "None": 17
+      }
+    }
+  }
+}

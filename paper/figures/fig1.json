@@ -1,0 +1,29 @@
+{
+  "content_digest": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8",
+  "group_id": "gabe1987fbac2",
+  "manifest": "manifests/pilot.json",
+  "question": "Node W can currently reach node T by following arrows. If the edge D->E were removed, would W no longer be able to reach T?",
+  "repair_goals": [
+    "M must be able to reach A.",
+    "M must be able to reach E.",
+    "W must NOT be able to reach T."
+  ],
+  "repair_minimal_solutions": [
+    [
+      {
+        "dst": "D",
+        "op": "remove_edge",
+        "src": "W"
+      }
+    ]
+  ],
+  "root_answer": false,
+  "root_image": "images/dev/img33aa200047a6df17.png",
+  "split": "dev",
+  "twin_adds": [],
+  "twin_answer": true,
+  "twin_image": "images/dev/img92a2e68598094130.png",
+  "twin_removes": [
+    "D->T"
+  ]
+}

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/MMb+NZFayD28EasarhgtwQChAiQ</id>
+  <title>arXiv Query: search_query=abs:"vision-language" AND abs:"graph reasoning" AND abs:"fine-tuning"&amp;id_list=&amp;start=0&amp;max_results=25</title>
+  <updated>2026-11-15T05:16:05Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22vision-language%22+AND+(abs:%22graph+reasoning%22+AND+abs:%22fine-tuning%22)&amp;start=0&amp;max_results=25&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+  <opensearch:totalResults>2</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2503.21435v3</id>
+    <title>Graph-to-Vision: Multi-graph Understanding and Reasoning using Vision-Language Models</title>
+    <updated>2026-04-24T09:18:36Z</updated>
+    <link href="https://arxiv.org/abs/2503.21435v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.21435v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in Vision-Language Models (VLMs) have shown promising capabilities in interpreting visualized graph data, offering a new perspective for graph-structured reasoning beyond traditional Graph Neural Networks (GNNs). However, existing studies focus primarily on single-graph reasoning, leaving the critical challenge of multi-graph joint reasoning underexplored. In this work, we introduce the first comprehensive benchmark designed to evaluate and enhance the multi-graph reasoning abilities of VLMs. Our benchmark covers four common graph types-knowledge graphs, flowcharts, mind maps, and route maps-and supports both homogeneous and heterogeneous graph groupings with tasks of increasing complexity. We evaluate several state-of-the-art VLMs under a multi-dimensional scoring framework that assesses graph parsing, reasoning consistency, and instruction-following accuracy. Additionally, we fine-tune multiple open-source models and observe consistent improvements, confirming the effectiveness of our dataset. This work provides a principled step toward advancing multi-graph understanding and reveals new opportunities for cross-modal graph intelligence.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-27T12:20:37Z</published>
+    <arxiv:comment>26 pages, 23 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Qihang Ai</name>
+    </author>
+    <author>
+      <name>Ruizhou Li</name>
+    </author>
+    <author>
+      <name>Menghui Wang</name>
+    </author>
+    <author>
+      <name>Haiyun Jiang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.22279v1</id>
+    <title>3D-Layout-R1: Structured Reasoning for Language-Instructed Spatial Editing</title>
+    <updated>2026-03-23T17:59:14Z</updated>
+    <link href="https://arxiv.org/abs/2603.22279v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.22279v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) and Vision Language Models (VLMs) have shown impressive reasoning abilities, yet they struggle with spatial understanding and layout consistency when performing fine-grained visual editing. We introduce a Structured Reasoning framework that performs text-conditioned spatial layout editing via scene-graph reasoning. Given an input scene graph and a natural-language instruction, the model reasons over the graph to generate an updated scene graph that satisfies the text condition while maintaining spatial coherence. By explicitly guiding the reasoning process through structured relational representations, our approach improves both interpretability and control over spatial relationships. We evaluate our method on a new text-guided layout editing benchmark encompassing sorting, spatial alignment, and room-editing tasks. Our training paradigm yields an average 15% improvement in IoU and 25% reduction in center-distance error compared to Chain of Thought Fine-tuning (CoT-SFT) and vanilla GRPO baselines. Compared to SOTA zero-shot LLMs, our best models achieve up to 20% higher mIoU, demonstrating markedly improved spatial precision.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-23T17:59:14Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Haoyu Zhen</name>
+    </author>
+    <author>
+      <name>Xiaolong Li</name>
+    </author>
+    <author>
+      <name>Yilin Zhao</name>
+    </author>
+    <author>
+      <name>Han Zhang</name>
+    </author>
+    <author>
+      <name>Sifei Liu</name>
+    </author>
+    <author>
+      <name>Kaichun Mo</name>
+    </author>
+    <author>
+      <name>Chuang Gan</name>
+    </author>
+    <author>
+      <name>Subhashree Radhakrishnan</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/zC0mkOoI8FpYHpKd0KVjViQKf9k</id>
+  <title>arXiv Query: search_query=abs:"minimal edit" AND abs:"vision-language"&amp;id_list=&amp;start=0&amp;max_results=25</title>
+  <updated>2026-11-15T05:16:35Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22minimal+edit%22+AND+abs:%22vision-language%22&amp;start=0&amp;max_results=25&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+  <opensearch:totalResults>9</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30231v1</id>
+    <title>Edit, Don't Imitate: Minimal-Edit On-Policy Distillation for Multimodal Reasoning</title>
+    <updated>2026-10-21T17:59:28Z</updated>
+    <link href="https://arxiv.org/abs/2610.30231v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30231v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Visual mathematical reasoning can fail before reasoning begins: when a vision-language model (VLM) misreads a diagram, subsequent reasoning proceeds from false premises. This perceptual bottleneck is especially pronounced in smaller models, while accurate textual descriptions can substantially narrow the gap to larger models. Because obtaining such descriptions at inference requires additional annotation or model calls, we propose minimal-edit corrective on-policy distillation. Using reference figure descriptions and verified reference solutions as training-only information, a teacher scores incorrect student rollouts under a minimal-edit objective, and only teacher-disfavored tokens contribute to the corrective loss. Correct rollouts receive task-reward reinforcement learning. This preserves on-policy supervision while avoiding full-response imitation. Across model scales, the method requires no descriptions at test time and meets or exceeds the corresponding base model supplied with a reference figure description at inference. It also improves perception-oriented performance, particularly low-level geometric perception, and transfers to external mathematics and perception benchmarks. Because the minimal-edit teacher evaluates corrections rather than generating its own solution, the method remains effective with a frozen same-size teacher, although its gains are smaller than with a larger teacher on most metrics.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:59:28Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Wen Ye</name>
+    </author>
+    <author>
+      <name>Ailin Deng</name>
+    </author>
+    <author>
+      <name>Zirui Wang</name>
+    </author>
+    <author>
+      <name>Shixing Yu</name>
+    </author>
+    <author>
+      <name>Han Zhang</name>
+    </author>
+    <author>
+      <name>Tian Yun</name>
+    </author>
+    <author>
+      <name>Nikhil Mehta</name>
+    </author>
+    <author>
+      <name>Tarun Kalluri</name>
+    </author>
+    <author>
+      <name>Xuefei Cao</name>
+    </author>
+    <author>
+      <name>Xuezhe Ma</name>
+    </author>
+    <author>
+      <name>Hengduo Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2412.11475v3</id>
+    <title>OmniVLM: A Token-Compressed, Sub-Billion-Parameter Vision-Language Model for Efficient On-Device Inference</title>
+    <updated>2026-07-20T02:07:28Z</updated>
+    <link href="https://arxiv.org/abs/2412.11475v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.11475v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present OmniVLM, a sub-billion-parameter vision-language model for efficient on-device inference. OmniVLM introduces a token compression mechanism that reduces visual token sequence length from 729 to 81 tokens, significantly reducing computational overhead while preserving visual-semantic fidelity. Through a multi-stage training pipeline of pretraining, supervised fine-tuning, and minimal-edit Direct Preference Optimization (DPO), OmniVLM matches the performance of larger models. On multiple benchmarks including ScienceQA, POPE, and MMMU, OmniVLM outperforms existing baselines like nanoLLAVA within a 968M-parameter footprint. Empirical results on the same laptop demonstrate 9.1x faster time-to-first-token (0.75s vs 6.82s) and 1.5x higher decoding speed (29.41 vs 19.20 tokens/s) compared to nanoLLAVA, enabling efficient deployment on edge devices. The model weights can be accessed on huggingface: https://huggingface.co/NexaAIDev/OmniVLM-968M, and the inference examples can be find in Appendix B.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-16T06:38:00Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Wei Chen</name>
+    </author>
+    <author>
+      <name>Zhiyuan Li</name>
+    </author>
+    <author>
+      <name>Shuo Xin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.07227v1</id>
+    <title>Hallucination at a Glance: Controlled Visual Edits and Fine-Grained Multimodal Learning</title>
+    <updated>2025-06-08T17:23:36Z</updated>
+    <link href="https://arxiv.org/abs/2506.07227v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.07227v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multimodal large language models (MLLMs) have achieved strong performance on vision-language tasks but still struggle with fine-grained visual differences, leading to hallucinations or missed semantic shifts. We attribute this to limitations in both training data and learning objectives. To address these issues, we propose a controlled data generation pipeline that produces minimally edited image pairs with semantically aligned captions. Using this pipeline, we construct the Micro Edit Dataset (MED), containing over 50K image-text pairs spanning 11 fine-grained edit categories, including attribute, count, position, and object presence changes. Building on MED, we introduce a supervised fine-tuning (SFT) framework with a feature-level consistency loss that promotes stable visual embeddings under small edits. We evaluate our approach on the Micro Edit Detection benchmark, which includes carefully balanced evaluation pairs designed to test sensitivity to subtle visual variations across the same edit categories. Our method improves difference detection accuracy and reduces hallucinations compared to strong baselines, including GPT-4o. Moreover, it yields consistent gains on standard vision-language tasks such as image captioning and visual question answering. These results demonstrate the effectiveness of combining targeted data and alignment objectives for enhancing fine-grained visual reasoning in MLLMs.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-08T17:23:36Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Tianyi Bai</name>
+    </author>
+    <author>
+      <name>Yuxuan Fan</name>
+    </author>
+    <author>
+      <name>Jiantao Qiu</name>
+    </author>
+    <author>
+      <name>Fupeng Sun</name>
+    </author>
+    <author>
+      <name>Jiayi Song</name>
+    </author>
+    <author>
+      <name>Junlin Han</name>
+    </author>
+    <author>
+      <name>Zichen Liu</name>
+    </author>
+    <author>
+      <name>Conghui He</name>
+    </author>
+    <author>
+      <name>Wentao Zhang</name>
+    </author>
+    <author>
+      <name>Binhang Yuan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.17953v1</id>
+    <title>EDCT-Bench: Uncovering Faithfulness Gaps in VLMs via Explanation-Driven Counterfactual Testing</title>
+    <updated>2026-09-16T00:25:31Z</updated>
+    <link href="https://arxiv.org/abs/2609.17953v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.17953v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Vision-Language Models (VLMs) can produce Natural Language Explanations (NLEs) that sound plausible yet remain inconsistent with the visual evidence they cite. We present Explanation-Driven Counterfactual Testing (EDCT), an intervention-based protocol that extracts visual concepts cited in a model's explanation, applies verified minimal edits to them, and tests whether the resulting answer and explanation remain consistent with the edited image. Using this protocol, we create EDCT-Bench, a comprehensive benchmark spanning three complementary domains: knowledge-intensive visual question answering (OK-VQA), safety-critical driving (DriveLM), and 3D spatial reasoning (3DSRBench). Across the evaluated VLMs, EDCT reveals substantial faithfulness gaps, with models frequently producing responses inconsistent with verified visual changes. Finally, our fine-tuning study suggests that EDCT-generated counterfactuals provide high-impact training signals.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-16T00:25:31Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Sihao Ding</name>
+    </author>
+    <author>
+      <name>Santosh Vasa</name>
+    </author>
+    <author>
+      <name>Aditi Ramadwar</name>
+    </author>
+    <author>
+      <name>Thomas Monninger</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.06680v1</id>
+    <title>VB: Visibility Benchmark for Visibility and Perspective Reasoning in Images</title>
+    <updated>2026-03-03T23:03:11Z</updated>
+    <link href="https://arxiv.org/abs/2603.06680v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.06680v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present VB, a benchmark that tests whether vision-language models can determine what is and is not visible in a photograph, and abstain when a human viewer cannot reliably answer. Each item pairs a single photo with a short yes/no visibility claim; the model must output VISIBLY_TRUE, VISIBLY_FALSE, or ABSTAIN, together with a confidence score. Items are organized into 100 families using a 2x2 design that crosses a minimal image edit with a minimal text edit, yielding 300 headline evaluation cells. Unlike prior unanswerable-VQA benchmarks, VB tests not only whether a question is unanswerable but why (via reason codes tied to specific visibility factors), and uses controlled minimal edits to verify that model judgments change when and only when the underlying evidence changes. We score models on confidence-aware accuracy with abstention (CAA), minimal-edit flip rate (MEFR), confidence-ranked selective prediction (SelRank), and second-order perspective reasoning (ToMAcc); all headline numbers are computed on the strict XOR subset (three cells per family, 300 scored items per model). We evaluate nine models spanning flagship and prior-generation closed-source systems, and open-source models from 8B to 12B parameters. GPT-4o and Gemini 3.1 Pro effectively tie for the best composite score (0.728 and 0.727), followed by Gemini 2.5 Pro (0.678). The best open-source model, Gemma 3 12B (0.505), surpasses one prior-generation closed-source system. Text-flip robustness exceeds image-flip robustness for six of nine models, and confidence calibration varies substantially: GPT-4o and Gemini 2.5 Pro achieve similar accuracy yet differ sharply in selective prediction quality.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-03T23:03:11Z</published>
+    <arxiv:comment>18 pages, 1 figure, 3 tables. Code and data: https://github.com/neilt93/Paper-with-Davis</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Neil Tripathi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.00436v2</id>
+    <title>HalCECE: A Framework for Explainable Hallucination Detection through Conceptual Counterfactuals in Image Captioning</title>
+    <updated>2025-06-30T08:26:14Z</updated>
+    <link href="https://arxiv.org/abs/2503.00436v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.00436v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the dynamic landscape of artificial intelligence, the exploration of hallucinations within vision-language (VL) models emerges as a critical frontier. This work delves into the intricacies of hallucinatory phenomena exhibited by widely used image captioners, unraveling interesting patterns. Specifically, we step upon previously introduced techniques of conceptual counterfactual explanations to address VL hallucinations. The deterministic and efficient nature of the employed conceptual counterfactuals backbone is able to suggest semantically minimal edits driven by hierarchical knowledge, so that the transition from a hallucinated caption to a non-hallucinated one is performed in a black-box manner. HalCECE, our proposed hallucination detection framework is highly interpretable, by providing semantically meaningful edits apart from standalone numbers, while the hierarchical decomposition of hallucinated concepts leads to a thorough hallucination analysis. Another novelty tied to the current work is the investigation of role hallucinations, being one of the first works to involve interconnections between visual concepts in hallucination detection. Overall, HalCECE recommends an explainable direction to the crucial field of VL hallucination detection, thus fostering trustworthy evaluation of current and future VL systems.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-01T10:28:19Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <arxiv:journal_ref>The World Conference on eXplainable Artificial Intelligence (XAI) 2025</arxiv:journal_ref>
+    <author>
+      <name>Maria Lymperaiou</name>
+    </author>
+    <author>
+      <name>Giorgos Filandrianos</name>
+    </author>
+    <author>
+      <name>Angeliki Dimitriou</name>
+    </author>
+    <author>
+      <name>Athanasios Voulodimos</name>
+    </author>
+    <author>
+      <name>Giorgos Stamou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.31257v1</id>
+    <title>Decodable Is Not Grounded: A Vision-Ablation Arbiter for VLM Spatial Reasoning</title>
+    <updated>2026-06-30T07:33:18Z</updated>
+    <link href="https://arxiv.org/abs/2606.31257v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.31257v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The standard way to read latent knowledge out of a model, a linear probe confirmed by a steering recovery, can systematically overstate what a vision-language model (VLM) actually grounds in the image. We show this on spatial reasoning, where the error is invisible to both probing and steering yet exposed by a one-line causal control: replacing the image with a gray blank. Probes decode the within-axis answer at 73--97% across axes, and a training-free projection lifts a near-chance axis from 59% to 79%, exactly the signature of unlocking latent knowledge. The blank-image arbiter refutes it, revealing three grounding regimes that probing conflates: an axis can be grounded (vision-dependent, correct), a prior (vision-independent, with its decode and its apparent recovery a directional default rather than perception), or, surprisingly, inverted: decodable, causally controllable, but deployed with the wrong sign, so the model scores below chance and the error requires looking. The taxonomy holds across the studied VLMs: in fourteen models spanning six language-model families and 2B--27B, horizontal is grounded, vertical is a prior, and depth is inverted, with the inversion emerging at scale within families. The decode-versus-deploy inversion replicates on seven of eight models across five families, and the minimal edit that re-deploys it varies with geometry: a training-free rotation matches a trained edit on the cleanest model, while distributed inversions need a trained low-rank edit, tracing a per-model correction-complexity spectrum. The cheap, self-calibrating arbiter cleanly separates grounded perception, inverted perception, and prior substitution; we argue it should be a default control for latent-knowledge and steering claims in VLMs.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-30T07:33:18Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Chih-Ting Liao</name>
+    </author>
+    <author>
+      <name>Fei Shen</name>
+    </author>
+    <author>
+      <name>Xin Cao</name>
+    </author>
+    <author>
+      <name>Tat-Seng Chua</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.21047v1</id>
+    <title>When Minor Edits Matter: LLM-Driven Prompt Attack for Medical VLM Robustness in Ultrasound</title>
+    <updated>2026-03-22T03:58:34Z</updated>
+    <link href="https://arxiv.org/abs/2603.21047v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.21047v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Ultrasound is widely used in clinical practice due to its portability, cost-effectiveness, safety, and real-time imaging capabilities. However, image acquisition and interpretation remain highly operator dependent, motivating the development of robust AI-assisted analysis methods. Vision-language models (VLMs) have recently demonstrated strong multimodal reasoning capabilities and competitive performance in medical image analysis, including ultrasound. However, emerging evidence highlights significant concerns about their trustworthiness. In particular, adversarial robustness is critical because Med-VLMs operate via natural-language instructions, rendering prompt formulation a realistic and practically exploitable point of vulnerability. Small variations (typos, shorthand, underspecified requests, or ambiguous wording) can meaningfully shift model outputs. We propose a scalable adversarial evaluation framework that leverages a large language model (LLM) to generate clinically plausible adversarial prompt variants via "humanized" rewrites and minimal edits that mimic routine clinical communication. Using ultrasound multiple-choice question answering benchmarks, we systematically assess the vulnerability of SOTA Med-VLMs to these attacks, examine how attacker LLM capacity influences attack success, analyze the relationship between attack success and model confidence, and identify consistent failure patterns across models. Our results highlight realistic robustness gaps that must be addressed for safe clinical translation. Code will be released publicly following the review process.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-22T03:58:34Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yasamin Medghalchi</name>
+    </author>
+    <author>
+      <name>Milad Yazdani</name>
+    </author>
+    <author>
+      <name>Amirhossein Dabiriaghdam</name>
+    </author>
+    <author>
+      <name>Moein Heidari</name>
+    </author>
+    <author>
+      <name>Mojan Izadkhah</name>
+    </author>
+    <author>
+      <name>Zahra Kavian</name>
+    </author>
+    <author>
+      <name>Giuseppe Carenini</name>
+    </author>
+    <author>
+      <name>Lele Wang</name>
+    </author>
+    <author>
+      <name>Dena Shahriari</name>
+    </author>
+    <author>
+      <name>Ilker Hacihaliloglu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.12590v2</id>
+    <title>Analyzing and Improving Fine-grained Preference Optimization in Medical LVLMs</title>
+    <updated>2026-10-08T06:46:23Z</updated>
+    <link href="https://arxiv.org/abs/2606.12590v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.12590v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Preference optimization is increasingly used to post-train medical large vision-language models (LVLMs), yet it operates at a much coarser granularity than the one that defines clinical correctness. Whether one response is clinically better than another usually comes down to a few decisive phrases, such as an anatomical laterality or a lesion attribute, and to whether each is supported by the image region the question concerns. Direct Preference Optimization (DPO) and its variants, by contrast, reduce the comparison to a single response-level scalar, an objective structurally unable to represent which tokens carry clinical meaning. We show that this mismatch is costly: of the objectives we compare, response-level DPO places the least reward on the phrases that decide clinical correctness, and substituting supervised references for preferred responses opens a stylistic gap that the model exploits as a reward-hacking shortcut, raising preference accuracy but not clinical accuracy. To capture the full feedback in a clinical comparison, we propose Fine-grained Regularized Medical Preference Optimization (FiRe-MPO). Preference pairs are built by minimally editing the model's own generations, so that preferred and rejected responses differ only on clinically decisive spans, and each is paired with a lesion-corrupted image withholding the supporting visual evidence. Because span-localized rewards are sparse, we stabilize optimization with a bidirectional token-wise KL regularizer. Across medical visual question answering and report generation, FiRe-MPO outperforms DPO, RRPO, and competing fine-grained objectives on two popular LVLMs, one medical and one general-purpose, while strengthening visual grounding and placing more reward on the medical phrases than the alternatives.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-10T18:35:36Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Shayan Mohammadizadehsamakosh</name>
+    </author>
+    <author>
+      <name>Pritam Sarkar</name>
+    </author>
+    <author>
+      <name>Leonid Sigal</name>
+    </author>
+    <author>
+      <name>Ali Etemad</name>
+    </author>
+    <author>
+      <name>Elham Dolatabadi</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,81 @@
+{
+ "source": "TRAIN-SUMMARY line read from the Colab job6 log through the notebook status cell on 2026-11-11T15:30Z (transcribed from cell output, not a file copy); adapter and predictions are on the Colab VM",
+ "train": {
+  "arm": "D",
+  "manifest": "manifests/pilot.json",
+  "split": "train",
+  "content_digest": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8",
+  "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+  "samples": 1024,
+  "root_graphs": 512,
+  "images": 1024,
+  "epochs": 3,
+  "accum": 4,
+  "updates": 768,
+  "lr": 0.0002,
+  "lora_r": 16,
+  "lora_targets": "model\\.language_model\\..*\\.(q_proj|k_proj|v_proj|o_proj|in_proj_qkv|in_proj_a|in_proj_b|in_proj_z|out_proj|gate_proj|up_proj|down_proj)",
+  "seed": 3407,
+  "base_id": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "torch": "2.14.1+cu130",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "tokens_in_seen": 1471362,
+  "target_tokens_seen": 55296,
+  "train_seconds": 2196.3,
+  "mean_loss_first_100": 0.17667740158736706,
+  "mean_loss_last_100": 0.0349961051371065,
+  "gpu": "Tesla T4",
+  "peak_allocated_gib": 8.92,
+  "peak_reserved_gib": 14.16
+ },
+ "eval_dev_200_roots": {
+  "source": "EVAL-SUMMARY line read from Colab cell output 2026-11-11T15:51Z",
+  "adapter": "runs/pilot3_D/adapter",
+  "n": 1200,
+  "max_new_tokens": 96,
+  "truncated": 0,
+  "seconds": 1538.7,
+  "per_task": {
+   "minimal_graph_repair": {
+    "n": 400,
+    "accuracy": 0.545,
+    "format_failure_rate": 0.0,
+    "lenient_accuracy": 0.545,
+    "status_accuracy": 0.6225,
+    "valid_edit_rate": 0.395,
+    "minimal_repair_accuracy": 0.395,
+    "n_true_edited": 200,
+    "n_parsed": 400
+   },
+   "reachability": {
+    "n": 400,
+    "accuracy": 0.84,
+    "format_failure_rate": 0.0,
+    "lenient_accuracy": 0.84
+   },
+   "critical_edge": {
+    "n": 400,
+    "accuracy": 0.5025,
+    "format_failure_rate": 0.0,
+    "lenient_accuracy": 0.5025
+   }
+  },
+  "macro": 0.6712499999999999,
+  "macro_lenient": 0.6712499999999999,
+  "pairs": {
+   "critical:critical_edge": {
+    "n": 200,
+    "both_correct": 0.095
+   },
+   "critical:minimal_graph_repair": {
+    "n": 200,
+    "both_correct": 0.3
+   },
+   "critical:reachability": {
+    "n": 200,
+    "both_correct": 0.68
+   }
+  }
+ }
+}

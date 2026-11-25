@@ -1,0 +1,89 @@
+{
+ "graphs": 400,
+ "n": 1200,
+ "record": "dev",
+ "reference": "pilot3_C",
+ "resamples": 10000,
+ "runs": {
+  "pilot3_B": {
+   "diff_edge_exists_accuracy": {
+    "hi": 0.05249999999999999,
+    "lo": -0.010000000000000009,
+    "p_le_0": 0.094,
+    "point": 0.02124999999999999
+   },
+   "diff_external_macro": {
+    "hi": 0.13828752767180053,
+    "lo": 0.07643127705627706,
+    "p_le_0": 0.0,
+    "point": 0.10809916762342131
+   },
+   "diff_reachability_balanced_accuracy": {
+    "hi": 0.24813122923588038,
+    "lo": 0.13944837597532211,
+    "p_le_0": 0.0,
+    "point": 0.19494833524684263
+   },
+   "edge_exists_accuracy": 0.8325,
+   "external_macro": 0.8367436854190585,
+   "format_ok": 1.0,
+   "reachability_balanced_accuracy": 0.840987370838117
+  },
+  "pilot3_C": {
+   "edge_exists_accuracy": 0.81125,
+   "external_macro": 0.7286445177956372,
+   "format_ok": 1.0,
+   "reachability_balanced_accuracy": 0.6460390355912744
+  },
+  "pilot3_D": {
+   "diff_edge_exists_accuracy": {
+    "hi": 0.07125000000000004,
+    "lo": 0.016249999999999987,
+    "p_le_0": 0.0011,
+    "point": 0.043749999999999956
+   },
+   "diff_external_macro": {
+    "hi": 0.15130873003981338,
+    "lo": 0.0982720588235293,
+    "p_le_0": 0.0,
+    "point": 0.12566374856486795
+   },
+   "diff_reachability_balanced_accuracy": {
+    "hi": 0.24981854472872433,
+    "lo": 0.16202722434176442,
+    "p_le_0": 0.0,
+    "point": 0.20757749712973594
+   },
+   "edge_exists_accuracy": 0.855,
+   "external_macro": 0.8543082663605052,
+   "format_ok": 1.0,
+   "reachability_balanced_accuracy": 0.8536165327210103
+  },
+  "pilot3_E": {
+   "diff_edge_exists_accuracy": {
+    "hi": -0.03499999999999992,
+    "lo": -0.09875,
+    "p_le_0": 1.0,
+    "point": -0.06625000000000003
+   },
+   "diff_external_macro": {
+    "hi": 0.027191091954023028,
+    "lo": -0.039963235294117716,
+    "p_le_0": 0.6229,
+    "point": -0.0053408438576348916
+   },
+   "diff_reachability_balanced_accuracy": {
+    "hi": 0.10423588039867115,
+    "lo": 0.0035837416076937023,
+    "p_le_0": 0.0175,
+    "point": 0.05556831228473014
+   },
+   "edge_exists_accuracy": 0.745,
+   "external_macro": 0.7233036739380023,
+   "format_ok": 0.945,
+   "reachability_balanced_accuracy": 0.7016073478760045
+  }
+ },
+ "seed": 20261114,
+ "subset_sha256": "6ce6782d1674ef5ce10681b011eab5b49ae9d927e47e735017831b823ce0afb0"
+}

@@ -1,0 +1,30 @@
+# Locked diagnostic test splits that separate the two factors test_struct_ood shifts together
+# (protocol open item 2): new graph family at ID sizes, and ID families at larger sizes.
+# With test_id (ID family, ID size) and test_struct_ood (new family, large size) of pilot_test
+# they complete a 2x2 design. Separate build so that pilot and pilot_test content digests stay
+# unchanged. No graph here is isomorphic to any graph of pilot.json or pilot_test.json.
+# Locked like pilot_test: no decision may look at these labels before the final evaluation.
+name: pilot_diag
+seed: 20261113
+image_size: 512
+supersample: 3
+invariant_rate: 0.25
+require_pairs: true
+exclude_isomorphic_to: [pilot.json, pilot_test.json]
+repair_pair_types:
+  - [add, unchanged]
+  - [add, impossible]
+  - [remove, unchanged]
+  - [remove, impossible]
+secondary_tasks: [edge_exists, shortest_path_length, graph_extraction]
+splits:
+  test_family_ood:
+    roots: 100
+    families: {ring_chords: 1, two_cluster: 1}
+    nodes: [5, 10]
+    styles: [a, b, c]
+  test_size_ood:
+    roots: 100
+    families: {layered_dag: 1, tree_plus: 1, sparse_random: 1}
+    nodes: [11, 16]
+    styles: [a, b, c]

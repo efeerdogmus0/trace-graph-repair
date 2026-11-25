@@ -1,0 +1,67 @@
+{
+ "rule": "repro-v1",
+ "task_tolerance": 0.03,
+ "macro_tolerance": 0.02,
+ "recorded": "runs/pilot3_D_kaggle",
+ "rerun": "runs/repro_D_s3407",
+ "arm": "D",
+ "seed": 3407,
+ "samples": 1200,
+ "per_task": {
+  "minimal_graph_repair": {
+   "recorded": 0.54,
+   "rerun": 0.54,
+   "difference": 0.0
+  },
+  "reachability": {
+   "recorded": 0.8125,
+   "rerun": 0.8125,
+   "difference": 0.0
+  },
+  "critical_edge": {
+   "recorded": 0.5125,
+   "rerun": 0.5125,
+   "difference": 0.0
+  }
+ },
+ "non_edit_macro_accuracy": {
+  "recorded": 0.6625,
+  "rerun": 0.6625,
+  "difference": 0.0
+ },
+ "bit_agreement": 1.0,
+ "predictions_identical": true,
+ "predictions_sha256": {
+  "recorded": "3118d615803beedc66184cb39fc91c8a7aa8ecb59a23f92f309fb69e53cd1c35",
+  "rerun": "3118d615803beedc66184cb39fc91c8a7aa8ecb59a23f92f309fb69e53cd1c35"
+ },
+ "images_digest": {
+  "recorded": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+  "rerun": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028"
+ },
+ "train_loss": {
+  "mean_loss_first_100": {
+   "recorded": 0.17671178579330443,
+   "rerun": 0.17671178579330443
+  },
+  "mean_loss_last_100": {
+   "recorded": 0.034948471446405165,
+   "rerun": 0.034948471446405165
+  }
+ },
+ "environment": {
+  "recorded": [
+   "JOB-START job20 arm=D seed=3407 roots=200 mode=image 2026-11-13T17:56:01Z",
+   "peft 0.21.2 transformers 5.22.2",
+   "TRAIN-SUMMARY {\"arm\": \"D\", \"manifest\": \"manifests/pilot.json\", \"split\": \"train\", \"content_digest\": \"ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8\", \"images_digest\": \"a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028\", \"samples\": 1024, \"root_graphs\": 512, \"images\": 1024, \"epochs\": 3, \"accum\": 4, \"resumed_from_sample\": 0, \"updates\": 768, \"lr\": 0.0002, \"lora_r\": 16, \"lora_targets\": \"model\\\\.language_model\\\\..*\\\\.(q_proj|k_proj|v_proj|o_proj|in_proj_qkv|in_proj_a|in_proj_b|in_proj_z|out_proj|gate_proj|up_proj|down_proj)\", \"seed\": 3407, \"base_id\": \"Qwen/Qwen3.5-2B\", \"revision\": \"15852e8c16360a2fea060d615a32b45270f8a8fc\", \"torch\": \"2.11.0+cu130\", \"platform\": \"Linux-6.18.55+-x86_64-with-glibc2.39\", \"tokens_in_seen\": 1471362, \"target_tokens_seen\": 55296, \"train_seconds\": 2062.7, \"mean_loss_first_100\": 0.17671178579330443, \"mean_loss_last_100\": 0.034948471446405165, \"gpu\": \"Tesla T4\", \"peak_allocated_gib\": 9.01, \"peak_reserved_gib\": 14.29}",
+   "JOB-END job20 2026-11-13T18:57:18Z"
+  ],
+  "rerun": [
+   "JOB-START jobR1 arm=D seed=3407 roots=200 mode=image 2026-11-22T00:37:07Z",
+   "peft 0.21.2 transformers 5.22.2",
+   "TRAIN-SUMMARY {\"arm\": \"D\", \"manifest\": \"manifests/pilot.json\", \"split\": \"train\", \"content_digest\": \"ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8\", \"images_digest\": \"a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028\", \"samples\": 1024, \"root_graphs\": 512, \"images\": 1024, \"epochs\": 3, \"accum\": 4, \"resumed_from_sample\": 0, \"updates\": 768, \"lr\": 0.0002, \"lora_r\": 16, \"lora_targets\": \"model\\\\.language_model\\\\..*\\\\.(q_proj|k_proj|v_proj|o_proj|in_proj_qkv|in_proj_a|in_proj_b|in_proj_z|out_proj|gate_proj|up_proj|down_proj)\", \"seed\": 3407, \"base_id\": \"Qwen/Qwen3.5-2B\", \"revision\": \"15852e8c16360a2fea060d615a32b45270f8a8fc\", \"torch\": \"2.11.0+cu130\", \"platform\": \"Linux-6.18.55+-x86_64-with-glibc2.39\", \"tokens_in_seen\": 1471362, \"target_tokens_seen\": 55296, \"train_seconds\": 2064.4, \"mean_loss_first_100\": 0.17671178579330443, \"mean_loss_last_100\": 0.034948471446405165, \"gpu\": \"Tesla T4\", \"peak_allocated_gib\": 9.01, \"peak_reserved_gib\": 14.29}",
+   "JOB-END jobR1 2026-11-22T01:38:08Z"
+  ]
+ },
+ "verdict": "identical"
+}

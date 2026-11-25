@@ -1,0 +1,718 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/7YeLtdmNjXMOiAg9AE5nBnPWxF8</id>
+  <title>arXiv Query: search_query=abs:"graph" AND abs:"structural" AND abs:"fine-tuning" AND abs:"multimodal"&amp;id_list=&amp;start=0&amp;max_results=25</title>
+  <updated>2026-11-15T05:16:16Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22graph%22+AND+(abs:%22structural%22+AND+(abs:%22fine-tuning%22+AND+abs:%22multimodal%22))&amp;start=0&amp;max_results=25&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+  <opensearch:totalResults>67</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2312.14574v2</id>
+    <title>MMGPL: Multimodal Medical Data Analysis with Graph Prompt Learning</title>
+    <updated>2024-06-27T13:29:07Z</updated>
+    <link href="https://arxiv.org/abs/2312.14574v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2312.14574v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Prompt learning has demonstrated impressive efficacy in the fine-tuning of multimodal large models to a wide range of downstream tasks. Nonetheless, applying existing prompt learning methods for the diagnosis of neurological disorder still suffers from two issues: (i) existing methods typically treat all patches equally, despite the fact that only a small number of patches in neuroimaging are relevant to the disease, and (ii) they ignore the structural information inherent in the brain connection network which is crucial for understanding and diagnosing neurological disorders. To tackle these issues, we introduce a novel prompt learning model by learning graph prompts during the fine-tuning process of multimodal large models for diagnosing neurological disorders. Specifically, we first leverage GPT-4 to obtain relevant disease concepts and compute semantic similarity between these concepts and all patches. Secondly, we reduce the weight of irrelevant patches according to the semantic similarity between each patch and disease-related concepts. Moreover, we construct a graph among tokens based on these concepts and employ a graph convolutional network layer to extract the structural information of the graph, which is used to prompt the pre-trained multimodal large models for diagnosing neurological disorders. Extensive experiments demonstrate that our method achieves superior performance for neurological disorder diagnosis compared with state-of-the-art methods and validated by clinicians.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-12-22T10:10:50Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Liang Peng</name>
+    </author>
+    <author>
+      <name>Songyue Cai</name>
+    </author>
+    <author>
+      <name>Zongqian Wu</name>
+    </author>
+    <author>
+      <name>Huifang Shang</name>
+    </author>
+    <author>
+      <name>Xiaofeng Zhu</name>
+    </author>
+    <author>
+      <name>Xiaoxiao Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.15687v1</id>
+    <title>Toward Federated Multimodal Graph Foundation Models: A Topology-Aware Multimodal Alignment Framework</title>
+    <updated>2026-07-17T06:57:41Z</updated>
+    <link href="https://arxiv.org/abs/2607.15687v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.15687v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multimodal-attributed graphs (MAGs), whose nodes carry modalities such as images and text alongside topological structure, now pervade applications including social platforms, e-commerce, and biomedical networks, offering richer semantic signals than single-modality graphs. In practice, such graphs are fragmented across privacy-restricted silos owned by different platforms and institutions, so learning a broadly transferable model over them demands collaborative training that never exposes raw data. This places the task at the intersection of multimodal graph learning and federated learning, yet existing methods cover only one side of it. To address the challenges from these two perspectives, we propose FedGAMMA, casting federated multimodal graph foundation learning as a two-stage semantic-structural alignment problem of federated pre-training and prompt-based fine-tuning. During pre-training, a shared-private semantic enhancer disentangles cross-modal commonality from modality-specific information, aligning it through optimal transport, a topology-aware graph fusion module decouples semantic and structural views via semantic residual graphs and dual positional encodings, and a dual-channel affinity-aware aggregation mechanism estimates client similarity from feature and graph centroids without exposing raw data. During fine-tuning, FedGAMMA adapts the pretrained encoder through lightweight graph-aware prompts, a shared prompt pool with controlled exploration, and channel-wise prompt synchronization. Experiments on twelve multimodal graph datasets show FedGAMMA consistently surpassing a broad range of baselines across downstream tasks, with gains of up to 12.96%. FedGAMMA further outperforms competitive baselines accross multi-domain datasets on multiple tasks with up to 5.71% under few-shot learning scenario.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-17T06:57:41Z</published>
+    <arxiv:comment>Under Review</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Xunkai Li</name>
+    </author>
+    <author>
+      <name>Guohao Fu</name>
+    </author>
+    <author>
+      <name>Yuming Ai</name>
+    </author>
+    <author>
+      <name>Zhengyu Wu</name>
+    </author>
+    <author>
+      <name>Hongchao Qin</name>
+    </author>
+    <author>
+      <name>Rong-Hua Li</name>
+    </author>
+    <author>
+      <name>Guoren Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.10282v1</id>
+    <title>Graph-MLLM: Harnessing Multimodal Large Language Models for Multimodal Graph Learning</title>
+    <updated>2025-06-12T01:44:46Z</updated>
+    <link href="https://arxiv.org/abs/2506.10282v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.10282v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multimodal Large Language Models (MLLMs) have demonstrated remarkable capabilities in representing and understanding diverse modalities. However, they typically focus on modality alignment in a pairwise manner while overlooking structural relationships across data points. Integrating multimodality with structured graph information (i.e., multimodal graphs, MMGs) is essential for real-world applications such as social networks, healthcare, and recommendation systems. Existing MMG learning methods fall into three paradigms based on how they leverage MLLMs: Encoder, Aligner, and Predictor. MLLM-as-Encoder focuses on enhancing graph neural networks (GNNs) via multimodal feature fusion; MLLM-as-Aligner aligns multimodal attributes in language or hidden space to enable LLM-based graph reasoning; MLLM-as-Predictor treats MLLMs as standalone reasoners with in-context learning or fine-tuning. Despite their advances, the MMG field lacks a unified benchmark to fairly evaluate across these approaches, making it unclear what progress has been made. To bridge this gap, we present Graph-MLLM, a comprehensive benchmark for multimodal graph learning by systematically evaluating these three paradigms across six datasets with different domains. Through extensive experiments, we observe that jointly considering the visual and textual attributes of the nodes benefits graph learning, even when using pre-trained text-to-image alignment models (e.g., CLIP) as encoders. We also find that converting visual attributes into textual descriptions further improves performance compared to directly using visual inputs. Moreover, we observe that fine-tuning MLLMs on specific MMGs can achieve state-of-the-art results in most scenarios, even without explicit graph structure information. We hope that our open-sourced library will facilitate rapid, equitable evaluation and inspire further innovative research in this field.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-12T01:44:46Z</published>
+    <arxiv:comment>16 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Jiajin Liu</name>
+    </author>
+    <author>
+      <name>Dongzhe Fan</name>
+    </author>
+    <author>
+      <name>Jiacheng Shen</name>
+    </author>
+    <author>
+      <name>Chuanhao Ji</name>
+    </author>
+    <author>
+      <name>Daochen Zha</name>
+    </author>
+    <author>
+      <name>Qiaoyu Tan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.05716v3</id>
+    <title>Scene Graph Thinking: Reinforcing Structured Visual Reasoning for Multimodal Large Language Models</title>
+    <updated>2026-07-13T06:34:36Z</updated>
+    <link href="https://arxiv.org/abs/2607.05716v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.05716v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multimodal Large Language Models (MLLMs) have demonstrated strong perception and reasoning capabilities. However, most existing models focus on isolated objects and neglect structured relationships for efficient target navigation, limiting their performance on visually intensive tasks. To address this challenge, we introduce Scene Graph Thinking (SaGe), a novel paradigm that enables fine-grained and structured visual reasoning through explicit scene-graph representations. Specifically, we first introduce an automated data engine that converts flat image-text corpora into structured scene graphs, where hierarchical entities constitute the nodes and diverse visual relations define the edges. Building upon this, we construct 120K high-quality training data by sampling reasoning traces from scene graphs. Then, two-stage graph-aligned post-training paradigms are introduced, where supervised fine-tuning internalizes MLLMs with structured reasoning, and subsequent reinforcement fine-tuning proposes node-as-proxy graph rewards to consolidate efficient graph exploration. With curated data and graph-aligned training, our approach achieves significant improvements across eight multimodal benchmarks, demonstrating strong effectiveness on fine-grained perception and reasoning tasks. Code is available at https://github.com/zwyang6/SaGe.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-07T01:00:51Z</published>
+    <arxiv:comment>ICML 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Zhiwei Yang</name>
+    </author>
+    <author>
+      <name>Yuanchen Wu</name>
+    </author>
+    <author>
+      <name>Nan Zhang</name>
+    </author>
+    <author>
+      <name>Yucong Meng</name>
+    </author>
+    <author>
+      <name>Ke Yan</name>
+    </author>
+    <author>
+      <name>Shouhong Ding</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.04950v1</id>
+    <title>VisionGraph: Leveraging Large Multimodal Models for Graph Theory Problems in Visual Context</title>
+    <updated>2024-05-08T10:42:48Z</updated>
+    <link href="https://arxiv.org/abs/2405.04950v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.04950v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Multimodal Models (LMMs) have achieved impressive success in visual understanding and reasoning, remarkably improving the performance of mathematical reasoning in a visual context. Yet, a challenging type of visual math lies in the multimodal graph theory problem, which demands that LMMs understand the graphical structures accurately and perform multi-step reasoning on the visual graph. Additionally, exploring multimodal graph theory problems will lead to more effective strategies in fields like biology, transportation, and robotics planning. To step forward in this direction, we are the first to design a benchmark named VisionGraph, used to explore the capabilities of advanced LMMs in solving multimodal graph theory problems. It encompasses eight complex graph problem tasks, from connectivity to shortest path problems. Subsequently, we present a Description-Program-Reasoning (DPR) chain to enhance the logical accuracy of reasoning processes through graphical structure description generation and algorithm-aware multi-step reasoning. Our extensive study shows that 1) GPT-4V outperforms Gemini Pro in multi-step graph reasoning; 2) All LMMs exhibit inferior perception accuracy for graphical structures, whether in zero/few-shot settings or with supervised fine-tuning (SFT), which further affects problem-solving performance; 3) DPR significantly improves the multi-step graph reasoning capabilities of LMMs and the GPT-4V (DPR) agent achieves SOTA performance.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-08T10:42:48Z</published>
+    <arxiv:comment>17 pages; Accepted by ICML 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yunxin Li</name>
+    </author>
+    <author>
+      <name>Baotian Hu</name>
+    </author>
+    <author>
+      <name>Haoyuan Shi</name>
+    </author>
+    <author>
+      <name>Wei Wang</name>
+    </author>
+    <author>
+      <name>Longyue Wang</name>
+    </author>
+    <author>
+      <name>Min Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.10159v1</id>
+    <title>UNIT: Unleash Large Language Models Potential for Graph Continual Learning</title>
+    <updated>2026-07-11T06:47:26Z</updated>
+    <link href="https://arxiv.org/abs/2607.10159v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.10159v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In real-world multimodal web scenarios, graph-structured data often arrives in a streaming manner, making graph continual learning a crucial paradigm for continuously modeling such evolving structures. However, existing graph continual learning methods still face two fundamental challenges. 1) semantic-structural separation, where the graph-based methods excel at modeling topological relationships but neglect deep semantics. 2) imbalanced knowledge transfer, where existing models fail to effectively leverage general knowledge gained from early tasks to benefit subsequent new tasks. To address above issues, we propose a novel framework, \textbf{UN}leash Large Language Models PotentIal for Graph ConTinual Learning (UNIT). By fine-tuning large language model only on the first task, we bridge the distributional gap between the pre-trained LLM corpus and the target task dataset to enhance the adaptability of LLMs for graph-structured tasks. Meanwhile, we propose an uncertain-aware anchor generation mechanism to effectively preserve representative knowledge across tasks, avoiding the neglect of universal knowledge learned from previous tasks. Additionally, we introduce structural confluence modeling to explicitly integrates graph topology information into semantic information, enhancing the collaborative capabilities between semantic understanding and structural modeling. Extensive experiments demonstrate that our proposed method achieves state-of-the-art performance in the graph continual learning task.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-11T06:47:26Z</published>
+    <arxiv:comment>Accepted by ACM MM 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Tairan Huang</name>
+    </author>
+    <author>
+      <name>Yili Wang</name>
+    </author>
+    <author>
+      <name>Beibei Hu</name>
+    </author>
+    <author>
+      <name>Yiting Shi</name>
+    </author>
+    <author>
+      <name>Qiutong Li</name>
+    </author>
+    <author>
+      <name>Changlong He</name>
+    </author>
+    <author>
+      <name>Jianliang Gao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.26023v1</id>
+    <title>CHARM: A Multimodal Graph Foundation Model with Hierarchical Context Modeling for Zero-Shot Transfer</title>
+    <updated>2026-07-28T17:35:26Z</updated>
+    <link href="https://arxiv.org/abs/2607.26023v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.26023v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Graph foundation models (GFMs) have emerged as a promising paradigm for transferring knowledge across graph domains and tasks. Real-world graphs associate nodes with text, images, and other modalities, making multimodal graphs essential for representing complex entities and relations. Moreover, collecting labels and adapting models for every new graph domain is costly and often infeasible, motivating zero-shot transfer. Unfortunately, zero-shot transfer on multimodal graphs remains underexplored. Existing GNN-based graph foundation models typically require downstream adaptation, whereas LLM-based graph methods mainly address unimodal graphs or tasks within a single domain. This setting presents two key challenges. First, models must generalize knowledge from individual modalities while capturing transferable cross-modal relations. Second, without target-domain fine-tuning, node representations remain entangled with domain-specific structures and modality-specific characteristics, obscuring shared concepts in unseen domains. To address these challenges, we propose CHARM, a multimodal graph foundation model with hierarchical context modeling for zero-shot transfer. CHARM replaces isolated raw nodes with hierarchical graph contexts that capture multimodal semantics and cross-modal relations. These contexts map domain-specific node patterns to shared high-level concepts, reducing reliance on target-domain supervision or adaptation. A modality-aware graph context encoder integrates multimodal information with graph structure and converts the resulting representations into graph tokens for a large language model . Experiments show consistent improvements on zero-shot multimodal graph tasks.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-28T17:35:26Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Ankang Yang</name>
+    </author>
+    <author>
+      <name>Jitao Zhao</name>
+    </author>
+    <author>
+      <name>Di Jin</name>
+    </author>
+    <author>
+      <name>Yuxiao Huang</name>
+    </author>
+    <author>
+      <name>Dongxiao He</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.16517v1</id>
+    <title>SmoGVLM: A Small, Graph-enhanced Vision-Language Model</title>
+    <updated>2026-04-15T13:44:49Z</updated>
+    <link href="https://arxiv.org/abs/2604.16517v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.16517v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large vision-language models (VLMs) achieve strong performance on multimodal tasks but often suffer from hallucination and poor grounding in knowledge-intensive reasoning. We propose SmoGVLM, a small, graph-enhanced VLM that integrates structured knowledge with visual and textual modalities, using Graph Neural Networks. We investigate the effects of our method across a range of model sizes, from tiny (1.3B) to large (13B) models. Our results demonstrate that, when trained using our approach, a small model can achieve performance gains upto 16.24%, and surpass its larger counterparts, outperforming larger VLMs and strong fine-tuned baselines. These results highlight the potential of structured knowledge augmentation for efficient, smaller-scale multimodal reasoning systems.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-15T13:44:49Z</published>
+    <arxiv:comment>ICASSP 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Debjyoti Mondal</name>
+    </author>
+    <author>
+      <name>Rituraj Singh</name>
+    </author>
+    <author>
+      <name>Subhadarshi Panda</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.15688v2</id>
+    <title>Transformer-Based Multimodal Knowledge Graph Completion with Link-Aware Contexts</title>
+    <updated>2025-09-15T11:55:10Z</updated>
+    <link href="https://arxiv.org/abs/2501.15688v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.15688v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multimodal knowledge graph completion (MMKGC) aims to predict missing links in multimodal knowledge graphs (MMKGs) by leveraging information from various modalities alongside structural data. Existing MMKGC approaches primarily extend traditional knowledge graph embedding (KGE) models, which often require creating an embedding for every entity. This results in large model sizes and inefficiencies in integrating multimodal information, particularly for real-world graphs. Meanwhile, Transformer-based models have demonstrated competitive performance in knowledge graph completion (KGC). However, their focus on single-modal knowledge limits their capacity to utilize cross-modal information. Recently, Large vision-language models (VLMs) have shown potential in cross-modal tasks but are constrained by the high cost of training. In this work, we propose a novel approach that integrates Transformer-based KGE models with cross-modal context generated by pre-trained VLMs, thereby extending their applicability to MMKGC. Specifically, we employ a pre-trained VLM to transform relevant visual information from entities and their neighbors into textual sequences. We then frame KGC as a sequence-to-sequence task, fine-tuning the model with the generated cross-modal context. This simple yet effective method significantly reduces model size compared to traditional KGE approaches while achieving competitive performance across multiple large-scale datasets with minimal hyperparameter tuning.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-26T22:23:14Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Haodi Ma</name>
+    </author>
+    <author>
+      <name>Dzmitry Kasinets</name>
+    </author>
+    <author>
+      <name>Daisy Zhe Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2412.11618v1</id>
+    <title>EvoLlama: Enhancing LLMs' Understanding of Proteins via Multimodal Structure and Sequence Representations</title>
+    <updated>2024-12-16T10:01:33Z</updated>
+    <link href="https://arxiv.org/abs/2412.11618v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.11618v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Current Large Language Models (LLMs) for understanding proteins primarily treats amino acid sequences as a text modality. Meanwhile, Protein Language Models (PLMs), such as ESM-2, have learned massive sequential evolutionary knowledge from the universe of natural protein sequences. Furthermore, structure-based encoders like ProteinMPNN learn the structural information of proteins through Graph Neural Networks. However, whether the incorporation of protein encoders can enhance the protein understanding of LLMs has not been explored. To bridge this gap, we propose EvoLlama, a multimodal framework that connects a structure-based encoder, a sequence-based protein encoder and an LLM for protein understanding. EvoLlama consists of a ProteinMPNN structure encoder, an ESM-2 protein sequence encoder, a multimodal projector to align protein and text representations and a Llama-3 text decoder. To train EvoLlama, we fine-tune it on protein-oriented instructions and protein property prediction datasets verbalized via natural language instruction templates. Our experiments show that EvoLlama's protein understanding capabilities have been significantly enhanced, outperforming other fine-tuned protein-oriented LLMs in zero-shot settings by an average of 1%-8% and surpassing the state-of-the-art baseline with supervised fine-tuning by an average of 6%. On protein property prediction datasets, our approach achieves promising results that are competitive with state-of-the-art task-specific baselines. We will release our code in a future version.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-16T10:01:33Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Nuowei Liu</name>
+    </author>
+    <author>
+      <name>Changzhi Sun</name>
+    </author>
+    <author>
+      <name>Tao Ji</name>
+    </author>
+    <author>
+      <name>Junfeng Tian</name>
+    </author>
+    <author>
+      <name>Jianxin Tang</name>
+    </author>
+    <author>
+      <name>Yuanbin Wu</name>
+    </author>
+    <author>
+      <name>Man Lan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.29088v2</id>
+    <title>HANIA: Planner-Guided Multimodal Graph Evidence Selection for Grounded Question Answering</title>
+    <updated>2026-09-23T08:27:08Z</updated>
+    <link href="https://arxiv.org/abs/2608.29088v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.29088v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multimodal question answering remains sensitive to noisy, incomplete, and weakly grounded evidence. Long unstructured contexts can introduce redundancy and encourage unsupported generation, while flat retrieval may overlook relations needed for multi-step reasoning. We present HANIA, a planner-guided multimodal graph framework for evidence-grounded question answering. HANIA processes the supplied image and text using a frozen vision-language model to extract concise question-relevant visual evidence with explicit abstention. It then constructs an input-grounded multimodal graph and applies a two-group finite-state planner to coordinate descriptive and relational evidence. Coverage-aware pruning retains a compact evidence set based on relevance, graph confidence, concept coverage, and modality diversity. The selected passages, visual statements, and graph triples are provided to a frozen instruction-tuned decoder. We evaluate HANIA on ScienceQA using answer accuracy, evidence-filtering quality, evidence-budget sensitivity, and efficiency. The results show that structured evidence planning and compact graph-guided retrieval can support competitive multimodal question answering without target-dataset fine-tuning or iterative retrieval. The code is available at https://github.com/Zafar-southeast/HANIA.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-29T06:38:21Z</published>
+    <arxiv:comment>10 pages, 1 figure. Accepted at Graph-enhanced LLMs for trustwOrthy Web data management (GLOW), ISWC 2026 Workshops, Bari, Italy</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zafar Ali</name>
+    </author>
+    <author>
+      <name>Asad Khan</name>
+    </author>
+    <author>
+      <name>Nimbeshaho Thierry</name>
+    </author>
+    <author>
+      <name>Nabila Amir</name>
+    </author>
+    <author>
+      <name>Adam A. Q. Mohammed</name>
+    </author>
+    <author>
+      <name>Pavlos Kefalas</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2504.10541v2</id>
+    <title>Multi-Modal Hypergraph Enhanced LLM Learning for Recommendation</title>
+    <updated>2025-07-29T12:44:24Z</updated>
+    <link href="https://arxiv.org/abs/2504.10541v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2504.10541v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The burgeoning presence of Large Language Models (LLM) is propelling the development of personalized recommender systems. Most existing LLM-based methods fail to sufficiently explore the multi-view graph structure correlations inherent in recommendation scenarios. To this end, we propose a novel framework, Hypergraph Enhanced LLM Learning for multimodal Recommendation (HeLLM), designed to equip LLMs with the capability to capture intricate higher-order semantic correlations by fusing graph-level contextual signals with sequence-level behavioral patterns. In the recommender pre-training phase, we design a user hypergraph to uncover shared interest preferences among users and an item hypergraph to capture correlations within multimodal similarities among items. The hypergraph convolution and synergistic contrastive learning mechanism are introduced to enhance the distinguishability of learned representations. In the LLM fine-tuning phase, we inject the learned graph-structured embeddings directly into the LLM's architecture and integrate sequential features capturing each user's chronological behavior. This process enables hypergraphs to leverage graph-structured information as global context, enhancing the LLM's ability to perceive complex relational patterns and integrate multimodal information, while also modeling local temporal dynamics. Extensive experiments demonstrate the superiority of our proposed method over state-of-the-art baselines, confirming the advantages of fusing hypergraph-based context with sequential user behavior in LLMs for recommendation.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-04-13T09:12:35Z</published>
+    <arxiv:comment>12 pages, 4 figures, submitted to IEEE Transactions on Knowledge and Data Engineering</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Xu Guo</name>
+    </author>
+    <author>
+      <name>Tong Zhang</name>
+    </author>
+    <author>
+      <name>Yuanzhi Wang</name>
+    </author>
+    <author>
+      <name>Chenxu Wang</name>
+    </author>
+    <author>
+      <name>Fuyun Wang</name>
+    </author>
+    <author>
+      <name>Xudong Wang</name>
+    </author>
+    <author>
+      <name>Xiaoya Zhang</name>
+    </author>
+    <author>
+      <name>Xin Liu</name>
+    </author>
+    <author>
+      <name>Zhen Cui</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.22610v1</id>
+    <title>Local-Global Multimodal Contrastive Learning for Molecular Property Prediction</title>
+    <updated>2026-01-30T06:06:17Z</updated>
+    <link href="https://arxiv.org/abs/2601.22610v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.22610v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Accurate molecular property prediction requires integrating complementary information from molecular structure and chemical semantics. In this work, we propose LGM-CL, a local-global multimodal contrastive learning framework that jointly models molecular graphs and textual representations derived from SMILES and chemistry-aware augmented texts. Local functional group information and global molecular topology are captured using AttentiveFP and Graph Transformer encoders, respectively, and aligned through self-supervised contrastive learning. In addition, chemically enriched textual descriptions are contrasted with original SMILES to incorporate physicochemical semantics in a task-agnostic manner. During fine-tuning, molecular fingerprints are further integrated via Dual Cross-attention multimodal fusion. Extensive experiments on MoleculeNet benchmarks demonstrate that LGM-CL achieves consistent and competitive performance across both classification and regression tasks, validating the effectiveness of unified local-global and multimodal representation learning.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-30T06:06:17Z</published>
+    <arxiv:comment>16 pages, 9 figures. Submitted to Briefings in Bioinformatics</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Xiayu Liu</name>
+    </author>
+    <author>
+      <name>Zhengyi Lu</name>
+    </author>
+    <author>
+      <name>Yunhong Liao</name>
+    </author>
+    <author>
+      <name>Chan Fan</name>
+    </author>
+    <author>
+      <name>Hou-biao Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.11228v1</id>
+    <title>Multimodal Graph Retrieval-Augmented Sequential Recommendation via Collaborative Filtering Paths</title>
+    <updated>2026-10-08T04:27:52Z</updated>
+    <link href="https://arxiv.org/abs/2610.11228v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.11228v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multimodal Large Language Models (MLLMs) have demonstrated strong potential for sequential recommendation through their ability to reason over complex multimodal data. However, existing approaches either rely solely on the target user's own interaction history, neglecting collaborative signals from neighboring users, or incur substantial computational overhead through repeated MLLM inference over long interaction histories. To address these challenges, we propose MGRASRec, a multimodal graph retrieval-augmented framework for sequential recommendation. MGRASRec injects collaborative filtering signals conditioned on the candidate item directly into the MLLM prompt by retrieving structured paths from a user-item interaction graph, extended via multimodal similarity to increase coverage beyond exact co-interaction overlap. This retrieval also surfaces the history items most relevant to the candidate at no additional cost, removing the need for recurrent summarization and keeping inference to a single forward pass per candidate. All components are unified into an augmented prompt for parameter-efficient fine-tuning of an MLLM. Extensive evaluations across three publicly available datasets validate the effectiveness of MGRASRec, achieving the best performance on all metrics with particularly strong gains in ranking quality.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-08T04:27:52Z</published>
+    <arxiv:comment>Accepted to AJCAI 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Jason Marcell Setiadi</name>
+    </author>
+    <author>
+      <name>Xin Cao</name>
+    </author>
+    <author>
+      <name>Lina Yao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.09343v1</id>
+    <title>SKG-VLA: Scene Knowledge Graph Priors for Structured Scene Semantics and Multimodal Reasoning for Decision Making</title>
+    <updated>2026-05-10T05:43:58Z</updated>
+    <link href="https://arxiv.org/abs/2605.09343v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.09343v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Decision making in large-scale complaint handling systems increasingly relies on heterogeneous evidence, including complaint narratives, screenshots, order metadata, historical interactions, and platform policies. Existing complaint understanding systems mainly perform shallow classification or template matching over isolated modalities, while underutilizing explicit scene structure, rule knowledge, and cross-evidence dependencies. To address this limitation, we present SKG-VLA for multimodal complaint decision making. The core idea is to model each case as a structured complaint scene and represent its decision-relevant semantics with a \emph{Scene Knowledge Graph} (SKG), which organizes complaint entities, evidence items, policy clauses, temporal events, transactional states, and action-relevant relations into a unified graph. Based on SKG, we build a data synthesis pipeline that generates complaint scene descriptions, rule-consistent graph generalizations, question-answer supervision, and decision recommendations. We further construct a large-scale complaint scene dataset with both text-only and multimodal in-domain benchmarks. Finally, we adopt a three-stage training strategy -- domain-adaptive pre-training, task-oriented instruction fine-tuning, and end-to-end multimodal alignment -- to inject structured scene priors into a multimodal decision model. Experiments show that SKG-VLA consistently improves policy-grounded reasoning, complaint decision accuracy, long-tail generalization, and robustness under incomplete evidence.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-10T05:43:58Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zeyu Li</name>
+    </author>
+    <author>
+      <name>Lei Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.02742v3</id>
+    <title>Entropy-Guided Dynamic Tokens for Graph-LLM Alignment in Molecular Understanding</title>
+    <updated>2026-03-02T05:13:15Z</updated>
+    <link href="https://arxiv.org/abs/2602.02742v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.02742v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Molecular understanding is central to advancing areas such as scientific discovery, yet Large Language Models (LLMs) struggle to understand molecular graphs effectively. Existing graph-LLM bridges often adapt the Q-Former-style connector with fixed-length static tokens, which is originally designed for vision tasks. These designs overlook stereochemistry and substructural context and typically require costly LLM-backbone fine-tuning, limiting efficiency and generalization. We introduce EDT-Former, an Entropy-guided Dynamic Token Transformer that generates tokens aligned with informative molecular patches, thereby preserving both local and global structural features for molecular graph understanding. Beyond prior approaches, EDT-Former enables alignment between frozen graph encoders and LLMs without tuning the LLM backbone (excluding the embedding layer), resulting in computationally efficient finetuning, and achieves stateof-the-art results on MoleculeQA, Molecule-oriented Mol-Instructions, and property prediction benchmarks (TDC, MoleculeNet), underscoring its effectiveness for scalable and generalizable multimodal molecular understanding</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-02T19:56:21Z</published>
+    <arxiv:comment>Accepted by ICLR 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zihao Jing</name>
+    </author>
+    <author>
+      <name>Qiuhao Zeng</name>
+    </author>
+    <author>
+      <name>Ruiyi Fang</name>
+    </author>
+    <author>
+      <name>Yan Sun</name>
+    </author>
+    <author>
+      <name>Boyu Wang</name>
+    </author>
+    <author>
+      <name>Pingzhao Hu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.06571v1</id>
+    <title>Enhancing Food-Domain Question Answering with a Multimodal Knowledge Graph: Hybrid QA Generation and Diversity Analysis</title>
+    <updated>2025-07-09T05:59:06Z</updated>
+    <link href="https://arxiv.org/abs/2507.06571v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.06571v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We propose a unified food-domain QA framework that combines a large-scale multimodal knowledge graph (MMKG) with generative AI. Our MMKG links 13,000 recipes, 3,000 ingredients, 140,000 relations, and 14,000 images. We generate 40,000 QA pairs using 40 templates and LLaVA/DeepSeek augmentation. Joint fine-tuning of Meta LLaMA 3.1-8B and Stable Diffusion 3.5-Large improves BERTScore by 16.2\%, reduces FID by 37.8\%, and boosts CLIP alignment by 31.1\%. Diagnostic analyses-CLIP-based mismatch detection (35.2\% to 7.3\%) and LLaVA-driven hallucination checks-ensure factual and visual fidelity. A hybrid retrieval-generation strategy achieves 94.1\% accurate image reuse and 85\% adequacy in synthesis. Our results demonstrate that structured knowledge and multimodal generation together enhance reliability and diversity in food QA.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-09T05:59:06Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Srihari K B</name>
+    </author>
+    <author>
+      <name>Pushpak Bhattacharyya</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.37384v1</id>
+    <title>MoTIF-X: A Multimodal Tokenized Framework for Interpretable and Extensible Molecular Representation Learning</title>
+    <updated>2026-09-29T12:33:49Z</updated>
+    <link href="https://arxiv.org/abs/2609.37384v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.37384v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Molecular representation learning is central to computer-aided drug discovery. Molecular graphs, SMILES strings, and 3D conformations provide complementary structural information, yet many multimodal approaches encode these views independently and align them only at a later stage, limiting fine-grained cross-modal interaction and substructure-level interpretability. To address these limitations, we introduce MoTIF-X, a motif-centered framework that uses graph-grounded chemical motifs as shared anchors for multimodal integration and interpretation. Its first pretraining stage learns motif representations through hierarchical contrastive learning across atomic, motif, and molecular scales. The second stage contextualizes these representations with SMILES and torsion-angle tokens through multimodal masked token modeling.
+  After pretraining on drug-like molecules with multiple conformers, MoTIF-X achieved the lowest mean absolute error on all nine OpenADMET ExpansionRx endpoints and the best overall performance among the evaluated methods. Significance analyses supported its advantage in the vast majority of endpoint-baseline comparisons after multiple-testing correction. Ablation studies supported the complementary contributions of motif-token contextualization, multimodal integration, and two-stage pretraining. Beyond molecular properties, the framework extended to drug-target interaction prediction, achieving the best average classification performance across the evaluated benchmarks and generalizing to an external drug-cold-start dataset without additional fine-tuning. Its motif-centered design also enabled substructure-level interpretation: higher motif attribution scores were associated with larger experimentally measured activity shifts. Together, these findings support MoTIF-X as a transferable and interpretable framework for molecular modeling.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-29T12:33:49Z</published>
+    <arxiv:comment>5 figures. Supplementary material is available as an ancillary file. Code: https://github.com/Bin-Chen-Lab/Motif-X</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Linqing Mo</name>
+    </author>
+    <author>
+      <name>Jiayu Zhou</name>
+    </author>
+    <author>
+      <name>Bin Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.14589v1</id>
+    <title>MATEO: A Multimodal Benchmark for Temporal Reasoning and Planning in LVLMs</title>
+    <updated>2026-02-16T09:41:50Z</updated>
+    <link href="https://arxiv.org/abs/2602.14589v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.14589v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI agents need to plan to achieve complex goals that involve orchestrating perception, sub-goal decomposition, and execution. These plans consist of ordered steps structured according to a Temporal Execution Order (TEO, a directed acyclic graph that ensures each step executes only after its preconditions are satisfied. Existing research on foundational models' understanding of temporal execution is limited to automatically derived annotations, approximations of the TEO as a linear chain, or text-only inputs. To address this gap, we introduce MATEO (MultimodAl Temporal Execution Order), a benchmark designed to assess and improve the temporal reasoning abilities of Large Vision Language Models (LVLMs) required for real-world planning. We acquire a high-quality professional multimodal recipe corpus, authored through a standardized editorial process that decomposes instructions into discrete steps, each paired with corresponding images. We collect TEO annotations as graphs by designing and using a scalable crowdsourcing pipeline. Using MATEO, we evaluate six state-of-the-art LVLMs across model scales, varying language context, multimodal input structure, and fine-tuning strategies.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-16T09:41:50Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Gabriel Roccabruna</name>
+    </author>
+    <author>
+      <name>Olha Khomyn</name>
+    </author>
+    <author>
+      <name>Giuseppe Riccardi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.00623v1</id>
+    <title>Towards Effective Federated Multimodal Graph Learning via Navigating Multifaceted Heterogeneity</title>
+    <updated>2026-08-01T12:29:38Z</updated>
+    <link href="https://arxiv.org/abs/2608.00623v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.00623v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multimodal-attributed graphs (MAGs), where nodes carry heterogeneous semantic content across multiple modalities while edges encode relational dependencies, have been widely adopted across diverse domains. Federated multimodal graph learning (FMGL) extends federated graph learning (FGL) to MAGs, enabling collaborative optimization across decentralized MAGs without exposing raw data. However, naively applying existing FGL methods to FMGL is insufficient, as they fail to navigate the multifaceted heterogeneity inherent in decentralized MAGs, including task heterogeneity across diverse client objectives, modality heterogeneity from discrepant modality quality and semantic domains, and topology heterogeneity arising from divergent topological patterns with low cross-modality correlation. To address these challenges, we propose Federated multimodal graph learning with Topology-aware Cross-modal Routing (FedTCR), the first systematic algorithm designed for FMGL. To handle task heterogeneity, FedTCR employs a two-stage paradigm that comprises federated task-agnostic pre-training followed by isolated task-oriented fine-tuning. To jointly address modality and topology heterogeneity, FedTCR introduces a topology-aware cross-modal routing mechanism. Concretely, each client distills modality-specific knowledge into compact prototypes via topology-aware importance-weighted aggregation informed by graph structure; the server then evaluates cross-client cross-modal relationships among these structure-informed prototypes and routes informative ones as contrastive references, driving a tri-level cross-modal contrastive learning scheme that jointly aligns cross-client modalities while preserving discrimination. Experiments across 7 domains demonstrate that FedTCR outperforms state-of-the-art baselines on both graph-centric and modality-centric tasks.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-01T12:29:38Z</published>
+    <arxiv:comment>Under Review</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yinlin Zhu</name>
+    </author>
+    <author>
+      <name>Di Wu</name>
+    </author>
+    <author>
+      <name>Yi Zhang</name>
+    </author>
+    <author>
+      <name>Xunkai Li</name>
+    </author>
+    <author>
+      <name>Wang Luo</name>
+    </author>
+    <author>
+      <name>Wei-Jin Huang</name>
+    </author>
+    <author>
+      <name>Miao Hu</name>
+    </author>
+    <author>
+      <name>Guocong Quan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.03892v2</id>
+    <title>GraFT: A Training-Free Framework for Spatial Reasoning in Multimodal Large Language Models via 3D Scene Graphs</title>
+    <updated>2026-10-16T21:39:47Z</updated>
+    <link href="https://arxiv.org/abs/2609.03892v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.03892v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>3D spatial reasoning underpins understanding and acting in the physical world, yet it remains unreliable in current multimodal large language models (MLLMs). These models falter at precise geometric measurement, at transforming between egocentric and allocentric viewpoints, and at grounding fine-grained appearance. The most common remedies fine-tune the model on large-scale curated spatial-reasoning datasets or attach dedicated encoders for 3D geometry, which typically couples the solution to costly supervision and a specific backbone. We instead introduce GraFT, a training-free framework that supplies the missing 3D structure through a compact, easily maintained 3D scene graph (3DSG). GraFT supplies the graph's 3D structure to the frozen model in three forms: as values computed by symbolic tools, as a bird's-eye-view (BEV) the model reads as an image, and as egocentric frames the geometry selects. On ScanQA, GraFT improves every metric over the same-backbone baseline, raising CIDEr by 27%. On VSI-Bench, GraFT improves frozen MLLMs by up to 65%, surpassing every proprietary and general-purpose open-source baseline, and several prominent fine-tuned spatial models.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-03T14:11:56Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Junqing Du</name>
+    </author>
+    <author>
+      <name>Fernando Ropero</name>
+    </author>
+    <author>
+      <name>Erkin Turkoz</name>
+    </author>
+    <author>
+      <name>Yanfeng Zhang</name>
+    </author>
+    <author>
+      <name>Lu Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.09484v2</id>
+    <title>MolFM: A Multimodal Molecular Foundation Model</title>
+    <updated>2023-07-21T05:13:55Z</updated>
+    <link href="https://arxiv.org/abs/2307.09484v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.09484v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Molecular knowledge resides within three different modalities of information sources: molecular structures, biomedical documents, and knowledge bases. Effective incorporation of molecular knowledge from these modalities holds paramount significance in facilitating biomedical research. However, existing multimodal molecular foundation models exhibit limitations in capturing intricate connections between molecular structures and texts, and more importantly, none of them attempt to leverage a wealth of molecular expertise derived from knowledge graphs. In this study, we introduce MolFM, a multimodal molecular foundation model designed to facilitate joint representation learning from molecular structures, biomedical texts, and knowledge graphs. We propose cross-modal attention between atoms of molecular structures, neighbors of molecule entities and semantically related texts to facilitate cross-modal comprehension. We provide theoretical analysis that our cross-modal pre-training captures local and global molecular knowledge by minimizing the distance in the feature space between different modalities of the same molecule, as well as molecules sharing similar structures or functions. MolFM achieves state-of-the-art performance on various downstream tasks. On cross-modal retrieval, MolFM outperforms existing models with 12.13% and 5.04% absolute gains under the zero-shot and fine-tuning settings, respectively. Furthermore, qualitative analysis showcases MolFM's implicit ability to provide grounding from molecular substructures and knowledge graphs. Code and models are available on https://github.com/BioFM/OpenBioMed.</summary>
+    <category term="q-bio.BM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.chem-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-06T12:45:15Z</published>
+    <arxiv:comment>31 pages, 15 figures, and 15 tables</arxiv:comment>
+    <arxiv:primary_category term="q-bio.BM"/>
+    <author>
+      <name>Yizhen Luo</name>
+    </author>
+    <author>
+      <name>Kai Yang</name>
+    </author>
+    <author>
+      <name>Massimo Hong</name>
+    </author>
+    <author>
+      <name>Xing Yi Liu</name>
+    </author>
+    <author>
+      <name>Zaiqing Nie</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.07777v1</id>
+    <title>A Causal-Guided Multimodal Large Language Model for Generalized Power System Time-Series Data Analytics</title>
+    <updated>2025-11-11T02:50:23Z</updated>
+    <link href="https://arxiv.org/abs/2511.07777v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.07777v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Power system time series analytics is critical in understanding the system operation conditions and predicting the future trends. Despite the wide adoption of Artificial Intelligence (AI) tools, many AI-based time series analytical models suffer from task-specificity (i.e. one model for one task) and structural rigidity (i.e. the input-output format is fixed), leading to limited model performances and resource wastes. In this paper, we propose a Causal-Guided Multimodal Large Language Model (CM-LLM) that can solve heterogeneous power system time-series analysis tasks. First, we introduce a physics-statistics combined causal discovery mechanism to capture the causal relationship, which is represented by graph, among power system variables. Second, we propose a multimodal data preprocessing framework that can encode and fuse text, graph and time series to enhance the model performance. Last, we formulate a generic "mask-and-reconstruct" paradigm and design a dynamic input-output padding mechanism to enable CM-LLM adaptive to heterogeneous time-series analysis tasks with varying sample lengths. Simulation results based on open-source LLM Qwen and real-world dataset demonstrate that, after simple fine-tuning, the proposed CM-LLM can achieve satisfying accuracy and efficiency on three heterogeneous time-series analytics tasks: missing data imputation, forecasting and super resolution.</summary>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-11T02:50:23Z</published>
+    <arxiv:primary_category term="eess.SP"/>
+    <author>
+      <name>Zhenghao Zhou</name>
+    </author>
+    <author>
+      <name>Yiyan Li</name>
+    </author>
+    <author>
+      <name>Xinjie Yu</name>
+    </author>
+    <author>
+      <name>Runlong Liu</name>
+    </author>
+    <author>
+      <name>Zelin Guo</name>
+    </author>
+    <author>
+      <name>Zheng Yan</name>
+    </author>
+    <author>
+      <name>Mo-Yuen Chow</name>
+    </author>
+    <author>
+      <name>Yuqi Yang</name>
+    </author>
+    <author>
+      <name>Yang Xu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.16666v2</id>
+    <title>MultiModal-Learning for Predicting Molecular Properties: A Framework Based on Image and Graph Structures</title>
+    <updated>2024-04-19T13:19:53Z</updated>
+    <link href="https://arxiv.org/abs/2311.16666v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.16666v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The quest for accurate prediction of drug molecule properties poses a fundamental challenge in the realm of Artificial Intelligence Drug Discovery (AIDD). An effective representation of drug molecules emerges as a pivotal component in this pursuit. Contemporary leading-edge research predominantly resorts to self-supervised learning (SSL) techniques to extract meaningful structural representations from large-scale, unlabeled molecular data, subsequently fine-tuning these representations for an array of downstream tasks. However, an inherent shortcoming of these studies lies in their singular reliance on one modality of molecular information, such as molecule image or SMILES representations, thus neglecting the potential complementarity of various molecular modalities. In response to this limitation, we propose MolIG, a novel MultiModaL molecular pre-training framework for predicting molecular properties based on Image and Graph structures. MolIG model innovatively leverages the coherence and correlation between molecule graph and molecule image to execute self-supervised tasks, effectively amalgamating the strengths of both molecular representation forms. This holistic approach allows for the capture of pivotal molecular structural characteristics and high-level semantic information. Upon completion of pre-training, Graph Neural Network (GNN) Encoder is used for the prediction of downstream tasks. In comparison to advanced baseline models, MolIG exhibits enhanced performance in downstream tasks pertaining to molecular property prediction within benchmark groups such as MoleculeNet Benchmark Group and ADMET Benchmark Group.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.chem-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.BM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-28T10:28:35Z</published>
+    <arxiv:comment>8 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zhuoyuan Wang</name>
+    </author>
+    <author>
+      <name>Jiacong Mi</name>
+    </author>
+    <author>
+      <name>Shan Lu</name>
+    </author>
+    <author>
+      <name>Jieyue He</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.03215v2</id>
+    <title>COSINT-Agent: A Knowledge-Driven Multimodal Agent for Chinese Open Source Intelligence</title>
+    <updated>2026-01-13T01:11:29Z</updated>
+    <link href="https://arxiv.org/abs/2503.03215v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.03215v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Open Source Intelligence (OSINT) requires the integration and reasoning of diverse multimodal data, presenting significant challenges in deriving actionable insights. Traditional approaches, including multimodal large language models (MLLMs), often struggle to infer complex contextual relationships or deliver comprehensive intelligence from unstructured data sources. In this paper, we introduce COSINT-Agent, a knowledge-driven multimodal agent tailored to address the challenges of OSINT in the Chinese domain. COSINT-Agent seamlessly integrates the perceptual capabilities of fine-tuned MLLMs with the structured reasoning power of the Entity-Event-Scene Knowledge Graph (EES-KG). Central to COSINT-Agent is the innovative EES-Match framework, which bridges COSINT-MLLM and EES-KG, enabling systematic extraction, reasoning, and contextualization of multimodal insights. This integration facilitates precise entity recognition, event interpretation, and context retrieval, effectively transforming raw multimodal data into actionable intelligence. Extensive experiments validate the superior performance of COSINT-Agent across core OSINT tasks, including entity recognition, EES generation, and context matching. These results underscore its potential as a robust and scalable solution for advancing automated multimodal reasoning and enhancing the effectiveness of OSINT methodologies.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-05T06:16:15Z</published>
+    <arxiv:comment>This manuscript (arXiv:2503.03215) is being withdrawn at the supervisor's request. The content is preliminary and needs further internal revision and approval before public release. We will resubmit a revised version after completion. Apologies for the inconvenience</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Wentao Li</name>
+    </author>
+    <author>
+      <name>Congcong Wang</name>
+    </author>
+    <author>
+      <name>Xiaoxiao Cui</name>
+    </author>
+    <author>
+      <name>Zhi Liu</name>
+    </author>
+    <author>
+      <name>Wei Guo</name>
+    </author>
+    <author>
+      <name>Lizhen Cui</name>
+    </author>
+  </entry>
+</feed>

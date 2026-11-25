@@ -1,0 +1,18 @@
+{
+ "note": "Locked-test (final) evaluation queue, fixed before any test output and before job22's dev result (DECISIONS 2026-11-13T22:00Z). One Kaggle kernel per trained run, built with make_final_kernel.py <job> <source> <run> --final-evaluation [--parse-solve=<parser>]. Order: seed rounds 3407 -> 2027 -> 9173 so that stopping at any point leaves whole seed rounds; inside a round the reference B first, then the two compared arms D and E, then C (reported, not a comparison target). dev_dir is the local directory holding that run's dev summary.json (used only for the cost estimate). An entry is done when runs/kaggle/<job>/ holds its output.",
+ "base": {"job": "jobF13", "arm": "A", "choice": "reports/pilot/base_prompt.json", "note": "Frozen base (no adapter): a reported floor outside the twelve compared kernels (DECISIONS 2026-11-14T12:15Z). Its run and dev_dir are runs/base_prompt_<variant>, with variant and token limit taken from the dev choice file; there is no entry until that file exists. Runs after jobF08. final_table.py / final_invariance.py do not read it."},
+ "jobs": [
+  {"job": "jobF01", "arm": "B", "seed": 3407, "source": "job11", "run": "pilot3_B", "dev_dir": "runs/pilot3_B_kaggle"},
+  {"job": "jobF02", "arm": "D", "seed": 3407, "source": "job20", "run": "pilot3_D", "dev_dir": "runs/pilot3_D_kaggle"},
+  {"job": "jobF03", "arm": "E", "seed": 3407, "source": "job13", "run": "pilot3_E", "parser": "pilot3_C_desc", "dev_dir": "runs/pilot3_E"},
+  {"job": "jobF04", "arm": "C", "seed": 3407, "source": "job12", "run": "pilot3_C", "dev_dir": "runs/pilot3_C"},
+  {"job": "jobF05", "arm": "B", "seed": 2027, "source": "job14", "run": "pilot3_B_s2027", "dev_dir": "runs/pilot3_B_s2027"},
+  {"job": "jobF06", "arm": "D", "seed": 2027, "source": "job15", "run": "pilot3_D_s2027", "dev_dir": "runs/pilot3_D_s2027"},
+  {"job": "jobF07", "arm": "E", "seed": 2027, "source": "job21", "run": "pilot3_E_s2027", "parser": "pilot3_C_desc_s2027", "dev_dir": "runs/pilot3_E_s2027"},
+  {"job": "jobF08", "arm": "C", "seed": 2027, "source": "job16", "run": "pilot3_C_s2027", "dev_dir": "runs/pilot3_C_s2027"},
+  {"job": "jobF09", "arm": "B", "seed": 9173, "source": "job17", "run": "pilot3_B_s9173", "dev_dir": "runs/pilot3_B_s9173"},
+  {"job": "jobF10", "arm": "D", "seed": 9173, "source": "job18", "run": "pilot3_D_s9173", "dev_dir": "runs/pilot3_D_s9173"},
+  {"job": "jobF11", "arm": "E", "seed": 9173, "source": "job22", "run": "pilot3_E_s9173", "parser": "pilot3_C_desc_s9173", "dev_dir": "runs/pilot3_E_s9173"},
+  {"job": "jobF12", "arm": "C", "seed": 9173, "source": "job19", "run": "pilot3_C_s9173", "dev_dir": "runs/pilot3_C_s9173"}
+ ]
+}

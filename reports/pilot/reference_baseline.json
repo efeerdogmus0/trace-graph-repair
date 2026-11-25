@@ -1,0 +1,35 @@
+{
+ "rule": "higher pooled non-edit macro on dev, all three seeds; tie -> first candidate",
+ "split": "dev",
+ "content_digest": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8",
+ "candidates": [
+  "B",
+  "C"
+ ],
+ "pooled_macro": {
+  "B": 0.7979166666666666,
+  "C": 0.54875
+ },
+ "per_seed_macro": {
+  "B": {
+   "2027": 0.8049999999999999,
+   "3407": 0.7962499999999999,
+   "9173": 0.7925
+  },
+  "C": {
+   "2027": 0.56375,
+   "3407": 0.5375,
+   "9173": 0.5449999999999999
+  }
+ },
+ "chosen": "B",
+ "gaps_vs_chosen": {
+  "C": {
+   "point": -0.24916666666666665,
+   "lo": -0.27749999999999997,
+   "hi": -0.22166666666666668,
+   "share_above_zero": 0.0
+  }
+ },
+ "source": "reports/pilot/seeds_dev_interim.json"
+}

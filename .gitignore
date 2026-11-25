@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+# Generated data and run artefacts are reproduced from configs; manifests are tracked.
+data/
+runs/*/checkpoints/
+.DS_Store
+# Full galleries are regenerated with `python -m trace_vr render-gallery`; a few sheets are tracked under contact_sheets/.
+reports/*/gallery/
+reports/*.log
+.venv-model/
+runs/*/adapter/
+dist/
+.claude/
+runs/kaggle/
+/external/

@@ -1,0 +1,56 @@
+{
+ "window": {
+  "lo": 0.875,
+  "hi": 1.6666666666666667,
+  "lo_q": 0.05,
+  "hi_q": 0.95,
+  "ref_roots": 512,
+  "ref_mean": 1.2877929687499998,
+  "ref": "pilot.json:train"
+ },
+ "roots": 200,
+ "matched_roots": 183,
+ "mean_density_all": 1.3240992063492063,
+ "mean_density_matched": 1.303387110764159,
+ "below": 4,
+ "above": 13,
+ "accuracy": {
+  "all": {
+   "minimal_graph_repair": {
+    "n": 400,
+    "right": 218,
+    "accuracy": 0.545
+   },
+   "reachability": {
+    "n": 400,
+    "right": 336,
+    "accuracy": 0.84
+   },
+   "critical_edge": {
+    "n": 400,
+    "right": 201,
+    "accuracy": 0.5025
+   },
+   "non_edit_macro": 0.6712499999999999
+  },
+  "matched": {
+   "minimal_graph_repair": {
+    "n": 366,
+    "right": 203,
+    "accuracy": 0.5546448087431693
+   },
+   "reachability": {
+    "n": 366,
+    "right": 309,
+    "accuracy": 0.8442622950819673
+   },
+   "critical_edge": {
+    "n": 366,
+    "right": 184,
+    "accuracy": 0.5027322404371585
+   },
+   "non_edit_macro": 0.6734972677595629
+  }
+ },
+ "split": "pilot.json:dev"
+}

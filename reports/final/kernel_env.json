@@ -1,0 +1,143 @@
+{
+  "differing_fields": [],
+  "jobs": {
+    "jobF01": null,
+    "jobF02": null,
+    "jobF03": null,
+    "jobF04": {
+      "PIL": "13.0.0",
+      "accelerate": "1.15.0",
+      "cuda": "13.0",
+      "cudnn": 92700,
+      "gpus": [
+        "Tesla T4",
+        "Tesla T4"
+      ],
+      "image": "gcr.io/kaggle-gpu-images/python@sha256:fc720c15545eb096a510e1f085b17fc118387a007599424d953a4f327b71cacf",
+      "matplotlib": "3.10.0",
+      "numpy": "2.1.3",
+      "peft": "0.21.2",
+      "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+      "python": "3.13.16",
+      "safetensors": "0.8.0",
+      "tokenizers": "0.23.3",
+      "torch": "2.11.0+cu130",
+      "transformers": "5.22.2"
+    },
+    "jobF05": {
+      "PIL": "13.0.0",
+      "accelerate": "1.15.0",
+      "cuda": "13.0",
+      "cudnn": 92700,
+      "gpus": [
+        "Tesla T4",
+        "Tesla T4"
+      ],
+      "image": "gcr.io/kaggle-gpu-images/python@sha256:fc720c15545eb096a510e1f085b17fc118387a007599424d953a4f327b71cacf",
+      "matplotlib": "3.10.0",
+      "numpy": "2.1.3",
+      "peft": "0.21.2",
+      "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+      "python": "3.13.16",
+      "safetensors": "0.8.0",
+      "tokenizers": "0.23.3",
+      "torch": "2.11.0+cu130",
+      "transformers": "5.22.2"
+    },
+    "jobF06": {
+      "PIL": "13.0.0",
+      "accelerate": "1.15.0",
+      "cuda": "13.0",
+      "cudnn": 92700,
+      "gpus": [
+        "Tesla T4",
+        "Tesla T4"
+      ],
+      "image": "gcr.io/kaggle-gpu-images/python@sha256:fc720c15545eb096a510e1f085b17fc118387a007599424d953a4f327b71cacf",
+      "matplotlib": "3.10.0",
+      "numpy": "2.1.3",
+      "peft": "0.21.2",
+      "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+      "python": "3.13.16",
+      "safetensors": "0.8.0",
+      "tokenizers": "0.23.3",
+      "torch": "2.11.0+cu130",
+      "transformers": "5.22.2"
+    },
+    "jobF07": {
+      "PIL": "13.0.0",
+      "accelerate": "1.15.0",
+      "cuda": "13.0",
+      "cudnn": 92700,
+      "gpus": [
+        "Tesla T4",
+        "Tesla T4"
+      ],
+      "image": "gcr.io/kaggle-gpu-images/python@sha256:fc720c15545eb096a510e1f085b17fc118387a007599424d953a4f327b71cacf",
+      "matplotlib": "3.10.0",
+      "numpy": "2.1.3",
+      "peft": "0.21.2",
+      "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+      "python": "3.13.16",
+      "safetensors": "0.8.0",
+      "tokenizers": "0.23.3",
+      "torch": "2.11.0+cu130",
+      "transformers": "5.22.2"
+    },
+    "jobF08": {
+      "PIL": "13.0.0",
+      "accelerate": "1.15.0",
+      "cuda": "13.0",
+      "cudnn": 92700,
+      "gpus": [
+        "Tesla T4",
+        "Tesla T4"
+      ],
+      "image": "gcr.io/kaggle-gpu-images/python@sha256:fc720c15545eb096a510e1f085b17fc118387a007599424d953a4f327b71cacf",
+      "matplotlib": "3.10.0",
+      "numpy": "2.1.3",
+      "peft": "0.21.2",
+      "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+      "python": "3.13.16",
+      "safetensors": "0.8.0",
+      "tokenizers": "0.23.3",
+      "torch": "2.11.0+cu130",
+      "transformers": "5.22.2"
+    },
+    "jobF09": null,
+    "jobF10": null,
+    "jobF11": null,
+    "jobF12": null,
+    "jobF13": {
+      "PIL": "13.0.0",
+      "accelerate": "1.15.0",
+      "cuda": "13.0",
+      "cudnn": 92700,
+      "gpus": [
+        "Tesla T4",
+        "Tesla T4"
+      ],
+      "image": "gcr.io/kaggle-gpu-images/python@sha256:fc720c15545eb096a510e1f085b17fc118387a007599424d953a4f327b71cacf",
+      "matplotlib": "3.10.0",
+      "numpy": "2.1.3",
+      "peft": "0.21.2",
+      "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+      "python": "3.13.16",
+      "safetensors": "0.8.0",
+      "tokenizers": "0.23.3",
+      "torch": "2.11.0+cu130",
+      "transformers": "5.22.2"
+    },
+    "jobR1": null
+  },
+  "not_recorded": [
+    "jobF01",
+    "jobF02",
+    "jobF03",
+    "jobF09",
+    "jobF10",
+    "jobF11",
+    "jobF12",
+    "jobR1"
+  ]
+}

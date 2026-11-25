@@ -1,0 +1,94 @@
+{
+ "unit": "graph_group_id",
+ "root_graphs": 200,
+ "n_boot": 2000,
+ "seed": "bootstrap-v1",
+ "level": 0.95,
+ "method": "percentile",
+ "a": {
+  "minimal_graph_repair": {
+   "point": 0.255,
+   "lo": 0.22,
+   "hi": 0.29
+  },
+  "reachability": {
+   "point": 0.7,
+   "lo": 0.665,
+   "hi": 0.7375
+  },
+  "critical_edge": {
+   "point": 0.375,
+   "lo": 0.3425,
+   "hi": 0.41
+  },
+  "non_edit_macro_accuracy": {
+   "point": 0.5375,
+   "lo": 0.5125,
+   "hi": 0.56375
+  }
+ },
+ "b": {
+  "minimal_graph_repair": {
+   "point": 0.5,
+   "lo": 0.455,
+   "hi": 0.5475
+  },
+  "reachability": {
+   "point": 0.77,
+   "lo": 0.735,
+   "hi": 0.805
+  },
+  "critical_edge": {
+   "point": 0.495,
+   "lo": 0.4875,
+   "hi": 0.5
+  },
+  "non_edit_macro_accuracy": {
+   "point": 0.6325000000000001,
+   "lo": 0.61375,
+   "hi": 0.65
+  }
+ },
+ "a_minus_b": {
+  "minimal_graph_repair": {
+   "point": -0.245,
+   "lo": -0.30000000000000004,
+   "hi": -0.185,
+   "share_above_zero": 0.0
+  },
+  "reachability": {
+   "point": -0.07000000000000006,
+   "lo": -0.10999999999999999,
+   "hi": -0.030000000000000027,
+   "share_above_zero": 0.0
+  },
+  "critical_edge": {
+   "point": -0.12,
+   "lo": -0.15499999999999997,
+   "hi": -0.08500000000000002,
+   "share_above_zero": 0.0
+  },
+  "non_edit_macro_accuracy": {
+   "point": -0.09500000000000008,
+   "lo": -0.12250000000000005,
+   "hi": -0.06874999999999998,
+   "share_above_zero": 0.0
+  }
+ },
+ "inputs": [
+  {
+   "file": "runs/pilot3_C/flags_dev.json",
+   "run": "pilot3_C",
+   "predictions_sha256": "db25314da4b03a8295ec755ed5d69e42f3da74c805962c470d1ae78349b9f234",
+   "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+   "missing_responses": 0
+  },
+  {
+   "file": "runs/pilot3_D2/flags_dev.json",
+   "run": "pilot3_D2",
+   "predictions_sha256": "1d033ddde1a51af4cbece41ae3816aae836d41c215fc8dc7e410e38aa1e00375",
+   "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+   "missing_responses": 0
+  }
+ ]
+}

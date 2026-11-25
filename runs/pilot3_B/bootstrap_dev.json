@@ -1,0 +1,39 @@
+{
+ "unit": "graph_group_id",
+ "root_graphs": 200,
+ "n_boot": 2000,
+ "seed": "bootstrap-v1",
+ "level": 0.95,
+ "method": "percentile",
+ "a": {
+  "minimal_graph_repair": {
+   "point": 0.295,
+   "lo": 0.26,
+   "hi": 0.3275
+  },
+  "reachability": {
+   "point": 0.845,
+   "lo": 0.81,
+   "hi": 0.8775
+  },
+  "critical_edge": {
+   "point": 0.77,
+   "lo": 0.735,
+   "hi": 0.8025
+  },
+  "non_edit_macro_accuracy": {
+   "point": 0.8075,
+   "lo": 0.78375,
+   "hi": 0.8325
+  }
+ },
+ "inputs": [
+  {
+   "file": "runs/pilot3_B/flags_dev.json",
+   "run": "pilot3_B",
+   "predictions_sha256": "db7e57b7b95184cd296dfa8a9557783e0f56ae260edc0119af9da4f2563aea6f",
+   "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+   "missing_responses": 0
+  }
+ ]
+}

@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/PKpWcNktz1HipxkEtbBcoexhzgQ</id>
+  <title>arXiv Query: search_query=&amp;id_list=2412.13540,2608.06769,2506.07227,2506.17267,2609.12606,2603.02865,2106.09685&amp;start=0&amp;max_results=10</title>
+  <updated>2026-11-12T14:47:02Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2412.13540,2608.06769,2506.07227,2506.17267,2609.12606,2603.02865,2106.09685" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>7</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2412.13540v3</id>
+    <title>Benchmarking and Improving Large Vision-Language Models for Fundamental Visual Graph Understanding and Reasoning</title>
+    <updated>2025-06-06T06:41:46Z</updated>
+    <link href="https://arxiv.org/abs/2412.13540v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.13540v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Vision-Language Models (LVLMs) have demonstrated remarkable performance across diverse tasks. Despite great success, recent studies show that LVLMs encounter substantial limitations when engaging with visual graphs. To study the reason behind these limitations, we propose VGCure, a comprehensive benchmark covering 22 tasks for examining the fundamental graph understanding and reasoning capacities of LVLMs. Extensive evaluations conducted on 14 LVLMs reveal that LVLMs are weak in basic graph understanding and reasoning tasks, particularly those concerning relational or structurally complex information. Based on this observation, we propose a structure-aware fine-tuning framework to enhance LVLMs with structure learning abilities through three self-supervised learning tasks. Experiments validate the effectiveness of our method in improving LVLMs' performance on fundamental and downstream graph learning tasks, as well as enhancing their robustness against complex visual graphs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-18T06:35:18Z</published>
+    <arxiv:comment>Accepted by ACL2025 main conference</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yingjie Zhu</name>
+    </author>
+    <author>
+      <name>Xuefeng Bai</name>
+    </author>
+    <author>
+      <name>Kehai Chen</name>
+    </author>
+    <author>
+      <name>Yang Xiang</name>
+    </author>
+    <author>
+      <name>Jun Yu</name>
+    </author>
+    <author>
+      <name>Min Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.07227v1</id>
+    <title>Hallucination at a Glance: Controlled Visual Edits and Fine-Grained Multimodal Learning</title>
+    <updated>2025-06-08T17:23:36Z</updated>
+    <link href="https://arxiv.org/abs/2506.07227v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.07227v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multimodal large language models (MLLMs) have achieved strong performance on vision-language tasks but still struggle with fine-grained visual differences, leading to hallucinations or missed semantic shifts. We attribute this to limitations in both training data and learning objectives. To address these issues, we propose a controlled data generation pipeline that produces minimally edited image pairs with semantically aligned captions. Using this pipeline, we construct the Micro Edit Dataset (MED), containing over 50K image-text pairs spanning 11 fine-grained edit categories, including attribute, count, position, and object presence changes. Building on MED, we introduce a supervised fine-tuning (SFT) framework with a feature-level consistency loss that promotes stable visual embeddings under small edits. We evaluate our approach on the Micro Edit Detection benchmark, which includes carefully balanced evaluation pairs designed to test sensitivity to subtle visual variations across the same edit categories. Our method improves difference detection accuracy and reduces hallucinations compared to strong baselines, including GPT-4o. Moreover, it yields consistent gains on standard vision-language tasks such as image captioning and visual question answering. These results demonstrate the effectiveness of combining targeted data and alignment objectives for enhancing fine-grained visual reasoning in MLLMs.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-08T17:23:36Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Tianyi Bai</name>
+    </author>
+    <author>
+      <name>Yuxuan Fan</name>
+    </author>
+    <author>
+      <name>Jiantao Qiu</name>
+    </author>
+    <author>
+      <name>Fupeng Sun</name>
+    </author>
+    <author>
+      <name>Jiayi Song</name>
+    </author>
+    <author>
+      <name>Junlin Han</name>
+    </author>
+    <author>
+      <name>Zichen Liu</name>
+    </author>
+    <author>
+      <name>Conghui He</name>
+    </author>
+    <author>
+      <name>Wentao Zhang</name>
+    </author>
+    <author>
+      <name>Binhang Yuan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.12606v2</id>
+    <title>Beyond Generation and Accuracy: Diagnosing and Enhancing Visual Chain-of-Thought for Geometry Problem Solving</title>
+    <updated>2026-09-14T09:51:45Z</updated>
+    <link href="https://arxiv.org/abs/2609.12606v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.12606v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While multimodal reasoning has advanced rapidly, solving complex geometry problems critically hinges on active visual assistance, such as constructing auxiliary lines, spurring the rise of Visual Chain-of-Thought (VCoT). However, existing evaluations typically assess visual generation quality and final answer accuracy in isolation, failing to examine whether intermediate visual aids are geometrically valid, effectively utilized in subsequent reasoning, or causally responsible for task success. To bridge this gap, we introduce GeoVAD-Bench, a diagnostic benchmark that pairs a fine-grained five-dimensional trajectory diagnosis covering perception, auxiliary quality, utilization, deductive reasoning, and final correctness with controlled No-Aux, Auto-Aux, and GT-Aux intervention settings to systematically isolate intermediate error modes, the causal gains of visual aids, and the resulting autonomy gap. Our findings reveal that while high-quality auxiliary aids offer substantial theoretical gains for geometric problem solving, autonomous generation is frequently hampered by compounding errors across geometric perception, faithful visual manipulation, visual-state grounding, and deductive reasoning. Guided by these diagnostic insights, we establish a specialized data construction pipeline encompassing geometric perception, diagram editing, and interleaved visual-textual reasoning trajectories, and develop a progressive SFT and multimodal RL training framework. The resulting model, GeoWeave-8B, outperforms the base model by +25.3% in final geometric accuracy and achieves a +30.4% gain in process average across the four intermediate diagnostic dimensions.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-11T09:00:57Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zhitong Dong</name>
+    </author>
+    <author>
+      <name>Jicai Pan</name>
+    </author>
+    <author>
+      <name>Yingguo Gao</name>
+    </author>
+    <author>
+      <name>Jingting Ding</name>
+    </author>
+    <author>
+      <name>Hao Chen</name>
+    </author>
+    <author>
+      <name>Jinjie Gu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.17267v1</id>
+    <title>CF-VLM:CounterFactual Vision-Language Fine-tuning</title>
+    <updated>2025-06-10T20:20:05Z</updated>
+    <link href="https://arxiv.org/abs/2506.17267v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.17267v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in vision-language models (VLMs) have greatly improved cross-modal semantic understanding, yet significant limitations remain in fine-grained discrimination and deep causal reasoning tasks. Existing VLMs often rely on superficial statistical correlations, lacking the ability to capture the underlying causal logic between visual and textual content. To address this, we propose CounterFactual Vision-Language Fine-tuning (CF-VLM), a novel framework that enhances the causal reasoning capabilities of VLMs through the targeted use of counterfactual samples. CF-VLM introduces three complementary training objectives: maintaining foundational cross-modal alignment, reinforcing the uniqueness and stability of factual scene representations against coherent counterfactuals, and sharpening the model's sensitivity to minimal but critical causal edits. Extensive experiments demonstrate that CF-VLM consistently outperforms strong baselines and state-of-the-art methods on compositional reasoning and generalization benchmarks. Furthermore, it shows promise in mitigating visual hallucinations, indicating improved factual consistency. Our CF-VLM provides a robust foundation for deploying VLMs in high-stakes, real-world scenarios requiring reliable reasoning and interpretability.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-10T20:20:05Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Jusheng Zhang</name>
+    </author>
+    <author>
+      <name>Kaitong Cai</name>
+    </author>
+    <author>
+      <name>Yijia Fan</name>
+    </author>
+    <author>
+      <name>Jian Wang</name>
+    </author>
+    <author>
+      <name>Keze Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2106.09685v2</id>
+    <title>LoRA: Low-Rank Adaptation of Large Language Models</title>
+    <updated>2021-10-16T18:40:34Z</updated>
+    <link href="https://arxiv.org/abs/2106.09685v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2106.09685v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>An important paradigm of natural language processing consists of large-scale pre-training on general domain data and adaptation to particular tasks or domains. As we pre-train larger models, full fine-tuning, which retrains all model parameters, becomes less feasible. Using GPT-3 175B as an example -- deploying independent instances of fine-tuned models, each with 175B parameters, is prohibitively expensive. We propose Low-Rank Adaptation, or LoRA, which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks. Compared to GPT-3 175B fine-tuned with Adam, LoRA can reduce the number of trainable parameters by 10,000 times and the GPU memory requirement by 3 times. LoRA performs on-par or better than fine-tuning in model quality on RoBERTa, DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a higher training throughput, and, unlike adapters, no additional inference latency. We also provide an empirical investigation into rank-deficiency in language model adaptation, which sheds light on the efficacy of LoRA. We release a package that facilitates the integration of LoRA with PyTorch models and provide our implementations and model checkpoints for RoBERTa, DeBERTa, and GPT-2 at https://github.com/microsoft/LoRA.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-06-17T17:37:18Z</published>
+    <arxiv:comment>Draft V2 includes better baselines, experiments on GLUE, and more on adapter latency</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Edward J. Hu</name>
+    </author>
+    <author>
+      <name>Yelong Shen</name>
+    </author>
+    <author>
+      <name>Phillip Wallis</name>
+    </author>
+    <author>
+      <name>Zeyuan Allen-Zhu</name>
+    </author>
+    <author>
+      <name>Yuanzhi Li</name>
+    </author>
+    <author>
+      <name>Shean Wang</name>
+    </author>
+    <author>
+      <name>Lu Wang</name>
+    </author>
+    <author>
+      <name>Weizhu Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.06769v2</id>
+    <title>GraphVerse: A Comprehensive Visual Graph Reasoning Benchmark for Multimodal Large Language Models</title>
+    <updated>2026-10-09T06:41:46Z</updated>
+    <link href="https://arxiv.org/abs/2608.06769v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.06769v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent Multimodal Large Language Models (MLLMs) have achieved remarkable progress across diverse vision-language tasks, creating an urgent need for more challenging benchmarks. Yet existing evaluations still provide limited insight into whether these models can truly reason over structured visual information. Visual Graph Reasoning (VGR) offers a compelling testbed for this challenge, requiring models to integrate perception, structural understanding, and multi-step reasoning over graph-based visual inputs. However, prior VGR benchmarks often reduce the task to visual perception followed by text-based reasoning, restrict evaluation to single-image settings, rely on answer-only metrics, and underrepresent realistic graph-centric scenarios. To bridge the gap, we introduce GraphVerse, a unified benchmark that jointly evaluates perception, visual reasoning, and text-based graph reasoning in MLLMs under both single-image and paired-image settings. At its core is a suite of Graph-centric Image Editing (GIE) strategies that modify graph images while preserving their semantics, turning them into active tests of visual reasoning. We further propose VGR-Score, a process-sensitive metric that evaluates reasoning quality beyond final-answer accuracy. Extensive experiments reveal several key limitations of current MLLMs in VGR, while also validating the effectiveness of GIE strategies and the transferability of GraphVerse to broader multimodal reasoning capabilities. The code is available at https://github.com/sunyuanfu/GraphVerse.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-07T03:43:25Z</published>
+    <arxiv:comment>EMNLP 2026 Main Conference</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yuanfu Sun</name>
+    </author>
+    <author>
+      <name>Yuanhang Ren</name>
+    </author>
+    <author>
+      <name>Kang Li</name>
+    </author>
+    <author>
+      <name>Chuanhao Ji</name>
+    </author>
+    <author>
+      <name>Jiaxi Li</name>
+    </author>
+    <author>
+      <name>Jiajin Liu</name>
+    </author>
+    <author>
+      <name>Ninghao Liu</name>
+    </author>
+    <author>
+      <name>Qiaoyu Tan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.02865v2</id>
+    <title>Signals Are Present, Predictions Fail: Probing Diagram Representations in Large Vision-Language Models</title>
+    <updated>2026-11-06T12:53:33Z</updated>
+    <link href="https://arxiv.org/abs/2603.02865v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.02865v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large vision-language models (LVLMs) demonstrate strong performance on diagram understanding benchmarks, yet they still struggle to understand relationships between elements, particularly those represented by directed edges between nodes. To investigate the causes of this limitation, we probe the internal representations of LVLMs using a synthetic diagram dataset based on directed graphs. Our linear probing experiments reveal that signals about nodes and edges are linearly decodable from the hidden states of LVLMs, even for aspects that LVLMs struggle with in VQA, such as edge direction and connectivity between nodes. These results reveal a gap between internal signals and model outputs. We further perform causal interventions on the model's hidden states, showing that, for some aspects, the signals identified through probing causally contribute to the model's final predictions. These findings also hold on flowcharts, not only on synthetic diagrams.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-03T11:17:31Z</published>
+    <arxiv:comment>Accepted to EMNLP 2026 Main; 38 pages, 58 figures, 18 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (2026), pp. 61160-61197</arxiv:journal_ref>
+    <author>
+      <name>Haruto Yoshida</name>
+    </author>
+    <author>
+      <name>Keito Kudo</name>
+    </author>
+    <author>
+      <name>Yoichi Aoki</name>
+    </author>
+    <author>
+      <name>Ryota Tanaka</name>
+    </author>
+    <author>
+      <name>Itsumi Saito</name>
+    </author>
+    <author>
+      <name>Keisuke Sakaguchi</name>
+    </author>
+    <author>
+      <name>Kentaro Inui</name>
+    </author>
+    <arxiv:doi>10.18653/2026.emnlp-main.2689</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.18653/2026.emnlp-main.2689" title="doi"/>
+  </entry>
+</feed>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/pYisXFcdKoHRRlR1Ce6VQaeB4Go</id>
+  <title>arXiv Query: search_query=abs:"diagram" AND abs:"edit" AND abs:"transfer" AND abs:"vision-language"&amp;id_list=&amp;start=0&amp;max_results=25</title>
+  <updated>2026-11-15T05:16:31Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22diagram%22+AND+(abs:%22edit%22+AND+(abs:%22transfer%22+AND+abs:%22vision-language%22))&amp;start=0&amp;max_results=25&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+  <opensearch:totalResults>2</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30231v1</id>
+    <title>Edit, Don't Imitate: Minimal-Edit On-Policy Distillation for Multimodal Reasoning</title>
+    <updated>2026-10-21T17:59:28Z</updated>
+    <link href="https://arxiv.org/abs/2610.30231v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.30231v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Visual mathematical reasoning can fail before reasoning begins: when a vision-language model (VLM) misreads a diagram, subsequent reasoning proceeds from false premises. This perceptual bottleneck is especially pronounced in smaller models, while accurate textual descriptions can substantially narrow the gap to larger models. Because obtaining such descriptions at inference requires additional annotation or model calls, we propose minimal-edit corrective on-policy distillation. Using reference figure descriptions and verified reference solutions as training-only information, a teacher scores incorrect student rollouts under a minimal-edit objective, and only teacher-disfavored tokens contribute to the corrective loss. Correct rollouts receive task-reward reinforcement learning. This preserves on-policy supervision while avoiding full-response imitation. Across model scales, the method requires no descriptions at test time and meets or exceeds the corresponding base model supplied with a reference figure description at inference. It also improves perception-oriented performance, particularly low-level geometric perception, and transfers to external mathematics and perception benchmarks. Because the minimal-edit teacher evaluates corrections rather than generating its own solution, the method remains effective with a frozen same-size teacher, although its gains are smaller than with a larger teacher on most metrics.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-21T17:59:28Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Wen Ye</name>
+    </author>
+    <author>
+      <name>Ailin Deng</name>
+    </author>
+    <author>
+      <name>Zirui Wang</name>
+    </author>
+    <author>
+      <name>Shixing Yu</name>
+    </author>
+    <author>
+      <name>Han Zhang</name>
+    </author>
+    <author>
+      <name>Tian Yun</name>
+    </author>
+    <author>
+      <name>Nikhil Mehta</name>
+    </author>
+    <author>
+      <name>Tarun Kalluri</name>
+    </author>
+    <author>
+      <name>Xuefei Cao</name>
+    </author>
+    <author>
+      <name>Xuezhe Ma</name>
+    </author>
+    <author>
+      <name>Hengduo Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.31356v1</id>
+    <title>Open Vocabulary Domain Unlearning</title>
+    <updated>2026-09-25T14:52:36Z</updated>
+    <link href="https://arxiv.org/abs/2609.31356v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.31356v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Vision-Language Models (VLMs) exhibit remarkable zero-shot generalization, yet they often encode unwanted or hazardous stylistic domains such as idealized textbook diagrams in medical AI or cartoon vehicles in autonomous driving. Approximate Domain Unlearning (ADU) aims to selectively erase a model's recognition of a target visual domain while preserving accuracy on the remaining domains. However, existing ADU methods operate under a flawed closed-vocabulary assumption: they evaluate unlearning solely on the specific object classes seen during the unlearning fine-tuning phase. Consequently, these methods do not unlearn the domain itself; they merely overfit to seen class-domain pairs, leaving the domain easily recognizable for unseen classes and providing a false sense of removal. We argue that true domain erasure must be class-agnostic. To address this, we formalize Open-Vocabulary Domain Unlearning (OVDU), a rigorous protocol that mandates domain forgetting must transfer to held-out classes. To solve the OVDU challenge, we propose a surgical parameter-editing framework. First, a Fisher Information mask isolates domain-sensitive weights, mathematically protecting foundational zero-shot generalization. Second, our Targeted Manifold Scattering (TMS) objective uses preference-based mining to locally scatter the forget domain's stylistic geometry. Evaluated across PACS, OfficeHome, and DomainNet, our method vastly improves open-vocabulary generalization over existing baselines. Crucially, it delivers exceptional sample efficiency, outperforming peak 8-shot baseline results with only 4 shots.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-25T14:52:36Z</published>
+    <arxiv:comment>Accepted in NeurIPS 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Sumanth Udupa</name>
+    </author>
+    <author>
+      <name>Mehrtash Harandi</name>
+    </author>
+    <author>
+      <name>Yadan Luo</name>
+    </author>
+    <author>
+      <name>Mahsa Baktashmotlagh</name>
+    </author>
+  </entry>
+</feed>

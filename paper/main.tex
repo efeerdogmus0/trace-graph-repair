@@ -1,0 +1,84 @@
+% Submission candidate (2026-11-23), not uploaded. Every number must trace to a file in runs/, reports/ or docs/.
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,booktabs,amsmath,longtable,hyperref}
+\title{Does Learning to Repair a Drawn Graph Teach a Small VLM to Read It?\\
+\large A verified benchmark with answer-flipping twins}
+\author{Yi\u{g}it Efe Erdo\u{g}mu\c{s}\\{\normalsize Independent researcher}
+\and Yi\u{g}it \c{C}er\c{c}i\\{\normalsize Y{\i}ld{\i}z Technical University}}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+% written by scripts/paper_framing.py (rule framing-v2, chosen after reading; see sections/why.tex);
+% the pre-registered finding-v1 text (scripts/paper_finding.py) is kept in reports/final/abstract.tex
+\IfFileExists{../reports/final/framing_abstract.tex}{\input{../reports/final/framing_abstract.tex}}{%
+\IfFileExists{../reports/final/abstract.tex}{\input{../reports/final/abstract.tex}}{%
+DRAFT. To be written after the main experiments. No result is claimed yet.}}
+\end{abstract}
+
+\input{sections/intro}
+
+\input{sections/related}
+
+\input{sections/benchmark}
+
+\input{sections/setup}
+
+\input{sections/analysis}
+
+\input{sections/results}
+
+\input{sections/test_results}
+
+\input{sections/external}
+
+\input{sections/why}
+
+\input{sections/negative}
+
+\input{sections/limitations}
+
+\input{sections/conclusion}
+
+\appendix
+\input{sections/reproducibility}
+
+% Bibliography: titles and authors from the arXiv API (docs/sources/arxiv_bib_2026-11-12.xml;
+% visiongraph, vgcompiler, knossos, mapreason from docs/sources/arxiv_bib_2026-11-15.xml).
+\begin{thebibliography}{99}
+\bibitem{mcdgraph} Yingjie Zhu, Xuefeng Bai, Kehai Chen, Yang Xiang, Jun Yu, Min Zhang.
+Benchmarking and Improving Large Vision-Language Models for Fundamental Visual Graph
+Understanding and Reasoning. ACL 2025. arXiv:2412.13540.
+\bibitem{graphverse} Yuanfu Sun, Yuanhang Ren, Kang Li, Chuanhao Ji, Jiaxi Li, Jiajin Liu,
+Ninghao Liu, Qiaoyu Tan. GraphVerse: A Comprehensive Visual Graph Reasoning Benchmark for
+Multimodal Large Language Models. arXiv:2608.06769, 2026.
+\bibitem{signals} Haruto Yoshida, Keito Kudo, Yoichi Aoki, Ryota Tanaka, Itsumi Saito,
+Keisuke Sakaguchi, Kentaro Inui. Signals Are Present, Predictions Fail: Probing Diagram
+Representations in Large Vision-Language Models. arXiv:2603.02865, 2026.
+\bibitem{med} Tianyi Bai, Yuxuan Fan, Jiantao Qiu, Fupeng Sun, Jiayi Song, Junlin Han,
+Zichen Liu, Conghui He, Wentao Zhang, Binhang Yuan. Hallucination at a Glance: Controlled
+Visual Edits and Fine-Grained Multimodal Learning. arXiv:2506.07227, 2025.
+\bibitem{cfvlm} Jusheng Zhang, Kaitong Cai, Yijia Fan, Jian Wang, Keze Wang.
+CF-VLM:CounterFactual Vision-Language Fine-tuning. arXiv:2506.17267, 2025.
+\bibitem{geoweave} Zhitong Dong, Jicai Pan, Yingguo Gao, Jingting Ding, Hao Chen, Jinjie Gu.
+Beyond Generation and Accuracy: Diagnosing and Enhancing Visual Chain-of-Thought for
+Geometry Problem Solving. arXiv:2609.12606, 2026.
+\bibitem{visiongraph} Yunxin Li, Baotian Hu, Haoyuan Shi, Wei Wang, Longyue Wang, Min Zhang.
+VisionGraph: Leveraging Large Multimodal Models for Graph Theory Problems in Visual Context.
+arXiv:2405.04950, 2024.
+\bibitem{vgcompiler} Rongzheng Wang, Zhe Wang, Ke Qin, Rongwei Wang, Muquan Li, Yizhuo Ma,
+Yihong Huang, Jielei Wang, Shuang Liang. Visual Graph Reasoning via Knowledge Compilation.
+arXiv:2609.22327, 2026.
+\bibitem{knossos} Bangwei Guo, Xujiang Zhao, Shengyu Chen, Yanchi Liu, Wei Cheng, Xi Zhu,
+Guoning Zhang, Dimitris N. Metaxas, Haifeng Chen. Knossos and Ariadne: Benchmarking and
+Learning Complete Diagram Topology Extraction with Vision-Language Models. arXiv:2610.04721, 2026.
+\bibitem{mapreason} Srinivas Venkatanarayanan, Clement Pakkam Isaac. MapReason-OSM: Can
+Vision-Language Models Make Graph-Verifiable Mobility Decisions from Street Maps ? arXiv:2606.22597, 2026.
+\bibitem{lora} Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li,
+Shean Wang, Lu Wang, Weizhu Chen. LoRA: Low-Rank Adaptation of Large Language Models.
+ICLR 2022. arXiv:2106.09685.
+\end{thebibliography}
+
+\end{document}

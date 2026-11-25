@@ -1,0 +1,70 @@
+# TRACE adapter `pilot3_B`
+
+LoRA adapter for `Qwen/Qwen3.5-2B` (revision `15852e8c16360a2fea060d615a32b45270f8a8fc`), arm **B**, seed 3407.
+
+- Training objective: QA fine-tuning: answers the non-edit questions (reachability, critical edge) and the repair task directly.
+- Produced by Kaggle kernel `trace-job11`; file `runs/kaggle/job11/runs/pilot3_B/adapter/adapter_model.safetensors`
+- `adapter_model.safetensors`: 67332688 bytes, sha256 `2a00eaa5ec89d2e5c6af9c97e3d7ca76464778383f11c2504060706021899862`
+
+## Scope
+
+Research artifact from a pilot-scale study on synthetic drawn directed graphs (TRACE benchmark, `manifests/pilot.json`), three seeds per arm. Evaluated once on the locked test splits (section below); not evaluated on any external benchmark yet. Not intended for any use outside reproducing the TRACE experiments; the numbers say nothing about natural images or other graph drawings.
+
+## Training
+
+| Field | Value |
+|---|---|
+| manifest | `manifests/pilot.json` |
+| split | `train` |
+| content_digest | `ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8` |
+| images_digest | `a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028` |
+| root_graphs | `512` |
+| samples | `1024` |
+| epochs | `3` |
+| accum | `4` |
+| updates | `768` |
+| lr | `0.0002` |
+| lora_r | `16` |
+| seed | `3407` |
+| tokens_in_seen | `1070592` |
+| target_tokens_seen | `21504` |
+| train_seconds | `1638.8000` |
+| mean_loss_first_100 | `0.4667` |
+| mean_loss_last_100 | `0.0657` |
+| gpu | `Tesla T4` |
+| peak_allocated_gib | `7.7700` |
+| torch | `2.11.0+cu130` |
+| platform | `Linux-6.18.55+-x86_64-with-glibc2.39` |
+
+LoRA target modules (regex): `model\.language_model\..*\.(q_proj|k_proj|v_proj|o_proj|in_proj_qkv|in_proj_a|in_proj_b|in_proj_z|out_proj|gate_proj|up_proj|down_proj)`
+
+## Dev evaluation
+
+200 dev root graphs, 1200 samples, input `image`, max_new_tokens 96, truncated 0.
+
+| Task | n | accuracy | format failures |
+|---|---|---|---|
+| minimal_graph_repair | 400 | 0.292 | 0.072 |
+| reachability | 400 | 0.830 | 0.000 |
+| critical_edge | 400 | 0.762 | 0.000 |
+
+Non-edit macro accuracy: **0.796**.
+
+## Locked-test evaluation
+
+Evaluated once in kernel `trace-jobF01` (arm **B**, seed 3407).
+
+Accuracy of this seed per locked split, copied from `reports/final/final_table.json` (pooled-over-seed intervals and the pre-registered reading: `reports/final/final_primary.md`).
+
+| Split | Roots | minimal_graph_repair | reachability | critical_edge | non_edit_macro_accuracy |
+|---|---|---|---|---|---|
+| test_id | 200 | 0.250 | 0.800 | 0.748 | 0.774 |
+| test_style_ood | 200 | 0.287 | 0.835 | 0.792 | 0.814 |
+| test_struct_ood | 200 | 0.225 | 0.743 | 0.698 | 0.720 |
+| test_combined_ood | 100 | 0.225 | 0.780 | 0.700 | 0.740 |
+| test_family_ood | 100 | 0.250 | 0.835 | 0.790 | 0.812 |
+| test_size_ood | 100 | 0.260 | 0.815 | 0.760 | 0.787 |
+
+## Licence
+
+Adapter weights: CC BY 4.0 (`LICENSE-DATA.md`); training and evaluation code: MIT (`LICENSE`). The base model's own licence (Apache-2.0 per its model card) applies to the base weights, which are not included.

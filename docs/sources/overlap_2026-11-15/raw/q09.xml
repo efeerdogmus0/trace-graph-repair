@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/jruVKfeT0uOgUx5YQBS9F6PVG1c</id>
+  <title>arXiv Query: search_query=abs:"visual graph reasoning"&amp;id_list=&amp;start=0&amp;max_results=25</title>
+  <updated>2026-11-15T05:16:24Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22visual+graph+reasoning%22&amp;start=0&amp;max_results=25&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+  <opensearch:totalResults>3</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2609.22327v1</id>
+    <title>Visual Graph Reasoning via Knowledge Compilation</title>
+    <updated>2026-09-16T08:40:43Z</updated>
+    <link href="https://arxiv.org/abs/2609.22327v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.22327v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Visual graph reasoning requires answering graph-theoretic questions directly from graph images, where graph topology and state are conveyed visually rather than given in symbolic form. Despite recent progress of vision-language models (VLMs), current approaches to visual graph reasoning still fail on simple visual graph problems. This reveals a fundamental limitation of existing approaches: they prioritize final-answer supervision over the intermediate recovery of an explicit graph representation that preserves graph topology and state from visual input. To address this limitation, we propose VGCompiler, a compilation-centric paradigm for visual graph reasoning via knowledge compilation. VGCompiler organizes reasoning around two compilers: a representation compiler that recovers a structure-preserving intermediate graph representation from visual input, and an operation compiler that compiles query intent under the recovered graph state into an executable graph operation. Specifically, we build VGCompiler on Qwen3-VL-8B and train it with reinforcement learning guided by a layered reward over executability, compiled graph validity, representation quality, and operation quality. VGCompiler uses a frozen observer to summarize graph and question conditions into lightweight signatures, enabling archive retrieval and code reuse across similar regimes. Experiments on three benchmarks GVLQA, VisionGraph, and VGCURE, show that Qwen-VGCompiler, built on an 8B backbone, surpasses the strongest closed-source VLM baseline by 28.9% and the strongest code-based baseline by 23.7%, while maintaining high efficiency. We further evaluate VGCompiler on three real-world domains, including metro routing, logistics delivery, and network fault assessment, where it generalizes across heterogeneous visual graphs and domain-grounded tasks.</summary>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-16T08:40:43Z</published>
+    <arxiv:comment>Accepted at the 34th ACM International Conference on Multimedia (MM '26)</arxiv:comment>
+    <arxiv:primary_category term="cs.MM"/>
+    <author>
+      <name>Rongzheng Wang</name>
+    </author>
+    <author>
+      <name>Zhe Wang</name>
+    </author>
+    <author>
+      <name>Ke Qin</name>
+    </author>
+    <author>
+      <name>Rongwei Wang</name>
+    </author>
+    <author>
+      <name>Muquan Li</name>
+    </author>
+    <author>
+      <name>Yizhuo Ma</name>
+    </author>
+    <author>
+      <name>Yihong Huang</name>
+    </author>
+    <author>
+      <name>Jielei Wang</name>
+    </author>
+    <author>
+      <name>Shuang Liang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2107.04768v1</id>
+    <title>DualVGR: A Dual-Visual Graph Reasoning Unit for Video Question Answering</title>
+    <updated>2021-07-10T06:08:15Z</updated>
+    <link href="https://arxiv.org/abs/2107.04768v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2107.04768v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Video question answering is a challenging task, which requires agents to be able to understand rich video contents and perform spatial-temporal reasoning. However, existing graph-based methods fail to perform multi-step reasoning well, neglecting two properties of VideoQA: (1) Even for the same video, different questions may require different amount of video clips or objects to infer the answer with relational reasoning; (2) During reasoning, appearance and motion features have complicated interdependence which are correlated and complementary to each other. Based on these observations, we propose a Dual-Visual Graph Reasoning Unit (DualVGR) which reasons over videos in an end-to-end fashion. The first contribution of our DualVGR is the design of an explainable Query Punishment Module, which can filter out irrelevant visual features through multiple cycles of reasoning. The second contribution is the proposed Video-based Multi-view Graph Attention Network, which captures the relations between appearance and motion features. Our DualVGR network achieves state-of-the-art performance on the benchmark MSVD-QA and SVQA datasets, and demonstrates competitive results on benchmark MSRVTT-QA datasets. Our code is available at https://github.com/MMIR/DualVGR-VideoQA.</summary>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-07-10T06:08:15Z</published>
+    <arxiv:comment>12 pages, 12 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.MM"/>
+    <arxiv:journal_ref>IEEE Transactions on Multimedia 2021</arxiv:journal_ref>
+    <author>
+      <name>Jianyu Wang</name>
+    </author>
+    <author>
+      <name>Bing-Kun Bao</name>
+    </author>
+    <author>
+      <name>Changsheng Xu</name>
+    </author>
+    <arxiv:doi>10.1109/TMM.2021.3097171</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/TMM.2021.3097171" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.06769v2</id>
+    <title>GraphVerse: A Comprehensive Visual Graph Reasoning Benchmark for Multimodal Large Language Models</title>
+    <updated>2026-10-09T06:41:46Z</updated>
+    <link href="https://arxiv.org/abs/2608.06769v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.06769v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent Multimodal Large Language Models (MLLMs) have achieved remarkable progress across diverse vision-language tasks, creating an urgent need for more challenging benchmarks. Yet existing evaluations still provide limited insight into whether these models can truly reason over structured visual information. Visual Graph Reasoning (VGR) offers a compelling testbed for this challenge, requiring models to integrate perception, structural understanding, and multi-step reasoning over graph-based visual inputs. However, prior VGR benchmarks often reduce the task to visual perception followed by text-based reasoning, restrict evaluation to single-image settings, rely on answer-only metrics, and underrepresent realistic graph-centric scenarios. To bridge the gap, we introduce GraphVerse, a unified benchmark that jointly evaluates perception, visual reasoning, and text-based graph reasoning in MLLMs under both single-image and paired-image settings. At its core is a suite of Graph-centric Image Editing (GIE) strategies that modify graph images while preserving their semantics, turning them into active tests of visual reasoning. We further propose VGR-Score, a process-sensitive metric that evaluates reasoning quality beyond final-answer accuracy. Extensive experiments reveal several key limitations of current MLLMs in VGR, while also validating the effectiveness of GIE strategies and the transferability of GraphVerse to broader multimodal reasoning capabilities. The code is available at https://github.com/sunyuanfu/GraphVerse.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-07T03:43:25Z</published>
+    <arxiv:comment>EMNLP 2026 Main Conference</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yuanfu Sun</name>
+    </author>
+    <author>
+      <name>Yuanhang Ren</name>
+    </author>
+    <author>
+      <name>Kang Li</name>
+    </author>
+    <author>
+      <name>Chuanhao Ji</name>
+    </author>
+    <author>
+      <name>Jiaxi Li</name>
+    </author>
+    <author>
+      <name>Jiajin Liu</name>
+    </author>
+    <author>
+      <name>Ninghao Liu</name>
+    </author>
+    <author>
+      <name>Qiaoyu Tan</name>
+    </author>
+  </entry>
+</feed>

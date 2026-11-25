@@ -1,0 +1,646 @@
+{
+ "source": "copied from Kaggle kernel output yiitefeerdomu/trace-jobf08 (files, not transcription); every flags file re-scored locally from the downloaded predictions and equal to the log line",
+ "job": "jobF08",
+ "run": "pilot3_C_s2027",
+ "kernel_environment_lines": [
+  "FINAL-START jobF08 run=runs/pilot3_C_s2027 adapter=runs/pilot3_C_s2027/adapter parse_solve=0 prompt_variant=common max_new=96 2026-11-21T22:22:32Z",
+  "FINAL-END jobF08 2026-11-22T00:17:17Z"
+ ],
+ "required_metric_values": {},
+ "evaluations": [
+  "test_id",
+  "test_id_inv",
+  "test_style_ood",
+  "test_style_ood_inv",
+  "test_struct_ood",
+  "test_struct_ood_inv",
+  "test_combined_ood",
+  "test_combined_ood_inv",
+  "test_family_ood",
+  "test_family_ood_inv",
+  "test_size_ood",
+  "test_size_ood_inv"
+ ],
+ "metrics": {
+  "test_id": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_id",
+   "eval_root_graphs": 200,
+   "samples": 1200,
+   "adapter": "runs/pilot3_C_s2027/adapter",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "main",
+   "prompt_variant": "common",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 1170.5,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 9.716666666666667,
+   "metrics": {
+    "samples": 1200,
+    "missing_responses": 0,
+    "per_task": {
+     "minimal_graph_repair": {
+      "n": 400,
+      "accuracy": 0.25,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.25,
+      "status_accuracy": 0.26,
+      "valid_edit_rate": 0.0,
+      "minimal_repair_accuracy": 0.0,
+      "n_true_edited": 200,
+      "n_parsed": 400
+     },
+     "reachability": {
+      "n": 400,
+      "accuracy": 0.63,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.63
+     },
+     "critical_edge": {
+      "n": 400,
+      "accuracy": 0.4725,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.4725
+     }
+    },
+    "non_edit_macro_lenient_accuracy": 0.55125,
+    "non_edit_macro_accuracy": 0.55125,
+    "pair_accuracy": {
+     "critical:critical_edge": {
+      "n": 200,
+      "both_correct": 0.02
+     },
+     "critical:minimal_graph_repair": {
+      "n": 200,
+      "both_correct": 0.0
+     },
+     "critical:reachability": {
+      "n": 200,
+      "both_correct": 0.27
+     }
+    }
+   }
+  },
+  "test_id_inv": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_id",
+   "eval_root_graphs": 200,
+   "samples": 198,
+   "adapter": "runs/pilot3_C_s2027/adapter",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "invariance",
+   "prompt_variant": "common",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 159.9,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 8.0,
+   "metrics": {
+    "samples": 198,
+    "missing_responses": 0,
+    "per_task": {},
+    "non_edit_macro_lenient_accuracy": null,
+    "non_edit_macro_accuracy": null,
+    "pair_accuracy": {},
+    "invariance_copy_accuracy": {
+     "reachability": {
+      "n": 99,
+      "accuracy": 0.5555555555555556
+     },
+     "critical_edge": {
+      "n": 99,
+      "accuracy": 0.37373737373737376
+     }
+    }
+   }
+  },
+  "test_style_ood": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_style_ood",
+   "eval_root_graphs": 200,
+   "samples": 1200,
+   "adapter": "runs/pilot3_C_s2027/adapter",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "main",
+   "prompt_variant": "common",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 1156.2,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 9.756666666666666,
+   "metrics": {
+    "samples": 1200,
+    "missing_responses": 0,
+    "per_task": {
+     "minimal_graph_repair": {
+      "n": 400,
+      "accuracy": 0.25,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.25,
+      "status_accuracy": 0.2625,
+      "valid_edit_rate": 0.0,
+      "minimal_repair_accuracy": 0.0,
+      "n_true_edited": 200,
+      "n_parsed": 400
+     },
+     "reachability": {
+      "n": 400,
+      "accuracy": 0.6475,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.6475
+     },
+     "critical_edge": {
+      "n": 400,
+      "accuracy": 0.4525,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.4525
+     }
+    },
+    "non_edit_macro_lenient_accuracy": 0.55,
+    "non_edit_macro_accuracy": 0.55,
+    "pair_accuracy": {
+     "critical:critical_edge": {
+      "n": 200,
+      "both_correct": 0.005
+     },
+     "critical:minimal_graph_repair": {
+      "n": 200,
+      "both_correct": 0.0
+     },
+     "critical:reachability": {
+      "n": 200,
+      "both_correct": 0.295
+     }
+    }
+   }
+  },
+  "test_style_ood_inv": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_style_ood",
+   "eval_root_graphs": 200,
+   "samples": 216,
+   "adapter": "runs/pilot3_C_s2027/adapter",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "invariance",
+   "prompt_variant": "common",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 173.6,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 8.0,
+   "metrics": {
+    "samples": 216,
+    "missing_responses": 0,
+    "per_task": {},
+    "non_edit_macro_lenient_accuracy": null,
+    "non_edit_macro_accuracy": null,
+    "pair_accuracy": {},
+    "invariance_copy_accuracy": {
+     "reachability": {
+      "n": 108,
+      "accuracy": 0.6574074074074074
+     },
+     "critical_edge": {
+      "n": 108,
+      "accuracy": 0.4074074074074074
+     }
+    }
+   }
+  },
+  "test_struct_ood": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_struct_ood",
+   "eval_root_graphs": 200,
+   "samples": 1200,
+   "adapter": "runs/pilot3_C_s2027/adapter",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "main",
+   "prompt_variant": "common",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 1155.3,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 9.726666666666667,
+   "metrics": {
+    "samples": 1200,
+    "missing_responses": 0,
+    "per_task": {
+     "minimal_graph_repair": {
+      "n": 400,
+      "accuracy": 0.25,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.25,
+      "status_accuracy": 0.26,
+      "valid_edit_rate": 0.0,
+      "minimal_repair_accuracy": 0.0,
+      "n_true_edited": 200,
+      "n_parsed": 400
+     },
+     "reachability": {
+      "n": 400,
+      "accuracy": 0.59,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.59
+     },
+     "critical_edge": {
+      "n": 400,
+      "accuracy": 0.475,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.475
+     }
+    },
+    "non_edit_macro_lenient_accuracy": 0.5325,
+    "non_edit_macro_accuracy": 0.5325,
+    "pair_accuracy": {
+     "critical:critical_edge": {
+      "n": 200,
+      "both_correct": 0.015
+     },
+     "critical:minimal_graph_repair": {
+      "n": 200,
+      "both_correct": 0.0
+     },
+     "critical:reachability": {
+      "n": 200,
+      "both_correct": 0.185
+     }
+    }
+   }
+  },
+  "test_struct_ood_inv": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_struct_ood",
+   "eval_root_graphs": 200,
+   "samples": 208,
+   "adapter": "runs/pilot3_C_s2027/adapter",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "invariance",
+   "prompt_variant": "common",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 169.3,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 8.0,
+   "metrics": {
+    "samples": 208,
+    "missing_responses": 0,
+    "per_task": {},
+    "non_edit_macro_lenient_accuracy": null,
+    "non_edit_macro_accuracy": null,
+    "pair_accuracy": {},
+    "invariance_copy_accuracy": {
+     "reachability": {
+      "n": 104,
+      "accuracy": 0.5961538461538461
+     },
+     "critical_edge": {
+      "n": 104,
+      "accuracy": 0.36538461538461536
+     }
+    }
+   }
+  },
+  "test_combined_ood": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_combined_ood",
+   "eval_root_graphs": 100,
+   "samples": 600,
+   "adapter": "runs/pilot3_C_s2027/adapter",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "main",
+   "prompt_variant": "common",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 580.0,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 9.886666666666667,
+   "metrics": {
+    "samples": 600,
+    "missing_responses": 0,
+    "per_task": {
+     "minimal_graph_repair": {
+      "n": 200,
+      "accuracy": 0.24,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.24,
+      "status_accuracy": 0.26,
+      "valid_edit_rate": 0.0,
+      "minimal_repair_accuracy": 0.0,
+      "n_true_edited": 100,
+      "n_parsed": 200
+     },
+     "reachability": {
+      "n": 200,
+      "accuracy": 0.595,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.595
+     },
+     "critical_edge": {
+      "n": 200,
+      "accuracy": 0.475,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.475
+     }
+    },
+    "non_edit_macro_lenient_accuracy": 0.5349999999999999,
+    "non_edit_macro_accuracy": 0.5349999999999999,
+    "pair_accuracy": {
+     "critical:critical_edge": {
+      "n": 100,
+      "both_correct": 0.0
+     },
+     "critical:minimal_graph_repair": {
+      "n": 100,
+      "both_correct": 0.0
+     },
+     "critical:reachability": {
+      "n": 100,
+      "both_correct": 0.19
+     }
+    }
+   }
+  },
+  "test_combined_ood_inv": {
+   "manifest": "manifests/pilot_test.json",
+   "split": "test_combined_ood",
+   "eval_root_graphs": 100,
+   "samples": 84,
+   "adapter": "runs/pilot3_C_s2027/adapter",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "invariance",
+   "prompt_variant": "common",
+   "content_digest": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+   "images_digest": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "eval_seconds": 67.6,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 8.0,
+   "metrics": {
+    "samples": 84,
+    "missing_responses": 0,
+    "per_task": {},
+    "non_edit_macro_lenient_accuracy": null,
+    "non_edit_macro_accuracy": null,
+    "pair_accuracy": {},
+    "invariance_copy_accuracy": {
+     "reachability": {
+      "n": 42,
+      "accuracy": 0.5952380952380952
+     },
+     "critical_edge": {
+      "n": 42,
+      "accuracy": 0.38095238095238093
+     }
+    }
+   }
+  },
+  "test_family_ood": {
+   "manifest": "manifests/pilot_diag.json",
+   "split": "test_family_ood",
+   "eval_root_graphs": 100,
+   "samples": 600,
+   "adapter": "runs/pilot3_C_s2027/adapter",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "main",
+   "prompt_variant": "common",
+   "content_digest": "bafc07abe3c4743e5fc4a4483602a3e388cd1df5e9036016007e5422e0b05652",
+   "images_digest": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "eval_seconds": 594.7,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 9.846666666666666,
+   "metrics": {
+    "samples": 600,
+    "missing_responses": 0,
+    "per_task": {
+     "minimal_graph_repair": {
+      "n": 200,
+      "accuracy": 0.24,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.24,
+      "status_accuracy": 0.26,
+      "valid_edit_rate": 0.0,
+      "minimal_repair_accuracy": 0.0,
+      "n_true_edited": 100,
+      "n_parsed": 200
+     },
+     "reachability": {
+      "n": 200,
+      "accuracy": 0.62,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.62
+     },
+     "critical_edge": {
+      "n": 200,
+      "accuracy": 0.44,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.44
+     }
+    },
+    "non_edit_macro_lenient_accuracy": 0.53,
+    "non_edit_macro_accuracy": 0.53,
+    "pair_accuracy": {
+     "critical:critical_edge": {
+      "n": 100,
+      "both_correct": 0.0
+     },
+     "critical:minimal_graph_repair": {
+      "n": 100,
+      "both_correct": 0.0
+     },
+     "critical:reachability": {
+      "n": 100,
+      "both_correct": 0.25
+     }
+    }
+   }
+  },
+  "test_family_ood_inv": {
+   "manifest": "manifests/pilot_diag.json",
+   "split": "test_family_ood",
+   "eval_root_graphs": 100,
+   "samples": 92,
+   "adapter": "runs/pilot3_C_s2027/adapter",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "invariance",
+   "prompt_variant": "common",
+   "content_digest": "bafc07abe3c4743e5fc4a4483602a3e388cd1df5e9036016007e5422e0b05652",
+   "images_digest": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "eval_seconds": 74.9,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 8.0,
+   "metrics": {
+    "samples": 92,
+    "missing_responses": 0,
+    "per_task": {},
+    "non_edit_macro_lenient_accuracy": null,
+    "non_edit_macro_accuracy": null,
+    "pair_accuracy": {},
+    "invariance_copy_accuracy": {
+     "reachability": {
+      "n": 46,
+      "accuracy": 0.6521739130434783
+     },
+     "critical_edge": {
+      "n": 46,
+      "accuracy": 0.391304347826087
+     }
+    }
+   }
+  },
+  "test_size_ood": {
+   "manifest": "manifests/pilot_diag.json",
+   "split": "test_size_ood",
+   "eval_root_graphs": 100,
+   "samples": 600,
+   "adapter": "runs/pilot3_C_s2027/adapter",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "main",
+   "prompt_variant": "common",
+   "content_digest": "bafc07abe3c4743e5fc4a4483602a3e388cd1df5e9036016007e5422e0b05652",
+   "images_digest": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "eval_seconds": 572.3,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 9.746666666666666,
+   "metrics": {
+    "samples": 600,
+    "missing_responses": 0,
+    "per_task": {
+     "minimal_graph_repair": {
+      "n": 200,
+      "accuracy": 0.25,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.25,
+      "status_accuracy": 0.255,
+      "valid_edit_rate": 0.01,
+      "minimal_repair_accuracy": 0.01,
+      "n_true_edited": 100,
+      "n_parsed": 200
+     },
+     "reachability": {
+      "n": 200,
+      "accuracy": 0.61,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.61
+     },
+     "critical_edge": {
+      "n": 200,
+      "accuracy": 0.47,
+      "format_failure_rate": 0.0,
+      "lenient_accuracy": 0.47
+     }
+    },
+    "non_edit_macro_lenient_accuracy": 0.54,
+    "non_edit_macro_accuracy": 0.54,
+    "pair_accuracy": {
+     "critical:critical_edge": {
+      "n": 100,
+      "both_correct": 0.01
+     },
+     "critical:minimal_graph_repair": {
+      "n": 100,
+      "both_correct": 0.01
+     },
+     "critical:reachability": {
+      "n": 100,
+      "both_correct": 0.23
+     }
+    }
+   }
+  },
+  "test_size_ood_inv": {
+   "manifest": "manifests/pilot_diag.json",
+   "split": "test_size_ood",
+   "eval_root_graphs": 100,
+   "samples": 86,
+   "adapter": "runs/pilot3_C_s2027/adapter",
+   "max_new_tokens": 96,
+   "input_mode": "image",
+   "sample_set": "invariance",
+   "prompt_variant": "common",
+   "content_digest": "bafc07abe3c4743e5fc4a4483602a3e388cd1df5e9036016007e5422e0b05652",
+   "images_digest": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "eval_seconds": 69.7,
+   "truncated_at_limit": 0,
+   "mean_new_tokens": 8.0,
+   "metrics": {
+    "samples": 86,
+    "missing_responses": 0,
+    "per_task": {},
+    "non_edit_macro_lenient_accuracy": null,
+    "non_edit_macro_accuracy": null,
+    "pair_accuracy": {},
+    "invariance_copy_accuracy": {
+     "reachability": {
+      "n": 43,
+      "accuracy": 0.5348837209302325
+     },
+     "critical_edge": {
+      "n": 43,
+      "accuracy": 0.5348837209302325
+     }
+    }
+   }
+  }
+ },
+ "images_digest": {
+  "test_id": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_id_inv": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_style_ood": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_style_ood_inv": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_struct_ood": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_struct_ood_inv": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_combined_ood": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_combined_ood_inv": {
+   "kernel": "ea6169fc9e243bec756e2d102e818b96c70715419104810b39a986c733682bf4",
+   "local": "da7dd61d94ebc187cc0f0799d10617234ffdc7df9c77aab67178a4b28c6c37da"
+  },
+  "test_family_ood": {
+   "kernel": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "local": "982403581f338031d28a21fef4c132db3851371371eaf6322954ed8947279fad"
+  },
+  "test_family_ood_inv": {
+   "kernel": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "local": "982403581f338031d28a21fef4c132db3851371371eaf6322954ed8947279fad"
+  },
+  "test_size_ood": {
+   "kernel": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "local": "982403581f338031d28a21fef4c132db3851371371eaf6322954ed8947279fad"
+  },
+  "test_size_ood_inv": {
+   "kernel": "ec78d0140503b0a474d78514dbe76ed9b83f6ba4f63bdc77e05083e460f343f6",
+   "local": "982403581f338031d28a21fef4c132db3851371371eaf6322954ed8947279fad"
+  }
+ }
+}

@@ -1,0 +1,373 @@
+{
+ "arms": {
+  "B": {
+   "diff_per_seed": [
+    {
+     "edge_exists_accuracy": {
+      "hi": 0.027000000000000024,
+      "lo": -0.025000000000000022,
+      "p_le_0": 0.4819,
+      "point": 0.0010000000000000009
+     },
+     "external_macro": {
+      "hi": 0.11041365390848301,
+      "lo": 0.055753736192332704,
+      "p_le_0": 0.0,
+      "point": 0.08338105537494278
+     },
+     "reachability_balanced_accuracy": {
+      "hi": 0.21461968773482498,
+      "lo": 0.11637136782423818,
+      "p_le_0": 0.0,
+      "point": 0.16576211074988578
+     }
+    },
+    {
+     "edge_exists_accuracy": {
+      "hi": 0.05499999999999994,
+      "lo": 0.0030000000000000027,
+      "p_le_0": 0.0166,
+      "point": 0.028999999999999915
+     },
+     "external_macro": {
+      "hi": 0.1490381659904888,
+      "lo": 0.09503047484053861,
+      "p_le_0": 0.0,
+      "point": 0.1224421800693194
+     },
+     "reachability_balanced_accuracy": {
+      "hi": 0.26318987609310196,
+      "lo": 0.16700370744860127,
+      "p_le_0": 0.0,
+      "point": 0.21588436013863888
+     }
+    },
+    {
+     "edge_exists_accuracy": {
+      "hi": 0.0020000000000000018,
+      "lo": -0.05499999999999994,
+      "p_le_0": 0.9657,
+      "point": -0.025999999999999912
+     },
+     "external_macro": {
+      "hi": 0.10820729835512011,
+      "lo": 0.058143009377664145,
+      "p_le_0": 0.0,
+      "point": 0.083301620140251
+     },
+     "reachability_balanced_accuracy": {
+      "hi": 0.23385549872122768,
+      "lo": 0.1490845684394072,
+      "p_le_0": 0.0,
+      "point": 0.1926032402805019
+     }
+    }
+   ],
+   "diff_pooled": {
+    "edge_exists_accuracy": {
+     "hi": 0.025000000000000022,
+     "lo": -0.022666666666666613,
+     "p_le_0": 0.4582,
+     "point": 0.0013333333333332975
+    },
+    "external_macro": {
+     "hi": 0.11946982906660308,
+     "lo": 0.0729753823035445,
+     "p_le_0": 0.0,
+     "point": 0.09637495186150447
+    },
+    "reachability_balanced_accuracy": {
+     "hi": 0.23202614379084952,
+     "lo": 0.14960317460317463,
+     "p_le_0": 0.0,
+     "point": 0.19141657038967552
+    }
+   },
+   "per_seed": [
+    {
+     "edge_exists_accuracy": 0.831,
+     "external_macro": 0.8162429001316531,
+     "reachability_balanced_accuracy": 0.8014858002633064
+    },
+    {
+     "edge_exists_accuracy": 0.827,
+     "external_macro": 0.816076640962949,
+     "reachability_balanced_accuracy": 0.8051532819258981
+    },
+    {
+     "edge_exists_accuracy": 0.797,
+     "external_macro": 0.8160286815873613,
+     "reachability_balanced_accuracy": 0.8350573631747226
+    }
+   ],
+   "pooled": {
+    "edge_exists_accuracy": 0.8183333333333334,
+    "external_macro": 0.8161160742273211,
+    "reachability_balanced_accuracy": 0.813898815121309
+   },
+   "runs": [
+    "runs/kaggle/jobV2/pilot3_B",
+    "runs/kaggle/jobV3/pilot3_B_s2027",
+    "runs/kaggle/jobV4/pilot3_B_s9173"
+   ]
+  },
+  "C": {
+   "per_seed": [
+    {
+     "edge_exists_accuracy": 0.83,
+     "external_macro": 0.7328618447567103,
+     "reachability_balanced_accuracy": 0.6357236895134206
+    },
+    {
+     "edge_exists_accuracy": 0.798,
+     "external_macro": 0.6936344608936296,
+     "reachability_balanced_accuracy": 0.5892689217872592
+    },
+    {
+     "edge_exists_accuracy": 0.823,
+     "external_macro": 0.7327270614471103,
+     "reachability_balanced_accuracy": 0.6424541228942207
+    }
+   ],
+   "pooled": {
+    "edge_exists_accuracy": 0.8170000000000001,
+    "external_macro": 0.7197411223658167,
+    "reachability_balanced_accuracy": 0.6224822447316335
+   },
+   "runs": [
+    "runs/kaggle/jobV2/pilot3_C",
+    "runs/kaggle/jobV3/pilot3_C_s2027",
+    "runs/kaggle/jobV4/pilot3_C_s9173"
+   ]
+  },
+  "D": {
+   "diff_per_seed": [
+    {
+     "edge_exists_accuracy": {
+      "hi": 0.06399999999999995,
+      "lo": 0.015000000000000013,
+      "p_le_0": 0.001,
+      "point": 0.039000000000000035
+     },
+     "external_macro": {
+      "hi": 0.16142251137822394,
+      "lo": 0.11963295569678545,
+      "p_le_0": 0.0,
+      "point": 0.14084259383648134
+     },
+     "reachability_balanced_accuracy": {
+      "hi": 0.2761557177615571,
+      "lo": 0.20737956134469882,
+      "p_le_0": 0.0,
+      "point": 0.24268518767296277
+     }
+    },
+    {
+     "edge_exists_accuracy": {
+      "hi": 0.09599999999999997,
+      "lo": 0.051000000000000045,
+      "p_le_0": 0.0,
+      "point": 0.07399999999999995
+     },
+     "external_macro": {
+      "hi": 0.19110808946694258,
+      "lo": 0.1453799087139238,
+      "p_le_0": 0.0,
+      "point": 0.16844496090706362
+     },
+     "reachability_balanced_accuracy": {
+      "hi": 0.30146670006401155,
+      "lo": 0.2222399829497017,
+      "p_le_0": 0.0,
+      "point": 0.2628899218141272
+     }
+    },
+    {
+     "edge_exists_accuracy": {
+      "hi": 0.062000000000000055,
+      "lo": 0.013000000000000012,
+      "p_le_0": 0.0015,
+      "point": 0.038000000000000034
+     },
+     "external_macro": {
+      "hi": 0.1692597732341008,
+      "lo": 0.12514069110562231,
+      "p_le_0": 0.0,
+      "point": 0.1476842741610468
+     },
+     "reachability_balanced_accuracy": {
+      "hi": 0.293149454439777,
+      "lo": 0.2208459723626559,
+      "p_le_0": 0.0,
+      "point": 0.25736854832209355
+     }
+    }
+   ],
+   "diff_pooled": {
+    "edge_exists_accuracy": {
+     "hi": 0.07066666666666677,
+     "lo": 0.029999999999999916,
+     "p_le_0": 0.0,
+     "point": 0.05033333333333334
+    },
+    "external_macro": {
+     "hi": 0.16957486985990278,
+     "lo": 0.13470431940892325,
+     "p_le_0": 0.0,
+     "point": 0.1523239429681973
+    },
+    "reachability_balanced_accuracy": {
+     "hi": 0.282377523998676,
+     "lo": 0.225618613399162,
+     "p_le_0": 0.0,
+     "point": 0.254314552603061
+    }
+   },
+   "per_seed": [
+    {
+     "edge_exists_accuracy": 0.869,
+     "external_macro": 0.8737044385931917,
+     "reachability_balanced_accuracy": 0.8784088771863834
+    },
+    {
+     "edge_exists_accuracy": 0.872,
+     "external_macro": 0.8620794218006932,
+     "reachability_balanced_accuracy": 0.8521588436013864
+    },
+    {
+     "edge_exists_accuracy": 0.861,
+     "external_macro": 0.8804113356081571,
+     "reachability_balanced_accuracy": 0.8998226712163142
+    }
+   ],
+   "pooled": {
+    "edge_exists_accuracy": 0.8673333333333334,
+    "external_macro": 0.872065065334014,
+    "reachability_balanced_accuracy": 0.8767967973346945
+   },
+   "runs": [
+    "runs/kaggle/jobV2/pilot3_D",
+    "runs/kaggle/jobV3/pilot3_D_s2027",
+    "runs/kaggle/jobV4/pilot3_D_s9173"
+   ]
+  },
+  "E": {
+   "diff_per_seed": [
+    {
+     "edge_exists_accuracy": {
+      "hi": -0.05800000000000005,
+      "lo": -0.11199999999999999,
+      "p_le_0": 1.0,
+      "point": -0.08499999999999996
+     },
+     "external_macro": {
+      "hi": 0.029503051438535377,
+      "lo": -0.03503089143865834,
+      "p_le_0": 0.5539,
+      "point": -0.0024465326849190117
+     },
+     "reachability_balanced_accuracy": {
+      "hi": 0.1289148890632803,
+      "lo": 0.030210923827945102,
+      "p_le_0": 0.0006,
+      "point": 0.08010693463016194
+     }
+    },
+    {
+     "edge_exists_accuracy": {
+      "hi": -0.049000000000000044,
+      "lo": -0.10300000000000009,
+      "p_le_0": 1.0,
+      "point": -0.07600000000000007
+     },
+     "external_macro": {
+      "hi": 0.04551425427104072,
+      "lo": -0.012388888888888894,
+      "p_le_0": 0.127,
+      "point": 0.01701894193825737
+     },
+     "reachability_balanced_accuracy": {
+      "hi": 0.1535824889503593,
+      "lo": 0.06729089980923719,
+      "p_le_0": 0.0,
+      "point": 0.1100378838765147
+     }
+    },
+    {
+     "edge_exists_accuracy": {
+      "hi": -0.05800000000000005,
+      "lo": -0.118,
+      "p_le_0": 1.0,
+      "point": -0.08799999999999997
+     },
+     "external_macro": {
+      "hi": 0.029428261247177345,
+      "lo": -0.031329129467140726,
+      "p_le_0": 0.4948,
+      "point": 1.649695048233646e-05
+     },
+     "reachability_balanced_accuracy": {
+      "hi": 0.13194734351952364,
+      "lo": 0.04217024041585449,
+      "p_le_0": 0.0001,
+      "point": 0.08803299390096464
+     }
+    }
+   ],
+   "diff_pooled": {
+    "edge_exists_accuracy": {
+     "hi": -0.061000000000000054,
+     "lo": -0.1050000000000001,
+     "p_le_0": 1.0,
+     "point": -0.08300000000000007
+    },
+    "external_macro": {
+     "hi": 0.029325337977006427,
+     "lo": -0.02009968834577236,
+     "p_le_0": 0.3484,
+     "point": 0.004862968734606898
+    },
+    "reachability_balanced_accuracy": {
+     "hi": 0.12967479674796745,
+     "lo": 0.055383678560554594,
+     "p_le_0": 0.0,
+     "point": 0.09272593746921376
+    }
+   },
+   "per_seed": [
+    {
+     "edge_exists_accuracy": 0.745,
+     "external_macro": 0.7304153120717913,
+     "reachability_balanced_accuracy": 0.7158306241435826
+    },
+    {
+     "edge_exists_accuracy": 0.722,
+     "external_macro": 0.7106534028318869,
+     "reachability_balanced_accuracy": 0.6993068056637739
+    },
+    {
+     "edge_exists_accuracy": 0.735,
+     "external_macro": 0.7327435583975926,
+     "reachability_balanced_accuracy": 0.7304871167951853
+    }
+   ],
+   "pooled": {
+    "edge_exists_accuracy": 0.734,
+    "external_macro": 0.7246040911004236,
+    "reachability_balanced_accuracy": 0.7152081822008473
+   },
+   "runs": [
+    "runs/kaggle/jobV2/pilot3_E",
+    "runs/kaggle/jobV3/pilot3_E_s2027",
+    "runs/kaggle/jobV4/pilot3_E_s9173"
+   ]
+  }
+ },
+ "graphs": 500,
+ "n": 1500,
+ "record": "preregistered",
+ "reference": "C",
+ "resamples": 10000,
+ "seed": 20261114,
+ "subset_sha256": "ac4796f87a6d5311a0cb7bed1bdd2875c9b5500cc667fcdf8a7b7d7264563888"
+}

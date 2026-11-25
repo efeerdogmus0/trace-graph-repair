@@ -1,0 +1,62 @@
+% Limitations. Written before results; every number is checked by tests/test_paper_limitations.py.
+\section{Limitations}
+\label{sec:limitations}
+
+\paragraph{Pilot scale.}
+The protocol planned a main experiment with about $5{,}000$ training root graphs. It was not
+run: all adapters were trained on $512$ root graphs for $3$ epochs, and the locked test has
+$200$ root graphs per split ($100$ for the combined split). Whether the ordering of the arms
+holds with ten times the training data is not measured here.
+
+\paragraph{Synthetic, clean drawings.}
+Every image is a procedurally drawn $512 \times 512$ directed graph with readable node
+spacing and no noise, handwriting, scanning artefacts or domain text. Nothing in this study
+measures how a model reads real diagrams, and no claim is made about them.
+
+\paragraph{One base model, one adapter type, one edit budget.}
+All arms fine-tune the same 2B base model (Qwen3.5-2B) with LoRA under one setting, and the
+repair task allows at most one edge change. A different base model, full fine-tuning, or
+multi-edit repair could behave differently; these were not run.
+
+\paragraph{Twins protect only the main tasks.}
+Answer-flipping twins cap an image-blind predictor at $0.50$ on the three main tasks. The
+secondary tasks have no twins: on the pilot development split a per-instruction lookup
+already reaches $0.895$ on edge existence. Accuracy on secondary tasks therefore cannot
+separate use of the image from guessing, and we do not use them for the main comparison.
+
+\paragraph{Unequal supervision per arm.}
+Arms are matched on samples, root graphs and images per epoch, not on answer tokens. On the
+pilot training split the repair arm D has $16{,}384$ target tokens per epoch, the
+question-answering arm B $5{,}120$ and the structural arm C $28{,}592$
+(Section~\ref{sec:setup}). A difference between arms can partly reflect how much answer
+text each one supervises.
+
+\paragraph{Generator coverage and selection.}
+Small graphs run out of distinct topologies: about $100$ five-node classes for
+\texttt{layered\_dag}, $255$ for \texttt{tree\_plus} and $422$ for \texttt{sparse\_random}.
+The planned main build therefore starts at seven nodes; the pilot graphs used here have 5 to 10. Layout rejection also prefers sparser
+graphs at large node counts, so the size-OOD split differs from the training graphs in
+density as well as size; we report edges per root and a density-matched slice
+(Section~\ref{sec:analysis}) rather than claiming a clean size effect. Layout is not held
+out in the style-OOD split.
+
+\paragraph{Controls not run.}
+The protocol lists a question-only (blank image) control and a wrong-image control. Neither
+was run on any model; only model-free text probes exist (the ceilings above). That the arms
+use the image therefore rests on the twin design (an image-blind predictor cannot exceed
+$0.50$ on the main tasks), not on an ablation of the image. The oracle condition (graph given as text) was evaluated on $100$
+development roots for arms B and D and not on the locked test. Slices cover graph family,
+size, layout and style; there is no slice by path length or by edge crossings.
+
+\paragraph{Reproducibility across machines.}
+Graphs, labels and instructions rebuild to the same content digest on every machine we
+tried, but PNG bytes differ with font rasterisation. Training runs used cloud T4 GPUs (Colab, Kaggle)
+whose library versions and hardware can differ between providers; we record the
+environment of each run and compare runs only within one environment unless stated.
+Within one environment, training is repeatable: retraining arm D with its recorded seed from a fresh
+clone of the repository on a Kaggle T4 gave byte-identical development predictions to the
+recorded Kaggle run (\texttt{scripts/repro\_compare.py}, \texttt{reports/repro.md}).
+
+\paragraph{Small budget.}
+The study runs on single T4 GPUs with no extra spending. This limits the number of seeds and the size of the
+training sets, so intervals are wide and small effects may go undetected.

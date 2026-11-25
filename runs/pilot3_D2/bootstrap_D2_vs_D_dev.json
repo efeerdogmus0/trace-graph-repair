@@ -1,0 +1,94 @@
+{
+ "unit": "graph_group_id",
+ "root_graphs": 200,
+ "n_boot": 2000,
+ "seed": "bootstrap-v1",
+ "level": 0.95,
+ "method": "percentile",
+ "a": {
+  "minimal_graph_repair": {
+   "point": 0.5,
+   "lo": 0.455,
+   "hi": 0.5475
+  },
+  "reachability": {
+   "point": 0.77,
+   "lo": 0.735,
+   "hi": 0.805
+  },
+  "critical_edge": {
+   "point": 0.495,
+   "lo": 0.4875,
+   "hi": 0.5
+  },
+  "non_edit_macro_accuracy": {
+   "point": 0.6325000000000001,
+   "lo": 0.61375,
+   "hi": 0.65
+  }
+ },
+ "b": {
+  "minimal_graph_repair": {
+   "point": 0.545,
+   "lo": 0.495,
+   "hi": 0.595
+  },
+  "reachability": {
+   "point": 0.84,
+   "lo": 0.8075,
+   "hi": 0.8725
+  },
+  "critical_edge": {
+   "point": 0.5025,
+   "lo": 0.4725,
+   "hi": 0.535
+  },
+  "non_edit_macro_accuracy": {
+   "point": 0.6712499999999999,
+   "lo": 0.6475,
+   "hi": 0.6937500000000001
+  }
+ },
+ "a_minus_b": {
+  "minimal_graph_repair": {
+   "point": -0.04500000000000004,
+   "lo": -0.08749999999999997,
+   "hi": -0.0050000000000000044,
+   "share_above_zero": 0.014
+  },
+  "reachability": {
+   "point": -0.06999999999999995,
+   "lo": -0.10250000000000004,
+   "hi": -0.03500000000000003,
+   "share_above_zero": 0.0
+  },
+  "critical_edge": {
+   "point": -0.007499999999999951,
+   "lo": -0.03999999999999998,
+   "hi": 0.02250000000000002,
+   "share_above_zero": 0.2985
+  },
+  "non_edit_macro_accuracy": {
+   "point": -0.03874999999999984,
+   "lo": -0.0625,
+   "hi": -0.016249999999999987,
+   "share_above_zero": 0.0
+  }
+ },
+ "inputs": [
+  {
+   "file": "runs/pilot3_D2/flags_dev.json",
+   "run": "pilot3_D2",
+   "predictions_sha256": "1d033ddde1a51af4cbece41ae3816aae836d41c215fc8dc7e410e38aa1e00375",
+   "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+   "missing_responses": 0
+  },
+  {
+   "file": "runs/pilot3_D/flags_dev.json",
+   "run": "pilot3_D",
+   "predictions_sha256": "7604ebcfdbb517e4c5733425e2acc21d5d21b432fc6f71fec3208d2156526d8b",
+   "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+   "missing_responses": 0
+  }
+ ]
+}

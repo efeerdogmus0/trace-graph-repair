@@ -1,0 +1,151 @@
+{
+ "arms": {
+  "B": {
+   "per_seed": [
+    {
+     "edge_exists_accuracy": 0.8325,
+     "external_macro": 0.8367436854190585,
+     "reachability_balanced_accuracy": 0.840987370838117
+    },
+    {
+     "edge_exists_accuracy": 0.8275,
+     "external_macro": 0.8334974167623421,
+     "reachability_balanced_accuracy": 0.8394948335246843
+    },
+    {
+     "edge_exists_accuracy": 0.8025,
+     "external_macro": 0.8255898392652123,
+     "reachability_balanced_accuracy": 0.8486796785304248
+    }
+   ],
+   "pooled": {
+    "edge_exists_accuracy": 0.8208333333333334,
+    "external_macro": 0.8319436471488709,
+    "reachability_balanced_accuracy": 0.8430539609644088
+   },
+   "runs": [
+    "runs/kaggle/jobV0/pilot3_B",
+    "runs/kaggle/jobV1/pilot3_B_s2027",
+    "runs/kaggle/jobV1/pilot3_B_s9173"
+   ]
+  },
+  "D": {
+   "diff_per_seed": [
+    {
+     "edge_exists_accuracy": {
+      "hi": 0.04499999999999993,
+      "lo": 0.0,
+      "p_le_0": 0.0256,
+      "point": 0.022499999999999964
+     },
+     "external_macro": {
+      "hi": 0.047681840077071325,
+      "lo": -0.011960784313725492,
+      "p_le_0": 0.1218,
+      "point": 0.01756458094144664
+     },
+     "reachability_balanced_accuracy": {
+      "hi": 0.0672348484848484,
+      "lo": -0.04111295681063132,
+      "p_le_0": 0.3199,
+      "point": 0.012629161882893314
+     }
+    },
+    {
+     "edge_exists_accuracy": {
+      "hi": 0.07000000000000006,
+      "lo": 0.02499999999999991,
+      "p_le_0": 0.0,
+      "point": 0.04749999999999999
+     },
+     "external_macro": {
+      "hi": 0.042209450765952394,
+      "lo": -0.0038028700906344026,
+      "p_le_0": 0.0521,
+      "point": 0.01927238805970144
+     },
+     "reachability_balanced_accuracy": {
+      "hi": 0.033439721456550164,
+      "lo": -0.051170535314876586,
+      "p_le_0": 0.669,
+      "point": -0.008955223880597107
+     }
+    },
+    {
+     "edge_exists_accuracy": {
+      "hi": 0.07125000000000004,
+      "lo": 0.026249999999999996,
+      "p_le_0": 0.0,
+      "point": 0.04874999999999996
+     },
+     "external_macro": {
+      "hi": 0.05597852894240529,
+      "lo": 0.003501082251082255,
+      "p_le_0": 0.0135,
+      "point": 0.030115528128587865
+     },
+     "reachability_balanced_accuracy": {
+      "hi": 0.058513467769234495,
+      "lo": -0.03579350675539417,
+      "p_le_0": 0.3131,
+      "point": 0.01148105625717566
+     }
+    }
+   ],
+   "diff_pooled": {
+    "edge_exists_accuracy": {
+     "hi": 0.05750000000000011,
+     "lo": 0.02124999999999999,
+     "p_le_0": 0.0,
+     "point": 0.03958333333333319
+    },
+    "external_macro": {
+     "hi": 0.04349645957954573,
+     "lo": 0.0015250708717220451,
+     "p_le_0": 0.0175,
+     "point": 0.022317499043245426
+    },
+    "reachability_balanced_accuracy": {
+     "hi": 0.04319350024871493,
+     "lo": -0.03199404761904756,
+     "p_le_0": 0.3982,
+     "point": 0.0050516647531573255
+    }
+   },
+   "per_seed": [
+    {
+     "edge_exists_accuracy": 0.855,
+     "external_macro": 0.8543082663605052,
+     "reachability_balanced_accuracy": 0.8536165327210103
+    },
+    {
+     "edge_exists_accuracy": 0.875,
+     "external_macro": 0.8527698048220436,
+     "reachability_balanced_accuracy": 0.8305396096440872
+    },
+    {
+     "edge_exists_accuracy": 0.85125,
+     "external_macro": 0.8557053673938002,
+     "reachability_balanced_accuracy": 0.8601607347876005
+    }
+   ],
+   "pooled": {
+    "edge_exists_accuracy": 0.8604166666666666,
+    "external_macro": 0.8542611461921163,
+    "reachability_balanced_accuracy": 0.8481056257175661
+   },
+   "runs": [
+    "runs/kaggle/jobV0/pilot3_D",
+    "runs/kaggle/jobV1/pilot3_D_s2027",
+    "runs/kaggle/jobV1/pilot3_D_s9173"
+   ]
+  }
+ },
+ "graphs": 400,
+ "n": 1200,
+ "record": "dev",
+ "reference": "B",
+ "resamples": 10000,
+ "seed": 20261114,
+ "subset_sha256": "6ce6782d1674ef5ce10681b011eab5b49ae9d927e47e735017831b823ce0afb0"
+}

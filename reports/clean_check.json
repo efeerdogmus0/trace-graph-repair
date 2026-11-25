@@ -1,0 +1,55 @@
+{
+  "datasets": {
+    "pilot": {
+      "content_digest_rebuilt": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8",
+      "content_digest_tracked": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8",
+      "content_match": true,
+      "generate_exit": 0,
+      "images_match": true,
+      "seconds": 145.4
+    },
+    "pilot_diag": {
+      "content_digest_rebuilt": "bafc07abe3c4743e5fc4a4483602a3e388cd1df5e9036016007e5422e0b05652",
+      "content_digest_tracked": "bafc07abe3c4743e5fc4a4483602a3e388cd1df5e9036016007e5422e0b05652",
+      "content_match": true,
+      "generate_exit": 0,
+      "images_match": true,
+      "seconds": 72.0
+    },
+    "pilot_test": {
+      "content_digest_rebuilt": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+      "content_digest_tracked": "f7c80f9383d273c14127fa2862b9d2e5e32b4579cdd9357dd82a1fb8ef5a2ad7",
+      "content_match": true,
+      "generate_exit": 0,
+      "images_match": true,
+      "seconds": 310.8
+    },
+    "smoke": {
+      "content_digest_rebuilt": "c26d05b470bdd5eade382a303c9673b8efacbae8909ab442e83efb1d3fc343da",
+      "content_digest_tracked": "c26d05b470bdd5eade382a303c9673b8efacbae8909ab442e83efb1d3fc343da",
+      "content_match": true,
+      "generate_exit": 0,
+      "images_match": true,
+      "seconds": 29.9
+    }
+  },
+  "head": "141e11d28b52ca4989679d198d4e2c156f647347",
+  "ok": true,
+  "platform": "macOS-15.6-arm64-arm-64bit",
+  "pytest": {
+    "exit": 0,
+    "seconds": 276.7,
+    "skipped_lines": [
+      "SKIPPED [1] tests/test_resume.py:4: could not import 'torch': No module named 'torch'",
+      "SKIPPED [1] tests/test_base_prompt.py:105: could not import 'torch': No module named 'torch'",
+      "SKIPPED [2] tests/test_kaggle_final.py:99: could not import 'torch': No module named 'torch'",
+      "SKIPPED [1] tests/test_model_cards.py:49: Kaggle outputs not downloaded here",
+      "SKIPPED [1] tests/test_vgcure.py:66: VGCure test files not downloaded",
+      "SKIPPED [1] tests/test_vgcure.py:82: VGCure test files not downloaded",
+      "SKIPPED [2] tests/test_vgcure_eval.py:85: could not import 'torch': No module named 'torch'"
+    ],
+    "summary": "SKIPPED [2] tests/test_vgcure_eval.py:85: could not import 'torch': No module named 'torch'"
+  },
+  "python": "3.9.6",
+  "tracked_files_unchanged": true
+}

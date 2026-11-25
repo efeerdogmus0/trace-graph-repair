@@ -1,0 +1,18 @@
+{
+ "window": {
+  "lo": 0.875,
+  "hi": 1.6666666666666667,
+  "lo_q": 0.05,
+  "hi_q": 0.95,
+  "ref_roots": 512,
+  "ref_mean": 1.2877929687499998,
+  "ref": "pilot.json:train"
+ },
+ "roots": 200,
+ "matched_roots": 183,
+ "mean_density_all": 1.3240992063492063,
+ "mean_density_matched": 1.3033871107641593,
+ "below": 4,
+ "above": 13,
+ "split": "pilot.json:dev"
+}

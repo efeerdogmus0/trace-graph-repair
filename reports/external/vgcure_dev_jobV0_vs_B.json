@@ -1,0 +1,65 @@
+{
+ "graphs": 400,
+ "n": 1200,
+ "record": "dev",
+ "reference": "pilot3_B",
+ "resamples": 10000,
+ "runs": {
+  "pilot3_B": {
+   "edge_exists_accuracy": 0.8325,
+   "external_macro": 0.8367436854190585,
+   "format_ok": 1.0,
+   "reachability_balanced_accuracy": 0.840987370838117
+  },
+  "pilot3_D": {
+   "diff_edge_exists_accuracy": {
+    "hi": 0.04499999999999993,
+    "lo": 0.0,
+    "p_le_0": 0.0256,
+    "point": 0.022499999999999964
+   },
+   "diff_external_macro": {
+    "hi": 0.047681840077071325,
+    "lo": -0.011960784313725492,
+    "p_le_0": 0.1218,
+    "point": 0.01756458094144664
+   },
+   "diff_reachability_balanced_accuracy": {
+    "hi": 0.0672348484848484,
+    "lo": -0.04111295681063132,
+    "p_le_0": 0.3199,
+    "point": 0.012629161882893314
+   },
+   "edge_exists_accuracy": 0.855,
+   "external_macro": 0.8543082663605052,
+   "format_ok": 1.0,
+   "reachability_balanced_accuracy": 0.8536165327210103
+  },
+  "pilot3_E": {
+   "diff_edge_exists_accuracy": {
+    "hi": -0.053749999999999964,
+    "lo": -0.12249999999999994,
+    "p_le_0": 1.0,
+    "point": -0.08750000000000002
+   },
+   "diff_external_macro": {
+    "hi": -0.0763695453097627,
+    "lo": -0.15106989092996548,
+    "p_le_0": 1.0,
+    "point": -0.1134400114810562
+   },
+   "diff_reachability_balanced_accuracy": {
+    "hi": -0.07775297619047628,
+    "lo": -0.19998991732204086,
+    "p_le_0": 1.0,
+    "point": -0.1393800229621125
+   },
+   "edge_exists_accuracy": 0.745,
+   "external_macro": 0.7233036739380023,
+   "format_ok": 0.945,
+   "reachability_balanced_accuracy": 0.7016073478760045
+  }
+ },
+ "seed": 20261114,
+ "subset_sha256": "6ce6782d1674ef5ce10681b011eab5b49ae9d927e47e735017831b823ce0afb0"
+}

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/WzMgO8H5CsNe5qnBV3UN8UGN3CU</id>
+  <title>arXiv Query: search_query=&amp;id_list=2609.22327,2405.04950,2610.04721,2606.22597&amp;start=0&amp;max_results=4</title>
+  <updated>2026-11-15T05:17:08Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=4&amp;id_list=2609.22327,2405.04950,2610.04721,2606.22597" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>4</opensearch:itemsPerPage>
+  <opensearch:totalResults>4</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2606.22597v2</id>
+    <title>MapReason-OSM: Can Vision-Language Models Make Graph-Verifiable Mobility Decisions from Street Maps ?</title>
+    <updated>2026-06-23T04:17:28Z</updated>
+    <link href="https://arxiv.org/abs/2606.22597v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.22597v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Vision-language models (VLMs) are increasingly used to read maps for logistics, delivery, and accessible navigation, where the output is an actionable decision (a route, a pin, a parking choice) that must respect the road network. Yet most map benchmarks grade free text or multiple-choice answers that cannot be verified against the underlying graph. We present MapReason-OSM, a benchmark and evaluation harness for graph-verifiable mobility decisions on self-rendered OpenStreetMap panels. We render fixed-style maps for ten U.S. downtowns at two aligned zoom scales, overlay a consistent marker grammar, and pair each panel with a hidden street graph and exact oracles, yielding 6,000 instances (12,000 panels across the two zooms) over 12 routing, facility-location, and visual disambiguation tasks. Models return structured decisions that we snap back to the graph and score for validity, legality, optimality, and constraint satisfaction, plus cross-zoom consistency. Across seven VLMs, models read maps and route simply but fail at graph cost reasoning (single-facility pin placement is near chance even for frontier reasoning models), and are frequently scale-inconsistent. We release the benchmark, harness, and deterministic generator. Code and data: https://github.com/Vi-Sri/mapreason-osm</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-21T17:13:35Z</published>
+    <arxiv:comment>9 pages, 7 figures. Submitted to ACM SIGSPATIAL 2026 (Industrial Track). Code and data: https://github.com/Vi-Sri/mapreason-osm</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Srinivas Venkatanarayanan</name>
+    </author>
+    <author>
+      <name>Clement Pakkam Isaac</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.22327v1</id>
+    <title>Visual Graph Reasoning via Knowledge Compilation</title>
+    <updated>2026-09-16T08:40:43Z</updated>
+    <link href="https://arxiv.org/abs/2609.22327v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.22327v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Visual graph reasoning requires answering graph-theoretic questions directly from graph images, where graph topology and state are conveyed visually rather than given in symbolic form. Despite recent progress of vision-language models (VLMs), current approaches to visual graph reasoning still fail on simple visual graph problems. This reveals a fundamental limitation of existing approaches: they prioritize final-answer supervision over the intermediate recovery of an explicit graph representation that preserves graph topology and state from visual input. To address this limitation, we propose VGCompiler, a compilation-centric paradigm for visual graph reasoning via knowledge compilation. VGCompiler organizes reasoning around two compilers: a representation compiler that recovers a structure-preserving intermediate graph representation from visual input, and an operation compiler that compiles query intent under the recovered graph state into an executable graph operation. Specifically, we build VGCompiler on Qwen3-VL-8B and train it with reinforcement learning guided by a layered reward over executability, compiled graph validity, representation quality, and operation quality. VGCompiler uses a frozen observer to summarize graph and question conditions into lightweight signatures, enabling archive retrieval and code reuse across similar regimes. Experiments on three benchmarks GVLQA, VisionGraph, and VGCURE, show that Qwen-VGCompiler, built on an 8B backbone, surpasses the strongest closed-source VLM baseline by 28.9% and the strongest code-based baseline by 23.7%, while maintaining high efficiency. We further evaluate VGCompiler on three real-world domains, including metro routing, logistics delivery, and network fault assessment, where it generalizes across heterogeneous visual graphs and domain-grounded tasks.</summary>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-16T08:40:43Z</published>
+    <arxiv:comment>Accepted at the 34th ACM International Conference on Multimedia (MM '26)</arxiv:comment>
+    <arxiv:primary_category term="cs.MM"/>
+    <author>
+      <name>Rongzheng Wang</name>
+    </author>
+    <author>
+      <name>Zhe Wang</name>
+    </author>
+    <author>
+      <name>Ke Qin</name>
+    </author>
+    <author>
+      <name>Rongwei Wang</name>
+    </author>
+    <author>
+      <name>Muquan Li</name>
+    </author>
+    <author>
+      <name>Yizhuo Ma</name>
+    </author>
+    <author>
+      <name>Yihong Huang</name>
+    </author>
+    <author>
+      <name>Jielei Wang</name>
+    </author>
+    <author>
+      <name>Shuang Liang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.04950v1</id>
+    <title>VisionGraph: Leveraging Large Multimodal Models for Graph Theory Problems in Visual Context</title>
+    <updated>2024-05-08T10:42:48Z</updated>
+    <link href="https://arxiv.org/abs/2405.04950v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.04950v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Multimodal Models (LMMs) have achieved impressive success in visual understanding and reasoning, remarkably improving the performance of mathematical reasoning in a visual context. Yet, a challenging type of visual math lies in the multimodal graph theory problem, which demands that LMMs understand the graphical structures accurately and perform multi-step reasoning on the visual graph. Additionally, exploring multimodal graph theory problems will lead to more effective strategies in fields like biology, transportation, and robotics planning. To step forward in this direction, we are the first to design a benchmark named VisionGraph, used to explore the capabilities of advanced LMMs in solving multimodal graph theory problems. It encompasses eight complex graph problem tasks, from connectivity to shortest path problems. Subsequently, we present a Description-Program-Reasoning (DPR) chain to enhance the logical accuracy of reasoning processes through graphical structure description generation and algorithm-aware multi-step reasoning. Our extensive study shows that 1) GPT-4V outperforms Gemini Pro in multi-step graph reasoning; 2) All LMMs exhibit inferior perception accuracy for graphical structures, whether in zero/few-shot settings or with supervised fine-tuning (SFT), which further affects problem-solving performance; 3) DPR significantly improves the multi-step graph reasoning capabilities of LMMs and the GPT-4V (DPR) agent achieves SOTA performance.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-08T10:42:48Z</published>
+    <arxiv:comment>17 pages; Accepted by ICML 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yunxin Li</name>
+    </author>
+    <author>
+      <name>Baotian Hu</name>
+    </author>
+    <author>
+      <name>Haoyuan Shi</name>
+    </author>
+    <author>
+      <name>Wei Wang</name>
+    </author>
+    <author>
+      <name>Longyue Wang</name>
+    </author>
+    <author>
+      <name>Min Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.04721v1</id>
+    <title>Knossos and Ariadne: Benchmarking and Learning Complete Diagram Topology Extraction with Vision-Language Models</title>
+    <updated>2026-10-03T19:20:33Z</updated>
+    <link href="https://arxiv.org/abs/2610.04721v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.04721v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Structural diagrams are widely used to represent complex systems and relational information across scientific, engineering, procedural, and spatial domains. Recent vision-language models (VLMs) have become increasingly capable of recognizing diagram elements and reasoning about their content, while complete diagram topology extraction remains comparatively underexplored. In this paper, we study diagram-to-graph topology extraction: extracting all diagram entities and the complete relations among them. To enable large-scale supervised training and systematic evaluation of this task, we introduce Knossos, a benchmark of 19,200 diagrams across six diverse domains, with 245,179 nodes and 439,740 edges. Its symbolic generation process provides exact alignment between rendered diagrams and annotations of complete topology, relation types, and connector geometry. To address the modeling challenge of complete topology extraction, we also present Ariadne, a structured framework that decomposes the task into node inventory extraction and source-conditioned edge prediction. Extensive experiments show that training on Knossos substantially improves complete topology extraction in smaller open-source VLMs. Ariadne further improves over one-step extraction under matched supervision, demonstrating the additional benefit of structured decomposition. It achieves the highest average Edge F1 among the evaluated methods on Knossos, while both backbone variants also improve over their unadapted counterparts on the real-world external benchmark. Code and benchmark are available at https://github.com/bangwayne/knossos_Ariadne_Public.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-03T19:20:33Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Bangwei Guo</name>
+    </author>
+    <author>
+      <name>Xujiang Zhao</name>
+    </author>
+    <author>
+      <name>Shengyu Chen</name>
+    </author>
+    <author>
+      <name>Yanchi Liu</name>
+    </author>
+    <author>
+      <name>Wei Cheng</name>
+    </author>
+    <author>
+      <name>Xi Zhu</name>
+    </author>
+    <author>
+      <name>Guoning Zhang</name>
+    </author>
+    <author>
+      <name>Dimitris N. Metaxas</name>
+    </author>
+    <author>
+      <name>Haifeng Chen</name>
+    </author>
+  </entry>
+</feed>

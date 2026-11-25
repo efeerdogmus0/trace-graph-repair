@@ -1,0 +1,546 @@
+{
+ "arms": [
+  {
+   "label": "A",
+   "predictions": "runs/kaggle/jobA1/runs/base_prompt_system/predictions_dev.jsonl",
+   "predictions_sha256": "4b4104d2cff0bb1deac9f79553534087cff02b1122e302436e3c15c34694b65b",
+   "sha_checked_against_flags": true
+  },
+  {
+   "label": "B",
+   "predictions": "runs/kaggle/job11/runs/pilot3_B/predictions_dev.jsonl",
+   "predictions_sha256": "7d20fdbf47438cb37c6af85daa19fe7cd00332d9e7edfec1870c0828274ba81e",
+   "sha_checked_against_flags": true
+  },
+  {
+   "label": "C",
+   "predictions": "runs/kaggle/job12/runs/pilot3_C/predictions_dev.jsonl",
+   "predictions_sha256": "db25314da4b03a8295ec755ed5d69e42f3da74c805962c470d1ae78349b9f234",
+   "sha_checked_against_flags": true
+  },
+  {
+   "label": "D",
+   "predictions": "runs/kaggle/job20/runs/pilot3_D/predictions_dev.jsonl",
+   "predictions_sha256": "3118d615803beedc66184cb39fc91c8a7aa8ecb59a23f92f309fb69e53cd1c35",
+   "sha_checked_against_flags": true
+  },
+  {
+   "label": "E",
+   "predictions": "runs/kaggle/job13/runs/pilot3_E/predictions_dev.jsonl",
+   "predictions_sha256": "f15d05cbf698d307e2175d1a77482eb1fb3f22dfc215ae85201c5eee19b0fffb",
+   "sha_checked_against_flags": true
+  }
+ ],
+ "content_digest": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8",
+ "focus": "D",
+ "manifest": "manifests/pilot.json",
+ "overlay": "overlay-v1",
+ "pool_root_graphs": 20,
+ "pool_samples": 120,
+ "rule": "gallery-v1",
+ "slots": [
+  {
+   "cards": [
+    {
+     "image": "images/dev/imge4a0b6fb477d44a8.png",
+     "image_sha256": "1f45a961d91708a0caac7c7b318ffe45f845db7396ce1d8e2b779dc24a3e6c87",
+     "instruction": "Look at the directed graph in the image. Arrows show edge directions.\nFollowing the arrow directions along one or more edges, is there a path from node M to node N?\nAnswer {\"answer\": true} or {\"answer\": false}. Answer with a single JSON object and nothing else.",
+     "rows": [
+      {
+       "arm": "A",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "text": "{\"answer\": false}\n"
+      },
+      {
+       "arm": "B",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "text": "{\"answer\":false}\n"
+      },
+      {
+       "arm": "C",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "text": "{\"answer\":false}\n"
+      },
+      {
+       "arm": "D",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "text": "{\"answer\": false}\n"
+      },
+      {
+       "arm": "E",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "read_graph": {
+        "invented_edges": 3,
+        "missed_edges": 2,
+        "parsed": true
+       },
+       "text": "{\"answer\":false}"
+      }
+     ],
+     "sample_id": "s4151dbdec0b8fa37",
+     "task": "reachability",
+     "true_answer": "{\"answer\":false}"
+    }
+   ],
+   "slot": "success",
+   "what": "Reachability, first sample the focus arm answers correctly"
+  },
+  {
+   "cards": [
+    {
+     "image": "images/dev/img9d6bb373b63ee675.png",
+     "image_sha256": "904bc0e25e4988bcb894ce31bee7081a7feadfa9de64f4d017cc41335278f091",
+     "instruction": "Look at the directed graph in the image. Arrows show edge directions.\nFollowing the arrow directions along one or more edges, is there a path from node K to node W?\nAnswer {\"answer\": true} or {\"answer\": false}. Answer with a single JSON object and nothing else.",
+     "rows": [
+      {
+       "arm": "A",
+       "correct": false,
+       "error": null,
+       "format_ok": true,
+       "text": "{\"answer\": true}\n"
+      },
+      {
+       "arm": "B",
+       "correct": false,
+       "error": null,
+       "format_ok": true,
+       "text": "{\"answer\":true}\n"
+      },
+      {
+       "arm": "C",
+       "correct": false,
+       "error": null,
+       "format_ok": true,
+       "text": "{\"answer\":true}\n"
+      },
+      {
+       "arm": "D",
+       "correct": false,
+       "error": null,
+       "format_ok": true,
+       "text": "{\"answer\": true}\n"
+      },
+      {
+       "arm": "E",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "read_graph": {
+        "invented_edges": 3,
+        "missed_edges": 2,
+        "parsed": true
+       },
+       "text": "{\"answer\":false}"
+      }
+     ],
+     "sample_id": "s29a4802b02ae2e68",
+     "task": "reachability",
+     "true_answer": "{\"answer\":false}"
+    }
+   ],
+   "slot": "failure",
+   "what": "Reachability, first sample the focus arm answers wrongly"
+  },
+  {
+   "cards": [
+    {
+     "image": "images/dev/imgd1fde63e8d93fda4.png",
+     "image_sha256": "a1eb66b01f6c9d1210992b91451d92a989a8c473efbbd8f5b721057a6df0ee83",
+     "instruction": "Look at the directed graph in the image. Arrows show edge directions.\nNode F can currently reach node H by following arrows. If the edge Y->H were removed, would F no longer be able to reach H?\nAnswer {\"answer\": true} if the connection would be lost, or {\"answer\": false} if F could still reach H. Answer with a single JSON object and nothing else.",
+     "rows": [
+      {
+       "arm": "A",
+       "correct": false,
+       "error": null,
+       "format_ok": true,
+       "text": "{\n\"answer\": true\n}\n"
+      },
+      {
+       "arm": "B",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "text": "{\"answer\":false}\n"
+      },
+      {
+       "arm": "C",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "text": "{\"answer\":false}\n"
+      },
+      {
+       "arm": "D",
+       "correct": false,
+       "error": null,
+       "format_ok": true,
+       "text": "{\"answer\": true}\n"
+      },
+      {
+       "arm": "E",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "read_graph": {
+        "invented_edges": 0,
+        "missed_edges": 0,
+        "parsed": true
+       },
+       "text": "{\"answer\":false}"
+      }
+     ],
+     "sample_id": "s91671137aac39e97",
+     "task": "critical_edge",
+     "true_answer": "{\"answer\":false}"
+    },
+    {
+     "image": "images/dev/imge03dd15cc1cac545.png",
+     "image_sha256": "88ab72c4548d43fe6f3495b618bf7d35cc96763f10a37c3fb0584b0c2fd93e9d",
+     "instruction": "Look at the directed graph in the image. Arrows show edge directions.\nNode F can currently reach node H by following arrows. If the edge Y->H were removed, would F no longer be able to reach H?\nAnswer {\"answer\": true} if the connection would be lost, or {\"answer\": false} if F could still reach H. Answer with a single JSON object and nothing else.",
+     "rows": [
+      {
+       "arm": "A",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "text": "{\n  \"answer\": true\n}\n"
+      },
+      {
+       "arm": "B",
+       "correct": false,
+       "error": null,
+       "format_ok": true,
+       "text": "{\"answer\":false}\n"
+      },
+      {
+       "arm": "C",
+       "correct": false,
+       "error": null,
+       "format_ok": true,
+       "text": "{\"answer\":false}\n"
+      },
+      {
+       "arm": "D",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "text": "{\"answer\": true}\n"
+      },
+      {
+       "arm": "E",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "read_graph": {
+        "invented_edges": 0,
+        "missed_edges": 0,
+        "parsed": true
+       },
+       "text": "{\"answer\":true}"
+      }
+     ],
+     "sample_id": "sc7b77805d94f4891",
+     "task": "critical_edge",
+     "true_answer": "{\"answer\":true}"
+    }
+   ],
+   "slot": "critical_pair",
+   "what": "Critical edge: one question on two images that differ by one edge (chosen without looking at any response)"
+  },
+  {
+   "cards": [
+    {
+     "edits": [
+      {
+       "dst": "H",
+       "file": "imgfda441d622a16270_remove_G_H.png",
+       "named_by": [
+        "reference",
+        "E"
+       ],
+       "not_drawn": null,
+       "op": "remove_edge",
+       "sha256": "e13452fc83325da5c05e0c48a18e5c79fafe02a54186d40a2b288c266cad8c5c",
+       "src": "G"
+      },
+      {
+       "dst": "L",
+       "file": "imgfda441d622a16270_add_W_L.png",
+       "named_by": [
+        "D"
+       ],
+       "not_drawn": null,
+       "op": "add_edge",
+       "sha256": "b0af739ae313110c2850ceb1bbe5862d64c95bdfc2d67f24800a54fbf22086ff",
+       "src": "W"
+      }
+     ],
+     "image": "images/dev/imgfda441d622a16270.png",
+     "image_sha256": "3fd64f4929da655e25f1e7e8d2ea5b6e03eb73070c8d3713967d4549c49058f3",
+     "instruction": "Look at the directed graph in the image. Arrows show edge directions.\nGoal (reaching means following arrows along one or more edges):\n- L must be able to reach A.\n- P must NOT be able to reach D.\nYou may change at most 1 edge. Edges you are allowed to add: E->D, H->E, H->L, W->L. You may remove any edge that exists in the image.\nIf the goal already holds, answer {\"status\":\"unchanged\",\"edits\":[]}.\nIf no single allowed change achieves the goal, answer {\"status\":\"impossible\",\"edits\":[]}.\nOtherwise answer {\"status\":\"edited\",\"edits\":[{\"op\":\"add_edge\",\"src\":\"<node>\",\"dst\":\"<node>\"}]} using \"op\":\"add_edge\" or \"op\":\"remove_edge\".\nAnswer with a single JSON object and nothing else.",
+     "rows": [
+      {
+       "arm": "A",
+       "correct": false,
+       "error": "format:bad_edit",
+       "format_ok": false,
+       "text": "{\n\"status\":\"edited\",\n\"edits\":[\n{\"op\":\"remove_edge\",\"src\":\"H->W\"}\n]\n}\n"
+      },
+      {
+       "arm": "B",
+       "correct": false,
+       "error": null,
+       "format_ok": true,
+       "legal": null,
+       "minimal": null,
+       "status_correct": false,
+       "text": "{\"status\":\"impossible\",\"edits\":[]}\n",
+       "valid": null
+      },
+      {
+       "arm": "C",
+       "correct": false,
+       "error": null,
+       "format_ok": true,
+       "legal": null,
+       "minimal": null,
+       "status_correct": false,
+       "text": "{\"status\":\"impossible\",\"edits\":[]}\n",
+       "valid": null
+      },
+      {
+       "arm": "D",
+       "correct": false,
+       "error": "constraints_not_satisfied",
+       "format_ok": true,
+       "legal": true,
+       "minimal": false,
+       "status_correct": true,
+       "text": "{\"status\":\"edited\",\"edits\":[{\"op\":\"add_edge\",\"src\":\"W\",\"dst\":\"L\"}]}\n",
+       "valid": false
+      },
+      {
+       "arm": "E",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "legal": true,
+       "minimal": true,
+       "read_graph": {
+        "invented_edges": 0,
+        "missed_edges": 1,
+        "parsed": true
+       },
+       "status_correct": true,
+       "text": "{\"status\":\"edited\",\"edits\":[{\"op\":\"remove_edge\",\"src\":\"G\",\"dst\":\"H\"}]}",
+       "valid": true
+      }
+     ],
+     "sample_id": "s869fc066847a37de",
+     "task": "minimal_graph_repair",
+     "true_answer": "{\"status\":\"edited\",\"edits\":[{\"op\":\"remove_edge\",\"src\":\"G\",\"dst\":\"H\"}]}"
+    }
+   ],
+   "slot": "repair_edited",
+   "what": "Minimal repair where one edit is needed (chosen without looking at any response)"
+  },
+  {
+   "cards": [
+    {
+     "edits": [
+      {
+       "dst": "T",
+       "file": null,
+       "named_by": [
+        "A"
+       ],
+       "not_drawn": "that edge is not in the image",
+       "op": "remove_edge",
+       "src": "K"
+      }
+     ],
+     "image": "images/dev/imgebed56a2d005100b.png",
+     "image_sha256": "8088cf212d651b2eec26984beb3002d6828d9f99ef16d7d2207acb06d757379f",
+     "instruction": "Look at the directed graph in the image. Arrows show edge directions.\nGoal (reaching means following arrows along one or more edges):\n- S must be able to reach A.\n- S must be able to reach Y.\n- K must NOT be able to reach T.\nYou may change at most 1 edge. Edges you are allowed to add: L->A, L->S, S->L, T->A. You may remove any edge that exists in the image.\nIf the goal already holds, answer {\"status\":\"unchanged\",\"edits\":[]}.\nIf no single allowed change achieves the goal, answer {\"status\":\"impossible\",\"edits\":[]}.\nOtherwise answer {\"status\":\"edited\",\"edits\":[{\"op\":\"add_edge\",\"src\":\"<node>\",\"dst\":\"<node>\"}]} using \"op\":\"add_edge\" or \"op\":\"remove_edge\".\nAnswer with a single JSON object and nothing else.",
+     "rows": [
+      {
+       "arm": "A",
+       "correct": false,
+       "error": "edge_not_present",
+       "format_ok": true,
+       "legal": false,
+       "minimal": null,
+       "status_correct": false,
+       "text": "{\n\"status\": \"edited\",\n\"edits\": [\n  {\n    \"op\": \"remove_edge\",\n    \"src\": \"K\",\n    \"dst\": \"T\"\n  }\n]\n}\n",
+       "valid": null
+      },
+      {
+       "arm": "B",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "legal": null,
+       "minimal": null,
+       "status_correct": true,
+       "text": "{\"status\":\"impossible\",\"edits\":[]}\n",
+       "valid": null
+      },
+      {
+       "arm": "C",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "legal": null,
+       "minimal": null,
+       "status_correct": true,
+       "text": "{\"status\":\"impossible\",\"edits\":[]}\n",
+       "valid": null
+      },
+      {
+       "arm": "D",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "legal": null,
+       "minimal": null,
+       "status_correct": true,
+       "text": "{\"status\":\"impossible\",\"edits\":[]}\n",
+       "valid": null
+      },
+      {
+       "arm": "E",
+       "correct": true,
+       "error": null,
+       "format_ok": true,
+       "legal": null,
+       "minimal": null,
+       "read_graph": {
+        "invented_edges": 0,
+        "missed_edges": 0,
+        "parsed": true
+       },
+       "status_correct": true,
+       "text": "{\"status\":\"impossible\",\"edits\":[]}",
+       "valid": null
+      }
+     ],
+     "sample_id": "sa0a18973a19b3ff2",
+     "task": "minimal_graph_repair",
+     "true_answer": "{\"status\":\"impossible\",\"edits\":[]}"
+    }
+   ],
+   "slot": "repair_impossible",
+   "what": "Minimal repair where no allowed single edit works (chosen without looking at any response)"
+  },
+  {
+   "cards": [
+    {
+     "edits": [
+      {
+       "dst": "W",
+       "file": "img390b56b7299c66f1_add_F_W.png",
+       "named_by": [
+        "reference"
+       ],
+       "not_drawn": null,
+       "op": "add_edge",
+       "sha256": "849a080e99be5806bcd642ecb6ec16612e06c83ed39046925758dfcae3351c00",
+       "src": "F"
+      },
+      {
+       "dst": "F",
+       "file": null,
+       "named_by": [
+        "A"
+       ],
+       "not_drawn": "that edge is not in the image",
+       "op": "remove_edge",
+       "src": "G"
+      }
+     ],
+     "image": "images/dev/img390b56b7299c66f1.png",
+     "image_sha256": "95adbe21e2fe36784530d5a5ed4761b29c27ab5d3e0ca5949830e6283cef0743",
+     "instruction": "Look at the directed graph in the image. Arrows show edge directions.\nGoal (reaching means following arrows along one or more edges):\n- F must be able to reach W.\n- G must NOT be able to reach F.\nYou may change at most 1 edge. Edges you are allowed to add: F->W, G->F, Z->W. You may remove any edge that exists in the image.\nIf the goal already holds, answer {\"status\":\"unchanged\",\"edits\":[]}.\nIf no single allowed change achieves the goal, answer {\"status\":\"impossible\",\"edits\":[]}.\nOtherwise answer {\"status\":\"edited\",\"edits\":[{\"op\":\"add_edge\",\"src\":\"<node>\",\"dst\":\"<node>\"}]} using \"op\":\"add_edge\" or \"op\":\"remove_edge\".\nAnswer with a single JSON object and nothing else.",
+     "rows": [
+      {
+       "arm": "A",
+       "correct": false,
+       "error": "edge_not_present",
+       "format_ok": true,
+       "legal": false,
+       "minimal": null,
+       "status_correct": true,
+       "text": "{\n\"status\": \"edited\",\n\"edits\": [\n  {\n  \"op\": \"remove_edge\",\n  \"src\": \"G\",\n  \"dst\": \"F\"\n}\n]\n}\n",
+       "valid": null
+      },
+      {
+       "arm": "B",
+       "correct": false,
+       "error": null,
+       "format_ok": true,
+       "legal": null,
+       "minimal": null,
+       "status_correct": false,
+       "text": "{\"status\":\"impossible\",\"edits\":[]}\n",
+       "valid": null
+      },
+      {
+       "arm": "C",
+       "correct": false,
+       "error": null,
+       "format_ok": true,
+       "legal": null,
+       "minimal": null,
+       "status_correct": false,
+       "text": "{\"status\":\"impossible\",\"edits\":[]}\n",
+       "valid": null
+      },
+      {
+       "arm": "D",
+       "correct": false,
+       "error": null,
+       "format_ok": true,
+       "legal": null,
+       "minimal": null,
+       "status_correct": false,
+       "text": "{\"status\":\"impossible\",\"edits\":[]}\n",
+       "valid": null
+      },
+      {
+       "arm": "E",
+       "correct": false,
+       "error": null,
+       "format_ok": true,
+       "legal": null,
+       "minimal": null,
+       "read_graph": {
+        "invented_edges": 3,
+        "missed_edges": 1,
+        "parsed": true
+       },
+       "status_correct": false,
+       "text": "{\"status\":\"impossible\",\"edits\":[]}",
+       "valid": null
+      }
+     ],
+     "sample_id": "sc0eac5b0ded64974",
+     "task": "minimal_graph_repair",
+     "true_answer": "{\"status\":\"edited\",\"edits\":[{\"op\":\"add_edge\",\"src\":\"F\",\"dst\":\"W\"}]}"
+    }
+   ],
+   "slot": "repair_failure",
+   "what": "Minimal repair, first sample the focus arm gets wrong"
+  }
+ ],
+ "split": "dev"
+}

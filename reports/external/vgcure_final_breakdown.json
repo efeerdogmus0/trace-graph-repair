@@ -1,0 +1,995 @@
+{
+ "arms": {
+  "B": {
+   "per_seed": [
+    {
+     "accuracy": {
+      "edge_false": 0.726,
+      "edge_true": 0.936,
+      "reach_no": 0.7692307692307693,
+      "reach_yes": 0.8337408312958435
+     },
+     "format_failure": 0.0,
+     "n": {
+      "edge_false": 500,
+      "edge_true": 500,
+      "reach_no": 91,
+      "reach_yes": 409
+     },
+     "per_source": {
+      "ba": {
+       "edge": 0.72,
+       "reach": 0.76
+      },
+      "dblp": {
+       "edge": 0.8,
+       "reach": 0.9
+      },
+      "dbpedia": {
+       "edge": 0.86,
+       "reach": 0.94
+      },
+      "er": {
+       "edge": 0.78,
+       "reach": 0.84
+      },
+      "openflights": {
+       "edge": 0.93,
+       "reach": 0.68
+      },
+      "pubchemqc": {
+       "edge": 0.73,
+       "reach": 0.9
+      },
+      "sbm": {
+       "edge": 0.75,
+       "reach": 0.86
+      },
+      "sfn": {
+       "edge": 0.9,
+       "reach": 0.74
+      },
+      "social_network": {
+       "edge": 0.95,
+       "reach": 0.9
+      },
+      "star": {
+       "edge": 0.89,
+       "reach": 0.7
+      }
+     },
+     "said_true": {
+      "edge": 0.605,
+      "reach": 0.724
+     }
+    },
+    {
+     "accuracy": {
+      "edge_false": 0.712,
+      "edge_true": 0.942,
+      "reach_no": 0.7692307692307693,
+      "reach_yes": 0.8410757946210269
+     },
+     "format_failure": 0.0,
+     "n": {
+      "edge_false": 500,
+      "edge_true": 500,
+      "reach_no": 91,
+      "reach_yes": 409
+     },
+     "per_source": {
+      "ba": {
+       "edge": 0.7,
+       "reach": 0.78
+      },
+      "dblp": {
+       "edge": 0.78,
+       "reach": 0.82
+      },
+      "dbpedia": {
+       "edge": 0.88,
+       "reach": 0.92
+      },
+      "er": {
+       "edge": 0.77,
+       "reach": 0.88
+      },
+      "openflights": {
+       "edge": 0.95,
+       "reach": 0.7
+      },
+      "pubchemqc": {
+       "edge": 0.73,
+       "reach": 0.9
+      },
+      "sbm": {
+       "edge": 0.76,
+       "reach": 0.86
+      },
+      "sfn": {
+       "edge": 0.88,
+       "reach": 0.76
+      },
+      "social_network": {
+       "edge": 0.92,
+       "reach": 0.94
+      },
+      "star": {
+       "edge": 0.9,
+       "reach": 0.72
+      }
+     },
+     "said_true": {
+      "edge": 0.615,
+      "reach": 0.73
+     }
+    },
+    {
+     "accuracy": {
+      "edge_false": 0.696,
+      "edge_true": 0.898,
+      "reach_no": 0.8461538461538461,
+      "reach_yes": 0.823960880195599
+     },
+     "format_failure": 0.0,
+     "n": {
+      "edge_false": 500,
+      "edge_true": 500,
+      "reach_no": 91,
+      "reach_yes": 409
+     },
+     "per_source": {
+      "ba": {
+       "edge": 0.66,
+       "reach": 0.74
+      },
+      "dblp": {
+       "edge": 0.74,
+       "reach": 0.92
+      },
+      "dbpedia": {
+       "edge": 0.87,
+       "reach": 0.86
+      },
+      "er": {
+       "edge": 0.74,
+       "reach": 0.8
+      },
+      "openflights": {
+       "edge": 0.87,
+       "reach": 0.82
+      },
+      "pubchemqc": {
+       "edge": 0.73,
+       "reach": 0.9
+      },
+      "sbm": {
+       "edge": 0.74,
+       "reach": 0.82
+      },
+      "sfn": {
+       "edge": 0.88,
+       "reach": 0.7
+      },
+      "social_network": {
+       "edge": 0.9,
+       "reach": 0.94
+      },
+      "star": {
+       "edge": 0.84,
+       "reach": 0.78
+      }
+     },
+     "said_true": {
+      "edge": 0.601,
+      "reach": 0.702
+     }
+    }
+   ],
+   "pooled": {
+    "accuracy": {
+     "edge_false": 0.7113333333333333,
+     "edge_true": 0.9253333333333335,
+     "reach_no": 0.7948717948717948,
+     "reach_yes": 0.8329258353708231
+    },
+    "format_failure": 0.0,
+    "per_source": {
+     "ba": {
+      "edge": 0.6933333333333334,
+      "reach": 0.7600000000000001
+     },
+     "dblp": {
+      "edge": 0.7733333333333334,
+      "reach": 0.88
+     },
+     "dbpedia": {
+      "edge": 0.87,
+      "reach": 0.9066666666666666
+     },
+     "er": {
+      "edge": 0.7633333333333333,
+      "reach": 0.84
+     },
+     "openflights": {
+      "edge": 0.9166666666666666,
+      "reach": 0.7333333333333333
+     },
+     "pubchemqc": {
+      "edge": 0.73,
+      "reach": 0.9
+     },
+     "sbm": {
+      "edge": 0.75,
+      "reach": 0.8466666666666667
+     },
+     "sfn": {
+      "edge": 0.8866666666666667,
+      "reach": 0.7333333333333334
+     },
+     "social_network": {
+      "edge": 0.9233333333333333,
+      "reach": 0.9266666666666666
+     },
+     "star": {
+      "edge": 0.8766666666666666,
+      "reach": 0.7333333333333334
+     }
+    },
+    "said_true": {
+     "edge": 0.607,
+     "reach": 0.7186666666666666
+    }
+   },
+   "runs": [
+    "runs/kaggle/jobV2/pilot3_B",
+    "runs/kaggle/jobV3/pilot3_B_s2027",
+    "runs/kaggle/jobV4/pilot3_B_s9173"
+   ]
+  },
+  "C": {
+   "per_seed": [
+    {
+     "accuracy": {
+      "edge_false": 0.982,
+      "edge_true": 0.678,
+      "reach_no": 0.9560439560439561,
+      "reach_yes": 0.3154034229828851
+     },
+     "format_failure": 0.0,
+     "n": {
+      "edge_false": 500,
+      "edge_true": 500,
+      "reach_no": 91,
+      "reach_yes": 409
+     },
+     "per_source": {
+      "ba": {
+       "edge": 0.69,
+       "reach": 0.26
+      },
+      "dblp": {
+       "edge": 0.78,
+       "reach": 0.54
+      },
+      "dbpedia": {
+       "edge": 0.84,
+       "reach": 0.56
+      },
+      "er": {
+       "edge": 0.8,
+       "reach": 0.4
+      },
+      "openflights": {
+       "edge": 0.76,
+       "reach": 0.96
+      },
+      "pubchemqc": {
+       "edge": 0.94,
+       "reach": 0.44
+      },
+      "sbm": {
+       "edge": 0.74,
+       "reach": 0.24
+      },
+      "sfn": {
+       "edge": 0.87,
+       "reach": 0.24
+      },
+      "social_network": {
+       "edge": 0.95,
+       "reach": 0.56
+      },
+      "star": {
+       "edge": 0.93,
+       "reach": 0.12
+      }
+     },
+     "said_true": {
+      "edge": 0.348,
+      "reach": 0.266
+     }
+    },
+    {
+     "accuracy": {
+      "edge_false": 0.984,
+      "edge_true": 0.612,
+      "reach_no": 0.9560439560439561,
+      "reach_yes": 0.22249388753056235
+     },
+     "format_failure": 0.0,
+     "n": {
+      "edge_false": 500,
+      "edge_true": 500,
+      "reach_no": 91,
+      "reach_yes": 409
+     },
+     "per_source": {
+      "ba": {
+       "edge": 0.64,
+       "reach": 0.16
+      },
+      "dblp": {
+       "edge": 0.73,
+       "reach": 0.32
+      },
+      "dbpedia": {
+       "edge": 0.8,
+       "reach": 0.5
+      },
+      "er": {
+       "edge": 0.79,
+       "reach": 0.28
+      },
+      "openflights": {
+       "edge": 0.76,
+       "reach": 0.94
+      },
+      "pubchemqc": {
+       "edge": 0.93,
+       "reach": 0.4
+      },
+      "sbm": {
+       "edge": 0.68,
+       "reach": 0.2
+      },
+      "sfn": {
+       "edge": 0.82,
+       "reach": 0.12
+      },
+      "social_network": {
+       "edge": 0.95,
+       "reach": 0.54
+      },
+      "star": {
+       "edge": 0.88,
+       "reach": 0.1
+      }
+     },
+     "said_true": {
+      "edge": 0.314,
+      "reach": 0.19
+     }
+    },
+    {
+     "accuracy": {
+      "edge_false": 0.978,
+      "edge_true": 0.668,
+      "reach_no": 0.945054945054945,
+      "reach_yes": 0.33985330073349634
+     },
+     "format_failure": 0.0,
+     "n": {
+      "edge_false": 500,
+      "edge_true": 500,
+      "reach_no": 91,
+      "reach_yes": 409
+     },
+     "per_source": {
+      "ba": {
+       "edge": 0.75,
+       "reach": 0.38
+      },
+      "dblp": {
+       "edge": 0.78,
+       "reach": 0.52
+      },
+      "dbpedia": {
+       "edge": 0.82,
+       "reach": 0.54
+      },
+      "er": {
+       "edge": 0.8,
+       "reach": 0.4
+      },
+      "openflights": {
+       "edge": 0.76,
+       "reach": 0.92
+      },
+      "pubchemqc": {
+       "edge": 0.94,
+       "reach": 0.46
+      },
+      "sbm": {
+       "edge": 0.73,
+       "reach": 0.32
+      },
+      "sfn": {
+       "edge": 0.84,
+       "reach": 0.28
+      },
+      "social_network": {
+       "edge": 0.92,
+       "reach": 0.52
+      },
+      "star": {
+       "edge": 0.89,
+       "reach": 0.16
+      }
+     },
+     "said_true": {
+      "edge": 0.345,
+      "reach": 0.288
+     }
+    }
+   ],
+   "pooled": {
+    "accuracy": {
+     "edge_false": 0.9813333333333333,
+     "edge_true": 0.6526666666666667,
+     "reach_no": 0.9523809523809524,
+     "reach_yes": 0.2925835370823146
+    },
+    "format_failure": 0.0,
+    "per_source": {
+     "ba": {
+      "edge": 0.6933333333333334,
+      "reach": 0.26666666666666666
+     },
+     "dblp": {
+      "edge": 0.7633333333333333,
+      "reach": 0.46
+     },
+     "dbpedia": {
+      "edge": 0.82,
+      "reach": 0.5333333333333333
+     },
+     "er": {
+      "edge": 0.7966666666666667,
+      "reach": 0.36000000000000004
+     },
+     "openflights": {
+      "edge": 0.7600000000000001,
+      "reach": 0.94
+     },
+     "pubchemqc": {
+      "edge": 0.9366666666666666,
+      "reach": 0.43333333333333335
+     },
+     "sbm": {
+      "edge": 0.7166666666666667,
+      "reach": 0.25333333333333335
+     },
+     "sfn": {
+      "edge": 0.8433333333333333,
+      "reach": 0.21333333333333335
+     },
+     "social_network": {
+      "edge": 0.94,
+      "reach": 0.54
+     },
+     "star": {
+      "edge": 0.9,
+      "reach": 0.12666666666666668
+     }
+    },
+    "said_true": {
+     "edge": 0.3356666666666666,
+     "reach": 0.248
+    }
+   },
+   "runs": [
+    "runs/kaggle/jobV2/pilot3_C",
+    "runs/kaggle/jobV3/pilot3_C_s2027",
+    "runs/kaggle/jobV4/pilot3_C_s9173"
+   ]
+  },
+  "D": {
+   "per_seed": [
+    {
+     "accuracy": {
+      "edge_false": 0.846,
+      "edge_true": 0.892,
+      "reach_no": 0.9230769230769231,
+      "reach_yes": 0.8337408312958435
+     },
+     "format_failure": 0.0,
+     "n": {
+      "edge_false": 500,
+      "edge_true": 500,
+      "reach_no": 91,
+      "reach_yes": 409
+     },
+     "per_source": {
+      "ba": {
+       "edge": 0.77,
+       "reach": 0.76
+      },
+      "dblp": {
+       "edge": 0.88,
+       "reach": 0.9
+      },
+      "dbpedia": {
+       "edge": 0.89,
+       "reach": 0.9
+      },
+      "er": {
+       "edge": 0.79,
+       "reach": 0.9
+      },
+      "openflights": {
+       "edge": 0.93,
+       "reach": 0.92
+      },
+      "pubchemqc": {
+       "edge": 0.76,
+       "reach": 0.86
+      },
+      "sbm": {
+       "edge": 0.83,
+       "reach": 0.82
+      },
+      "sfn": {
+       "edge": 0.96,
+       "reach": 0.7
+      },
+      "social_network": {
+       "edge": 0.98,
+       "reach": 0.94
+      },
+      "star": {
+       "edge": 0.9,
+       "reach": 0.8
+      }
+     },
+     "said_true": {
+      "edge": 0.523,
+      "reach": 0.696
+     }
+    },
+    {
+     "accuracy": {
+      "edge_false": 0.874,
+      "edge_true": 0.87,
+      "reach_no": 0.8681318681318682,
+      "reach_yes": 0.8361858190709046
+     },
+     "format_failure": 0.0,
+     "n": {
+      "edge_false": 500,
+      "edge_true": 500,
+      "reach_no": 91,
+      "reach_yes": 409
+     },
+     "per_source": {
+      "ba": {
+       "edge": 0.77,
+       "reach": 0.76
+      },
+      "dblp": {
+       "edge": 0.83,
+       "reach": 0.98
+      },
+      "dbpedia": {
+       "edge": 0.89,
+       "reach": 0.88
+      },
+      "er": {
+       "edge": 0.83,
+       "reach": 0.84
+      },
+      "openflights": {
+       "edge": 0.92,
+       "reach": 0.82
+      },
+      "pubchemqc": {
+       "edge": 0.81,
+       "reach": 0.84
+      },
+      "sbm": {
+       "edge": 0.81,
+       "reach": 0.82
+      },
+      "sfn": {
+       "edge": 0.97,
+       "reach": 0.76
+      },
+      "social_network": {
+       "edge": 0.97,
+       "reach": 0.94
+      },
+      "star": {
+       "edge": 0.92,
+       "reach": 0.78
+      }
+     },
+     "said_true": {
+      "edge": 0.498,
+      "reach": 0.708
+     }
+    },
+    {
+     "accuracy": {
+      "edge_false": 0.842,
+      "edge_true": 0.88,
+      "reach_no": 0.8901098901098901,
+      "reach_yes": 0.9095354523227384
+     },
+     "format_failure": 0.0,
+     "n": {
+      "edge_false": 500,
+      "edge_true": 500,
+      "reach_no": 91,
+      "reach_yes": 409
+     },
+     "per_source": {
+      "ba": {
+       "edge": 0.78,
+       "reach": 0.8
+      },
+      "dblp": {
+       "edge": 0.81,
+       "reach": 0.98
+      },
+      "dbpedia": {
+       "edge": 0.91,
+       "reach": 0.94
+      },
+      "er": {
+       "edge": 0.79,
+       "reach": 0.92
+      },
+      "openflights": {
+       "edge": 0.92,
+       "reach": 0.88
+      },
+      "pubchemqc": {
+       "edge": 0.76,
+       "reach": 0.9
+      },
+      "sbm": {
+       "edge": 0.81,
+       "reach": 0.86
+      },
+      "sfn": {
+       "edge": 0.95,
+       "reach": 0.84
+      },
+      "social_network": {
+       "edge": 0.96,
+       "reach": 0.98
+      },
+      "star": {
+       "edge": 0.92,
+       "reach": 0.96
+      }
+     },
+     "said_true": {
+      "edge": 0.519,
+      "reach": 0.764
+     }
+    }
+   ],
+   "pooled": {
+    "accuracy": {
+     "edge_false": 0.854,
+     "edge_true": 0.8806666666666666,
+     "reach_no": 0.8937728937728938,
+     "reach_yes": 0.8598207008964955
+    },
+    "format_failure": 0.0,
+    "per_source": {
+     "ba": {
+      "edge": 0.7733333333333334,
+      "reach": 0.7733333333333334
+     },
+     "dblp": {
+      "edge": 0.84,
+      "reach": 0.9533333333333333
+     },
+     "dbpedia": {
+      "edge": 0.8966666666666666,
+      "reach": 0.9066666666666666
+     },
+     "er": {
+      "edge": 0.8033333333333333,
+      "reach": 0.8866666666666667
+     },
+     "openflights": {
+      "edge": 0.9233333333333333,
+      "reach": 0.8733333333333334
+     },
+     "pubchemqc": {
+      "edge": 0.7766666666666667,
+      "reach": 0.8666666666666667
+     },
+     "sbm": {
+      "edge": 0.8166666666666668,
+      "reach": 0.8333333333333334
+     },
+     "sfn": {
+      "edge": 0.96,
+      "reach": 0.7666666666666666
+     },
+     "social_network": {
+      "edge": 0.9700000000000001,
+      "reach": 0.9533333333333333
+     },
+     "star": {
+      "edge": 0.9133333333333334,
+      "reach": 0.8466666666666667
+     }
+    },
+    "said_true": {
+     "edge": 0.5133333333333333,
+     "reach": 0.7226666666666667
+    }
+   },
+   "runs": [
+    "runs/kaggle/jobV2/pilot3_D",
+    "runs/kaggle/jobV3/pilot3_D_s2027",
+    "runs/kaggle/jobV4/pilot3_D_s9173"
+   ]
+  },
+  "E": {
+   "per_seed": [
+    {
+     "accuracy": {
+      "edge_false": 0.932,
+      "edge_true": 0.558,
+      "reach_no": 0.9010989010989011,
+      "reach_yes": 0.530562347188264
+     },
+     "format_failure": 0.05400000000000005,
+     "n": {
+      "edge_false": 500,
+      "edge_true": 500,
+      "reach_no": 91,
+      "reach_yes": 409
+     },
+     "per_source": {
+      "ba": {
+       "edge": 0.63,
+       "reach": 0.32
+      },
+      "dblp": {
+       "edge": 0.68,
+       "reach": 0.7
+      },
+      "dbpedia": {
+       "edge": 0.88,
+       "reach": 0.74
+      },
+      "er": {
+       "edge": 0.72,
+       "reach": 0.44
+      },
+      "openflights": {
+       "edge": 0.8,
+       "reach": 0.94
+      },
+      "pubchemqc": {
+       "edge": 0.91,
+       "reach": 0.84
+      },
+      "sbm": {
+       "edge": 0.54,
+       "reach": 0.26
+      },
+      "sfn": {
+       "edge": 0.62,
+       "reach": 0.38
+      },
+      "social_network": {
+       "edge": 0.89,
+       "reach": 0.82
+      },
+      "star": {
+       "edge": 0.78,
+       "reach": 0.54
+      }
+     },
+     "said_true": {
+      "edge": 0.3023255813953488,
+      "reach": 0.46511627906976744
+     }
+    },
+    {
+     "accuracy": {
+      "edge_false": 0.918,
+      "edge_true": 0.526,
+      "reach_no": 0.9340659340659341,
+      "reach_yes": 0.46454767726161367
+     },
+     "format_failure": 0.07199999999999995,
+     "n": {
+      "edge_false": 500,
+      "edge_true": 500,
+      "reach_no": 91,
+      "reach_yes": 409
+     },
+     "per_source": {
+      "ba": {
+       "edge": 0.57,
+       "reach": 0.14
+      },
+      "dblp": {
+       "edge": 0.66,
+       "reach": 0.64
+      },
+      "dbpedia": {
+       "edge": 0.85,
+       "reach": 0.7
+      },
+      "er": {
+       "edge": 0.68,
+       "reach": 0.44
+      },
+      "openflights": {
+       "edge": 0.77,
+       "reach": 0.94
+      },
+      "pubchemqc": {
+       "edge": 0.93,
+       "reach": 0.82
+      },
+      "sbm": {
+       "edge": 0.56,
+       "reach": 0.24
+      },
+      "sfn": {
+       "edge": 0.58,
+       "reach": 0.32
+      },
+      "social_network": {
+       "edge": 0.88,
+       "reach": 0.76
+      },
+      "star": {
+       "edge": 0.74,
+       "reach": 0.5
+      }
+     },
+     "said_true": {
+      "edge": 0.28879310344827586,
+      "reach": 0.41594827586206895
+     }
+    },
+    {
+     "accuracy": {
+      "edge_false": 0.894,
+      "edge_true": 0.576,
+      "reach_no": 0.9230769230769231,
+      "reach_yes": 0.5378973105134475
+     },
+     "format_failure": 0.09199999999999997,
+     "n": {
+      "edge_false": 500,
+      "edge_true": 500,
+      "reach_no": 91,
+      "reach_yes": 409
+     },
+     "per_source": {
+      "ba": {
+       "edge": 0.61,
+       "reach": 0.24
+      },
+      "dblp": {
+       "edge": 0.67,
+       "reach": 0.74
+      },
+      "dbpedia": {
+       "edge": 0.91,
+       "reach": 0.76
+      },
+      "er": {
+       "edge": 0.52,
+       "reach": 0.44
+      },
+      "openflights": {
+       "edge": 0.81,
+       "reach": 0.9
+      },
+      "pubchemqc": {
+       "edge": 0.93,
+       "reach": 0.88
+      },
+      "sbm": {
+       "edge": 0.57,
+       "reach": 0.38
+      },
+      "sfn": {
+       "edge": 0.63,
+       "reach": 0.34
+      },
+      "social_network": {
+       "edge": 0.9,
+       "reach": 0.82
+      },
+      "star": {
+       "edge": 0.8,
+       "reach": 0.58
+      }
+     },
+     "said_true": {
+      "edge": 0.3248898678414097,
+      "reach": 0.4933920704845815
+     }
+    }
+   ],
+   "pooled": {
+    "accuracy": {
+     "edge_false": 0.9146666666666667,
+     "edge_true": 0.5533333333333333,
+     "reach_no": 0.9194139194139194,
+     "reach_yes": 0.511002444987775
+    },
+    "format_failure": 0.07266666666666666,
+    "per_source": {
+     "ba": {
+      "edge": 0.6033333333333334,
+      "reach": 0.2333333333333333
+     },
+     "dblp": {
+      "edge": 0.67,
+      "reach": 0.6933333333333334
+     },
+     "dbpedia": {
+      "edge": 0.88,
+      "reach": 0.7333333333333334
+     },
+     "er": {
+      "edge": 0.64,
+      "reach": 0.44
+     },
+     "openflights": {
+      "edge": 0.7933333333333333,
+      "reach": 0.9266666666666666
+     },
+     "pubchemqc": {
+      "edge": 0.9233333333333333,
+      "reach": 0.8466666666666667
+     },
+     "sbm": {
+      "edge": 0.5566666666666666,
+      "reach": 0.29333333333333333
+     },
+     "sfn": {
+      "edge": 0.61,
+      "reach": 0.3466666666666667
+     },
+     "social_network": {
+      "edge": 0.89,
+      "reach": 0.7999999999999999
+     },
+     "star": {
+      "edge": 0.7733333333333334,
+      "reach": 0.54
+     }
+    },
+    "said_true": {
+     "edge": 0.3053361842283448,
+     "reach": 0.4581522084721393
+    }
+   },
+   "runs": [
+    "runs/kaggle/jobV2/pilot3_E",
+    "runs/kaggle/jobV3/pilot3_E_s2027",
+    "runs/kaggle/jobV4/pilot3_E_s9173"
+   ]
+  }
+ },
+ "n": 1500,
+ "record": "preregistered",
+ "subset_sha256": "ac4796f87a6d5311a0cb7bed1bdd2875c9b5500cc667fcdf8a7b7d7264563888"
+}

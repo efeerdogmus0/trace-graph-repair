@@ -1,0 +1,14 @@
+{
+ "commit": "40620446fd6a39b4322b20c25a3dead9c443afbe",
+ "commit_date": "2026-11-14T15:43:28+03:00",
+ "protocol_sections_1_to_6_sha256": "e3e815924775b4bf7d4cade15b764a7a27588928e48ab656de76d95c041c6e08",
+ "protocol_blob": "785e71e847ce8e0c87a904bcc91ad018183dedb9",
+ "files": {
+  "scripts/kaggle/final_queue.json": "d0cfcd3f89540cf9d80e7ffd452d8bbc56f15d7f",
+  "reports/pilot/reference_baseline.json": "edf2c9d2c0352190398bc2982c693dff91dd3158",
+  "reports/pilot/base_prompt.json": "7e582a4cec5563ef6908eff7b605d42b36ce740f",
+  "reports/external/vgcure_subset.json": "1b2dfce38b3a9e0f708e46fbf897e92aa3c58954",
+  "docs/external_eval.md": "0d4b91198485d0d650f10e9b210d910d5233abbc"
+ },
+ "note": "values at the commit jobF01's payload was built from (scripts/kaggle/eval_freeze.json); see scripts/protocol_freeze.py"
+}

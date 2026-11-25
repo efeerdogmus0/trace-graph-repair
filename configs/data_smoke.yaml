@@ -1,0 +1,50 @@
+# CPU smoke dataset: 100 root graphs across all split kinds.
+# Purpose: exercise generator, renderer, solver and validator end to end.
+# Not a training set and not a test set; sizes are far too small for either.
+name: smoke
+seed: 20261109
+image_size: 512
+supersample: 3
+
+# Share of root graphs that also get a relabelled and a restyled copy (invariance pairs).
+invariant_rate: 0.25
+
+# Root graphs for which a main task cannot get an answer-flipping twin are discarded.
+require_pairs: true
+
+# Each root graph yields one repair pair: same instruction, two images, different answers.
+# Pair types are balanced, which gives roughly 25% of each repair category.
+repair_pair_types:
+  - [add, unchanged]
+  - [add, impossible]
+  - [remove, unchanged]
+  - [remove, impossible]
+
+secondary_tasks: [edge_exists, shortest_path_length, graph_extraction]
+
+splits:
+  train:
+    roots: 60
+    families: {layered_dag: 1, tree_plus: 1, sparse_random: 1}
+    nodes: [5, 10]
+    styles: [a, b, c]
+  dev:
+    roots: 10
+    families: {layered_dag: 1, tree_plus: 1, sparse_random: 1}
+    nodes: [5, 10]
+    styles: [a, b, c]
+  test_id:
+    roots: 10
+    families: {layered_dag: 1, tree_plus: 1, sparse_random: 1}
+    nodes: [5, 10]
+    styles: [a, b, c]
+  test_style_ood:
+    roots: 10
+    families: {layered_dag: 1, tree_plus: 1, sparse_random: 1}
+    nodes: [5, 10]
+    styles: [x, y]
+  test_struct_ood:
+    roots: 10
+    families: {ring_chords: 1, two_cluster: 1}
+    nodes: [11, 16]
+    styles: [a, b, c]

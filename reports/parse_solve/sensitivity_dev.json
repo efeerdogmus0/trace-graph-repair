@@ -1,0 +1,79 @@
+{
+ "manifest": "manifests/pilot.json",
+ "split": "dev",
+ "eval_root_graphs": 200,
+ "samples": 1200,
+ "seed": "ps-sens-v1",
+ "conditions": {
+  "drop_0": {
+   "per_task_accuracy": {
+    "minimal_graph_repair": 1.0,
+    "reachability": 1.0,
+    "critical_edge": 1.0
+   },
+   "non_edit_macro": 1.0,
+   "reasons": {
+    "answered": 1200
+   }
+  },
+  "drop_1": {
+   "per_task_accuracy": {
+    "minimal_graph_repair": 0.7725,
+    "reachability": 0.895,
+    "critical_edge": 0.72
+   },
+   "non_edit_macro": 0.8075,
+   "reasons": {
+    "answered": 1129,
+    "premise_fails_on_predicted_graph": 71
+   }
+  },
+  "drop_2": {
+   "per_task_accuracy": {
+    "minimal_graph_repair": 0.6375,
+    "reachability": 0.8325,
+    "critical_edge": 0.5375
+   },
+   "non_edit_macro": 0.685,
+   "reasons": {
+    "answered": 1063,
+    "premise_fails_on_predicted_graph": 137
+   }
+  },
+  "flip_0": {
+   "per_task_accuracy": {
+    "minimal_graph_repair": 1.0,
+    "reachability": 1.0,
+    "critical_edge": 1.0
+   },
+   "non_edit_macro": 1.0,
+   "reasons": {
+    "answered": 1200
+   }
+  },
+  "flip_1": {
+   "per_task_accuracy": {
+    "minimal_graph_repair": 0.5625,
+    "reachability": 0.8075,
+    "critical_edge": 0.6525
+   },
+   "non_edit_macro": 0.73,
+   "reasons": {
+    "answered": 1111,
+    "premise_fails_on_predicted_graph": 89
+   }
+  },
+  "flip_2": {
+   "per_task_accuracy": {
+    "minimal_graph_repair": 0.4375,
+    "reachability": 0.725,
+    "critical_edge": 0.445
+   },
+   "non_edit_macro": 0.585,
+   "reasons": {
+    "answered": 1031,
+    "premise_fails_on_predicted_graph": 169
+   }
+  }
+ }
+}

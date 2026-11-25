@@ -1,0 +1,49 @@
+% Related work. Every claim about another paper comes from docs/related_work.md (pages read
+% 2026-11-09/10); bibliographic data from docs/sources/arxiv_bib_2026-11-12.xml (arXiv API).
+% The overlap search was about eight queries (2026-11-09), extended on 2026-11-15 by 14 fixed
+% arXiv API queries (scripts/overlap_search.py, docs/sources/overlap_2026-11-15/); still not an
+% exhaustive negative. Claims about the 2026-11-15 additions come from their arXiv abstracts only.
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Visual graph understanding.}
+VGCure and its MCDGraph training recipe~\cite{mcdgraph} benchmark large VLMs on
+fundamental questions about drawn graphs and improve them with structural fine-tuning:
+masked graph infilling, contrastive graph discrimination (two images, same graph or not)
+and graph description, applied with LoRA to 7--8B models. Our arm~C follows this recipe
+at matched exposure. GraphVerse~\cite{graphverse} is a broader benchmark of single- and
+paired-image graph tasks and trains Qwen3-VL models; its ``editing'' denotes
+topology-preserving perturbations of the input, not an edit the model outputs, and
+reachability is not one of its tasks. Neither work asks the model to \emph{produce} an
+edge edit that satisfies a goal, nor compares edit training with question-answer training
+on the same graphs. Probing work~\cite{signals} reports that node and edge information
+is linearly decodable from VLM representations of diagrams even where question answering
+fails, which motivates our attempt to separate perception from reasoning with oracle-graph and
+parse-and-solve conditions.
+
+\paragraph{Recover the graph, then compute.}
+Our arm~E, which parses the drawing into an edge list and answers with an exact solver,
+has close precedents. VisionGraph~\cite{visiongraph} pairs a benchmark of graph-theory
+problems on images with a description--program--reasoning chain and reports that
+perception of the graph structure limits all tested models. VGCompiler~\cite{vgcompiler}
+trains an 8B VLM with reinforcement learning to recover an explicit graph representation
+and compile the question into an executable graph operation. Knossos and
+Ariadne~\cite{knossos} study complete diagram-to-graph extraction with exactly aligned
+synthetic annotations. MapReason-OSM~\cite{mapreason} scores structured decisions on
+rendered maps against a hidden graph with exact oracles. We do not claim parse-and-solve
+as a contribution; arm~E is the reference that tells whether a gain from edit training
+exceeds what explicit graph recovery already gives at the same base and data.
+
+\paragraph{Minimal edits as a training signal.}
+Controlled minimal edits of natural images have been used as fine-grained supervision,
+with a consistency objective over edited pairs~\cite{med} or as counterfactual
+contrastive signal~\cite{cfvlm}. Diagram editing also appears as one stage in a
+geometry-reasoning training pipeline~\cite{geoweave}. These works edit natural images or
+use editing alongside other stages; none isolates whether learning to edit transfers to
+non-edit questions, and none has an exact verifier that accepts every optimal edit.
+Our answer-flipping twins are minimal edits used for \emph{evaluation}: each pair differs
+by one edge and has opposite answers, bounding an image-blind model at 0.50.
+
+\paragraph{Parameter-efficient adaptation.}
+All trained arms use LoRA~\cite{lora} on the same base, so differences come from the
+training data, not the adaptation method.

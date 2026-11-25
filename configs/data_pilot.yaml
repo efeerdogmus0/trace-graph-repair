@@ -1,0 +1,26 @@
+# Pilot dataset (master plan M4): 512 training root graphs and 200 independent dev root graphs.
+# DRAFT: family mix and sizes follow docs/protocol.md v0.1 and may still change before any
+# GPU run uses this data. The dev split is for go/no-go decisions; it is not a test set.
+name: pilot
+seed: 20261110
+image_size: 512
+supersample: 3
+invariant_rate: 0.25
+require_pairs: true
+repair_pair_types:
+  - [add, unchanged]
+  - [add, impossible]
+  - [remove, unchanged]
+  - [remove, impossible]
+secondary_tasks: [edge_exists, shortest_path_length, graph_extraction]
+splits:
+  train:
+    roots: 512
+    families: {layered_dag: 1, tree_plus: 1, sparse_random: 1}
+    nodes: [5, 10]
+    styles: [a, b, c]
+  dev:
+    roots: 200
+    families: {layered_dag: 1, tree_plus: 1, sparse_random: 1}
+    nodes: [5, 10]
+    styles: [a, b, c]

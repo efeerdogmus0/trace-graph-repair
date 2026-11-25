@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/ynon935wN7P3lwuN+Ir/K5XaK6M</id>
+  <title>arXiv Query: search_query=abs:"visual graph" AND abs:"edit"&amp;id_list=&amp;start=0&amp;max_results=25</title>
+  <updated>2026-11-15T05:16:01Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22visual+graph%22+AND+abs:%22edit%22&amp;start=0&amp;max_results=25&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+  <opensearch:totalResults>4</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2606.16103v1</id>
+    <title>SceneCraft: Interactive System for Image Editing via Scene Graph</title>
+    <updated>2026-06-15T01:34:22Z</updated>
+    <link href="https://arxiv.org/abs/2606.16103v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.16103v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in generative AI have enabled natural language-driven image editing, yet existing systems often fail in complex scenes with multiple interacting objects because they rely heavily on users crafting precise text prompts. To address the absence of structured control, we propose SceneCraft, a novel interactive framework that bridges user intent and model execution by representing images as editable scene graphs. Instead of guessing text prompts through trial and error, users interact directly with a visual graph to perform complex spatial and relational operations. These graph modifications are automatically translated into precise, context-aware editing prompts, effectively eliminating linguistic ambiguity. To ensure robust and diverse results, structured prompts are dispatched to multiple state-of-the-art generative models. Evaluations across diverse editing scenarios show that SceneCraft provides a more intuitive control mechanism, significantly reducing the cognitive burden of manual prompt engineering while generating outputs that users consistently rate as higher in quality and fidelity.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-15T01:34:22Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Duc-Manh Phan</name>
+    </author>
+    <author>
+      <name>Ngoc-Dai Tran</name>
+    </author>
+    <author>
+      <name>Duy-Khang Do</name>
+    </author>
+    <author>
+      <name>Tam V. Nguyen</name>
+    </author>
+    <author>
+      <name>Minh-Triet Tran</name>
+    </author>
+    <author>
+      <name>Trung-Nghia Le</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2101.00449v1</id>
+    <title>Graph Drawing and Network Visualization GD2020</title>
+    <updated>2021-01-02T13:01:19Z</updated>
+    <link href="https://arxiv.org/abs/2101.00449v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2101.00449v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Proceedings of GD2020: This volume contains the papers presented at GD~2020, the 28th International Symposium on Graph Drawing and Network Visualization, held on September 18-20, 2020 online. Graph drawing is concerned with the geometric representation of graphs and constitutes the algorithmic core of network visualization. Graph drawing and network visualization are motivated by applications where it is crucial to visually analyse and interact with relational datasets. Information about the conference series and past symposia is maintained at http://www.graphdrawing.org. The 2020 edition of the conference was hosted by University Of British Columbia, with Will Evans as chair of the Organizing Committee. A total of 251 participants attended the conference.</summary>
+    <category term="cs.CG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-01-02T13:01:19Z</published>
+    <arxiv:comment>Proceedings of GD2020</arxiv:comment>
+    <arxiv:primary_category term="cs.CG"/>
+    <author>
+      <name>David Auber</name>
+    </author>
+    <author>
+      <name>Pavel Valtr</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.06769v2</id>
+    <title>GraphVerse: A Comprehensive Visual Graph Reasoning Benchmark for Multimodal Large Language Models</title>
+    <updated>2026-10-09T06:41:46Z</updated>
+    <link href="https://arxiv.org/abs/2608.06769v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.06769v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent Multimodal Large Language Models (MLLMs) have achieved remarkable progress across diverse vision-language tasks, creating an urgent need for more challenging benchmarks. Yet existing evaluations still provide limited insight into whether these models can truly reason over structured visual information. Visual Graph Reasoning (VGR) offers a compelling testbed for this challenge, requiring models to integrate perception, structural understanding, and multi-step reasoning over graph-based visual inputs. However, prior VGR benchmarks often reduce the task to visual perception followed by text-based reasoning, restrict evaluation to single-image settings, rely on answer-only metrics, and underrepresent realistic graph-centric scenarios. To bridge the gap, we introduce GraphVerse, a unified benchmark that jointly evaluates perception, visual reasoning, and text-based graph reasoning in MLLMs under both single-image and paired-image settings. At its core is a suite of Graph-centric Image Editing (GIE) strategies that modify graph images while preserving their semantics, turning them into active tests of visual reasoning. We further propose VGR-Score, a process-sensitive metric that evaluates reasoning quality beyond final-answer accuracy. Extensive experiments reveal several key limitations of current MLLMs in VGR, while also validating the effectiveness of GIE strategies and the transferability of GraphVerse to broader multimodal reasoning capabilities. The code is available at https://github.com/sunyuanfu/GraphVerse.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-08-07T03:43:25Z</published>
+    <arxiv:comment>EMNLP 2026 Main Conference</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yuanfu Sun</name>
+    </author>
+    <author>
+      <name>Yuanhang Ren</name>
+    </author>
+    <author>
+      <name>Kang Li</name>
+    </author>
+    <author>
+      <name>Chuanhao Ji</name>
+    </author>
+    <author>
+      <name>Jiaxi Li</name>
+    </author>
+    <author>
+      <name>Jiajin Liu</name>
+    </author>
+    <author>
+      <name>Ninghao Liu</name>
+    </author>
+    <author>
+      <name>Qiaoyu Tan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.18860v1</id>
+    <title>AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards</title>
+    <updated>2026-10-13T17:59:31Z</updated>
+    <link href="https://arxiv.org/abs/2610.18860v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.18860v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generating information-rich visual artifacts such as slides, posters, and dashboards as code is appealing because the outputs are structured, editable, and verifiable. Yet code models cannot see how their choices of layout and color come together on the canvas, often limiting spatial planning and aesthetic quality. Image generators excel at visual design but can misrender requested content, making their outputs unreliable targets for direct reproduction. We therefore introduce AesCode, which generates code grounded in the content prompt while using an image generated from the same prompt as an aesthetic guidance. To do so, AesCode represents the target as a design graph that describes the whole canvas and makes each property attributable. From this graph, we derive complementary cross-modal rewards: deterministic verifiers score properties parsable from code and rendering, while a VLM judge assesses the non-parsable ones with a sample-specific Visual Graph Rubric (VGR) tied to graph elements and relations. We optimize these decoupled rewards through reinforcement learning with per-channel normalization to jointly improve spatial planning, aesthetic quality, and verifiable correctness. To evaluate this setting, we build a benchmark that scores verifiable correctness and visual quality separately, with visual scores highly consistent with human judgments. We find that reference images substantially improve the visual quality of code generated by existing models, and ablations show that AesCode benefits from references both as model input and as a source of visual rewards. Relative to same-scale Qwen3-VL baselines given the same references, AesCode-8B and AesCode-32B improve visual quality by 31.1 and 22.4 percentage points, reaching scores comparable to those of closed-source frontier models such as GPT-5.5 and Claude Opus 4.8.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-13T17:59:31Z</published>
+    <arxiv:comment>44 pages,18 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xin Gao</name>
+    </author>
+    <author>
+      <name>Yifan Yang</name>
+    </author>
+    <author>
+      <name>Xin Li</name>
+    </author>
+    <author>
+      <name>Pan Wang</name>
+    </author>
+    <author>
+      <name>Yan Li</name>
+    </author>
+    <author>
+      <name>Muzhao Tian</name>
+    </author>
+    <author>
+      <name>Mingxi Cheng</name>
+    </author>
+    <author>
+      <name>Bei Liu</name>
+    </author>
+    <author>
+      <name>Kai Qiu</name>
+    </author>
+    <author>
+      <name>Qi Dai</name>
+    </author>
+    <author>
+      <name>Dong Chen</name>
+    </author>
+    <author>
+      <name>Yue Dong</name>
+    </author>
+    <author>
+      <name>Leandros Tassiulas</name>
+    </author>
+    <author>
+      <name>Rex Ying</name>
+    </author>
+    <author>
+      <name>Ji Li</name>
+    </author>
+    <author>
+      <name>Chong Luo</name>
+    </author>
+  </entry>
+</feed>

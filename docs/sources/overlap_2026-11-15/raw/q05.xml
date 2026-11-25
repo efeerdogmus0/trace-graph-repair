@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/6hC4L4ck1kFUn+dagayzfBzKP3c</id>
+  <title>arXiv Query: search_query=abs:"graph" AND abs:"image" AND abs:"counterfactual" AND abs:"vision-language"&amp;id_list=&amp;start=0&amp;max_results=25</title>
+  <updated>2026-11-15T05:16:08Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22graph%22+AND+(abs:%22image%22+AND+(abs:%22counterfactual%22+AND+abs:%22vision-language%22))&amp;start=0&amp;max_results=25&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+  <opensearch:totalResults>6</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2605.22902v3</id>
+    <title>Transcoders Trace Visual Grounding and Hallucinations in Vision-Language Models</title>
+    <updated>2026-10-05T12:15:26Z</updated>
+    <link href="https://arxiv.org/abs/2605.22902v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.22902v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generative Vision-Language Models (VLMs) perform well on multimodal reasoning, but how visual inputs are transformed to text remains poorly understood. Existing interpretability work on VLMs uses Sparse Autoencoders (SAEs), which decompose static residual representations and miss the functional updates that drive cross-modal interaction. We adopt a function-centric framework based on Transcoders, sparse approximations of MLP sublayers that act as a causal proxy for layer-wise computation. Applied to Gemma 3-4B-IT, the framework decomposes the model into interpretable computational pathways linking image patches to directions in token generation. Transcoder attributions produce stronger and more stable effects on visually grounded tokens under patch ablation than SAE attributions, and align better with semantically relevant image regions. A False Visual Grounding counterfactual analysis confirms that the recovered pathways are specific to vision-language interaction.Finally, we perform a structural analysis of hallucinated generations, by extracting graph-based indicators from circuit traces produced by the transcoders. A logistic classifier over these mechanistic graph features predicts hallucinations at AUC $0.68$. These results show that function-centric circuit decomposition yields interpretable and predictive accounts of multimodal computation in VLMs.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-21T17:34:39Z</published>
+    <arxiv:comment>Later experiments showed that the reported results are not correct.</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Dimitrios Damianos</name>
+    </author>
+    <author>
+      <name>Leon Voukoutis</name>
+    </author>
+    <author>
+      <name>Georgios Skyrianos</name>
+    </author>
+    <author>
+      <name>Vassilis Katsouros</name>
+    </author>
+    <author>
+      <name>Georgios Paraskevopoulos</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.11745v1</id>
+    <title>From Prompts to Tokens: Internalizing Causal Supervision in Vision-Language Model for Multi-Image Causal Reasoning</title>
+    <updated>2026-06-10T07:21:45Z</updated>
+    <link href="https://arxiv.org/abs/2606.11745v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.11745v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Visual causal reasoning is essential for understanding and intervening in the physical world, requiring identification of causal variables from visual inputs and reasoning over intervention effects. Despite recent progress, large vision--language models (VLMs) remain brittle at such tasks, especially for interventional and counterfactual queries over multi-image inputs. Most existing explorations inject causal knowledge via textual prompts, leaving causal mechanisms external to model execution and limiting reliable control during inference. To address this problem, we propose BridgeVLM, which internalizes visual causal reasoning by inducing a causal graph from multi-image inputs and converting it into structured Causal Tokens executed by RAMP layers injected into the LLM decoder for causal message passing. We further introduce a unified training interface M3S for fine-grained causal supervision from different granularities (local/global level). BridgeVLM achieves 54.4% accuracy on intervention tasks on CausalVLBench (vs. 33.2% with prompt-level supervision), improves results on Causal3D from 43.6% to 49.0%, and substantially improves causal structure learning on CausalVLBench ($F_1$: 33.4% $\rightarrow$ 75.1%).</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-10T07:21:45Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Haoping Yu</name>
+    </author>
+    <author>
+      <name>Yuanxi Li</name>
+    </author>
+    <author>
+      <name>Jing Ma</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.06169v2</id>
+    <title>Treble Counterfactual VLMs: A Causal Approach to Hallucination</title>
+    <updated>2025-03-17T08:11:52Z</updated>
+    <link href="https://arxiv.org/abs/2503.06169v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.06169v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Vision-Language Models (VLMs) have advanced multi-modal tasks like image captioning, visual question answering, and reasoning. However, they often generate hallucinated outputs inconsistent with the visual context or prompt, limiting reliability in critical applications like autonomous driving and medical imaging. Existing studies link hallucination to statistical biases, language priors, and biased feature learning but lack a structured causal understanding. In this work, we introduce a causal perspective to analyze and mitigate hallucination in VLMs. We hypothesize that hallucination arises from unintended direct influences of either the vision or text modality, bypassing proper multi-modal fusion. To address this, we construct a causal graph for VLMs and employ counterfactual analysis to estimate the Natural Direct Effect (NDE) of vision, text, and their cross-modal interaction on the output. We systematically identify and mitigate these unintended direct effects to ensure that responses are primarily driven by genuine multi-modal fusion. Our approach consists of three steps: (1) designing structural causal graphs to distinguish correct fusion pathways from spurious modality shortcuts, (2) estimating modality-specific and cross-modal NDE using perturbed image representations, hallucinated text embeddings, and degraded visual inputs, and (3) implementing a test-time intervention module to dynamically adjust the model's dependence on each modality. Experimental results demonstrate that our method significantly reduces hallucination while preserving task performance, providing a robust and interpretable framework for improving VLM reliability. To enhance accessibility and reproducibility, our code is publicly available at https://github.com/TREE985/Treble-Counterfactual-VLMs.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-08T11:13:05Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Shawn Li</name>
+    </author>
+    <author>
+      <name>Jiashu Qu</name>
+    </author>
+    <author>
+      <name>Yuxiao Zhou</name>
+    </author>
+    <author>
+      <name>Yuehan Qin</name>
+    </author>
+    <author>
+      <name>Tiankai Yang</name>
+    </author>
+    <author>
+      <name>Yue Zhao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.14404v2</id>
+    <title>Causally Steered Diffusion for Automated Video Counterfactual Generation</title>
+    <updated>2025-08-05T10:10:38Z</updated>
+    <link href="https://arxiv.org/abs/2506.14404v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.14404v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Adapting text-to-image (T2I) latent diffusion models (LDMs) to video editing has shown strong visual fidelity and controllability, but challenges remain in maintaining causal relationships inherent to the video data generating process. Edits affecting causally dependent attributes often generate unrealistic or misleading outcomes if these relationships are ignored. In this work, we introduce a causally faithful framework for counterfactual video generation, formulated as an Out-of-Distribution (OOD) prediction problem. We embed prior causal knowledge by encoding the relationships specified in a causal graph into text prompts and guide the generation process by optimizing these prompts using a vision-language model (VLM)-based textual loss. This loss encourages the latent space of the LDMs to capture OOD variations in the form of counterfactuals, effectively steering generation toward causally meaningful alternatives. The proposed framework, dubbed CSVC, is agnostic to the underlying video editing system and does not require access to its internal mechanisms or fine-tuning. We evaluate our approach using standard video quality metrics and counterfactual-specific criteria, such as causal effectiveness and minimality. Experimental results show that CSVC generates causally faithful video counterfactuals within the LDM distribution via prompt-based causal steering, achieving state-of-the-art causal effectiveness without compromising temporal consistency or visual quality on real-world facial videos. Due to its compatibility with any black-box video editing system, our framework has significant potential to generate realistic 'what if' hypothetical video scenarios in diverse areas such as digital media and healthcare.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-17T11:06:22Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Nikos Spyrou</name>
+    </author>
+    <author>
+      <name>Athanasios Vlontzos</name>
+    </author>
+    <author>
+      <name>Paraskevas Pegios</name>
+    </author>
+    <author>
+      <name>Thomas Melistas</name>
+    </author>
+    <author>
+      <name>Nefeli Gkouti</name>
+    </author>
+    <author>
+      <name>Yannis Panagakis</name>
+    </author>
+    <author>
+      <name>Giorgos Papanastasiou</name>
+    </author>
+    <author>
+      <name>Sotirios A. Tsaftaris</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.18356v1</id>
+    <title>Making medical vision-language models think causally across modalities with retrieval-augmented cross-modal reasoning</title>
+    <updated>2026-01-26T11:03:00Z</updated>
+    <link href="https://arxiv.org/abs/2601.18356v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.18356v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Medical vision-language models (VLMs) achieve strong performance in diagnostic reporting and image-text alignment, yet their underlying reasoning mechanisms remain fundamentally correlational, exhibiting reliance on superficial statistical associations that fail to capture the causal pathophysiological mechanisms central to clinical decision-making. This limitation makes them fragile, prone to hallucinations, and sensitive to dataset biases. Retrieval-augmented generation (RAG) offers a partial remedy by grounding predictions in external knowledge. However, conventional RAG depends on semantic similarity, introducing new spurious correlations. We propose Multimodal Causal Retrieval-Augmented Generation, a framework that integrates causal inference principles with multimodal retrieval. It retrieves clinically relevant exemplars and causal graphs from external sources, conditioning model reasoning on counterfactual and interventional evidence rather than correlations alone. Applied to radiology report generation, diagnosis prediction, and visual question answering, it improves factual accuracy, robustness to distribution shifts, and interpretability. Our results highlight causal retrieval as a scalable path toward medical VLMs that think beyond pattern matching, enabling trustworthy multimodal reasoning in high-stakes clinical settings.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-26T11:03:00Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Weiqin Yang</name>
+    </author>
+    <author>
+      <name>Haowen Xue</name>
+    </author>
+    <author>
+      <name>Qingyi Peng</name>
+    </author>
+    <author>
+      <name>Hexuan Hu</name>
+    </author>
+    <author>
+      <name>Qian Huang</name>
+    </author>
+    <author>
+      <name>Tingbo Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.00491v1</id>
+    <title>MindEdit-Bench: Benchmarking Object-Level Counterfactual Spatial Reasoning in VLMs from In-the-Wild Photos</title>
+    <updated>2026-07-01T06:19:54Z</updated>
+    <link href="https://arxiv.org/abs/2607.00491v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.00491v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Benchmarks for vision-language models (VLMs) mostly test observational spatial reasoning: models describe relations already visible in the input. Existing what-if tasks typically vary the observer while keeping the scene fixed. Can VLMs instead predict the consequences of hypothetically moving or rotating an object? We introduce MindEdit-Bench, a benchmark of six spatial reasoning tasks built from three-photo smartphone triplets of newly captured indoor scenes via an automatic in-the-wild 3D scene-graph extraction pipeline. Four tasks probe perception and perspective transformation over observed structure; two new tasks, L4 (spatial editing) and L5 (cross-view visibility editing), probe object-level counterfactual reasoning, where correct answers are absent from all input images. Each question provides 8-24 structured answer choices, enabling answer-letter-level diagnosis of spatial and fallback errors. The benchmark covers 120 private indoor scenes not drawn from public datasets, reducing public-data pretraining-overlap risk. Across 15 VLMs on 1,003 human-verified questions, task-wise mean VLM accuracy is only 8%-31%, versus 81%-97% human majority-vote accuracy. The pooled human--best-VLM gap is 53 pp, with at least 39 pp on every task. The structured answer space further reveals non-uniform failures, including weaker camera-depth-axis inference and fallback behavior on difficult visibility-editing cases.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-01T06:19:54Z</published>
+    <arxiv:comment>18 pages, 7 figures. Dataset available at https://huggingface.co/datasets/ZODAOfficial/MindEdit-Bench</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Leyuan Yu</name>
+    </author>
+    <author>
+      <name>Xiao Tang</name>
+    </author>
+    <author>
+      <name>Minghao Liu</name>
+    </author>
+    <author>
+      <name>Xinyuan Li</name>
+    </author>
+    <author>
+      <name>Xiaokai Bai</name>
+    </author>
+    <author>
+      <name>Sheng Zhou</name>
+    </author>
+    <author>
+      <name>Qunshu Lin</name>
+    </author>
+    <author>
+      <name>Weihao Xuan</name>
+    </author>
+    <author>
+      <name>Naoto Yokoya</name>
+    </author>
+  </entry>
+</feed>

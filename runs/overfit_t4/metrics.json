@@ -1,0 +1,45 @@
+{
+  "source": "copied by hand from the Colab job log on 2026-11-10",
+  "purpose": "overfit_smoke_not_a_result",
+  "status": "incomplete: script crashed after evaluation, before save/reload check (bug fixed afterwards)",
+  "gpu": "Tesla T4",
+  "samples": 16,
+  "steps": 96,
+  "trainable_params": 16819200,
+  "total_params": 2230060864,
+  "loss_at_steps": {
+    "0": 0.3167,
+    "10": 0.0722,
+    "20": 0.1173,
+    "30": 0.0253,
+    "40": 0.0658,
+    "50": 0.4825,
+    "60": 0.094,
+    "70": 0.1703,
+    "80": 0.0393,
+    "90": 0.0074,
+    "95": 0.0729
+  },
+  "train_seconds": 70,
+  "seconds_per_step": 0.73,
+  "gpu_memory_used_mib_during_training_nvidia_smi": 12867,
+  "eval_after": {
+    "n": 16,
+    "accuracy": 0.5,
+    "format_failure_rate": 0.0,
+    "status_accuracy": 0.5,
+    "minimal_repair_accuracy": 0.0,
+    "n_true_edited": 8
+  },
+  "eval_adapter_disabled": {
+    "n": 16,
+    "accuracy": 0.0,
+    "format_failure_rate": 1.0
+  },
+  "not_checked": [
+    "save and reload",
+    "base weight unchanged",
+    "memorising the 8 edited samples (6 passes were not enough)"
+  ],
+  "environment_fix": "pip uninstall torchao (Colab ships 0.10.0, peft 0.21.2 refuses it)"
+}

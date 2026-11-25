@@ -1,0 +1,62 @@
+% Sources: docs/protocol.md (sections 5-7), src/trace_vr/analysis.py (FACETS, answer_bias,
+% pair_table, invariance_table, density_window), src/trace_vr/arms.py (eval_samples,
+% invariance_samples), scripts/colab/final_eval.sh, reports/density/pilot_dev.json,
+% reports/parse_solve/sensitivity_dev.json. tests/test_paper_analysis.py re-checks every number.
+% Written before any main run. It fixes what is computed, not what will be found.
+\section{Analysis plan}
+\label{sec:analysis}
+
+Everything in this section is fixed before the main runs and computed by committed scripts
+from per-sample correctness flags, so no analysis needs the raw responses or a second look
+at the test labels. Only the primary statistic (Section~\ref{sec:setup}) decides the
+hypothesis; every quantity below is reported for every arm and seed, labelled secondary, and
+is not corrected for multiple comparisons because no claim rests on it alone.
+
+\paragraph{Cells and task means.}
+Each of the six accuracies behind the primary statistic is shown with its own paired
+interval, together with the reachability and critical-edge means and, for repair, status
+accuracy, valid-edit rate and minimal-repair accuracy. Format failures (strict) and the
+lenient score are reported per task.
+
+\paragraph{Twin pairs and answer bias.}
+For every answer-flipping twin pair we count both right, one right and both wrong. A model
+that ignores the differing edge gets at most one of the two right, so ``both right'' is the
+measure of whether it uses the edge. For yes/no tasks we report how often the model answered
+true next to how often true was correct; with valid format this is recovered exactly from the
+flags and the labels.
+
+\paragraph{Invariance pairs.}
+Some root questions are repeated on a relabelled copy and on a restyled copy of the same
+graph with the same answer. The copies are scored in a separate run on the same roots and
+paired with the root answers afterwards; we report both right and how often the two answers
+have the same correctness. On the pilot development split this adds 212 copies (53 per pair
+kind and task) to 1{,}200 main samples, and 884 copies over the six locked test splits.
+
+\paragraph{Slices.}
+Accuracy is broken down by true answer, image variant (root or edited), graph family, size
+bucket ($\le 8$, 9--12, $\ge 13$ nodes), layout and style. The structure-OOD cell changes
+family and size together, so the separate family-only and size-only splits are reported as a
+$2\times2$ table next to the primary statistic, never inside it. Because layout rejection
+leaves large graphs sparser, size-OOD is also scored on a density-matched slice: roots whose
+edges per node lie inside the central 5--95\% (nearest rank) of the 512 training roots,
+$[0.875, 1.667]$. The slice is shown next to the full split, never instead of it.
+
+\paragraph{Perception or reasoning.}
+Two diagnostics help separate reading the drawing from reasoning about it. (i) Oracle text: an
+adapter trained with the same recipe answers with the true edge list in the prompt and a blank
+image, compared with the image-mode result of the arm (for D these are two checkpoints trained
+separately with the same recipe); it is reported outside the main table and is not a clean upper bound with perception
+removed, because arms trained only on images meet an unfamiliar input format (B scores lower
+with the edge list as text than with the image, Section~\ref{sec:negative}). (ii) Arm E is scored with node and edge precision and recall and
+direction accuracy of its extraction, next to a model-free curve of how the exact solver
+degrades when its input graph is wrong. On the 200 pilot development roots, dropping one or
+two true edges per image lowers the non-edit macro accuracy of exact solving from $1.0$ to
+$0.8075$ and $0.685$; reversing one or two edges lowers it to $0.73$ and $0.585$. Parse and
+solve is therefore only as good as an almost error-free extraction, which is why E is reported
+with its extraction quality and not only its answers.
+
+\paragraph{Seeds and decision order.}
+Each of the three training seeds is shown individually and pooled; a positive reading must
+hold in each seed. The reference baseline (the stronger of B and C), the token limits and the
+prompt of the frozen base are chosen on development data and written to the decision log
+before the locked splits are evaluated, once, by \texttt{final\_eval.sh}.

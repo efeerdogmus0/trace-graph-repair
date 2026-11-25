@@ -1,0 +1,327 @@
+{
+ "split": "dev",
+ "root_graphs": 200,
+ "sample_set": "main",
+ "reference": "B_kaggle",
+ "content_digest": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8",
+ "n_boot": 2000,
+ "arms": [
+  {
+   "label": "B_kaggle",
+   "file": "runs/pilot3_B_kaggle/flags_dev.json",
+   "run": "pilot3_B",
+   "input_mode": "image",
+   "predictions_sha256": "7d20fdbf47438cb37c6af85daa19fe7cd00332d9e7edfec1870c0828274ba81e",
+   "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+   "acc": {
+    "minimal_graph_repair": {
+     "point": 0.2925,
+     "lo": 0.255,
+     "hi": 0.33
+    },
+    "reachability": {
+     "point": 0.83,
+     "lo": 0.795,
+     "hi": 0.8625
+    },
+    "critical_edge": {
+     "point": 0.7625,
+     "lo": 0.725,
+     "hi": 0.7975
+    },
+    "non_edit_macro_accuracy": {
+     "point": 0.7962499999999999,
+     "lo": 0.77,
+     "hi": 0.8225
+    }
+   },
+   "vs_ref": null
+  },
+  {
+   "label": "C_kaggle",
+   "file": "runs/pilot3_C/flags_dev.json",
+   "run": "pilot3_C",
+   "input_mode": "image",
+   "predictions_sha256": "db25314da4b03a8295ec755ed5d69e42f3da74c805962c470d1ae78349b9f234",
+   "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+   "acc": {
+    "minimal_graph_repair": {
+     "point": 0.255,
+     "lo": 0.22,
+     "hi": 0.29
+    },
+    "reachability": {
+     "point": 0.7,
+     "lo": 0.665,
+     "hi": 0.7375
+    },
+    "critical_edge": {
+     "point": 0.375,
+     "lo": 0.3425,
+     "hi": 0.41
+    },
+    "non_edit_macro_accuracy": {
+     "point": 0.5375,
+     "lo": 0.5125,
+     "hi": 0.56375
+    }
+   },
+   "vs_ref": {
+    "minimal_graph_repair": {
+     "point": -0.03749999999999998,
+     "lo": -0.07250000000000001,
+     "hi": 0.0,
+     "share_above_zero": 0.021
+    },
+    "reachability": {
+     "point": -0.13,
+     "lo": -0.16999999999999993,
+     "hi": -0.09249999999999992,
+     "share_above_zero": 0.0
+    },
+    "critical_edge": {
+     "point": -0.38749999999999996,
+     "lo": -0.44249999999999995,
+     "hi": -0.3325,
+     "share_above_zero": 0.0
+    },
+    "non_edit_macro_accuracy": {
+     "point": -0.2587499999999999,
+     "lo": -0.29375000000000007,
+     "hi": -0.22375,
+     "share_above_zero": 0.0
+    }
+   }
+  },
+  {
+   "label": "E_kaggle",
+   "file": "runs/pilot3_E/flags_dev.json",
+   "run": "pilot3_E",
+   "input_mode": "image",
+   "predictions_sha256": "f15d05cbf698d307e2175d1a77482eb1fb3f22dfc215ae85201c5eee19b0fffb",
+   "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+   "acc": {
+    "minimal_graph_repair": {
+     "point": 0.83,
+     "lo": 0.79,
+     "hi": 0.8675
+    },
+    "reachability": {
+     "point": 0.935,
+     "lo": 0.9125,
+     "hi": 0.9575
+    },
+    "critical_edge": {
+     "point": 0.8325,
+     "lo": 0.7875,
+     "hi": 0.875
+    },
+    "non_edit_macro_accuracy": {
+     "point": 0.88375,
+     "lo": 0.8574999999999999,
+     "hi": 0.90875
+    }
+   },
+   "vs_ref": {
+    "minimal_graph_repair": {
+     "point": 0.5375,
+     "lo": 0.4925,
+     "hi": 0.5874999999999999,
+     "share_above_zero": 1.0
+    },
+    "reachability": {
+     "point": 0.1050000000000001,
+     "lo": 0.06999999999999995,
+     "hi": 0.14,
+     "share_above_zero": 1.0
+    },
+    "critical_edge": {
+     "point": 0.07000000000000006,
+     "lo": 0.01749999999999996,
+     "hi": 0.12249999999999994,
+     "share_above_zero": 0.9955
+    },
+    "non_edit_macro_accuracy": {
+     "point": 0.08750000000000013,
+     "lo": 0.053750000000000075,
+     "hi": 0.12125000000000008,
+     "share_above_zero": 1.0
+    }
+   }
+  },
+  {
+   "label": "B_colab",
+   "file": "runs/pilot3_B/flags_dev.json",
+   "run": "pilot3_B",
+   "input_mode": null,
+   "predictions_sha256": "db7e57b7b95184cd296dfa8a9557783e0f56ae260edc0119af9da4f2563aea6f",
+   "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+   "acc": {
+    "minimal_graph_repair": {
+     "point": 0.295,
+     "lo": 0.26,
+     "hi": 0.3275
+    },
+    "reachability": {
+     "point": 0.845,
+     "lo": 0.81,
+     "hi": 0.8775
+    },
+    "critical_edge": {
+     "point": 0.77,
+     "lo": 0.735,
+     "hi": 0.8025
+    },
+    "non_edit_macro_accuracy": {
+     "point": 0.8075,
+     "lo": 0.78375,
+     "hi": 0.8325
+    }
+   },
+   "vs_ref": {
+    "minimal_graph_repair": {
+     "point": 0.0025000000000000022,
+     "lo": -0.024999999999999967,
+     "hi": 0.027500000000000024,
+     "share_above_zero": 0.5375
+    },
+    "reachability": {
+     "point": 0.015000000000000013,
+     "lo": -0.0050000000000000044,
+     "hi": 0.03500000000000003,
+     "share_above_zero": 0.92
+    },
+    "critical_edge": {
+     "point": 0.007500000000000062,
+     "lo": -0.01750000000000007,
+     "hi": 0.03249999999999997,
+     "share_above_zero": 0.677
+    },
+    "non_edit_macro_accuracy": {
+     "point": 0.011250000000000093,
+     "lo": -0.006249999999999978,
+     "hi": 0.02750000000000008,
+     "share_above_zero": 0.893
+    }
+   }
+  },
+  {
+   "label": "D_colab",
+   "file": "runs/pilot3_D/flags_dev.json",
+   "run": "pilot3_D",
+   "input_mode": null,
+   "predictions_sha256": "7604ebcfdbb517e4c5733425e2acc21d5d21b432fc6f71fec3208d2156526d8b",
+   "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+   "acc": {
+    "minimal_graph_repair": {
+     "point": 0.545,
+     "lo": 0.495,
+     "hi": 0.595
+    },
+    "reachability": {
+     "point": 0.84,
+     "lo": 0.8075,
+     "hi": 0.8725
+    },
+    "critical_edge": {
+     "point": 0.5025,
+     "lo": 0.4725,
+     "hi": 0.535
+    },
+    "non_edit_macro_accuracy": {
+     "point": 0.6712499999999999,
+     "lo": 0.6475,
+     "hi": 0.6937500000000001
+    }
+   },
+   "vs_ref": {
+    "minimal_graph_repair": {
+     "point": 0.25250000000000006,
+     "lo": 0.1975,
+     "hi": 0.3075,
+     "share_above_zero": 1.0
+    },
+    "reachability": {
+     "point": 0.010000000000000009,
+     "lo": -0.01749999999999996,
+     "hi": 0.040000000000000036,
+     "share_above_zero": 0.741
+    },
+    "critical_edge": {
+     "point": -0.26,
+     "lo": -0.3075,
+     "hi": -0.21499999999999997,
+     "share_above_zero": 0.0
+    },
+    "non_edit_macro_accuracy": {
+     "point": -0.125,
+     "lo": -0.15250000000000008,
+     "hi": -0.09875,
+     "share_above_zero": 0.0
+    }
+   }
+  },
+  {
+   "label": "D2_kaggle",
+   "file": "runs/pilot3_D2/flags_dev.json",
+   "run": "pilot3_D2",
+   "input_mode": "image",
+   "predictions_sha256": "1d033ddde1a51af4cbece41ae3816aae836d41c215fc8dc7e410e38aa1e00375",
+   "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+   "acc": {
+    "minimal_graph_repair": {
+     "point": 0.5,
+     "lo": 0.455,
+     "hi": 0.5475
+    },
+    "reachability": {
+     "point": 0.77,
+     "lo": 0.735,
+     "hi": 0.805
+    },
+    "critical_edge": {
+     "point": 0.495,
+     "lo": 0.4875,
+     "hi": 0.5
+    },
+    "non_edit_macro_accuracy": {
+     "point": 0.6325000000000001,
+     "lo": 0.61375,
+     "hi": 0.65
+    }
+   },
+   "vs_ref": {
+    "minimal_graph_repair": {
+     "point": 0.20750000000000002,
+     "lo": 0.15750000000000003,
+     "hi": 0.255,
+     "share_above_zero": 1.0
+    },
+    "reachability": {
+     "point": -0.05999999999999994,
+     "lo": -0.09749999999999992,
+     "hi": -0.022500000000000075,
+     "share_above_zero": 0.0005
+    },
+    "critical_edge": {
+     "point": -0.26749999999999996,
+     "lo": -0.305,
+     "hi": -0.22999999999999998,
+     "share_above_zero": 0.0
+    },
+    "non_edit_macro_accuracy": {
+     "point": -0.16374999999999984,
+     "lo": -0.18999999999999995,
+     "hi": -0.13750000000000007,
+     "share_above_zero": 0.0
+    }
+   }
+  }
+ ],
+ "tasks": [
+  "minimal_graph_repair",
+  "reachability",
+  "critical_edge",
+  "non_edit_macro_accuracy"
+ ]
+}

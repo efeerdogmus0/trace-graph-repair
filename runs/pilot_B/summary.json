@@ -1,0 +1,13 @@
+{
+ "source": "copied by hand from the Colab job log on 2026-11-10; adapter and predictions stayed on the Colab VM",
+ "train": {"arm": "B", "samples": 1024, "root_graphs": 512, "images": 1024, "epochs": 1, "accum": 4, "updates": 256, "lr": 0.0002, "lora_r": 16, "seed": 3407,
+           "content_digest": "ab499a7351a81aaaaaaaa668b785ae44dbd7d244c1c11eb5d42f2bd189eda5c8", "images_digest": "a5410cad199de20de17c5f30174e5e75065ededd64f89e2dda73ff590967b028",
+           "tokens_in_seen": 356864, "target_tokens_seen": 7168, "train_seconds": 622.7, "mean_loss_first_100": 0.3370, "mean_loss_last_100": 0.0690,
+           "gpu": "Tesla T4", "peak_allocated_gib": 7.71, "peak_reserved_gib": 7.98},
+ "eval_dev_first_60_roots": {"n": 360, "max_new_tokens": 96, "truncated": 0, "seconds": 436.8,
+   "minimal_graph_repair": {"n": 120, "accuracy": 0.2417, "format_failure_rate": 0.0, "status_accuracy": 0.3917, "valid_edit_rate": 0.0167, "minimal_repair_accuracy": 0.0167, "n_true_edited": 60},
+   "reachability": {"n": 120, "accuracy": 0.85, "format_failure_rate": 0.0},
+   "critical_edge": {"n": 120, "accuracy": 0.6833, "format_failure_rate": 0.0},
+   "non_edit_macro_accuracy": 0.7667,
+   "pair_both_correct": {"critical_edge": 0.3667, "minimal_graph_repair": 0.0, "reachability": 0.70}}
+}

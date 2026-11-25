@@ -1,0 +1,39 @@
+# Locked test splits for the pilot-scale study (brief section 19, M6). Built once, validated,
+# and NOT evaluated until the final run of the study: no decision may look at these labels.
+# Sizes are the pilot-scale reduction allowed by docs/protocol.md section 3 (main plan: 500 /
+# 500 / 500 / 250 roots). No graph here is isomorphic to any graph of manifests/pilot.json
+# (train or dev); the validator re-checks this against pilot.json's recorded content digest.
+name: pilot_test
+seed: 20261112
+image_size: 512
+supersample: 3
+invariant_rate: 0.25
+require_pairs: true
+exclude_isomorphic_to: [pilot.json]
+repair_pair_types:
+  - [add, unchanged]
+  - [add, impossible]
+  - [remove, unchanged]
+  - [remove, impossible]
+secondary_tasks: [edge_exists, shortest_path_length, graph_extraction]
+splits:
+  test_id:
+    roots: 200
+    families: {layered_dag: 1, tree_plus: 1, sparse_random: 1}
+    nodes: [5, 10]
+    styles: [a, b, c]
+  test_style_ood:
+    roots: 200
+    families: {layered_dag: 1, tree_plus: 1, sparse_random: 1}
+    nodes: [5, 10]
+    styles: [x, y]
+  test_struct_ood:
+    roots: 200
+    families: {ring_chords: 1, two_cluster: 1}
+    nodes: [11, 16]
+    styles: [a, b, c]
+  test_combined_ood:
+    roots: 100
+    families: {ring_chords: 1, two_cluster: 1}
+    nodes: [11, 16]
+    styles: [x, y]

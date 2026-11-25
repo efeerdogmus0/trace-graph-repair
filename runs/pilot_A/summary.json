@@ -1,0 +1,11 @@
+{
+ "source": "copied by hand from the Colab job log on 2026-11-10",
+ "system": "A frozen base, no adapter",
+ "eval_dev_first_30_roots": {"n": 180, "max_new_tokens": 160, "truncated": 99, "seconds": 1258.6,
+   "minimal_graph_repair": {"n": 60, "accuracy": 0.0, "format_failure_rate": 1.0, "lenient_accuracy": 0.0},
+   "reachability": {"n": 60, "accuracy": 0.1333, "format_failure_rate": 0.7667, "lenient_accuracy": 0.5667},
+   "critical_edge": {"n": 60, "accuracy": 0.0667, "format_failure_rate": 0.8333, "lenient_accuracy": 0.2333},
+   "non_edit_macro_accuracy": 0.10, "non_edit_macro_lenient_accuracy": 0.40,
+   "pair_both_correct": {"critical_edge": 0.0, "minimal_graph_repair": 0.0, "reachability": 0.0}},
+ "note": "99 of 180 responses were cut off at 160 new tokens, so even the lenient score under-counts: a cut-off answer has no final JSON. The base model needs a higher limit or a no-reasoning instruction before it is a fair floor."
+}

@@ -1,0 +1,1023 @@
+{
+ "queries": [
+  "abs:\"graph\" AND abs:\"vision-language\" AND abs:\"edit\" AND abs:\"reachability\"",
+  "abs:\"graph repair\" AND abs:\"multimodal\"",
+  "abs:\"visual graph\" AND abs:\"edit\"",
+  "abs:\"vision-language\" AND abs:\"graph reasoning\" AND abs:\"fine-tuning\"",
+  "abs:\"graph\" AND abs:\"image\" AND abs:\"counterfactual\" AND abs:\"vision-language\"",
+  "abs:\"VGCure\"",
+  "abs:\"graph\" AND abs:\"structural\" AND abs:\"fine-tuning\" AND abs:\"multimodal\"",
+  "abs:\"rendered\" AND abs:\"graph\" AND abs:\"vision-language\"",
+  "abs:\"visual graph reasoning\"",
+  "abs:\"graph\" AND abs:\"image\" AND abs:\"shortest path\" AND abs:\"vision-language\"",
+  "abs:\"diagram\" AND abs:\"edit\" AND abs:\"transfer\" AND abs:\"vision-language\"",
+  "abs:\"minimal edit\" AND abs:\"vision-language\"",
+  "abs:\"graph extraction\" AND abs:\"vision-language\" AND abs:\"solver\"",
+  "abs:\"answer-flipping\" OR abs:\"contrast set\" AND abs:\"graph\""
+ ],
+ "hits": [
+  {
+   "id": "2608.06769",
+   "published": "2026-08-07",
+   "updated": "2026-10-09",
+   "title": "GraphVerse: A Comprehensive Visual Graph Reasoning Benchmark for Multimodal Large Language Models",
+   "summary": "Recent Multimodal Large Language Models (MLLMs) have achieved remarkable progress across diverse vision-language tasks, creating an urgent need for more challenging benchmarks. Yet existing evaluations still provide limited insight into whether these models can truly reason over structured visual information. Visual Graph Reasoning (VGR) offers a compelling testbed for this challenge, requiring models to integrate perception, structural understanding, and multi-step reasoning over graph-based visual inputs. However, prior VGR benchmarks often reduce the task to visual perception followed by text-based reasoning, restrict evaluation to single-image settings, rely on answer-only metrics, and underrepresent realistic graph-centric scenarios. To bridge the gap, we introduce GraphVerse, a unified benchmark that jointly evaluates perception, visual reasoning, and text-based graph reasoning in MLLMs under both single-image and paired-image settings. At its core is a suite of Graph-centric Image Editing (GIE) strategies that modify graph images while preserving their semantics, turning them into active tests of visual reasoning. We further propose VGR-Score, a process-sensitive metric that evaluates reasoning quality beyond final-answer accuracy. Extensive experiments reveal several key limitations of current MLLMs in VGR, while also validating the effectiveness of GIE strategies and the transferability of GraphVerse to broader multimodal reasoning capabilities. The code is available at https://github.com/sunyuanfu/GraphVerse.",
+   "queries": [
+    3,
+    9
+   ]
+  },
+  {
+   "id": "2609.22327",
+   "published": "2026-09-16",
+   "updated": "2026-09-16",
+   "title": "Visual Graph Reasoning via Knowledge Compilation",
+   "summary": "Visual graph reasoning requires answering graph-theoretic questions directly from graph images, where graph topology and state are conveyed visually rather than given in symbolic form. Despite recent progress of vision-language models (VLMs), current approaches to visual graph reasoning still fail on simple visual graph problems. This reveals a fundamental limitation of existing approaches: they prioritize final-answer supervision over the intermediate recovery of an explicit graph representation that preserves graph topology and state from visual input. To address this limitation, we propose VGCompiler, a compilation-centric paradigm for visual graph reasoning via knowledge compilation. VGCompiler organizes reasoning around two compilers: a representation compiler that recovers a structure-preserving intermediate graph representation from visual input, and an operation compiler that compiles query intent under the recovered graph state into an executable graph operation. Specifically, we build VGCompiler on Qwen3-VL-8B and train it with reinforcement learning guided by a layered reward over executability, compiled graph validity, representation quality, and operation quality. VGCompiler uses a frozen observer to summarize graph and question conditions into lightweight signatures, enabling archive retrieval and code reuse across similar regimes. Experiments on three benchmarks GVLQA, VisionGraph, and VGCURE, show that Qwen-VGCompiler, built on an 8B backbone, surpasses the strongest closed-source VLM baseline by 28.9% and the strongest code-based baseline by 23.7%, while maintaining high efficiency. We further evaluate VGCompiler on three real-world domains, including metro routing, logistics delivery, and network fault assessment, where it generalizes across heterogeneous visual graphs and domain-grounded tasks.",
+   "queries": [
+    6,
+    9
+   ]
+  },
+  {
+   "id": "2610.30231",
+   "published": "2026-10-21",
+   "updated": "2026-10-21",
+   "title": "Edit, Don't Imitate: Minimal-Edit On-Policy Distillation for Multimodal Reasoning",
+   "summary": "Visual mathematical reasoning can fail before reasoning begins: when a vision-language model (VLM) misreads a diagram, subsequent reasoning proceeds from false premises. This perceptual bottleneck is especially pronounced in smaller models, while accurate textual descriptions can substantially narrow the gap to larger models. Because obtaining such descriptions at inference requires additional annotation or model calls, we propose minimal-edit corrective on-policy distillation. Using reference figure descriptions and verified reference solutions as training-only information, a teacher scores incorrect student rollouts under a minimal-edit objective, and only teacher-disfavored tokens contribute to the corrective loss. Correct rollouts receive task-reward reinforcement learning. This preserves on-policy supervision while avoiding full-response imitation. Across model scales, the method requires no descriptions at test time and meets or exceeds the corresponding base model supplied with a reference figure description at inference. It also improves perception-oriented performance, particularly low-level geometric perception, and transfers to external mathematics and perception benchmarks. Because the minimal-edit teacher evaluates corrections rather than generating its own solution, the method remains effective with a frozen same-size teacher, although its gains are smaller than with a larger teacher on most metrics.",
+   "queries": [
+    11,
+    12
+   ]
+  },
+  {
+   "id": "2101.00449",
+   "published": "2021-01-02",
+   "updated": "2021-01-02",
+   "title": "Graph Drawing and Network Visualization GD2020",
+   "summary": "Proceedings of GD2020: This volume contains the papers presented at GD~2020, the 28th International Symposium on Graph Drawing and Network Visualization, held on September 18-20, 2020 online. Graph drawing is concerned with the geometric representation of graphs and constitutes the algorithmic core of network visualization. Graph drawing and network visualization are motivated by applications where it is crucial to visually analyse and interact with relational datasets. Information about the conference series and past symposia is maintained at http://www.graphdrawing.org. The 2020 edition of the conference was hosted by University Of British Columbia, with Will Evans as chair of the Organizing Committee. A total of 251 participants attended the conference.",
+   "queries": [
+    3
+   ]
+  },
+  {
+   "id": "2103.09591",
+   "published": "2021-03-17",
+   "updated": "2021-03-17",
+   "title": "Automatic Generation of Contrast Sets from Scene Graphs: Probing the Compositional Consistency of GQA",
+   "summary": "Recent works have shown that supervised models often exploit data artifacts to achieve good test scores while their performance severely degrades on samples outside their training distribution. Contrast sets (Gardneret al., 2020) quantify this phenomenon by perturbing test samples in a minimal way such that the output label is modified. While most contrast sets were created manually, requiring intensive annotation effort, we present a novel method which leverages rich semantic input representation to automatically generate contrast sets for the visual question answering task. Our method computes the answer of perturbed questions, thus vastly reducing annotation cost and enabling thorough evaluation of models' performance on various semantic aspects (e.g., spatial or relational reasoning). We demonstrate the effectiveness of our approach on the GQA dataset and its semantic scene graph image representation. We find that, despite GQA's compositionality and carefully balanced label distribution, two high-performing models drop 13-17% in accuracy compared to the original test set. Finally, we show that our automatic perturbation can be applied to the training set to mitigate the degradation in performance, opening the door to more robust models.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2104.09570",
+   "published": "2021-04-19",
+   "updated": "2022-10-24",
+   "title": "Extracting Temporal Event Relation with Syntax-guided Graph Transformer",
+   "summary": "Extracting temporal relations (e.g., before, after, and simultaneous) among events is crucial to natural language understanding. One of the key challenges of this problem is that when the events of interest are far away in text, the context in-between often becomes complicated, making it challenging to resolve the temporal relationship between them. This paper thus proposes a new Syntax-guided Graph Transformer network (SGT) to mitigate this issue, by (1) explicitly exploiting the connection between two events based on their dependency parsing trees, and (2) automatically locating temporal cues between two events via a novel syntax-guided attention mechanism. Experiments on two benchmark datasets, MATRES and TB-Dense, show that our approach significantly outperforms previous state-of-the-art methods on both end-to-end temporal relation extraction and temporal relation classification; This improvement also proves to be robust on the contrast set of MATRES. The code is publicly available at https://github.com/VT-NLP/Syntax-Guided-Graph-Transformer.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2107.04768",
+   "published": "2021-07-10",
+   "updated": "2021-07-10",
+   "title": "DualVGR: A Dual-Visual Graph Reasoning Unit for Video Question Answering",
+   "summary": "Video question answering is a challenging task, which requires agents to be able to understand rich video contents and perform spatial-temporal reasoning. However, existing graph-based methods fail to perform multi-step reasoning well, neglecting two properties of VideoQA: (1) Even for the same video, different questions may require different amount of video clips or objects to infer the answer with relational reasoning; (2) During reasoning, appearance and motion features have complicated interdependence which are correlated and complementary to each other. Based on these observations, we propose a Dual-Visual Graph Reasoning Unit (DualVGR) which reasons over videos in an end-to-end fashion. The first contribution of our DualVGR is the design of an explainable Query Punishment Module, which can filter out irrelevant visual features through multiple cycles of reasoning. The second contribution is the proposed Video-based Multi-view Graph Attention Network, which captures the relations between appearance and motion features. Our DualVGR network achieves state-of-the-art performance on the benchmark MSVD-QA and SVQA datasets, and demonstrates competitive results on benchmark MSRVTT-QA datasets. Our code is available at https://github.com/MMIR/DualVGR-VideoQA.",
+   "queries": [
+    9
+   ]
+  },
+  {
+   "id": "2201.05493",
+   "published": "2022-01-14",
+   "updated": "2022-01-14",
+   "title": "Contrastive Laplacian Eigenmaps",
+   "summary": "Graph contrastive learning attracts/disperses node representations for similar/dissimilar node pairs under some notion of similarity. It may be combined with a low-dimensional embedding of nodes to preserve intrinsic and structural properties of a graph. In this paper, we extend the celebrated Laplacian Eigenmaps with contrastive learning, and call them COntrastive Laplacian EigenmapS (COLES). Starting from a GAN-inspired contrastive formulation, we show that the Jensen-Shannon divergence underlying many contrastive graph embedding models fails under disjoint positive and negative distributions, which may naturally emerge during sampling in the contrastive setting. In contrast, we demonstrate analytically that COLES essentially minimizes a surrogate of Wasserstein distance, which is known to cope well under disjoint distributions. Moreover, we show that the loss of COLES belongs to the family of so-called block-contrastive losses, previously shown to be superior compared to pair-wise losses typically used by contrastive methods. We show on popular benchmarks/backbones that COLES offers favourable accuracy/scalability compared to DeepWalk, GCN, Graph2Gauss, DGI and GRACE baselines.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2304.12537",
+   "published": "2023-04-25",
+   "updated": "2023-04-25",
+   "title": "GARCIA: Powering Representations of Long-tail Query with Multi-granularity Contrastive Learning",
+   "summary": "Recently, the growth of service platforms brings great convenience to both users and merchants, where the service search engine plays a vital role in improving the user experience by quickly obtaining desirable results via textual queries. Unfortunately, users' uncontrollable search customs usually bring vast amounts of long-tail queries, which severely threaten the capability of search models. Inspired by recently emerging graph neural networks (GNNs) and contrastive learning (CL), several efforts have been made in alleviating the long-tail issue and achieve considerable performance. Nevertheless, they still face a few major weaknesses. Most importantly, they do not explicitly utilize the contextual structure between heads and tails for effective knowledge transfer, and intention-level information is commonly ignored for more generalized representations. To this end, we develop a novel framework GARCIA, which exploits the graph based knowledge transfer and intention based representation generalization in a contrastive setting. In particular, we employ an adaptive encoder to produce informative representations for queries and services, as well as hierarchical structure aware representations of intentions. To fully understand tail queries and services, we equip GARCIA with a novel multi-granularity contrastive learning module, which powers representations through knowledge transfer, structure enhancement and intention generalization. Subsequently, the complete GARCIA is well trained in a pre-training&fine-tuning manner. At last, we conduct extensive experiments on both offline and online environments, which demonstrates the superior capability of GARCIA in improving tail queries and overall performance in service search scenarios.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2307.09484",
+   "published": "2023-06-06",
+   "updated": "2023-07-21",
+   "title": "MolFM: A Multimodal Molecular Foundation Model",
+   "summary": "Molecular knowledge resides within three different modalities of information sources: molecular structures, biomedical documents, and knowledge bases. Effective incorporation of molecular knowledge from these modalities holds paramount significance in facilitating biomedical research. However, existing multimodal molecular foundation models exhibit limitations in capturing intricate connections between molecular structures and texts, and more importantly, none of them attempt to leverage a wealth of molecular expertise derived from knowledge graphs. In this study, we introduce MolFM, a multimodal molecular foundation model designed to facilitate joint representation learning from molecular structures, biomedical texts, and knowledge graphs. We propose cross-modal attention between atoms of molecular structures, neighbors of molecule entities and semantically related texts to facilitate cross-modal comprehension. We provide theoretical analysis that our cross-modal pre-training captures local and global molecular knowledge by minimizing the distance in the feature space between different modalities of the same molecule, as well as molecules sharing similar structures or functions. MolFM achieves state-of-the-art performance on various downstream tasks. On cross-modal retrieval, MolFM outperforms existing models with 12.13% and 5.04% absolute gains under the zero-shot and fine-tuning settings, respectively. Furthermore, qualitative analysis showcases MolFM's implicit ability to provide grounding from molecular substructures and knowledge graphs. Code and models are available on https://github.com/BioFM/OpenBioMed.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2311.16666",
+   "published": "2023-11-28",
+   "updated": "2024-04-19",
+   "title": "MultiModal-Learning for Predicting Molecular Properties: A Framework Based on Image and Graph Structures",
+   "summary": "The quest for accurate prediction of drug molecule properties poses a fundamental challenge in the realm of Artificial Intelligence Drug Discovery (AIDD). An effective representation of drug molecules emerges as a pivotal component in this pursuit. Contemporary leading-edge research predominantly resorts to self-supervised learning (SSL) techniques to extract meaningful structural representations from large-scale, unlabeled molecular data, subsequently fine-tuning these representations for an array of downstream tasks. However, an inherent shortcoming of these studies lies in their singular reliance on one modality of molecular information, such as molecule image or SMILES representations, thus neglecting the potential complementarity of various molecular modalities. In response to this limitation, we propose MolIG, a novel MultiModaL molecular pre-training framework for predicting molecular properties based on Image and Graph structures. MolIG model innovatively leverages the coherence and correlation between molecule graph and molecule image to execute self-supervised tasks, effectively amalgamating the strengths of both molecular representation forms. This holistic approach allows for the capture of pivotal molecular structural characteristics and high-level semantic information. Upon completion of pre-training, Graph Neural Network (GNN) Encoder is used for the prediction of downstream tasks. In comparison to advanced baseline models, MolIG exhibits enhanced performance in downstream tasks pertaining to molecular property prediction within benchmark groups such as MoleculeNet Benchmark Group and ADMET Benchmark Group.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2312.14574",
+   "published": "2023-12-22",
+   "updated": "2024-06-27",
+   "title": "MMGPL: Multimodal Medical Data Analysis with Graph Prompt Learning",
+   "summary": "Prompt learning has demonstrated impressive efficacy in the fine-tuning of multimodal large models to a wide range of downstream tasks. Nonetheless, applying existing prompt learning methods for the diagnosis of neurological disorder still suffers from two issues: (i) existing methods typically treat all patches equally, despite the fact that only a small number of patches in neuroimaging are relevant to the disease, and (ii) they ignore the structural information inherent in the brain connection network which is crucial for understanding and diagnosing neurological disorders. To tackle these issues, we introduce a novel prompt learning model by learning graph prompts during the fine-tuning process of multimodal large models for diagnosing neurological disorders. Specifically, we first leverage GPT-4 to obtain relevant disease concepts and compute semantic similarity between these concepts and all patches. Secondly, we reduce the weight of irrelevant patches according to the semantic similarity between each patch and disease-related concepts. Moreover, we construct a graph among tokens based on these concepts and employ a graph convolutional network layer to extract the structural information of the graph, which is used to prompt the pre-trained multimodal large models for diagnosing neurological disorders. Extensive experiments demonstrate that our method achieves superior performance for neurological disorder diagnosis compared with state-of-the-art methods and validated by clinicians.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2403.01248",
+   "published": "2024-03-02",
+   "updated": "2024-03-02",
+   "title": "SceneCraft: An LLM Agent for Synthesizing 3D Scene as Blender Code",
+   "summary": "This paper introduces SceneCraft, a Large Language Model (LLM) Agent converting text descriptions into Blender-executable Python scripts which render complex scenes with up to a hundred 3D assets. This process requires complex spatial planning and arrangement. We tackle these challenges through a combination of advanced abstraction, strategic planning, and library learning. SceneCraft first models a scene graph as a blueprint, detailing the spatial relationships among assets in the scene. SceneCraft then writes Python scripts based on this graph, translating relationships into numerical constraints for asset layout. Next, SceneCraft leverages the perceptual strengths of vision-language foundation models like GPT-V to analyze rendered images and iteratively refine the scene. On top of this process, SceneCraft features a library learning mechanism that compiles common script functions into a reusable library, facilitating continuous self-improvement without expensive LLM parameter tuning. Our evaluation demonstrates that SceneCraft surpasses existing LLM-based agents in rendering complex scenes, as shown by its adherence to constraints and favorable human assessments. We also showcase the broader application potential of SceneCraft by reconstructing detailed 3D scenes from the Sintel movie and guiding a video generative model with generated scenes as intermediary control signal.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2403.17954",
+   "published": "2024-03-10",
+   "updated": "2024-03-10",
+   "title": "Sort & Slice: A Simple and Superior Alternative to Hash-Based Folding for Extended-Connectivity Fingerprints",
+   "summary": "Extended-connectivity fingerprints (ECFPs) are a ubiquitous tool in current cheminformatics and molecular machine learning, and one of the most prevalent molecular feature extraction techniques used for chemical prediction. Atom features learned by graph neural networks can be aggregated to compound-level representations using a large spectrum of graph pooling methods; in contrast, sets of detected ECFP substructures are by default transformed into bit vectors using only a simple hash-based folding procedure. We introduce a general mathematical framework for the vectorisation of structural fingerprints via a formal operation called substructure pooling that encompasses hash-based folding, algorithmic substructure-selection, and a wide variety of other potential techniques. We go on to describe Sort & Slice, an easy-to-implement and bit-collision-free alternative to hash-based folding for the pooling of ECFP substructures. Sort & Slice first sorts ECFP substructures according to their relative prevalence in a given set of training compounds and then slices away all but the $L$ most frequent substructures which are subsequently used to generate a binary fingerprint of desired length, $L$. We computationally compare the performance of hash-based folding, Sort & Slice, and two advanced supervised substructure-selection schemes (filtering and mutual-information maximisation) for ECFP-based molecular property prediction. Our results indicate that, despite its technical simplicity, Sort & Slice robustly (and at times substantially) outperforms traditional hash-based folding as well as the other investigated methods across prediction tasks, data splitting techniques, machine-learning models and ECFP hyperparameters. We thus recommend that Sort & Slice canonically replace hash-based folding as the default substructure-pooling technique to vectorise ECFPs for supervised molecular machine learning.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2404.02838",
+   "published": "2024-04-03",
+   "updated": "2024-04-03",
+   "title": "I-Design: Personalized LLM Interior Designer",
+   "summary": "Interior design allows us to be who we are and live how we want - each design is as unique as our distinct personality. However, it is not trivial for non-professionals to express and materialize this since it requires aligning functional and visual expectations with the constraints of physical space; this renders interior design a luxury. To make it more accessible, we present I-Design, a personalized interior designer that allows users to generate and visualize their design goals through natural language communication. I-Design starts with a team of large language model agents that engage in dialogues and logical reasoning with one another, transforming textual user input into feasible scene graph designs with relative object relationships. Subsequently, an effective placement algorithm determines optimal locations for each object within the scene. The final design is then constructed in 3D by retrieving and integrating assets from an existing object database. Additionally, we propose a new evaluation protocol that utilizes a vision-language model and complements the design pipeline. Extensive quantitative and qualitative experiments show that I-Design outperforms existing methods in delivering high-quality 3D design solutions and aligning with abstract concepts that match user input, showcasing its advantages across detailed 3D arrangement and conceptual fidelity.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2405.04950",
+   "published": "2024-05-08",
+   "updated": "2024-05-08",
+   "title": "VisionGraph: Leveraging Large Multimodal Models for Graph Theory Problems in Visual Context",
+   "summary": "Large Multimodal Models (LMMs) have achieved impressive success in visual understanding and reasoning, remarkably improving the performance of mathematical reasoning in a visual context. Yet, a challenging type of visual math lies in the multimodal graph theory problem, which demands that LMMs understand the graphical structures accurately and perform multi-step reasoning on the visual graph. Additionally, exploring multimodal graph theory problems will lead to more effective strategies in fields like biology, transportation, and robotics planning. To step forward in this direction, we are the first to design a benchmark named VisionGraph, used to explore the capabilities of advanced LMMs in solving multimodal graph theory problems. It encompasses eight complex graph problem tasks, from connectivity to shortest path problems. Subsequently, we present a Description-Program-Reasoning (DPR) chain to enhance the logical accuracy of reasoning processes through graphical structure description generation and algorithm-aware multi-step reasoning. Our extensive study shows that 1) GPT-4V outperforms Gemini Pro in multi-step graph reasoning; 2) All LMMs exhibit inferior perception accuracy for graphical structures, whether in zero/few-shot settings or with supervised fine-tuning (SFT), which further affects problem-solving performance; 3) DPR significantly improves the multi-step graph reasoning capabilities of LMMs and the GPT-4V (DPR) agent achieves SOTA performance.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2405.06634",
+   "published": "2024-05-10",
+   "updated": "2024-06-10",
+   "title": "Multimodal LLMs Struggle with Basic Visual Network Analysis: a VNA Benchmark",
+   "summary": "We evaluate the zero-shot ability of GPT-4 and LLaVa to perform simple Visual Network Analysis (VNA) tasks on small-scale graphs. We evaluate the Vision Language Models (VLMs) on 5 tasks related to three foundational network science concepts: identifying nodes of maximal degree on a rendered graph, identifying whether signed triads are balanced or unbalanced, and counting components. The tasks are structured to be easy for a human who understands the underlying graph theoretic concepts, and can all be solved by counting the appropriate elements in graphs. We find that while GPT-4 consistently outperforms LLaVa, both models struggle with every visual network analysis task we propose. We publicly release the first benchmark for the evaluation of VLMs on foundational VNA tasks.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2407.01992",
+   "published": "2024-07-02",
+   "updated": "2024-07-02",
+   "title": "Is Your Large Language Model Knowledgeable or a Choices-Only Cheater?",
+   "summary": "Recent work shows that large language models (LLMs) can answer multiple-choice questions using only the choices, but does this mean that MCQA leaderboard rankings of LLMs are largely influenced by abilities in choices-only settings? To answer this, we use a contrast set that probes if LLMs over-rely on choices-only shortcuts in MCQA. While previous works build contrast sets via expensive human annotations or model-generated data which can be biased, we employ graph mining to extract contrast sets from existing MCQA datasets. We use our method on UnifiedQA, a group of six commonsense reasoning datasets with high choices-only accuracy, to build an 820-question contrast set. After validating our contrast set, we test 12 LLMs, finding that these models do not exhibit reliance on choice-only shortcuts when given both the question and choices. Thus, despite the susceptibility~of MCQA to high choices-only accuracy, we argue that LLMs are not obtaining high ranks on MCQA leaderboards just due to their ability to exploit choices-only shortcuts.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2411.14460",
+   "published": "2024-11-16",
+   "updated": "2025-02-09",
+   "title": "LLaSA: Large Language and Structured Data Assistant",
+   "summary": "Structured data, such as tables, graphs, and databases, play a critical role in plentiful NLP tasks such as question answering and dialogue system. Recently, inspired by Vision-Language Models, Graph Neutral Networks (GNNs) have been introduced as an additional modality into the input of Large Language Models (LLMs) to improve their performance on Structured Knowledge Grounding (SKG) tasks. However, those GNN-enhanced LLMs have the following limitations: (1) They employ diverse GNNs to model varying types of structured data, rendering them unable to uniformly process various forms of structured data. (2) The pretraining of GNNs is coupled with specific LLMs, which prevents GNNs from fully aligning with the textual space and limits their adaptability to other LLMs. To address these issues, we propose \\textbf{L}arge \\textbf{L}anguage and \\textbf{S}tructured Data \\textbf{A}ssistant (LLaSA), a general framework for enhancing LLMs' ability to handle structured data. Specifically, we represent various types of structured data in a unified hypergraph format, and use self-supervised learning to pretrain a hypergraph encoder, and a G-Former compressing encoded hypergraph representations with cross-attention. The compressed hypergraph representations are appended to the serialized inputs during training and inference stages of LLMs. Experimental results on multiple SKG tasks show that our pretrained hypergraph encoder can adapt to various LLMs and enhance their ability to process different types of structured data. Besides, LLaSA, with LoRA fine-tuning, outperforms previous SOTA method using full parameters tuning.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2412.11475",
+   "published": "2024-12-16",
+   "updated": "2026-07-20",
+   "title": "OmniVLM: A Token-Compressed, Sub-Billion-Parameter Vision-Language Model for Efficient On-Device Inference",
+   "summary": "We present OmniVLM, a sub-billion-parameter vision-language model for efficient on-device inference. OmniVLM introduces a token compression mechanism that reduces visual token sequence length from 729 to 81 tokens, significantly reducing computational overhead while preserving visual-semantic fidelity. Through a multi-stage training pipeline of pretraining, supervised fine-tuning, and minimal-edit Direct Preference Optimization (DPO), OmniVLM matches the performance of larger models. On multiple benchmarks including ScienceQA, POPE, and MMMU, OmniVLM outperforms existing baselines like nanoLLAVA within a 968M-parameter footprint. Empirical results on the same laptop demonstrate 9.1x faster time-to-first-token (0.75s vs 6.82s) and 1.5x higher decoding speed (29.41 vs 19.20 tokens/s) compared to nanoLLAVA, enabling efficient deployment on edge devices. The model weights can be accessed on huggingface: https://huggingface.co/NexaAIDev/OmniVLM-968M, and the inference examples can be find in Appendix B.",
+   "queries": [
+    12
+   ]
+  },
+  {
+   "id": "2412.11618",
+   "published": "2024-12-16",
+   "updated": "2024-12-16",
+   "title": "EvoLlama: Enhancing LLMs' Understanding of Proteins via Multimodal Structure and Sequence Representations",
+   "summary": "Current Large Language Models (LLMs) for understanding proteins primarily treats amino acid sequences as a text modality. Meanwhile, Protein Language Models (PLMs), such as ESM-2, have learned massive sequential evolutionary knowledge from the universe of natural protein sequences. Furthermore, structure-based encoders like ProteinMPNN learn the structural information of proteins through Graph Neural Networks. However, whether the incorporation of protein encoders can enhance the protein understanding of LLMs has not been explored. To bridge this gap, we propose EvoLlama, a multimodal framework that connects a structure-based encoder, a sequence-based protein encoder and an LLM for protein understanding. EvoLlama consists of a ProteinMPNN structure encoder, an ESM-2 protein sequence encoder, a multimodal projector to align protein and text representations and a Llama-3 text decoder. To train EvoLlama, we fine-tune it on protein-oriented instructions and protein property prediction datasets verbalized via natural language instruction templates. Our experiments show that EvoLlama's protein understanding capabilities have been significantly enhanced, outperforming other fine-tuned protein-oriented LLMs in zero-shot settings by an average of 1%-8% and surpassing the state-of-the-art baseline with supervised fine-tuning by an average of 6%. On protein property prediction datasets, our approach achieves promising results that are competitive with state-of-the-art task-specific baselines. We will release our code in a future version.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2412.13540",
+   "published": "2024-12-18",
+   "updated": "2025-06-06",
+   "title": "Benchmarking and Improving Large Vision-Language Models for Fundamental Visual Graph Understanding and Reasoning",
+   "summary": "Large Vision-Language Models (LVLMs) have demonstrated remarkable performance across diverse tasks. Despite great success, recent studies show that LVLMs encounter substantial limitations when engaging with visual graphs. To study the reason behind these limitations, we propose VGCure, a comprehensive benchmark covering 22 tasks for examining the fundamental graph understanding and reasoning capacities of LVLMs. Extensive evaluations conducted on 14 LVLMs reveal that LVLMs are weak in basic graph understanding and reasoning tasks, particularly those concerning relational or structurally complex information. Based on this observation, we propose a structure-aware fine-tuning framework to enhance LVLMs with structure learning abilities through three self-supervised learning tasks. Experiments validate the effectiveness of our method in improving LVLMs' performance on fundamental and downstream graph learning tasks, as well as enhancing their robustness against complex visual graphs.",
+   "queries": [
+    6
+   ]
+  },
+  {
+   "id": "2501.15688",
+   "published": "2025-01-26",
+   "updated": "2025-09-15",
+   "title": "Transformer-Based Multimodal Knowledge Graph Completion with Link-Aware Contexts",
+   "summary": "Multimodal knowledge graph completion (MMKGC) aims to predict missing links in multimodal knowledge graphs (MMKGs) by leveraging information from various modalities alongside structural data. Existing MMKGC approaches primarily extend traditional knowledge graph embedding (KGE) models, which often require creating an embedding for every entity. This results in large model sizes and inefficiencies in integrating multimodal information, particularly for real-world graphs. Meanwhile, Transformer-based models have demonstrated competitive performance in knowledge graph completion (KGC). However, their focus on single-modal knowledge limits their capacity to utilize cross-modal information. Recently, Large vision-language models (VLMs) have shown potential in cross-modal tasks but are constrained by the high cost of training. In this work, we propose a novel approach that integrates Transformer-based KGE models with cross-modal context generated by pre-trained VLMs, thereby extending their applicability to MMKGC. Specifically, we employ a pre-trained VLM to transform relevant visual information from entities and their neighbors into textual sequences. We then frame KGC as a sequence-to-sequence task, fine-tuning the model with the generated cross-modal context. This simple yet effective method significantly reduces model size compared to traditional KGE approaches while achieving competitive performance across multiple large-scale datasets with minimal hyperparameter tuning.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2503.00436",
+   "published": "2025-03-01",
+   "updated": "2025-06-30",
+   "title": "HalCECE: A Framework for Explainable Hallucination Detection through Conceptual Counterfactuals in Image Captioning",
+   "summary": "In the dynamic landscape of artificial intelligence, the exploration of hallucinations within vision-language (VL) models emerges as a critical frontier. This work delves into the intricacies of hallucinatory phenomena exhibited by widely used image captioners, unraveling interesting patterns. Specifically, we step upon previously introduced techniques of conceptual counterfactual explanations to address VL hallucinations. The deterministic and efficient nature of the employed conceptual counterfactuals backbone is able to suggest semantically minimal edits driven by hierarchical knowledge, so that the transition from a hallucinated caption to a non-hallucinated one is performed in a black-box manner. HalCECE, our proposed hallucination detection framework is highly interpretable, by providing semantically meaningful edits apart from standalone numbers, while the hierarchical decomposition of hallucinated concepts leads to a thorough hallucination analysis. Another novelty tied to the current work is the investigation of role hallucinations, being one of the first works to involve interconnections between visual concepts in hallucination detection. Overall, HalCECE recommends an explainable direction to the crucial field of VL hallucination detection, thus fostering trustworthy evaluation of current and future VL systems.",
+   "queries": [
+    12
+   ]
+  },
+  {
+   "id": "2503.03215",
+   "published": "2025-03-05",
+   "updated": "2026-01-13",
+   "title": "COSINT-Agent: A Knowledge-Driven Multimodal Agent for Chinese Open Source Intelligence",
+   "summary": "Open Source Intelligence (OSINT) requires the integration and reasoning of diverse multimodal data, presenting significant challenges in deriving actionable insights. Traditional approaches, including multimodal large language models (MLLMs), often struggle to infer complex contextual relationships or deliver comprehensive intelligence from unstructured data sources. In this paper, we introduce COSINT-Agent, a knowledge-driven multimodal agent tailored to address the challenges of OSINT in the Chinese domain. COSINT-Agent seamlessly integrates the perceptual capabilities of fine-tuned MLLMs with the structured reasoning power of the Entity-Event-Scene Knowledge Graph (EES-KG). Central to COSINT-Agent is the innovative EES-Match framework, which bridges COSINT-MLLM and EES-KG, enabling systematic extraction, reasoning, and contextualization of multimodal insights. This integration facilitates precise entity recognition, event interpretation, and context retrieval, effectively transforming raw multimodal data into actionable intelligence. Extensive experiments validate the superior performance of COSINT-Agent across core OSINT tasks, including entity recognition, EES generation, and context matching. These results underscore its potential as a robust and scalable solution for advancing automated multimodal reasoning and enhancing the effectiveness of OSINT methodologies.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2503.06169",
+   "published": "2025-03-08",
+   "updated": "2025-03-17",
+   "title": "Treble Counterfactual VLMs: A Causal Approach to Hallucination",
+   "summary": "Vision-Language Models (VLMs) have advanced multi-modal tasks like image captioning, visual question answering, and reasoning. However, they often generate hallucinated outputs inconsistent with the visual context or prompt, limiting reliability in critical applications like autonomous driving and medical imaging. Existing studies link hallucination to statistical biases, language priors, and biased feature learning but lack a structured causal understanding. In this work, we introduce a causal perspective to analyze and mitigate hallucination in VLMs. We hypothesize that hallucination arises from unintended direct influences of either the vision or text modality, bypassing proper multi-modal fusion. To address this, we construct a causal graph for VLMs and employ counterfactual analysis to estimate the Natural Direct Effect (NDE) of vision, text, and their cross-modal interaction on the output. We systematically identify and mitigate these unintended direct effects to ensure that responses are primarily driven by genuine multi-modal fusion. Our approach consists of three steps: (1) designing structural causal graphs to distinguish correct fusion pathways from spurious modality shortcuts, (2) estimating modality-specific and cross-modal NDE using perturbed image representations, hallucinated text embeddings, and degraded visual inputs, and (3) implementing a test-time intervention module to dynamically adjust the model's dependence on each modality. Experimental results demonstrate that our method significantly reduces hallucination while preserving task performance, providing a robust and interpretable framework for improving VLM reliability. To enhance accessibility and reproducibility, our code is publicly available at https://github.com/TREE985/Treble-Counterfactual-VLMs.",
+   "queries": [
+    5
+   ]
+  },
+  {
+   "id": "2503.21435",
+   "published": "2025-03-27",
+   "updated": "2026-04-24",
+   "title": "Graph-to-Vision: Multi-graph Understanding and Reasoning using Vision-Language Models",
+   "summary": "Recent advances in Vision-Language Models (VLMs) have shown promising capabilities in interpreting visualized graph data, offering a new perspective for graph-structured reasoning beyond traditional Graph Neural Networks (GNNs). However, existing studies focus primarily on single-graph reasoning, leaving the critical challenge of multi-graph joint reasoning underexplored. In this work, we introduce the first comprehensive benchmark designed to evaluate and enhance the multi-graph reasoning abilities of VLMs. Our benchmark covers four common graph types-knowledge graphs, flowcharts, mind maps, and route maps-and supports both homogeneous and heterogeneous graph groupings with tasks of increasing complexity. We evaluate several state-of-the-art VLMs under a multi-dimensional scoring framework that assesses graph parsing, reasoning consistency, and instruction-following accuracy. Additionally, we fine-tune multiple open-source models and observe consistent improvements, confirming the effectiveness of our dataset. This work provides a principled step toward advancing multi-graph understanding and reveals new opportunities for cross-modal graph intelligence.",
+   "queries": [
+    4
+   ]
+  },
+  {
+   "id": "2504.10541",
+   "published": "2025-04-13",
+   "updated": "2025-07-29",
+   "title": "Multi-Modal Hypergraph Enhanced LLM Learning for Recommendation",
+   "summary": "The burgeoning presence of Large Language Models (LLM) is propelling the development of personalized recommender systems. Most existing LLM-based methods fail to sufficiently explore the multi-view graph structure correlations inherent in recommendation scenarios. To this end, we propose a novel framework, Hypergraph Enhanced LLM Learning for multimodal Recommendation (HeLLM), designed to equip LLMs with the capability to capture intricate higher-order semantic correlations by fusing graph-level contextual signals with sequence-level behavioral patterns. In the recommender pre-training phase, we design a user hypergraph to uncover shared interest preferences among users and an item hypergraph to capture correlations within multimodal similarities among items. The hypergraph convolution and synergistic contrastive learning mechanism are introduced to enhance the distinguishability of learned representations. In the LLM fine-tuning phase, we inject the learned graph-structured embeddings directly into the LLM's architecture and integrate sequential features capturing each user's chronological behavior. This process enables hypergraphs to leverage graph-structured information as global context, enhancing the LLM's ability to perceive complex relational patterns and integrate multimodal information, while also modeling local temporal dynamics. Extensive experiments demonstrate the superiority of our proposed method over state-of-the-art baselines, confirming the advantages of fusing hypergraph-based context with sequential user behavior in LLMs for recommendation.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2506.07227",
+   "published": "2025-06-08",
+   "updated": "2025-06-08",
+   "title": "Hallucination at a Glance: Controlled Visual Edits and Fine-Grained Multimodal Learning",
+   "summary": "Multimodal large language models (MLLMs) have achieved strong performance on vision-language tasks but still struggle with fine-grained visual differences, leading to hallucinations or missed semantic shifts. We attribute this to limitations in both training data and learning objectives. To address these issues, we propose a controlled data generation pipeline that produces minimally edited image pairs with semantically aligned captions. Using this pipeline, we construct the Micro Edit Dataset (MED), containing over 50K image-text pairs spanning 11 fine-grained edit categories, including attribute, count, position, and object presence changes. Building on MED, we introduce a supervised fine-tuning (SFT) framework with a feature-level consistency loss that promotes stable visual embeddings under small edits. We evaluate our approach on the Micro Edit Detection benchmark, which includes carefully balanced evaluation pairs designed to test sensitivity to subtle visual variations across the same edit categories. Our method improves difference detection accuracy and reduces hallucinations compared to strong baselines, including GPT-4o. Moreover, it yields consistent gains on standard vision-language tasks such as image captioning and visual question answering. These results demonstrate the effectiveness of combining targeted data and alignment objectives for enhancing fine-grained visual reasoning in MLLMs.",
+   "queries": [
+    12
+   ]
+  },
+  {
+   "id": "2506.10282",
+   "published": "2025-06-12",
+   "updated": "2025-06-12",
+   "title": "Graph-MLLM: Harnessing Multimodal Large Language Models for Multimodal Graph Learning",
+   "summary": "Multimodal Large Language Models (MLLMs) have demonstrated remarkable capabilities in representing and understanding diverse modalities. However, they typically focus on modality alignment in a pairwise manner while overlooking structural relationships across data points. Integrating multimodality with structured graph information (i.e., multimodal graphs, MMGs) is essential for real-world applications such as social networks, healthcare, and recommendation systems. Existing MMG learning methods fall into three paradigms based on how they leverage MLLMs: Encoder, Aligner, and Predictor. MLLM-as-Encoder focuses on enhancing graph neural networks (GNNs) via multimodal feature fusion; MLLM-as-Aligner aligns multimodal attributes in language or hidden space to enable LLM-based graph reasoning; MLLM-as-Predictor treats MLLMs as standalone reasoners with in-context learning or fine-tuning. Despite their advances, the MMG field lacks a unified benchmark to fairly evaluate across these approaches, making it unclear what progress has been made. To bridge this gap, we present Graph-MLLM, a comprehensive benchmark for multimodal graph learning by systematically evaluating these three paradigms across six datasets with different domains. Through extensive experiments, we observe that jointly considering the visual and textual attributes of the nodes benefits graph learning, even when using pre-trained text-to-image alignment models (e.g., CLIP) as encoders. We also find that converting visual attributes into textual descriptions further improves performance compared to directly using visual inputs. Moreover, we observe that fine-tuning MLLMs on specific MMGs can achieve state-of-the-art results in most scenarios, even without explicit graph structure information. We hope that our open-sourced library will facilitate rapid, equitable evaluation and inspire further innovative research in this field.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2506.14404",
+   "published": "2025-06-17",
+   "updated": "2025-08-05",
+   "title": "Causally Steered Diffusion for Automated Video Counterfactual Generation",
+   "summary": "Adapting text-to-image (T2I) latent diffusion models (LDMs) to video editing has shown strong visual fidelity and controllability, but challenges remain in maintaining causal relationships inherent to the video data generating process. Edits affecting causally dependent attributes often generate unrealistic or misleading outcomes if these relationships are ignored. In this work, we introduce a causally faithful framework for counterfactual video generation, formulated as an Out-of-Distribution (OOD) prediction problem. We embed prior causal knowledge by encoding the relationships specified in a causal graph into text prompts and guide the generation process by optimizing these prompts using a vision-language model (VLM)-based textual loss. This loss encourages the latent space of the LDMs to capture OOD variations in the form of counterfactuals, effectively steering generation toward causally meaningful alternatives. The proposed framework, dubbed CSVC, is agnostic to the underlying video editing system and does not require access to its internal mechanisms or fine-tuning. We evaluate our approach using standard video quality metrics and counterfactual-specific criteria, such as causal effectiveness and minimality. Experimental results show that CSVC generates causally faithful video counterfactuals within the LDM distribution via prompt-based causal steering, achieving state-of-the-art causal effectiveness without compromising temporal consistency or visual quality on real-world facial videos. Due to its compatibility with any black-box video editing system, our framework has significant potential to generate realistic 'what if' hypothetical video scenarios in diverse areas such as digital media and healthcare.",
+   "queries": [
+    5
+   ]
+  },
+  {
+   "id": "2507.06571",
+   "published": "2025-07-09",
+   "updated": "2025-07-09",
+   "title": "Enhancing Food-Domain Question Answering with a Multimodal Knowledge Graph: Hybrid QA Generation and Diversity Analysis",
+   "summary": "We propose a unified food-domain QA framework that combines a large-scale multimodal knowledge graph (MMKG) with generative AI. Our MMKG links 13,000 recipes, 3,000 ingredients, 140,000 relations, and 14,000 images. We generate 40,000 QA pairs using 40 templates and LLaVA/DeepSeek augmentation. Joint fine-tuning of Meta LLaMA 3.1-8B and Stable Diffusion 3.5-Large improves BERTScore by 16.2\\%, reduces FID by 37.8\\%, and boosts CLIP alignment by 31.1\\%. Diagnostic analyses-CLIP-based mismatch detection (35.2\\% to 7.3\\%) and LLaVA-driven hallucination checks-ensure factual and visual fidelity. A hybrid retrieval-generation strategy achieves 94.1\\% accurate image reuse and 85\\% adequacy in synthesis. Our results demonstrate that structured knowledge and multimodal generation together enhance reliability and diversity in food QA.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2509.22720",
+   "published": "2025-09-24",
+   "updated": "2025-09-24",
+   "title": "LayoutAgent: A Vision-Language Agent Guided Compositional Diffusion for Spatial Layout Planning",
+   "summary": "Designing realistic multi-object scenes requires not only generating images, but also planning spatial layouts that respect semantic relations and physical plausibility. On one hand, while recent advances in diffusion models have enabled high-quality image generation, they lack explicit spatial reasoning, leading to unrealistic object layouts. On the other hand, traditional spatial planning methods in robotics emphasize geometric and relational consistency, but they struggle to capture semantic richness in visual scenes. To bridge this gap, in this paper, we propose LayoutAgent, an agentic framework that unifies vision-language reasoning with compositional diffusion for layout generation. Given multiple input images with target objects in them, our method first employs visual-language model to preprocess the inputs through segmentation, object size estimation, scene graph construction, and prompt rewriting. Then we leverage compositional diffusion-a method traditionally used in robotics-to synthesize bounding boxes that respect object relations encoded in the scene graph for spatial layouts. In the end, a foreground-conditioned image generator composes the complete scene by rendering the objects into the planned layout guided by designed prompts. Experiments demonstrate that LayoutAgent outperforms other state-of-the-art layout generation models in layout coherence, spatial realism and aesthetic alignment.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2510.22866",
+   "published": "2025-10-26",
+   "updated": "2025-10-26",
+   "title": "Interpreting and Mitigating Unwanted Uncertainty in LLMs",
+   "summary": "Despite their impressive capabilities, Large Language Models (LLMs) exhibit unwanted uncertainty, a phenomenon where a model changes a previously correct answer into an incorrect one when re-prompted. This behavior undermines trust and poses serious risks in high-stakes domains. In this work, we investigate the mechanisms that drive this phenomenon. We adapt the Needle-in-a-Haystack retrieval framework and integrate a Flip-style re-evaluation prompt to simulate realistic answer-flipping scenarios. We find that retrieval heads are not primarily responsible for avoiding uncertainty. Instead, we identify a small set of non-retrieval attention heads that disproportionately attend to misleading tokens in uncertain contexts. Masking these heads yields significant improvements, reducing flip behavior by up to 15% without introducing incoherence or overcorrection. However, when tested for downstream tasks, we observe trade-offs with flip behavior. Our findings contribute to the growing field of mechanistic interpretability and present a simple yet effective technique for mitigating uncertainty-driven failure modes in LLMs.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2511.07777",
+   "published": "2025-11-11",
+   "updated": "2025-11-11",
+   "title": "A Causal-Guided Multimodal Large Language Model for Generalized Power System Time-Series Data Analytics",
+   "summary": "Power system time series analytics is critical in understanding the system operation conditions and predicting the future trends. Despite the wide adoption of Artificial Intelligence (AI) tools, many AI-based time series analytical models suffer from task-specificity (i.e. one model for one task) and structural rigidity (i.e. the input-output format is fixed), leading to limited model performances and resource wastes. In this paper, we propose a Causal-Guided Multimodal Large Language Model (CM-LLM) that can solve heterogeneous power system time-series analysis tasks. First, we introduce a physics-statistics combined causal discovery mechanism to capture the causal relationship, which is represented by graph, among power system variables. Second, we propose a multimodal data preprocessing framework that can encode and fuse text, graph and time series to enhance the model performance. Last, we formulate a generic \"mask-and-reconstruct\" paradigm and design a dynamic input-output padding mechanism to enable CM-LLM adaptive to heterogeneous time-series analysis tasks with varying sample lengths. Simulation results based on open-source LLM Qwen and real-world dataset demonstrate that, after simple fine-tuning, the proposed CM-LLM can achieve satisfying accuracy and efficiency on three heterogeneous time-series analytics tasks: missing data imputation, forecasting and super resolution.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2512.09215",
+   "published": "2025-12-10",
+   "updated": "2025-12-10",
+   "title": "View-on-Graph: Zero-shot 3D Visual Grounding via Vision-Language Reasoning on Scene Graphs",
+   "summary": "3D visual grounding (3DVG) identifies objects in 3D scenes from language descriptions. Existing zero-shot approaches leverage 2D vision-language models (VLMs) by converting 3D spatial information (SI) into forms amenable to VLM processing, typically as composite inputs such as specified view renderings or video sequences with overlaid object markers. However, this VLM + SI paradigm yields entangled visual representations that compel the VLM to process entire cluttered cues, making it hard to exploit spatial semantic relationships effectively. In this work, we propose a new VLM x SI paradigm that externalizes the 3D SI into a form enabling the VLM to incrementally retrieve only what it needs during reasoning. We instantiate this paradigm with a novel View-on-Graph (VoG) method, which organizes the scene into a multi-modal, multi-layer scene graph and allows the VLM to operate as an active agent that selectively accesses necessary cues as it traverses the scene. This design offers two intrinsic advantages: (i) by structuring 3D context into a spatially and semantically coherent scene graph rather than confounding the VLM with densely entangled visual inputs, it lowers the VLM's reasoning difficulty; and (ii) by actively exploring and reasoning over the scene graph, it naturally produces transparent, step-by-step traces for interpretable 3DVG. Extensive experiments show that VoG achieves state-of-the-art zero-shot performance, establishing structured scene exploration as a promising strategy for advancing zero-shot 3DVG.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2601.18356",
+   "published": "2026-01-26",
+   "updated": "2026-01-26",
+   "title": "Making medical vision-language models think causally across modalities with retrieval-augmented cross-modal reasoning",
+   "summary": "Medical vision-language models (VLMs) achieve strong performance in diagnostic reporting and image-text alignment, yet their underlying reasoning mechanisms remain fundamentally correlational, exhibiting reliance on superficial statistical associations that fail to capture the causal pathophysiological mechanisms central to clinical decision-making. This limitation makes them fragile, prone to hallucinations, and sensitive to dataset biases. Retrieval-augmented generation (RAG) offers a partial remedy by grounding predictions in external knowledge. However, conventional RAG depends on semantic similarity, introducing new spurious correlations. We propose Multimodal Causal Retrieval-Augmented Generation, a framework that integrates causal inference principles with multimodal retrieval. It retrieves clinically relevant exemplars and causal graphs from external sources, conditioning model reasoning on counterfactual and interventional evidence rather than correlations alone. Applied to radiology report generation, diagnosis prediction, and visual question answering, it improves factual accuracy, robustness to distribution shifts, and interpretability. Our results highlight causal retrieval as a scalable path toward medical VLMs that think beyond pattern matching, enabling trustworthy multimodal reasoning in high-stakes clinical settings.",
+   "queries": [
+    5
+   ]
+  },
+  {
+   "id": "2601.22610",
+   "published": "2026-01-30",
+   "updated": "2026-01-30",
+   "title": "Local-Global Multimodal Contrastive Learning for Molecular Property Prediction",
+   "summary": "Accurate molecular property prediction requires integrating complementary information from molecular structure and chemical semantics. In this work, we propose LGM-CL, a local-global multimodal contrastive learning framework that jointly models molecular graphs and textual representations derived from SMILES and chemistry-aware augmented texts. Local functional group information and global molecular topology are captured using AttentiveFP and Graph Transformer encoders, respectively, and aligned through self-supervised contrastive learning. In addition, chemically enriched textual descriptions are contrasted with original SMILES to incorporate physicochemical semantics in a task-agnostic manner. During fine-tuning, molecular fingerprints are further integrated via Dual Cross-attention multimodal fusion. Extensive experiments on MoleculeNet benchmarks demonstrate that LGM-CL achieves consistent and competitive performance across both classification and regression tasks, validating the effectiveness of unified local-global and multimodal representation learning.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2602.00414",
+   "published": "2026-01-31",
+   "updated": "2026-10-28",
+   "title": "Toward Autonomous Laboratory Safety Monitoring with Vision Language Models: Learning to See Hazards Through Scene Structure",
+   "summary": "Laboratories are prone to severe injuries from unsafe actions, yet continuous manual safety monitoring, beyond mandatory pre-lab safety training, is infeasible. Vision-language models (VLMs) offer promise for autonomous laboratory safety monitoring, but their effectiveness in realistic settings is unclear due to the lack of visual evaluation data. Safety incidents are mostly documented as text, and existing studies are largely limited to textual understanding. Since hazardous scenes are unsafe to stage or capture, synthetic visual data becomes the only practical way to study this problem. This motivates us to introduce a structured data generation pipeline that converts textual laboratory scenarios into aligned quadruples using LLM as scene graph architect and image generation model as renderer, yielding \\dataset: a synthetic dataset of 1,207 $\\langle$image, scene graph, ground truth, hazard relevance mask$\\rangle$ quadruples across 362 unique scenarios. Experiments on \\dataset and seven open- and closed-source models show that VLMs perform effectively given a textual scene graph but degrade substantially in visual-only settings (i.e., where no scene graph is involved), indicating difficulty in extracting structured object relationships directly from pixels. We thus propose \\saga, a post-training framework that leverages reinforcement learning to first structure the visual scene as a scene graph, and then predict hazards while aligning attention with relevant image regions. Evaluations with Qwen 3.5 and Gemma 4 show that our method nearly doubles the $F_1$ score over the baseline on our synthetic dataset and achieves an improvement of $\\sim 3\\times$ on a mini real-world dataset, while preserving general visual understanding in visual question answering.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2602.02742",
+   "published": "2026-02-02",
+   "updated": "2026-03-02",
+   "title": "Entropy-Guided Dynamic Tokens for Graph-LLM Alignment in Molecular Understanding",
+   "summary": "Molecular understanding is central to advancing areas such as scientific discovery, yet Large Language Models (LLMs) struggle to understand molecular graphs effectively. Existing graph-LLM bridges often adapt the Q-Former-style connector with fixed-length static tokens, which is originally designed for vision tasks. These designs overlook stereochemistry and substructural context and typically require costly LLM-backbone fine-tuning, limiting efficiency and generalization. We introduce EDT-Former, an Entropy-guided Dynamic Token Transformer that generates tokens aligned with informative molecular patches, thereby preserving both local and global structural features for molecular graph understanding. Beyond prior approaches, EDT-Former enables alignment between frozen graph encoders and LLMs without tuning the LLM backbone (excluding the embedding layer), resulting in computationally efficient finetuning, and achieves stateof-the-art results on MoleculeQA, Molecule-oriented Mol-Instructions, and property prediction benchmarks (TDC, MoleculeNet), underscoring its effectiveness for scalable and generalizable multimodal molecular understanding",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2602.14589",
+   "published": "2026-02-16",
+   "updated": "2026-02-16",
+   "title": "MATEO: A Multimodal Benchmark for Temporal Reasoning and Planning in LVLMs",
+   "summary": "AI agents need to plan to achieve complex goals that involve orchestrating perception, sub-goal decomposition, and execution. These plans consist of ordered steps structured according to a Temporal Execution Order (TEO, a directed acyclic graph that ensures each step executes only after its preconditions are satisfied. Existing research on foundational models' understanding of temporal execution is limited to automatically derived annotations, approximations of the TEO as a linear chain, or text-only inputs. To address this gap, we introduce MATEO (MultimodAl Temporal Execution Order), a benchmark designed to assess and improve the temporal reasoning abilities of Large Vision Language Models (LVLMs) required for real-world planning. We acquire a high-quality professional multimodal recipe corpus, authored through a standardized editorial process that decomposes instructions into discrete steps, each paired with corresponding images. We collect TEO annotations as graphs by designing and using a scalable crowdsourcing pipeline. Using MATEO, we evaluate six state-of-the-art LVLMs across model scales, varying language context, multimodal input structure, and fine-tuning strategies.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2603.06680",
+   "published": "2026-03-03",
+   "updated": "2026-03-03",
+   "title": "VB: Visibility Benchmark for Visibility and Perspective Reasoning in Images",
+   "summary": "We present VB, a benchmark that tests whether vision-language models can determine what is and is not visible in a photograph, and abstain when a human viewer cannot reliably answer. Each item pairs a single photo with a short yes/no visibility claim; the model must output VISIBLY_TRUE, VISIBLY_FALSE, or ABSTAIN, together with a confidence score. Items are organized into 100 families using a 2x2 design that crosses a minimal image edit with a minimal text edit, yielding 300 headline evaluation cells. Unlike prior unanswerable-VQA benchmarks, VB tests not only whether a question is unanswerable but why (via reason codes tied to specific visibility factors), and uses controlled minimal edits to verify that model judgments change when and only when the underlying evidence changes. We score models on confidence-aware accuracy with abstention (CAA), minimal-edit flip rate (MEFR), confidence-ranked selective prediction (SelRank), and second-order perspective reasoning (ToMAcc); all headline numbers are computed on the strict XOR subset (three cells per family, 300 scored items per model). We evaluate nine models spanning flagship and prior-generation closed-source systems, and open-source models from 8B to 12B parameters. GPT-4o and Gemini 3.1 Pro effectively tie for the best composite score (0.728 and 0.727), followed by Gemini 2.5 Pro (0.678). The best open-source model, Gemma 3 12B (0.505), surpasses one prior-generation closed-source system. Text-flip robustness exceeds image-flip robustness for six of nine models, and confidence calibration varies substantially: GPT-4o and Gemini 2.5 Pro achieve similar accuracy yet differ sharply in selective prediction quality.",
+   "queries": [
+    12
+   ]
+  },
+  {
+   "id": "2603.19137",
+   "published": "2026-03-19",
+   "updated": "2026-03-19",
+   "title": "GSMem: 3D Gaussian Splatting as Persistent Spatial Memory for Zero-Shot Embodied Exploration and Reasoning",
+   "summary": "Effective embodied exploration requires agents to accumulate and retain spatial knowledge over time. However, existing scene representations, such as discrete scene graphs or static view-based snapshots, lack \\textit{post-hoc re-observability}. If an initial observation misses a target, the resulting memory omission is often irrecoverable. To bridge this gap, we propose \\textbf{GSMem}, a zero-shot embodied exploration and reasoning framework built upon 3D Gaussian Splatting (3DGS). By explicitly parameterizing continuous geometry and dense appearance, 3DGS serves as a persistent spatial memory that endows the agent with \\textit{Spatial Recollection}: the ability to render photorealistic novel views from optimal, previously unoccupied viewpoints. To operationalize this, GSMem employs a retrieval mechanism that simultaneously leverages parallel object-level scene graphs and semantic-level language fields. This complementary design robustly localizes target regions, enabling the agent to ``hallucinate'' optimal views for high-fidelity Vision-Language Model (VLM) reasoning. Furthermore, we introduce a hybrid exploration strategy that combines VLM-driven semantic scoring with a 3DGS-based coverage objective, balancing task-aware exploration with geometric coverage. Extensive experiments on embodied question answering and lifelong navigation demonstrate the robustness and effectiveness of our framework",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2603.21047",
+   "published": "2026-03-22",
+   "updated": "2026-03-22",
+   "title": "When Minor Edits Matter: LLM-Driven Prompt Attack for Medical VLM Robustness in Ultrasound",
+   "summary": "Ultrasound is widely used in clinical practice due to its portability, cost-effectiveness, safety, and real-time imaging capabilities. However, image acquisition and interpretation remain highly operator dependent, motivating the development of robust AI-assisted analysis methods. Vision-language models (VLMs) have recently demonstrated strong multimodal reasoning capabilities and competitive performance in medical image analysis, including ultrasound. However, emerging evidence highlights significant concerns about their trustworthiness. In particular, adversarial robustness is critical because Med-VLMs operate via natural-language instructions, rendering prompt formulation a realistic and practically exploitable point of vulnerability. Small variations (typos, shorthand, underspecified requests, or ambiguous wording) can meaningfully shift model outputs. We propose a scalable adversarial evaluation framework that leverages a large language model (LLM) to generate clinically plausible adversarial prompt variants via \"humanized\" rewrites and minimal edits that mimic routine clinical communication. Using ultrasound multiple-choice question answering benchmarks, we systematically assess the vulnerability of SOTA Med-VLMs to these attacks, examine how attacker LLM capacity influences attack success, analyze the relationship between attack success and model confidence, and identify consistent failure patterns across models. Our results highlight realistic robustness gaps that must be addressed for safe clinical translation. Code will be released publicly following the review process.",
+   "queries": [
+    12
+   ]
+  },
+  {
+   "id": "2603.22279",
+   "published": "2026-03-23",
+   "updated": "2026-03-23",
+   "title": "3D-Layout-R1: Structured Reasoning for Language-Instructed Spatial Editing",
+   "summary": "Large Language Models (LLMs) and Vision Language Models (VLMs) have shown impressive reasoning abilities, yet they struggle with spatial understanding and layout consistency when performing fine-grained visual editing. We introduce a Structured Reasoning framework that performs text-conditioned spatial layout editing via scene-graph reasoning. Given an input scene graph and a natural-language instruction, the model reasons over the graph to generate an updated scene graph that satisfies the text condition while maintaining spatial coherence. By explicitly guiding the reasoning process through structured relational representations, our approach improves both interpretability and control over spatial relationships. We evaluate our method on a new text-guided layout editing benchmark encompassing sorting, spatial alignment, and room-editing tasks. Our training paradigm yields an average 15% improvement in IoU and 25% reduction in center-distance error compared to Chain of Thought Fine-tuning (CoT-SFT) and vanilla GRPO baselines. Compared to SOTA zero-shot LLMs, our best models achieve up to 20% higher mIoU, demonstrating markedly improved spatial precision.",
+   "queries": [
+    4
+   ]
+  },
+  {
+   "id": "2604.01639",
+   "published": "2026-04-02",
+   "updated": "2026-04-02",
+   "title": "Fragile Reasoning: A Mechanistic Analysis of LLM Sensitivity to Meaning-Preserving Perturbations",
+   "summary": "Large language models demonstrate strong performance on mathematical reasoning benchmarks, yet remain surprisingly fragile to meaning-preserving surface perturbations. We systematically evaluate three open-weight LLMs, Mistral-7B, Llama-3-8B, and Qwen2.5-7B, on 677 GSM8K problems paired with semantically equivalent variants generated through name substitution and number format paraphrasing. All three models exhibit substantial answer-flip rates (28.8%-45.1%), with number paraphrasing consistently more disruptive than name swaps. To trace the mechanistic basis of these failures, we introduce the Mechanistic Perturbation Diagnostics (MPD) framework, combining logit lens analysis, activation patching, component ablation, and the Cascading Amplification Index (CAI) into a unified diagnostic pipeline. CAI, a novel metric quantifying layer-wise divergence amplification, outperforms first divergence layer as a failure predictor for two of three architectures (AUC up to 0.679). Logit lens reveals that flipped samples diverge from correct predictions at significantly earlier layers than stable samples. Activation patching reveals a stark architectural divide in failure localizability: Llama-3 failures are recoverable by patching at specific layers (43/60 samples), while Mistral and Qwen failures are broadly distributed (3/60 and 0/60). Based on these diagnostic signals, we propose a mechanistic failure taxonomy (localized, distributed, and entangled) and validate it through targeted repair experiments: steering vectors and layer fine-tuning recover 12.2% of localized failures (Llama-3) but only 7.2% of entangled (Qwen) and 5.2% of distributed (Mistral) failures.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2604.03476",
+   "published": "2026-04-03",
+   "updated": "2026-04-21",
+   "title": "Fine-tuning DeepSeek-OCR-2 for Molecular Structure Recognition",
+   "summary": "Optical Chemical Structure Recognition (OCSR) is critical for converting 2D molecular diagrams from printed literature into machine-readable formats. While Vision-Language Models have shown promise in end-to-end OCR tasks, their direct application to OCSR remains challenging, and direct full-parameter supervised fine-tuning often fails. In this work, we adapt DeepSeek-OCR-2 for molecular optical recognition by formulating the task as image-conditioned SMILES generation. To overcome training instabilities, we propose a two-stage progressive supervised fine-tuning strategy: starting with parameter-efficient LoRA and transitioning to selective full-parameter fine-tuning with split learning rates. We train our model on a large-scale corpus combining synthetic renderings from PubChem and realistic patent images from USPTO-MOL to improve coverage and robustness. Our fine-tuned model, MolSeek-OCR, demonstrates competitive capabilities, achieving exact matching accuracies comparable to the best-performing image-to-sequence model. However, it remains inferior to state-of-the-art image-to-graph modelS. Furthermore, we explore reinforcement-style post-training and data-curation-based refinement, finding that they fail to improve the strict sequence-level fidelity required for exact SMILES matching.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2604.08941",
+   "published": "2026-04-10",
+   "updated": "2026-08-11",
+   "title": "Predictive Entropy as a Joint Screen for Error and Paraphrase Instability in Medical Vision-Language Models",
+   "summary": "Medical Vision-Language Models (VLMs) answering binary presence questions on chest radiographs can fail in two linked ways: they are confidently wrong, and they change answers when a clinically equivalent question is rephrased. In a binary answer head both failures track the same logit margin, so we test how well one score screens for both. On MedGemma-4B-IT across MIMIC-CXR (in-distribution, n=196) and PadChest (out-of-distribution, n=861), single-pass predictive entropy predicts which yes/no answers flip under rephrasing with an area under the receiver operating characteristic curve (AUROC) of 0.823 on PadChest and 0.821 on MIMIC, and the signal is stable across five random seeds (0.828$\\pm$0.021). The same signal replicates on LLaVA-RAD-7B (AUROC 0.83) and is invariant to the flip definition (all, operator-preserving, or negation-excluded rewrites), so the screen needs no semantic filter at inference. One low-entropy threshold drives error and flip rate down together (3.3% and 5.7% at 80% coverage), and threshold selection transfers to a held-out split. Under cross-site shift the more expensive methods we test add nothing practical: at the 5% risk target a single forward pass answers 88.5% of cases, matching Monte Carlo (MC) Dropout, and beats the uniformly averaged five-seed adapter ensemble on error detection by 0.111 AUROC. Even a model that is 91% accurate still contradicts itself on 13% of items under rephrasing, and one forward pass flags them.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2604.13035",
+   "published": "2026-04-14",
+   "updated": "2026-04-14",
+   "title": "SceneCritic: A Symbolic Evaluator for 3D Indoor Scene Synthesis",
+   "summary": "Large Language Models (LLMs) and Vision-Language Models (VLMs) increasingly generate indoor scenes through intermediate structures such as layouts and scene graphs, yet evaluation still relies on LLM or VLM judges that score rendered views, making judgments sensitive to viewpoint, prompt phrasing, and hallucination. When the evaluator is unstable, it becomes difficult to determine whether a model has produced a spatially plausible scene or whether the output score reflects the choice of viewpoint, rendering, or prompt. We introduce SceneCritic, a symbolic evaluator for floor-plan-level layouts. SceneCritic's constraints are grounded in SceneOnto, a structured spatial ontology we construct by aggregating indoor scene priors from 3D-FRONT, ScanNet, and Visual Genome. SceneOnto traverses this ontology to jointly verify semantic, orientation, and geometric coherence across object relationships, providing object-level and relationship-level assessments that identify specific violations and successful placements. Furthermore, we pair SceneCritic with an iterative refinement test bed that probes how models build and revise spatial structure under different critic modalities: a rule-based critic using collision constraints as feedback, an LLM critic operating on the layout as text, and a VLM critic operating on rendered observations. Through extensive experiments, we show that (a) SceneCritic aligns substantially better with human judgments than VLM-based evaluators, (b) text-only LLMs can outperform VLMs on semantic layout quality, and (c) image-based VLM refinement is the most effective critic modality for semantic and orientation correction.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2604.16517",
+   "published": "2026-04-15",
+   "updated": "2026-04-15",
+   "title": "SmoGVLM: A Small, Graph-enhanced Vision-Language Model",
+   "summary": "Large vision-language models (VLMs) achieve strong performance on multimodal tasks but often suffer from hallucination and poor grounding in knowledge-intensive reasoning. We propose SmoGVLM, a small, graph-enhanced VLM that integrates structured knowledge with visual and textual modalities, using Graph Neural Networks. We investigate the effects of our method across a range of model sizes, from tiny (1.3B) to large (13B) models. Our results demonstrate that, when trained using our approach, a small model can achieve performance gains upto 16.24%, and surpass its larger counterparts, outperforming larger VLMs and strong fine-tuned baselines. These results highlight the potential of structured knowledge augmentation for efficient, smaller-scale multimodal reasoning systems.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2605.09343",
+   "published": "2026-05-10",
+   "updated": "2026-05-10",
+   "title": "SKG-VLA: Scene Knowledge Graph Priors for Structured Scene Semantics and Multimodal Reasoning for Decision Making",
+   "summary": "Decision making in large-scale complaint handling systems increasingly relies on heterogeneous evidence, including complaint narratives, screenshots, order metadata, historical interactions, and platform policies. Existing complaint understanding systems mainly perform shallow classification or template matching over isolated modalities, while underutilizing explicit scene structure, rule knowledge, and cross-evidence dependencies. To address this limitation, we present SKG-VLA for multimodal complaint decision making. The core idea is to model each case as a structured complaint scene and represent its decision-relevant semantics with a \\emph{Scene Knowledge Graph} (SKG), which organizes complaint entities, evidence items, policy clauses, temporal events, transactional states, and action-relevant relations into a unified graph. Based on SKG, we build a data synthesis pipeline that generates complaint scene descriptions, rule-consistent graph generalizations, question-answer supervision, and decision recommendations. We further construct a large-scale complaint scene dataset with both text-only and multimodal in-domain benchmarks. Finally, we adopt a three-stage training strategy -- domain-adaptive pre-training, task-oriented instruction fine-tuning, and end-to-end multimodal alignment -- to inject structured scene priors into a multimodal decision model. Experiments show that SKG-VLA consistently improves policy-grounded reasoning, complaint decision accuracy, long-tail generalization, and robustness under incomplete evidence.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2605.11307",
+   "published": "2026-05-11",
+   "updated": "2026-10-09",
+   "title": "Vision2Code: A Multi-Domain Benchmark for Evaluating Image-to-Code Generation",
+   "summary": "We study whether vision-language models (VLMs) can reconstruct structured, graphics-based images by writing executable code to generate them. Existing benchmarks on image-to-code generation are generally limited in the domains they cover, rely on reference source code for evaluation, and do not provide metrics to quantify domain-specific issues. To address this, we introduce Vision2Code, a multi-domain, reference-code-free benchmark containing 539 test examples from 15 different datasets, spanning charts and plots, geometry, graphs, scientific diagrams, documents and 3D spatial scenes. Evaluation is done by executing the generated programs and comparing their rendered outputs to the source images using dataset- and domain-specific rubrics for a VLM judge. We find that the final scores obtained in this manner have substantially higher correlation with human ratings than those obtained via generic VLM rubrics or standard pixel-based, embedding-based or perceptual similarity metrics. We further demonstrate the reliability of our evaluation under repeated sampling from the VLM judges, varying rubric weights, and in the presence of controlled errors. Our results highlight the variability across domains of existing image-to-code generation models, with accuracy on charts and graphs being significantly higher than other domains. Lastly, we demonstrate the utility of our scoring method for rejection sampling of generated programs for fine-tuning, improving Qwen3.5-9B by 16% and Phi-4-MM by 28% compared to their base checkpoints. Our code and data are publicly available at https://image2code.github.io/vision2code/.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2605.11616",
+   "published": "2026-05-12",
+   "updated": "2026-05-12",
+   "title": "Grounding by Remembering: Cross-Scene and In-Scene Memory for 3D Functional Affordances",
+   "summary": "Functional affordance grounding requires more than recognizing an object: an agent must localize the specific region that supports an interaction, such as the handle to pull or the button to press. This is difficult for training-free vision-language pipelines because actionable regions are often small, visually ambiguous, and repeated across multiple same-category instances in a scene. We propose AFFORDMEM, a framework that grounds 3D functional affordances by remembering geometry at two levels. The first is cross-scene affordance memory: the agent maintains a category-level memory bank of RGB images with affordance regions rendered as overlays, and recalls the most informative examples at query time to guide a frozen VLM toward small operable subregions that text-only prompting consistently misses. The second is in-scene spatial memory: as the agent processes the scene, it organizes candidate instances and their 3D spatial relations into a structured scene graph, enabling the language model to resolve references over distant or currently unobserved candidates such as \"the second handle from the top.\" AFFORDMEM requires no model fine-tuning and no target-scene annotation, using a reusable memory bank built from source scenes. On SceneFun3D, our method improves AP50 over the prior training-free state of the art by 3.23 on Split 0 and 3.7 on Split 1. Ablation studies support complementary benefits: cross-scene affordance memory improves fine-grained localization, while in-scene spatial memory provides the larger gain on spatially qualified queries. The project homepage is available at the project page.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2605.22902",
+   "published": "2026-05-21",
+   "updated": "2026-10-05",
+   "title": "Transcoders Trace Visual Grounding and Hallucinations in Vision-Language Models",
+   "summary": "Generative Vision-Language Models (VLMs) perform well on multimodal reasoning, but how visual inputs are transformed to text remains poorly understood. Existing interpretability work on VLMs uses Sparse Autoencoders (SAEs), which decompose static residual representations and miss the functional updates that drive cross-modal interaction. We adopt a function-centric framework based on Transcoders, sparse approximations of MLP sublayers that act as a causal proxy for layer-wise computation. Applied to Gemma 3-4B-IT, the framework decomposes the model into interpretable computational pathways linking image patches to directions in token generation. Transcoder attributions produce stronger and more stable effects on visually grounded tokens under patch ablation than SAE attributions, and align better with semantically relevant image regions. A False Visual Grounding counterfactual analysis confirms that the recovered pathways are specific to vision-language interaction.Finally, we perform a structural analysis of hallucinated generations, by extracting graph-based indicators from circuit traces produced by the transcoders. A logistic classifier over these mechanistic graph features predicts hallucinations at AUC $0.68$. These results show that function-centric circuit decomposition yields interpretable and predictive accounts of multimodal computation in VLMs.",
+   "queries": [
+    5
+   ]
+  },
+  {
+   "id": "2605.29087",
+   "published": "2026-05-27",
+   "updated": "2026-05-27",
+   "title": "The Chain Holds, the Answer Folds: Trace-Answer Dissociation in Reasoning Models Under Adversarial Pressure",
+   "summary": "Reasoning models are evaluated on single-turn benchmarks but deployed in multi-turn dialogue, where users push back on correct answers. Under sustained adversarial pressure we find a previously undocumented failure mode: the chain-of-thought stays factually correct from first turn to last while the emitted answer flips wrong. We call this unfaithful capitulation (UC) and isolate it with a $2\\times 2$ latent-versus-behavioral framework that flip-rate metrics and single-turn faithfulness probes both miss. Across three datasets (MT-Consistency, MMLU-Pro, GSM8K), the latent-correct rate at the behavioral flip clusters near 50% in think mode and collapses to 11-15% under no_think -- paired, within-model causal evidence that reasoning creates the gap. Across models the effect tracks the reasoning channel (high in Qwen3-32B and GPT-OSS-20B, low in inline-CoT Gemma-4-31B-it). An independent GPT-4o judge corroborates $86\\%$ of UC labels; a token-level probe shows the answer-slot argmax is correct in $84\\%$ of UC cells; and a naive trace-anchored defense backfires. We release all trajectories, traces, and judge labels.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2606.01106",
+   "published": "2026-05-31",
+   "updated": "2026-05-31",
+   "title": "Temporal Evidence Routing with Structured Visual Evidence for TimeLogicQA",
+   "summary": "TimeLogicQA evaluates whether video question answering systems can reason over temporal relations such as event existence, ordering, persistence, boundary conditions, and overlap. We address this task with a visual evidence routing pipeline that separates perception from symbolic temporal reasoning. The system first parses each question into event targets, answer mode, candidate options, and temporal operators. It then routes videos according to duration and operator difficulty, using ordered full-frame evidence for short clips and event-focused candidate windows for long videos. A multimodal large language model produces structured visual evidence for the relevant events, while programmatic verifiers recover dense action intervals and a deterministic reducer applies operator-specific temporal rules to produce the final answer. Conservative fusion accepts an answer only when the visual evidence, temporal program, and confidence checks agree, reducing noisy answer flips. On the official test evaluation, our final system achieves an AvgAcc of 81.8.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2606.11745",
+   "published": "2026-06-10",
+   "updated": "2026-06-10",
+   "title": "From Prompts to Tokens: Internalizing Causal Supervision in Vision-Language Model for Multi-Image Causal Reasoning",
+   "summary": "Visual causal reasoning is essential for understanding and intervening in the physical world, requiring identification of causal variables from visual inputs and reasoning over intervention effects. Despite recent progress, large vision--language models (VLMs) remain brittle at such tasks, especially for interventional and counterfactual queries over multi-image inputs. Most existing explorations inject causal knowledge via textual prompts, leaving causal mechanisms external to model execution and limiting reliable control during inference. To address this problem, we propose BridgeVLM, which internalizes visual causal reasoning by inducing a causal graph from multi-image inputs and converting it into structured Causal Tokens executed by RAMP layers injected into the LLM decoder for causal message passing. We further introduce a unified training interface M3S for fine-grained causal supervision from different granularities (local/global level). BridgeVLM achieves 54.4% accuracy on intervention tasks on CausalVLBench (vs. 33.2% with prompt-level supervision), improves results on Causal3D from 43.6% to 49.0%, and substantially improves causal structure learning on CausalVLBench ($F_1$: 33.4% $\\rightarrow$ 75.1%).",
+   "queries": [
+    5
+   ]
+  },
+  {
+   "id": "2606.12590",
+   "published": "2026-06-10",
+   "updated": "2026-10-08",
+   "title": "Analyzing and Improving Fine-grained Preference Optimization in Medical LVLMs",
+   "summary": "Preference optimization is increasingly used to post-train medical large vision-language models (LVLMs), yet it operates at a much coarser granularity than the one that defines clinical correctness. Whether one response is clinically better than another usually comes down to a few decisive phrases, such as an anatomical laterality or a lesion attribute, and to whether each is supported by the image region the question concerns. Direct Preference Optimization (DPO) and its variants, by contrast, reduce the comparison to a single response-level scalar, an objective structurally unable to represent which tokens carry clinical meaning. We show that this mismatch is costly: of the objectives we compare, response-level DPO places the least reward on the phrases that decide clinical correctness, and substituting supervised references for preferred responses opens a stylistic gap that the model exploits as a reward-hacking shortcut, raising preference accuracy but not clinical accuracy. To capture the full feedback in a clinical comparison, we propose Fine-grained Regularized Medical Preference Optimization (FiRe-MPO). Preference pairs are built by minimally editing the model's own generations, so that preferred and rejected responses differ only on clinically decisive spans, and each is paired with a lesion-corrupted image withholding the supporting visual evidence. Because span-localized rewards are sparse, we stabilize optimization with a bidirectional token-wise KL regularizer. Across medical visual question answering and report generation, FiRe-MPO outperforms DPO, RRPO, and competing fine-grained objectives on two popular LVLMs, one medical and one general-purpose, while strengthening visual grounding and placing more reward on the medical phrases than the alternatives.",
+   "queries": [
+    12
+   ]
+  },
+  {
+   "id": "2606.16011",
+   "published": "2026-06-14",
+   "updated": "2026-08-30",
+   "title": "Who Flips? Self- and Cross-Model Counterarguments Reveal Answer Instability in LLMs",
+   "summary": "Standard accuracy benchmarks evaluate whether large language models (LLMs) reach correct answers. However, they do not test whether models maintain that answer when challenged by a plausible counter-argument. We introduce a controlled protocol for evaluating answer stability: after a model answers a multiple-choice question correctly, we challenge the model's answer with a coherent argument for an incorrect option and measure whether the model flips. The setup a) isolates argumentative content from overt social pressure and b) varies argument length, self-attribution, and cross-model source. Across seven frontier models and 57 MMLU subjects, flip rates range from 17.5% to 97.3%, revealing large differences in stability that are not captured by accuracy metrics alone. We find that self-attribution consistently increases flip rates (mean 7.1pp, up to 18.7pp). Furthermore, pooling wrong-answer arguments across models and selecting the most effective one per question yields stronger adversarial challenges than relying on any single source model. From this cross-model pool, we construct MaxFlip, a curated benchmark that amplifies answer flips by up to 23.6pp over self-generated challenges. We release the protocol, challenge records, and MaxFlip to support stability evaluation alongside standard accuracy benchmarks. Materials are available at https://github.com/nafisenik/WhoFlips, https://hf.co/datasets/nafisehNik/WhoFlips.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2606.16103",
+   "published": "2026-06-15",
+   "updated": "2026-06-15",
+   "title": "SceneCraft: Interactive System for Image Editing via Scene Graph",
+   "summary": "Recent advances in generative AI have enabled natural language-driven image editing, yet existing systems often fail in complex scenes with multiple interacting objects because they rely heavily on users crafting precise text prompts. To address the absence of structured control, we propose SceneCraft, a novel interactive framework that bridges user intent and model execution by representing images as editable scene graphs. Instead of guessing text prompts through trial and error, users interact directly with a visual graph to perform complex spatial and relational operations. These graph modifications are automatically translated into precise, context-aware editing prompts, effectively eliminating linguistic ambiguity. To ensure robust and diverse results, structured prompts are dispatched to multiple state-of-the-art generative models. Evaluations across diverse editing scenarios show that SceneCraft provides a more intuitive control mechanism, significantly reducing the cognitive burden of manual prompt engineering while generating outputs that users consistently rate as higher in quality and fidelity.",
+   "queries": [
+    3
+   ]
+  },
+  {
+   "id": "2606.22597",
+   "published": "2026-06-21",
+   "updated": "2026-06-23",
+   "title": "MapReason-OSM: Can Vision-Language Models Make Graph-Verifiable Mobility Decisions from Street Maps ?",
+   "summary": "Vision-language models (VLMs) are increasingly used to read maps for logistics, delivery, and accessible navigation, where the output is an actionable decision (a route, a pin, a parking choice) that must respect the road network. Yet most map benchmarks grade free text or multiple-choice answers that cannot be verified against the underlying graph. We present MapReason-OSM, a benchmark and evaluation harness for graph-verifiable mobility decisions on self-rendered OpenStreetMap panels. We render fixed-style maps for ten U.S. downtowns at two aligned zoom scales, overlay a consistent marker grammar, and pair each panel with a hidden street graph and exact oracles, yielding 6,000 instances (12,000 panels across the two zooms) over 12 routing, facility-location, and visual disambiguation tasks. Models return structured decisions that we snap back to the graph and score for validity, legality, optimality, and constraint satisfaction, plus cross-zoom consistency. Across seven VLMs, models read maps and route simply but fail at graph cost reasoning (single-facility pin placement is near chance even for frontier reasoning models), and are frequently scale-inconsistent. We release the benchmark, harness, and deterministic generator. Code and data: https://github.com/Vi-Sri/mapreason-osm",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2606.31257",
+   "published": "2026-06-30",
+   "updated": "2026-06-30",
+   "title": "Decodable Is Not Grounded: A Vision-Ablation Arbiter for VLM Spatial Reasoning",
+   "summary": "The standard way to read latent knowledge out of a model, a linear probe confirmed by a steering recovery, can systematically overstate what a vision-language model (VLM) actually grounds in the image. We show this on spatial reasoning, where the error is invisible to both probing and steering yet exposed by a one-line causal control: replacing the image with a gray blank. Probes decode the within-axis answer at 73--97% across axes, and a training-free projection lifts a near-chance axis from 59% to 79%, exactly the signature of unlocking latent knowledge. The blank-image arbiter refutes it, revealing three grounding regimes that probing conflates: an axis can be grounded (vision-dependent, correct), a prior (vision-independent, with its decode and its apparent recovery a directional default rather than perception), or, surprisingly, inverted: decodable, causally controllable, but deployed with the wrong sign, so the model scores below chance and the error requires looking. The taxonomy holds across the studied VLMs: in fourteen models spanning six language-model families and 2B--27B, horizontal is grounded, vertical is a prior, and depth is inverted, with the inversion emerging at scale within families. The decode-versus-deploy inversion replicates on seven of eight models across five families, and the minimal edit that re-deploys it varies with geometry: a training-free rotation matches a trained edit on the cleanest model, while distributed inversions need a trained low-rank edit, tracing a per-model correction-complexity spectrum. The cheap, self-calibrating arbiter cleanly separates grounded perception, inverted perception, and prior substitution; we argue it should be a default control for latent-knowledge and steering claims in VLMs.",
+   "queries": [
+    12
+   ]
+  },
+  {
+   "id": "2607.00491",
+   "published": "2026-07-01",
+   "updated": "2026-07-01",
+   "title": "MindEdit-Bench: Benchmarking Object-Level Counterfactual Spatial Reasoning in VLMs from In-the-Wild Photos",
+   "summary": "Benchmarks for vision-language models (VLMs) mostly test observational spatial reasoning: models describe relations already visible in the input. Existing what-if tasks typically vary the observer while keeping the scene fixed. Can VLMs instead predict the consequences of hypothetically moving or rotating an object? We introduce MindEdit-Bench, a benchmark of six spatial reasoning tasks built from three-photo smartphone triplets of newly captured indoor scenes via an automatic in-the-wild 3D scene-graph extraction pipeline. Four tasks probe perception and perspective transformation over observed structure; two new tasks, L4 (spatial editing) and L5 (cross-view visibility editing), probe object-level counterfactual reasoning, where correct answers are absent from all input images. Each question provides 8-24 structured answer choices, enabling answer-letter-level diagnosis of spatial and fallback errors. The benchmark covers 120 private indoor scenes not drawn from public datasets, reducing public-data pretraining-overlap risk. Across 15 VLMs on 1,003 human-verified questions, task-wise mean VLM accuracy is only 8%-31%, versus 81%-97% human majority-vote accuracy. The pooled human--best-VLM gap is 53 pp, with at least 39 pp on every task. The structured answer space further reveals non-uniform failures, including weaker camera-depth-axis inference and fallback behavior on difficult visibility-editing cases.",
+   "queries": [
+    5
+   ]
+  },
+  {
+   "id": "2607.02448",
+   "published": "2026-07-02",
+   "updated": "2026-07-07",
+   "title": "AgentsCAD: Automated Design for Manufacturing of FDM Parts via Multi-Agent LLM Reasoning and Geometric Feature Recognition",
+   "summary": "Parts manufactured with Fused Deposition Modeling (FDM) often require Design for Additive Manufacturing (DFAM) modifications to ensure printability, structural integrity, and reduced post-processing. Current slicers identify defects such as steep overhangs but are unable to modify the underlying geometry. This work presents AgentsCAD, a multi-agent system that bridges raw boundary-representation (B-Rep) geometry and Large Language Model (LLM) reasoning to automate targeted DFM. The workflow begins by parsing a STEP file. The agentic system detects overhangs above a 45°threshold, constructs a face-adjacency topology graph, and optionally injects semantic feature labels from a GraphSAGE model trained on MFCAD++ (59,665 parts), before dispatching a Claude Sonnet design-reasoning agent that recommends reorientations, fillets, chamfers, and similar modifications. A GPT-4o vision-language verifier inspects rendered views to confirm geometric integrity. Outputs include a modified STEP file and a human-readable report. A test case on a birdhouse model demonstrates that the system correctly diagnoses overhangs, selects appropriate defect mitigation strategies, and proposes physically valid corrections, partially solving the geometry-to-language translation problem central to LLM-driven CAD modification.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2607.05716",
+   "published": "2026-07-07",
+   "updated": "2026-07-13",
+   "title": "Scene Graph Thinking: Reinforcing Structured Visual Reasoning for Multimodal Large Language Models",
+   "summary": "Multimodal Large Language Models (MLLMs) have demonstrated strong perception and reasoning capabilities. However, most existing models focus on isolated objects and neglect structured relationships for efficient target navigation, limiting their performance on visually intensive tasks. To address this challenge, we introduce Scene Graph Thinking (SaGe), a novel paradigm that enables fine-grained and structured visual reasoning through explicit scene-graph representations. Specifically, we first introduce an automated data engine that converts flat image-text corpora into structured scene graphs, where hierarchical entities constitute the nodes and diverse visual relations define the edges. Building upon this, we construct 120K high-quality training data by sampling reasoning traces from scene graphs. Then, two-stage graph-aligned post-training paradigms are introduced, where supervised fine-tuning internalizes MLLMs with structured reasoning, and subsequent reinforcement fine-tuning proposes node-as-proxy graph rewards to consolidate efficient graph exploration. With curated data and graph-aligned training, our approach achieves significant improvements across eight multimodal benchmarks, demonstrating strong effectiveness on fine-grained perception and reasoning tasks. Code is available at https://github.com/zwyang6/SaGe.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2607.10159",
+   "published": "2026-07-11",
+   "updated": "2026-07-11",
+   "title": "UNIT: Unleash Large Language Models Potential for Graph Continual Learning",
+   "summary": "In real-world multimodal web scenarios, graph-structured data often arrives in a streaming manner, making graph continual learning a crucial paradigm for continuously modeling such evolving structures. However, existing graph continual learning methods still face two fundamental challenges. 1) semantic-structural separation, where the graph-based methods excel at modeling topological relationships but neglect deep semantics. 2) imbalanced knowledge transfer, where existing models fail to effectively leverage general knowledge gained from early tasks to benefit subsequent new tasks. To address above issues, we propose a novel framework, \\textbf{UN}leash Large Language Models PotentIal for Graph ConTinual Learning (UNIT). By fine-tuning large language model only on the first task, we bridge the distributional gap between the pre-trained LLM corpus and the target task dataset to enhance the adaptability of LLMs for graph-structured tasks. Meanwhile, we propose an uncertain-aware anchor generation mechanism to effectively preserve representative knowledge across tasks, avoiding the neglect of universal knowledge learned from previous tasks. Additionally, we introduce structural confluence modeling to explicitly integrates graph topology information into semantic information, enhancing the collaborative capabilities between semantic understanding and structural modeling. Extensive experiments demonstrate that our proposed method achieves state-of-the-art performance in the graph continual learning task.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2607.13305",
+   "published": "2026-07-14",
+   "updated": "2026-07-14",
+   "title": "Accuracy Without Grounding: Diagnosing Visual Dependency Dissociation in Video LLM Benchmarks",
+   "summary": "Benchmark accuracy in video large language models (LLMs) is often treated as evidence of visual understanding. We audit this assumption across twenty models spanning 2-78B parameters and ten architecture families. We introduce the Visual Dependency Gap (VDG), the difference in per-question correctness between original-video and black-screen conditions. Paired McNemar tests on MVBench show that accuracy and visual dependency are separable: models differ on original video (p = 0.0003) but not on black screens (p = 0.53). Across models, task-type rankings are stable: Attribute Perception is strongly visual, whereas Temporal Reasoning approaches the language-only baseline. A diagnostic ladder from black screen to single frame, shuffled frames, and original video reveals that frame diversity supplies most of the visual benefit, while temporal order contributes near-zero accuracy across sixteen open-weight models. An ablation from 0.5 to 24 FPS rules out sparse sampling as the cause. H.264 experiments further show that stable aggregate accuracy conceals bidirectional question-level answer flips. The diagnostic also generalizes to four API-accessed models, whose VDG values range from 0.025 to 0.315. These results motivate VDG as a standard audit for whether video benchmarks measure visually grounded capability. Code is available at https://github.com/JaeLee18/accuracy-without-grounding.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2607.14099",
+   "published": "2026-05-01",
+   "updated": "2026-05-01",
+   "title": "Just Keep Prompting: Evaluating Repetitive Socratic Prompting in VLMs",
+   "summary": "Deploying Vision-Language Models (VLMs) in real-world settings requires not only strong visual reasoning but also stability under sustained conversational pressure. We introduce Just Keep Prompting (JKP), a multi-turn evaluation framework that measures VLM epistemic stability when users repeatedly challenge, question, or contradict a model's answer. JKP probes models for up to 10 follow-up turns using three strategies: Adversarial Negation (repeated rejection), Pure Socratic Interrogation (repeated calls to reassess certainty), and Context-Aware Socratic Summarization (reflecting the model's prior rationale back before asking for reconsideration). We evaluate GPT-4o, Gemini 2.5 Pro, and Qwen3-VL-30B on a subset of the STAR benchmark across 720 multi-turn runs. Aggregate accuracy changes modestly from Turn 0 to Turn 10, but trajectory-level analysis reveals substantial instability: correct answers regress, wrong answers recover, and many runs exhibit repeated answer flipping. Repeated prompting has bounded upside and often acts as a destabilizer rather than a reasoning aid. The effect is strongly model-dependent: Qwen3-VL-30B achieves the highest final accuracy but becomes confidently wrong under direct contradiction; Gemini 2.5 Pro is comparatively stable but token-expensive; GPT-4o is the most brittle and oscillatory. These findings reveal that multi-turn VLM evaluation captures not just additional reasoning but pressure-response profiles: how models trade off visual grounding, calibration, and conversational compliance under repeated challenge.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2607.15687",
+   "published": "2026-07-17",
+   "updated": "2026-07-17",
+   "title": "Toward Federated Multimodal Graph Foundation Models: A Topology-Aware Multimodal Alignment Framework",
+   "summary": "Multimodal-attributed graphs (MAGs), whose nodes carry modalities such as images and text alongside topological structure, now pervade applications including social platforms, e-commerce, and biomedical networks, offering richer semantic signals than single-modality graphs. In practice, such graphs are fragmented across privacy-restricted silos owned by different platforms and institutions, so learning a broadly transferable model over them demands collaborative training that never exposes raw data. This places the task at the intersection of multimodal graph learning and federated learning, yet existing methods cover only one side of it. To address the challenges from these two perspectives, we propose FedGAMMA, casting federated multimodal graph foundation learning as a two-stage semantic-structural alignment problem of federated pre-training and prompt-based fine-tuning. During pre-training, a shared-private semantic enhancer disentangles cross-modal commonality from modality-specific information, aligning it through optimal transport, a topology-aware graph fusion module decouples semantic and structural views via semantic residual graphs and dual positional encodings, and a dual-channel affinity-aware aggregation mechanism estimates client similarity from feature and graph centroids without exposing raw data. During fine-tuning, FedGAMMA adapts the pretrained encoder through lightweight graph-aware prompts, a shared prompt pool with controlled exploration, and channel-wise prompt synchronization. Experiments on twelve multimodal graph datasets show FedGAMMA consistently surpassing a broad range of baselines across downstream tasks, with gains of up to 12.96%. FedGAMMA further outperforms competitive baselines accross multi-domain datasets on multiple tasks with up to 5.71% under few-shot learning scenario.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2607.22554",
+   "published": "2026-05-18",
+   "updated": "2026-05-18",
+   "title": "Same Question, Different Answers: Evaluating LLM Reliability Beyond Accuracy",
+   "summary": "Large language models (LLMs) often achieve strong accuracy on benchmarks, yet it remains unclear how reliably they apply this knowledge when the same question is phrased in different but equivalent ways. In this work, we study how model answers change under meaning-preserving paraphrases across factual question answering and mathematical reasoning tasks. Across four benchmarks and 13 models, we find that model outputs frequently depend on the exact wording of the prompt. While overall accuracy typically changes only modestly across paraphrases, instance-level behavior is far less stable: for many questions, models alternate between correct and incorrect answers depending on phrasing, with mismatch rates reaching more than 23%. Conditioning on questions that are answered correctly in their original form reveals even larger failures measured by answer flip rates, showing that single-prompt correctness is often a poor indicator of reliability. At the same time, we find that models often produce a correct answer for at least one paraphrase of a question, suggesting that the underlying knowledge is present but inconsistently retrieved. Building on this observation, we show that a simple self-paraphrasing strategy can partially recover this latent knowledge and improve performance at inference time. Together, these findings suggest that standard accuracy metrics can mask substantial instability, and that evaluating consistency across equivalent inputs provides a clearer picture of LLM reliability.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2607.23458",
+   "published": "2026-07-26",
+   "updated": "2026-08-23",
+   "title": "Two Regimes of Chain-of-Thought Unfaithfulness: Metric-Based Detection Fails Where Models Are Wrong",
+   "summary": "Chain-of-thought (CoT) explanations support oversight only if they are faithful: the stated reasoning must actually produce the answer. Auditing black-box (behavioral) detection of unfaithful CoT against FaithCoT-Bench's human annotations, we find answer correctness structures the problem at every level. Answer incorrectness alone (an oracle diagnostic, not a deployable detector) outperforms every purpose-built signal (AUROC 0.696), because 69% of annotated unfaithfulness occurs on incorrect answers. Stratifying by correctness splits detection into two regimes: on correct answers, behavioral signals moderately separate faithful from post-hoc reasoning (0.63-0.67); on incorrect answers, where most unfaithfulness lives, no tested signal is detectably above chance (replicated on all four models for benchmark-wide signals). The standard step-removal metric anti-correlates with human labels; this inversion reproduces on the benchmark's released scores and on hint-dependent counterfactually labeled traces. Linear probes decode the behaviorally blind regime in Llama-3.1-8B and the correct-answer regime in Qwen-2.5-7B, with no shared, positively aligned direction detected across regimes; instructed answer-first traces (7 models) transfer to neither annotated regime, while hint-induced unverbalized answer flips do, in model- and source-dependent settings. We also independently verify and resolve a documentation-data mismatch in the benchmark's label semantics.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2607.26023",
+   "published": "2026-07-28",
+   "updated": "2026-07-28",
+   "title": "CHARM: A Multimodal Graph Foundation Model with Hierarchical Context Modeling for Zero-Shot Transfer",
+   "summary": "Graph foundation models (GFMs) have emerged as a promising paradigm for transferring knowledge across graph domains and tasks. Real-world graphs associate nodes with text, images, and other modalities, making multimodal graphs essential for representing complex entities and relations. Moreover, collecting labels and adapting models for every new graph domain is costly and often infeasible, motivating zero-shot transfer. Unfortunately, zero-shot transfer on multimodal graphs remains underexplored. Existing GNN-based graph foundation models typically require downstream adaptation, whereas LLM-based graph methods mainly address unimodal graphs or tasks within a single domain. This setting presents two key challenges. First, models must generalize knowledge from individual modalities while capturing transferable cross-modal relations. Second, without target-domain fine-tuning, node representations remain entangled with domain-specific structures and modality-specific characteristics, obscuring shared concepts in unseen domains. To address these challenges, we propose CHARM, a multimodal graph foundation model with hierarchical context modeling for zero-shot transfer. CHARM replaces isolated raw nodes with hierarchical graph contexts that capture multimodal semantics and cross-modal relations. These contexts map domain-specific node patterns to shared high-level concepts, reducing reliance on target-domain supervision or adaptation. A modality-aware graph context encoder integrates multimodal information with graph structure and converts the resulting representations into graph tokens for a large language model . Experiments show consistent improvements on zero-shot multimodal graph tasks.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2607.27069",
+   "published": "2026-07-29",
+   "updated": "2026-07-30",
+   "title": "Visual Credit Audit for Multimodal Spatial Reasoning",
+   "summary": "Closed yes/no spatial benchmarks can reward a correct answer even when the image adds little support beyond no-image contexts. Under a fixed forced-choice interface, Visual Credit Audit (VCA) separates two estimands: whether the benchmark image gives the model's declared decision more support than text-only and blank controls, and whether the model responds to relation-specific visual evidence. The first audit is training- and label-free and does not require an answer flip. Applying labels yields dependence-credited correctness (D-CC); on correct items, it equals same-control gold-aligned positive gain, while prediction alignment extends the audit to errors. Across four open MLLMs and two spatial benchmarks, 12.73-26.25% of decisions are correct yet uncredited. Matched same-split image permutation reduces D-CC by 21.25-47.80 points, with every paired 95% interval above zero. Fixed-pixel relation contrasts and a 3x3 evidence-source factorial show why null controls cannot identify relation response. Among controlled correct-but-uncredited agreement decisions, response to relation reversal spans 81.57-100.00%, while 32.11% pooled change answer. Independently audited outcomes on 108 geometry-compatible edits provide a bounded natural-image correspondence check. VCA thereby decomposes benchmark success into correctness, additional image support, and relation-consistent response.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2608.00623",
+   "published": "2026-08-01",
+   "updated": "2026-08-01",
+   "title": "Towards Effective Federated Multimodal Graph Learning via Navigating Multifaceted Heterogeneity",
+   "summary": "Multimodal-attributed graphs (MAGs), where nodes carry heterogeneous semantic content across multiple modalities while edges encode relational dependencies, have been widely adopted across diverse domains. Federated multimodal graph learning (FMGL) extends federated graph learning (FGL) to MAGs, enabling collaborative optimization across decentralized MAGs without exposing raw data. However, naively applying existing FGL methods to FMGL is insufficient, as they fail to navigate the multifaceted heterogeneity inherent in decentralized MAGs, including task heterogeneity across diverse client objectives, modality heterogeneity from discrepant modality quality and semantic domains, and topology heterogeneity arising from divergent topological patterns with low cross-modality correlation. To address these challenges, we propose Federated multimodal graph learning with Topology-aware Cross-modal Routing (FedTCR), the first systematic algorithm designed for FMGL. To handle task heterogeneity, FedTCR employs a two-stage paradigm that comprises federated task-agnostic pre-training followed by isolated task-oriented fine-tuning. To jointly address modality and topology heterogeneity, FedTCR introduces a topology-aware cross-modal routing mechanism. Concretely, each client distills modality-specific knowledge into compact prototypes via topology-aware importance-weighted aggregation informed by graph structure; the server then evaluates cross-client cross-modal relationships among these structure-informed prototypes and routes informative ones as contrastive references, driving a tri-level cross-modal contrastive learning scheme that jointly aligns cross-client modalities while preserving discrimination. Experiments across 7 domains demonstrate that FedTCR outperforms state-of-the-art baselines on both graph-centric and modality-centric tasks.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2608.04425",
+   "published": "2026-08-05",
+   "updated": "2026-08-05",
+   "title": "SSC: A Verifiable Structured Representation for Bimanual Manipulation Labelling",
+   "summary": "Subtask labels decompose a long-horizon manipulation demonstration into shorter semantic segments for policy training and evaluation. Natural language descriptions are easy to read, but their linguistic variability makes automatic verification difficult. Rigid template formats, such as BEHAVIOR-1K's skill_annotation, are linguistically over-segmented, hindering both readability and annotation consistency. We propose the Structured Subtask Chain (SSC), a state-transition representation that bridges these extremes. A demonstration is a sequence of Structured Subtask Template (SST) entries. Each SST stores core action components (subject, predicate, object), flexible conditions (adverbial modifiers such as spatial or instrumental phrases), a base-motion field separate from arm actions, and an after-state scene graph. Built on this format, SSC supports three vision-language assisted functions: rendering SSTs as natural language, checking the assembled chain against four state-transition rules, and completing underspecified fields through a query resolution cascade. We instantiate the pipeline on BEHAVIOR-1K (50 tasks, 3 episodes per task, 2,357 annotated action cells) for logic verification and content completion, evaluating 13 selected state-of-the-art VL models as candidate verifiers and reporting labelling anomalies.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2608.08045",
+   "published": "2026-08-08",
+   "updated": "2026-08-08",
+   "title": "Lingjing: A Simulation Testbed for Multi-Agent Embodied Tasks in Open-Ended Cities",
+   "summary": "Urban embodied intelligence requires coordination among heterogeneous agents (e.g., UAVs, ground robots, and autonomous vehicles) in dynamic cities. Simulators therefore provide a scalable foundation for developing and evaluating such coordination. Existing platforms nevertheless isolate different embodiments and decouple them from task design and evaluation. We present \\textbf{Lingjing}, a simulation platform for heterogeneous multi-agent embodied intelligence in open-ended urban environments. Lingjing reconstructs and renders evolving cities from geographic data, synchronizes multiple physics engines, and exposes shared physical and structured urban state to agents. Its Gym-like interface supports user-defined ReAct agents and single- or multi-agent natural-language missions with configurable star or broadcast communication and resource constraints. Each episode becomes an attribution-ready replay that links agent trajectories and communication to relation-graph changes, resource consumption, and engine-based evaluations for systematic diagnosis. We evaluate twelve vision-language models on nine urban tasks under a shared engine-in-the-loop protocol. Controlled studies further examine communication, scalability, robustness, and failure provenance. Results expose persistent bottlenecks in grounding and long-horizon execution. They also show task-dependent coordination trade-offs and diminishing returns from added capacity, while heavier workloads further reduce success. Lingjing provides a unified testbed that enables reproducible end-to-end evaluation and systematic failure diagnosis in urban multi-agent embodied intelligence.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2608.17535",
+   "published": "2026-08-18",
+   "updated": "2026-08-18",
+   "title": "GroupForward: Building Referable 3D Scenes via Instance-Grouped Feed-Forward Gaussian Splatting",
+   "summary": "Simultaneously reconstructing and understanding 3D environments is essential for embodied agents. Toward this goal, feed-forward semantic 3D Gaussian Splatting (3DGS) efficiently constructs semantic scene representations from sparse multi-view observations. However, existing methods lack explicit instance discrimination and mainly support category- or phrase-based semantic queries. To this end, we propose GroupForward, an instance-grouped feed-forward Gaussian splatting model that reconstructs geometry, appearance, instance structure, and semantics from sparse, unposed, and uncalibrated multi-view images. Unlike existing methods that attach high-dimensional semantic features to each Gaussian, GroupForward learns compact instance embeddings that group Gaussians into cross-view consistent 3D instances, reformulating feed-forward semantic 3DGS from per-Gaussian semantic feature rendering to instance-level semantic aggregation and propagation. Building on these instance groups, we further propose a Referential Scene Reasoning Framework (RSRF) for complex 3D referring segmentation. RSRF constructs an instance-grouped 3D scene graph and retrieves candidate instances for a given referring expression. A vision-language model then reasons over structured instance evidence and multi-view observations to identify the referred instance among the candidates. RSRF thereby extends language interaction from simple semantic querying to complex referential scene reasoning. Experiments on semantic reconstruction and referential reasoning demonstrate the effectiveness of our instance-grouped reconstruction and reasoning framework.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2608.21443",
+   "published": "2026-08-19",
+   "updated": "2026-08-19",
+   "title": "Text-Guided Visual Dependency Graph Learning with Cross-Modal Attention Priors",
+   "summary": "Estimating interpretable conditional-dependence structures from multimodal visual-linguistic features remains largely unexplored. We propose CM-GLasso (Cross-Modal Graphical Lasso), a framework that bridges vision-language representation learning and sparse Gaussian Graphical Models. CM-GLasso introduces three key components: (i) a text visualization strategy that renders class-attribute descriptions as images and processes them through the same SigLIP-2 vision encoder as natural images, yielding prototype-indexed patch-level attention footprints in a shared feature coordinate system; (ii) a cross-attention distillation mechanism that condenses high-dimensional patches into a small set of semantic graph nodes, whose attention-footprint similarities yield cross-modal structural priors for non-uniform L1 penalization; (iii) a joint ADMM formulation that estimates shared and class-specific precision components within a single convex objective, avoiding the need to first estimate and then decompose separate class-wise graphs. The learned sparse graph topologies directly support a parameter-free, precision-based classification rule and a lightweight topology-aware segmentation head. Extensive experiments on eight benchmarks demonstrate that CM-GLasso achieves competitive or superior performance compared with strong feature-based and task-specific baselines. Under the matched controlled protocol, it attains the highest average classification accuracy (91.97%) and the highest segmentation mIoU among the controlled baselines on VOC (74.75%) and ADE20K (64.01%), while also yielding explicit sparse conditional-dependence graphs with common-specific decomposition.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2608.24790",
+   "published": "2026-08-25",
+   "updated": "2026-08-25",
+   "title": "Right Diagnoses, Decorative Reasoning:A Perturbation Audit of Medical Chain-of-Thought",
+   "summary": "Clinicians read chain-of-thought (CoT) rationales as evidence of medical reasoning, but whether the visible chain plays that role is rarely tested. General-domain CoT-faithfulness probes ignore clinical cost, and medical LLM evaluations treat the chain as a black box. We close this gap with a medical perturbation audit: a 30-operator battery edits both the chain and the question with clinically motivated operators (severity reversal, negation flip, demographic swap, evidence ablation), paired with a chain-update times answer-flip joint analysis that classifies each model by its failure mode. Applied to 14 LLMs on four medical QA benchmarks, three independent tests converge: the Chain-Decoupling Rate (CDR; chain does not register the edit and the answer does not flip) is 72.9% panel-wide on clinically meaningful destructive edits, chain corruption leaves accuracy unchanged, and removing CoT prompting does not reduce accuracy. Two board-certified clinicians re-annotate N=197 perturbed questions; 98.5% leave the gold defensible. The pattern holds across medical and reasoning fine-tuning and scale; on the closed-source tier, where the chain text is unavailable, the answer-side signals are consistent with the same decoupling. Our framework and CDR provide a reusable yardstick for auditing whether medical CoT is faithful or merely documentation.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2608.26511",
+   "published": "2026-08-27",
+   "updated": "2026-08-27",
+   "title": "Sycophancy Suppression Can Impair Rational Updating: Anti-Sycophancy Should Preserve the Ability to Update",
+   "summary": "Large language models often exhibit sycophancy, revising their answers to align with users when users push back. Such answer flips, however, can arise from different causes. One possibility is that the model simply aligns with the user's feedback in order to satisfy them. Another is that the feedback genuinely contains useful evidence, prompting the model to update its answer in a rational way. We distinguish them as Unsupported-Yielding and Rational-Updating. Prior work focuses primarily on suppressing Unsupported-Yielding, while overlooking its effect on Rational-Updating. We address this gap with a two-turn evaluation framework that measures the two behaviors separately. Across representative training-time and inference-time interventions, we find that anti-sycophancy methods often encounter a trade-off in which reducing Unsupported-Yielding can sacrifice Rational-Updating, and vice versa, even when the two objectives are optimized jointly. Mechanistic analysis suggests that the two behaviors share an internal substrate: the MLP neurons and attention heads driving them overlap substantially, and their associated steering directions are positively aligned. We further conduct a preliminary orthogonalized steering exploration, which yields modest, backbone-dependent selectivity gains. Overall, our results suggest that anti-sycophancy should be treated not as a simple suppression problem, but as a selectivity problem, where effective interventions should preserve Rational-Updating while reducing Unsupported-Yielding.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2608.26544",
+   "published": "2026-08-27",
+   "updated": "2026-08-27",
+   "title": "Chart2SVG: Editable SVG Generation from Raster Chart Images",
+   "summary": "We present Chart2SVG, a multimodal large language model that converts static raster charts into structurally organized, semantically enriched SVGs that support programmatic editing. By incorporating chart-specific semantic tokens into a vision-language model, Chart2SVG captures both geometric primitives and their functional roles. To support robust structural recovery, we introduce Beagle+, a dataset of 33K canonicalized and structurally distilled chart samples. Our approach combines specialized training objectives with a rendering-aware post-training phase, producing SVGs that are both visually accurate and structurally consistent. To facilitate higher-level manipulations, we construct a Chart Structure Graph (CSG) that exposes visual dependencies, enabling tasks such as interactive exploration, chart repurposing, and layout reuse. Experiments show that Chart2SVG substantially outperforms baselines in reconstruction fidelity and downstream editing utility, advancing the development of intelligent and interactive visualization tools.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2608.29088",
+   "published": "2026-08-29",
+   "updated": "2026-09-23",
+   "title": "HANIA: Planner-Guided Multimodal Graph Evidence Selection for Grounded Question Answering",
+   "summary": "Multimodal question answering remains sensitive to noisy, incomplete, and weakly grounded evidence. Long unstructured contexts can introduce redundancy and encourage unsupported generation, while flat retrieval may overlook relations needed for multi-step reasoning. We present HANIA, a planner-guided multimodal graph framework for evidence-grounded question answering. HANIA processes the supplied image and text using a frozen vision-language model to extract concise question-relevant visual evidence with explicit abstention. It then constructs an input-grounded multimodal graph and applies a two-group finite-state planner to coordinate descriptive and relational evidence. Coverage-aware pruning retains a compact evidence set based on relevance, graph confidence, concept coverage, and modality diversity. The selected passages, visual statements, and graph triples are provided to a frozen instruction-tuned decoder. We evaluate HANIA on ScienceQA using answer accuracy, evidence-filtering quality, evidence-budget sensitivity, and efficiency. The results show that structured evidence planning and compact graph-guided retrieval can support competitive multimodal question answering without target-dataset fine-tuning or iterative retrieval. The code is available at https://github.com/Zafar-southeast/HANIA.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2609.03892",
+   "published": "2026-09-03",
+   "updated": "2026-10-16",
+   "title": "GraFT: A Training-Free Framework for Spatial Reasoning in Multimodal Large Language Models via 3D Scene Graphs",
+   "summary": "3D spatial reasoning underpins understanding and acting in the physical world, yet it remains unreliable in current multimodal large language models (MLLMs). These models falter at precise geometric measurement, at transforming between egocentric and allocentric viewpoints, and at grounding fine-grained appearance. The most common remedies fine-tune the model on large-scale curated spatial-reasoning datasets or attach dedicated encoders for 3D geometry, which typically couples the solution to costly supervision and a specific backbone. We instead introduce GraFT, a training-free framework that supplies the missing 3D structure through a compact, easily maintained 3D scene graph (3DSG). GraFT supplies the graph's 3D structure to the frozen model in three forms: as values computed by symbolic tools, as a bird's-eye-view (BEV) the model reads as an image, and as egocentric frames the geometry selects. On ScanQA, GraFT improves every metric over the same-backbone baseline, raising CIDEr by 27%. On VSI-Bench, GraFT improves frozen MLLMs by up to 65%, surpassing every proprietary and general-purpose open-source baseline, and several prominent fine-tuned spatial models.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2609.13006",
+   "published": "2026-07-16",
+   "updated": "2026-09-29",
+   "title": "PhysPlan: Grounded Physical State Reasoning and Graph-Guided Optimization for Physically Plausible Video Generation",
+   "summary": "Video diffusion models (VDMs) synthesize photorealistic content, yet they often fail to follow the course that a physical phenomenon should take within a given scene. Recent training-free methods let a vision-language model (VLM) plan the phenomenon and guide a frozen VDM toward the plan; however, such plans are derived from the prompt and consumed as whole keyframes or trajectories, which leaves unspecified where the consequences land in the observed scene and turns incidental visual details into optimization targets. We observe that a phenomenon specified in words unfolds as sparse, local changes to the physical state of the observed scene. Building on this observation, we present PhysPlan, a training-free image-to-video framework that represents a phenomenon as a grounded state graph and uses this graph to decide what, where, and when the guidance constrains. Grounded Physical State Reasoning decomposes the phenomenon into physical deltas, each stating which objects change, to what state, and by which physical rule, and translates each delta into graph edits, verified by deterministic checks, that leave all other objects unchanged. Graph-Guided Test-Time Optimization renders a keyframe for each state, measures the denoised estimates only along the properties selected by the edits, and concentrates the update on the edited objects. On PhyGenBench and Physics-IQ, PhysPlan raises its base model from 0.52 to 0.77 and from 27.1 to 38.2, surpassing the strongest prior I2V method (0.60 and 34.6), and lowers FVD by over 20%. Project page: https://physplan.github.io",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2609.17953",
+   "published": "2026-09-16",
+   "updated": "2026-09-16",
+   "title": "EDCT-Bench: Uncovering Faithfulness Gaps in VLMs via Explanation-Driven Counterfactual Testing",
+   "summary": "Vision-Language Models (VLMs) can produce Natural Language Explanations (NLEs) that sound plausible yet remain inconsistent with the visual evidence they cite. We present Explanation-Driven Counterfactual Testing (EDCT), an intervention-based protocol that extracts visual concepts cited in a model's explanation, applies verified minimal edits to them, and tests whether the resulting answer and explanation remain consistent with the edited image. Using this protocol, we create EDCT-Bench, a comprehensive benchmark spanning three complementary domains: knowledge-intensive visual question answering (OK-VQA), safety-critical driving (DriveLM), and 3D spatial reasoning (3DSRBench). Across the evaluated VLMs, EDCT reveals substantial faithfulness gaps, with models frequently producing responses inconsistent with verified visual changes. Finally, our fine-tuning study suggests that EDCT-generated counterfactuals provide high-impact training signals.",
+   "queries": [
+    12
+   ]
+  },
+  {
+   "id": "2609.19158",
+   "published": "2026-07-29",
+   "updated": "2026-07-29",
+   "title": "VisKG-LM: Compiling Knowledge Graphs into Visual Memory for Multiple-Choice Question Answering",
+   "summary": "Knowledge graphs are usually integrated into question answering by encoding a retrieved subgraph with a graph neural network and fusing it with the language model in the online inference path. The same subgraph is therefore re-encoded from scratch every time a pair is scored, across training epochs, seeds, and evaluation runs, even though the knowledge graph never changes. We ask whether the retrieved knowledge graphs can instead be compiled once, offline, and then accessed as read-only memory. VisKG-LM shows that it can, by decoupling graph encoding from language reasoning. It serializes each retrieved candidate-specific subgraph as Relation-Labeled Paths and renders the result as an image whose two-dimensional layout preserves the branching structure of the paths. Each image is encoded once, offline, and cached for reuse. At inference, the language model contextualizes the question and candidate from text alone, and only its final layer consults the cached visual memory, reading both its global layout and its local relational detail. The graph information thus enters only after the text has been understood. On the test sets of CommonsenseQA, OpenBookQA, and MedQA-USMLE, VisKG-LMimproves over GreaseLM by $1.2$, $0.8$, and $4.3$ points, respectively, while matching or surpassing GraphVis, a $7$B vision-language model, with only about $400$M online parameters. Against a matched text-only control that receives the identical Relation-Labeled Paths, it gains $4.2$, $6.5$, and $5.1$ points across the three benchmarks. These gains show that the complete visual-memory interface adds value beyond path textualization alone and support compiled visual memory as an alternative to online graph propagation.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2609.28851",
+   "published": "2026-09-23",
+   "updated": "2026-09-23",
+   "title": "Looks the Same, Answers Differently: Flip-Direction Steering for Robust Vision-Language Reasoning",
+   "summary": "Vision-language models (VLMs) achieve strong visual reasoning performance, yet subtle changes from routine image capture and processing can alter their reasoning trajectories even when images appear nearly identical. In long-horizon generation, the resulting activation shifts may accumulate across decoding steps, progressively altering reasoning tokens and ultimately changing the final answer, a phenomenon referred to as answer flips. To address this instability, we propose FlipDir (Flip-Direction Steering), a training-free inference-time method that estimates a low-rank flip-inducing activation subspace from contrastive pairs of original and answer-flipping inputs and selectively steers hidden states during decoding. A margin-based gate limits subspace attenuation to uncertain decoding steps, recovering original predictions while preserving stable ones. To evaluate robustness beyond accuracy or consistency on fixed test sets, we introduce VisFlip, a benchmark framework that constructs evaluation groups for a target model and visual variation setting to separately assess recovery of original predictions and preservation of stable ones. VisFlip spans nine dataset-variation combinations across scientific reasoning, robot-scene understanding, and medical VQA, covering subtle visual variations common in each domain. Experiments across 18 settings demonstrate that FlipDir consistently outperforms existing methods on the combined recovery and preservation metric. We will make our code publicly available.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2609.30826",
+   "published": "2026-09-25",
+   "updated": "2026-09-25",
+   "title": "SUCRe: Selective Uncertainty-Aware Contrastive Representation for Graph Transfer Learning",
+   "summary": "Graph transfer learning (GTL) provides a promising paradigm for adapting knowledge from source graphs with sufficient labels to label-scarce target graphs. However, existing approaches often assume that transferred knowledge is uniformly reliable, ignoring the different transferability of samples caused by structural and distribution shifts across graphs. This limitation leads to negative transfer and unnecessary computational overhead. In this work, we propose SUCRe, a selective uncertainty-aware contrastive representation method for GTL. The key idea is to selectively adapt and transfer graph knowledge according to its estimated reliability. Specifically, we introduce structure-aware entropy-based matching discrepancy, which jointly models feature uncertainty and structural coherence to ensure accurate feature adaptation between graphs. Moreover, we develop a domain-aware semi-hard negative sampling strategy that constructs informative contrastive sets by filtering unreliable cross-domain relationships, reducing computational redundancy while enhancing representation discrimination. Extensive experiments on graph transfer benchmarks demonstrate that SUCRe achieves competitive performance with improved efficiency.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2609.31341",
+   "published": "2026-09-25",
+   "updated": "2026-09-25",
+   "title": "The Right Information Extraction Pipeline Depends on the Document: Accuracy-Energy Trade-offs for Small, Local Models",
+   "summary": "Whether an information extraction pipeline should process page images or parsed text depends on the document, and the answer flips across the layout spectrum. We study this trade-off under a constraint that rules out (closed) cloud services: privacy-sensitive documents processed on-premise by small ($\\le 8\\mathrm{B}$ parameter) text-only and vision--language models, evaluated on both accuracy and energy over a design space spanning input representation, model family, and inference configuration. Benchmarking on the near-plain-text Kleister-NDA contracts and the layout-rich VRDU forms, we find that batching is the dominant energy lever, cutting energy per page by 38-85% at no cost in accuracy, while FP8 quantization saves 27-32% when requests are served one at a time but less than 1mWh per page (9-19%) once batching is applied. Preprocessing dominates what remains: neural OCR costs $17\\times$ more energy per page than classical OCR and never reaches the Pareto frontier. Which representation wins flips with the type of document: vision--language models on layout-rich documents and small text-only models with a cheap parser on near-plain text, where they are both more accurate and cheaper than any vision--language configuration. Our work yields concrete guidelines for energy-efficient, privacy-compliant local information extraction.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2609.31356",
+   "published": "2026-09-25",
+   "updated": "2026-09-25",
+   "title": "Open Vocabulary Domain Unlearning",
+   "summary": "Vision-Language Models (VLMs) exhibit remarkable zero-shot generalization, yet they often encode unwanted or hazardous stylistic domains such as idealized textbook diagrams in medical AI or cartoon vehicles in autonomous driving. Approximate Domain Unlearning (ADU) aims to selectively erase a model's recognition of a target visual domain while preserving accuracy on the remaining domains. However, existing ADU methods operate under a flawed closed-vocabulary assumption: they evaluate unlearning solely on the specific object classes seen during the unlearning fine-tuning phase. Consequently, these methods do not unlearn the domain itself; they merely overfit to seen class-domain pairs, leaving the domain easily recognizable for unseen classes and providing a false sense of removal. We argue that true domain erasure must be class-agnostic. To address this, we formalize Open-Vocabulary Domain Unlearning (OVDU), a rigorous protocol that mandates domain forgetting must transfer to held-out classes. To solve the OVDU challenge, we propose a surgical parameter-editing framework. First, a Fisher Information mask isolates domain-sensitive weights, mathematically protecting foundational zero-shot generalization. Second, our Targeted Manifold Scattering (TMS) objective uses preference-based mining to locally scatter the forget domain's stylistic geometry. Evaluated across PACS, OfficeHome, and DomainNet, our method vastly improves open-vocabulary generalization over existing baselines. Crucially, it delivers exceptional sample efficiency, outperforming peak 8-shot baseline results with only 4 shots.",
+   "queries": [
+    11
+   ]
+  },
+  {
+   "id": "2609.37384",
+   "published": "2026-09-29",
+   "updated": "2026-09-29",
+   "title": "MoTIF-X: A Multimodal Tokenized Framework for Interpretable and Extensible Molecular Representation Learning",
+   "summary": "Molecular representation learning is central to computer-aided drug discovery. Molecular graphs, SMILES strings, and 3D conformations provide complementary structural information, yet many multimodal approaches encode these views independently and align them only at a later stage, limiting fine-grained cross-modal interaction and substructure-level interpretability. To address these limitations, we introduce MoTIF-X, a motif-centered framework that uses graph-grounded chemical motifs as shared anchors for multimodal integration and interpretation. Its first pretraining stage learns motif representations through hierarchical contrastive learning across atomic, motif, and molecular scales. The second stage contextualizes these representations with SMILES and torsion-angle tokens through multimodal masked token modeling. After pretraining on drug-like molecules with multiple conformers, MoTIF-X achieved the lowest mean absolute error on all nine OpenADMET ExpansionRx endpoints and the best overall performance among the evaluated methods. Significance analyses supported its advantage in the vast majority of endpoint-baseline comparisons after multiple-testing correction. Ablation studies supported the complementary contributions of motif-token contextualization, multimodal integration, and two-stage pretraining. Beyond molecular properties, the framework extended to drug-target interaction prediction, achieving the best average classification performance across the evaluated benchmarks and generalizing to an external drug-cold-start dataset without additional fine-tuning. Its motif-centered design also enabled substructure-level interpretation: higher motif attribution scores were associated with larger experimentally measured activity shifts. Together, these findings support MoTIF-X as a transferable and interpretable framework for molecular modeling.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2609.37616",
+   "published": "2026-09-29",
+   "updated": "2026-09-29",
+   "title": "Authority Bias in Language Models: Source Deference and User Agreement Are Not Interchangeable",
+   "summary": "Language models tend to agree with whatever a user asserts, and post-training increasingly targets this sycophancy so that models evaluate claims on their merits rather than deferring to the user. Yet the same models are far more compliant when a wrong answer is attributed to a verified source, which is how retrieval results, tool outputs, and grounded-search content often present information. We measure this gap across five open-weight families and three closed APIs. A single verified-source note endorsing a wrong answer flips 45-88% of baseline-correct responses in seven of eight models, and compliance rises with how authoritative the note sounds. Source deference and user agreement are not behaviorally interchangeable inside the model: on matched items with the same wrong answer, causal interventions can selectively suppress one without equally affecting the other. In three open-weight families, removing a fitted source direction lowers source compliance by 65-80 percentage points while removing a user or assistant direction has far smaller effects, and removing the user direction shows the reverse preference. A separately fitted intervention derived from source-versus-user cue activations moves compliance in both directions while leaving the prompt text unchanged. An authority direction fitted on trivia also transfers to PIQA and multi-turn SYCON dialogues without refitting, and removing it lowers wrong-source compliance by tens of percentage points in four of five families with no detected change in MMLU-Pro or GSM8K accuracy at our evaluation sizes. Source deference and user agreement therefore need separate evaluation.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2610.03468",
+   "published": "2026-10-02",
+   "updated": "2026-10-02",
+   "title": "A Vision-Language Model (VLM)-based Pipeline for End-to-End Procedural Modeling of Field-Grown Maize from Point Clouds",
+   "summary": "Editable 3D models of field-grown crops support high-throughput phenotyping and in silico breeding trials, but building them from scanned point clouds requires organ-level segmentation and fitting. Procedural generators can turn an organ-level parameter set into an analysis-suitable 3D model, but obtaining that set requires hours of manual tuning per plant or segmentation models trained on species-specific labels. We present an automated pipeline that reconstructs procedural maize models from raw 3D point clouds without manual tuning or species-specific training data. A multimodal vision-language model (VLM) annotates leaf midlines in rendered orthographic views. Deterministic geometric algorithms back-project the annotations onto the point cloud, merge them into 3D leaves by cross-view consensus, and grow the midlines to full blades on an orientation-weighted surface graph. Measured organ parameters populate a plant descriptor for a Non-Uniform Rational B-Spline (NURBS)-based procedural model generator. Each leaf surface is then refined against its scan points by differentiable NURBS fitting. The pipeline reached a median whole-plant Chamfer distance of 5.4 mm on 100 genotypically diverse field-grown maize plants from the MaizeField3D dataset. The reconstructions were closer to the scans than those of an earlier semi-automated pipeline based on manual annotations. The pipeline recovered 1,017 of 1,023 (99.4%) curated reference leaves at an intersection-over-union of at least 0.5 without using those labels as input. These results show that VLM annotations become usable organ-level measurements when downstream geometric stages can correct them. This makes automated generation of editable 3D plant assets feasible at the scale of modern phenotyping experiments.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2610.04721",
+   "published": "2026-10-03",
+   "updated": "2026-10-03",
+   "title": "Knossos and Ariadne: Benchmarking and Learning Complete Diagram Topology Extraction with Vision-Language Models",
+   "summary": "Structural diagrams are widely used to represent complex systems and relational information across scientific, engineering, procedural, and spatial domains. Recent vision-language models (VLMs) have become increasingly capable of recognizing diagram elements and reasoning about their content, while complete diagram topology extraction remains comparatively underexplored. In this paper, we study diagram-to-graph topology extraction: extracting all diagram entities and the complete relations among them. To enable large-scale supervised training and systematic evaluation of this task, we introduce Knossos, a benchmark of 19,200 diagrams across six diverse domains, with 245,179 nodes and 439,740 edges. Its symbolic generation process provides exact alignment between rendered diagrams and annotations of complete topology, relation types, and connector geometry. To address the modeling challenge of complete topology extraction, we also present Ariadne, a structured framework that decomposes the task into node inventory extraction and source-conditioned edge prediction. Extensive experiments show that training on Knossos substantially improves complete topology extraction in smaller open-source VLMs. Ariadne further improves over one-step extraction under matched supervision, demonstrating the additional benefit of structured decomposition. It achieves the highest average Edge F1 among the evaluated methods on Knossos, while both backbone variants also improve over their unadapted counterparts on the real-world external benchmark. Code and benchmark are available at https://github.com/bangwayne/knossos_Ariadne_Public.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2610.10782",
+   "published": "2026-10-07",
+   "updated": "2026-10-07",
+   "title": "VICO: Visual Environments Co-Evolving for Vision-Language Model Reasoning",
+   "summary": "Reinforcement learning with verifiable rewards (RLVR) has become a standard recipe for post-training vision-language models (VLMs), but it typically assumes a static training environment. As the actor improves, fixed tasks drift out of its learning frontier: many become trivial, others remain unsolvable; and the learning signal collapses. We argue that VLM post-training should evolve the visual environment alongside the actor, not just the actor itself. We propose VICO, a co-evolutionary framework in which an actor and an Environment-as-Rewriter (EnvRewriter) are trained jointly: the EnvRewriter edits verifiable image-side structures, such as scene graphs, chart tables, or protected region masks, and re-renders them to produce label-valid training samples whose difficulty is calibrated to the actor's current ability through a pass-rate-based reward. This loop continuously realigns task difficulty with actor capability without any additional human annotation. Across nine multimodal benchmarks spanning mathematical reasoning and visually grounded understanding, VICO-8B improves over its base model by up to +5.0% on out-of-domain tasks, surpasses the strongest self-evolution and text-editing co-evolution baselines by +4.3% and +8.4% respectively, and stays comparable to chart-specialized RLVR methods using 16-160 times fewer labeled samples. By shifting from human-labeled supervision to image-editing co-evolution, VICO offers a scalable path beyond static-corpus RLVR for visual reasoning.",
+   "queries": [
+    8
+   ]
+  },
+  {
+   "id": "2610.11196",
+   "published": "2026-10-08",
+   "updated": "2026-10-08",
+   "title": "Selective Listening: Mechanism-Guided Control of Audio Influence in Large Audio-Language Models",
+   "summary": "Large audio-language models (LALMs) exploit multimodal evidence, yet task-irrelevant audio can alter text-reasoning decisions when listening is unnecessary. Aggregate Accuracy can hide this paired drift because audio-induced repairs and damages may cancel. Paired drift analysis and targeted interventions identify architecture-specific, intervention-sensitive late audio pathways as actionable control points. We introduce ICAP-Gate, which applies mechanism-guided, task-conditioned control to each model's pathway. Across four LALMs, two reasoning benchmarks, and environmental-sound and natural-speech interference, ICAP-Gate has lower point estimates for Influence Rate and Answer Flip than ungated inference in all 16 full-split model--condition evaluations. Fixed suppression degrades automatic speech recognition (ASR) across all four models, whereas ICAP-Gate matches ungated ASR performance by preserving the pathway for explicit audio-demand instructions. ICAP-Gate has lower paired-drift point estimates than mitigation prompting in all four evaluated settings and provides competitive stabilization relative to eight-sample Self-Consistency while using one generation per query; in controlled ARC measurements, Self-Consistency incurs $7.0$--$9.2\\times$ ungated latency. These results establish selective modality influence control as a design principle for robust multimodal reasoning.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2610.11228",
+   "published": "2026-10-08",
+   "updated": "2026-10-08",
+   "title": "Multimodal Graph Retrieval-Augmented Sequential Recommendation via Collaborative Filtering Paths",
+   "summary": "Multimodal Large Language Models (MLLMs) have demonstrated strong potential for sequential recommendation through their ability to reason over complex multimodal data. However, existing approaches either rely solely on the target user's own interaction history, neglecting collaborative signals from neighboring users, or incur substantial computational overhead through repeated MLLM inference over long interaction histories. To address these challenges, we propose MGRASRec, a multimodal graph retrieval-augmented framework for sequential recommendation. MGRASRec injects collaborative filtering signals conditioned on the candidate item directly into the MLLM prompt by retrieving structured paths from a user-item interaction graph, extended via multimodal similarity to increase coverage beyond exact co-interaction overlap. This retrieval also surfaces the history items most relevant to the candidate at no additional cost, removing the need for recurrent summarization and keeping inference to a single forward pass per candidate. All components are unified into an augmented prompt for parameter-efficient fine-tuning of an MLLM. Extensive evaluations across three publicly available datasets validate the effectiveness of MGRASRec, achieving the best performance on all metrics with particularly strong gains in ranking quality.",
+   "queries": [
+    7
+   ]
+  },
+  {
+   "id": "2610.18860",
+   "published": "2026-10-13",
+   "updated": "2026-10-13",
+   "title": "AesCode: Aesthetic Code Generation with Decoupled Cross-Modal Rewards",
+   "summary": "Generating information-rich visual artifacts such as slides, posters, and dashboards as code is appealing because the outputs are structured, editable, and verifiable. Yet code models cannot see how their choices of layout and color come together on the canvas, often limiting spatial planning and aesthetic quality. Image generators excel at visual design but can misrender requested content, making their outputs unreliable targets for direct reproduction. We therefore introduce AesCode, which generates code grounded in the content prompt while using an image generated from the same prompt as an aesthetic guidance. To do so, AesCode represents the target as a design graph that describes the whole canvas and makes each property attributable. From this graph, we derive complementary cross-modal rewards: deterministic verifiers score properties parsable from code and rendering, while a VLM judge assesses the non-parsable ones with a sample-specific Visual Graph Rubric (VGR) tied to graph elements and relations. We optimize these decoupled rewards through reinforcement learning with per-channel normalization to jointly improve spatial planning, aesthetic quality, and verifiable correctness. To evaluate this setting, we build a benchmark that scores verifiable correctness and visual quality separately, with visual scores highly consistent with human judgments. We find that reference images substantially improve the visual quality of code generated by existing models, and ablations show that AesCode benefits from references both as model input and as a source of visual rewards. Relative to same-scale Qwen3-VL baselines given the same references, AesCode-8B and AesCode-32B improve visual quality by 31.1 and 22.4 percentage points, reaching scores comparable to those of closed-source frontier models such as GPT-5.5 and Claude Opus 4.8.",
+   "queries": [
+    3
+   ]
+  },
+  {
+   "id": "2610.38067",
+   "published": "2026-10-27",
+   "updated": "2026-10-27",
+   "title": "From Error Prediction to Causal Influence: Auditing SAE Features in Multiple-Choice QA",
+   "summary": "Sparse autoencoders (SAEs) can predict internal features associated with model errors, but association alone does not establish causal influence. We study this distinction in multiple-choice question answering, where answer preference can be measured by the logit margin between the correct answer and the competing choices. Across eight datasets, we analyze Gemma~3 1B and 4B with Gemma Scope SAEs. We propose a pipeline to filter out the features that have high correlation with format and content artifacts, such as prompt and answer permutation, and evaluate the remaining ones with causal feature interventions. Our results show that SAE activations contain predictive signals about wrongness and uncertainty across models and datasets. After filtering artifact-contaminated features, selected features for causal intervention at question and option spans produce larger absolute margin shifts and a higher wrong-to-correct rate than randomly selected features, indicating greater causal leverage. However, answer flips are rare, and we do not observe stable effect directions across meaning-preserving changes in prompt format and answer order. An adapted HalluSAE baseline produces larger final-token margin changes, but relies on substantially contaminated features and does not significantly improve correction rates. Therefore, the identified features reflect context-dependent answer competition rather than the mechanism of incorrect answer errors.",
+   "queries": [
+    14
+   ]
+  },
+  {
+   "id": "2611.12938",
+   "published": "2026-11-06",
+   "updated": "2026-11-06",
+   "title": "Graph Visualizations in Prompts for Knowledge Graph Question Answering",
+   "summary": "We study when and how multimodal input improves knowledge graph question answering (KGQA) in large vision--language models. Using a controlled evaluation over 1,500 WebQSP and CWQ questions and six VLMs within a fixed KGQA pipeline, we compare text-only prompting against text-plus-graph visualization at the per-question level and analyze performance changes as a function of reasoning complexity, model size, and image layout. Adding a graph image yields an average gain of 1.85 F1 points, driven by strong precision improvements on low-complexity questions (+4.65 F1). Mixed-effects and regression analyses show that these multimodal gains do not depend strongly on model scale, but are highly sensitive to graph layout: image-only settings sharply degrade performance, hierarchical Graphviz layouts outperform less organized renderings, and decomposing large subgraphs into separated paths yields the largest improvements. Taken together, the results indicate that visual prompting primarily aids KGQA by enhancing prediction precision in low-complexity contexts, provided that visual design respects cognitive and perceptual constraints. To optimize both accuracy and inference efficiency, we argue for adaptive visual prompting policies that selectively append diagrams to small, visually sparse subgraphs with well-structured layouts, avoiding unnecessary visual clutter and token overhead on complex queries. We conclude by relating these findings to a visual notation design theory, outlining how principled diagram encoding can guide future multimodal VLM prompting.",
+   "queries": [
+    8
+   ]
+  }
+ ]
+}

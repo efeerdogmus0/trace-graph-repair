@@ -1,0 +1,2 @@
+{"draws": 120, "accepted": 78, "accept_rate": 0.65, "mean_edges_accepted": 21.55, "mean_edges_rejected": 24.83, "pixel_problems": 0, "s_per_graph": 0.846, "family": "sparse_random", "n": 15, "budget": 180}
+{"draws": 120, "accepted": 88, "accept_rate": 0.733, "mean_edges_accepted": 21.86, "mean_edges_rejected": 25.0, "pixel_problems": 0, "s_per_graph": 2.785, "family": "sparse_random", "n": 15, "budget": 720}
